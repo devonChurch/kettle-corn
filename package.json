@@ -1,0 +1,33 @@
+{
+  "name": "kettle-corn",
+  "version": "1.0.0",
+  "description": "React static site generator using Gatsby",
+  "main": "index.js",
+  "scripts": {
+    "develop": "cd ./gatsby-site && gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gatsby": "gatsby",
+    "commit": "git-cz",
+    "commitizen": "commitizen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonChurch/kettle-corn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devonChurch/kettle-corn/issues"
+  },
+  "homepage": "https://github.com/devonChurch/kettle-corn#readme",
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "gatsby-cli": "^1.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
