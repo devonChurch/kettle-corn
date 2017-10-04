@@ -169,7 +169,7 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
     </section>
 
     <section>
-      <Spacer padding={['largest', 0]}>
+      <Spacer padding={[0, 0, 'largest']}>
         <Content>
 
           <HeadingTwo>Grid</HeadingTwo>
@@ -180,17 +180,63 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
             {({GridWrapper, GridItemThreeUp: Item}) => (
               <GridWrapper>
                 <Item>
-                  <Spacer color={colors.blue.medium} padding={['largest', 0]} />
-                </Item>
-                <Item>
-                  <Spacer color={colors.green.medium} padding={['largest', 0]} />
+                  <Spacer color={colors.orange.medium} padding={['largest', 0]} />
                 </Item>
                 <Item>
                   <Spacer color={colors.purple.medium} padding={['largest', 0]} />
                 </Item>
+                <Item>
+                  <Spacer color={colors.green.medium} padding={['largest', 0]} />
+                </Item>
               </GridWrapper>
             )}
           </Grid>
+
+        </Content>
+      </Spacer>
+
+    </section>
+
+    <section>
+      <Spacer padding={[0, 0, 'largest']}>
+        <Content>
+
+          <HeadingTwo>Spacing</HeadingTwo>
+
+          <Spacer padding={['large', 0, 0]}>
+            <HeadingThree>Largest</HeadingThree>
+            <Spacer isInline color={colors.blue.medium} padding={['largest']}>
+              <Spacer color={colors.pink.medium} padding={['largest', 0, 0, 'largest']}/>
+            </Spacer>
+          </Spacer>
+
+          <Spacer padding={['large', 0, 0]}>
+            <HeadingThree>Large</HeadingThree>
+            <Spacer isInline color={colors.blue.medium} padding={['large']}>
+              <Spacer color={colors.pink.medium} padding={['large', 0, 0, 'large']}/>
+            </Spacer>
+          </Spacer>
+
+          <Spacer padding={['large', 0, 0]}>
+            <HeadingThree>Medium</HeadingThree>
+            <Spacer isInline color={colors.blue.medium} padding={['medium']}>
+              <Spacer color={colors.pink.medium} padding={['medium', 0, 0, 'medium']}/>
+            </Spacer>
+          </Spacer>
+
+          <Spacer padding={['large', 0, 0]}>
+            <HeadingThree>Small</HeadingThree>
+            <Spacer isInline color={colors.blue.medium} padding={['small']}>
+              <Spacer color={colors.pink.medium} padding={['small', 0, 0, 'small']}/>
+            </Spacer>
+          </Spacer>
+
+          <Spacer padding={['large', 0, 0]}>
+            <HeadingThree>Smallest</HeadingThree>
+            <Spacer isInline color={colors.blue.medium} padding={['smallest']}>
+              <Spacer color={colors.pink.medium} padding={['smallest', 0, 0, 'smallest']}/>
+            </Spacer>
+          </Spacer>
 
         </Content>
       </Spacer>

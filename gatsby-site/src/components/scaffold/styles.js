@@ -34,6 +34,7 @@ const scaffold = {
 
   Sspacer: styled.div`
     background: ${({color}) => color || 'transparent'};
+    display: ${({isInline}) => isInline ? 'inline-block' : 'block'};
     ${({margin, padding}) => createResponsiveSpacing({margin, padding})}
   `,
 
