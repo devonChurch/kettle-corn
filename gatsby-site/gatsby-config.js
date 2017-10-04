@@ -1,6 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: 'Enhance Digital',
   },
-  plugins: [`gatsby-plugin-react-helmet`],
+  plugins: [
+
+    'gatsby-plugin-react-helmet',
+
+    'gatsby-plugin-styled-components',
+
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/styles/typography.js',
+      },
+    }
+
+  ],
 }
