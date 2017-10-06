@@ -1,15 +1,21 @@
-import { rem } from 'polished'
+import { rem as createRem } from 'polished'
 
-const small = rem('600px');
-const medium = rem('900px');
-const large = rem('1200px');
+const small = 600;
+const medium = 900;
+const large = 1200;
 
-const media = {
-  '>=small': `@media all and (min-width: ${small})`,
-  '>=medium': `@media all and (min-width: ${medium})`,
-  '>=large': `@media all and (min-width: ${large})`,
+const breakpoints = {
+  small: `${small}px`,
+  medium: `${medium}px`,
+  large: `${large}px`
 };
 
-const breakpoints = { small, medium, large };
+const createMediaQuery = (breakpoint) => `@media all and (min-width: ${createRem(breakpoint)})`;
 
-export {media as default, breakpoints};
+const media = {
+  ">=small": createMediaQuery(small),
+  ">=medium": createMediaQuery(medium),
+  ">=large": createMediaQuery(large)
+};
+
+export {media as default, media, breakpoints, createMediaQuery};

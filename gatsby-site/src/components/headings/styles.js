@@ -17,6 +17,26 @@ const createFontSizes = ({minimum, dynamic, maximum}) => css`
   }
 `;
 
+// const createFontSizes = ({max, breakpoint}) => {
+//
+//   const multiplier = viewportMultiplyer[breakpoint];
+//   const vwValue =
+//   const base =
+//
+//   return css`
+//     font-size: ${rem(base)};
+//
+//     ${media[`>=${breakpoint}`]} {
+//       font-size: ${vwValue};
+//     }
+//
+//     ${media['>=large']} {
+//       font-size: ${max};
+//     }
+//   `;
+//
+// }
+
 const SheadingOne = styled.h1`
   color: ${(props) =>  props.color || gray.light};
   font-weight: 700;

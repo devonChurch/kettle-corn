@@ -1,30 +1,8 @@
 import styled, {css} from 'styled-components';
 import {padding as createPadding, margin as createMargin} from 'polished';
-import {media, breakpoints} from '../../styles';
-import {spacing} from '../../styles';
+import {media, breakpoints, spacing, dynamic} from '../../styles';
 
-const sanatiseSpacing = (spacers, keys = []) => {
-
-  return keys.map((key) => spacers[key] || key);
-
-};
-
-const createResponsiveSpacing = ({margin, padding}) => css`
-  ${createMargin(...sanatiseSpacing(spacing.minimum, margin))}
-  ${createPadding(...sanatiseSpacing(spacing.minimum, padding))}
-
-  ${media['>=small']} {
-    ${createMargin(...sanatiseSpacing(spacing.dynamic, margin))}
-    ${createPadding(...sanatiseSpacing(spacing.dynamic, padding))}
-  }
-
-  ${media['>=large']} {
-    ${createMargin(...sanatiseSpacing(spacing.maximum, margin))}
-    ${createPadding(...sanatiseSpacing(spacing.maximum, padding))}
-  }
-
-`;
-
+const {createDynamicPadding, createDynamicMargin} = dynamic;
 const scaffold = {
 
   Scontent: styled.div`
@@ -35,13 +13,14 @@ const scaffold = {
   Sspacer: styled.div`
     background: ${({color}) => color || 'transparent'};
     display: ${({isInline}) => isInline ? 'inline-block' : 'block'};
-    ${({margin, padding}) => createResponsiveSpacing({margin, padding})}
+    ${({padding}) => createDynamicPadding(padding)}
+    ${({margin}) => createDynamicMargin(margin)}
   `,
 
   SbuttonGroup: styled.div`
 
     > * {
-      ${createResponsiveSpacing({margin: ['medium', 'small', 0]})}
+      ${createDynamicMargin(['medium', 'small', 0])}
     }
   `
 

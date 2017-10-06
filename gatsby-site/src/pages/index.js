@@ -21,125 +21,7 @@ const createDummyParagraphs = () => loremIpsum({
   // words: ['BANANA']
 }); // .split('\n\n').map((paragraph) => <p>{paragraph}</p>);
 
-const IndexPage = () => (
-  <div>
-
-    <Hero color={colors.yellow.medium} arrow={['left', 'bottom']} element="header" padding={['largest', 0, 'large']}>
-
-      <HeadingOne color={colors.misc.white}>Style Guide</HeadingOne>
-
-    </Hero>
-
-    <section>
-      <Spacer padding={['largest', 0, 'largest']}>
-        <Content>
-
-          <HeadingTwo>Colors</HeadingTwo>
-          {Object.keys(colors).map((key) => <ColorList key={key} heading={key} options={colors[key]}/>)}
-
-        </Content>
-      </Spacer>
-    </section>
-
-    <section>
-      <Content>
-
-        <HeadingTwo>Headings</HeadingTwo>
-
-      </Content>
-
-      <Spacer color={colors.blue.medium} padding={['largest', 0, 'large']}>
-        <Content>
-
-          <HeadingOne color={colors.gray.darkest}>{createDummyHeading()}</HeadingOne>
-          <HeadingTwo color={colors.orange.medium}>{createDummyHeading()}</HeadingTwo>
-          <HeadingThree color={colors.misc.white}>{createDummyHeading()}</HeadingThree>
-
-        </Content>
-      </Spacer>
-
-      <Spacer padding={['largest', 0, 'large']}>
-        <Content>
-
-          <HeadingOne color={colors.green.medium}>{createDummyHeading()}</HeadingOne>
-          <HeadingTwo color={colors.orange.darkest}>{createDummyHeading()}</HeadingTwo>
-          <HeadingThree color={colors.blue.darkest}>{createDummyHeading()}</HeadingThree>
-
-        </Content>
-      </Spacer>
-
-      <Spacer color={colors.gray.darkest} padding={['largest', 0, 'large']}>
-        <Content>
-
-          <HeadingOne color={colors.blue.medium}>{createDummyHeading()}</HeadingOne>
-          <HeadingTwo color={colors.pink.medium}>{createDummyHeading()}</HeadingTwo>
-          <HeadingThree color={colors.yellow.medium}>{createDummyHeading()}</HeadingThree>
-
-        </Content>
-      </Spacer>
-
-    </section>
-
-    <section>
-      <Spacer padding={['largest', 0, 'large']}>
-        <Content>
-
-          <HeadingTwo>Buttons</HeadingTwo>
-
-          <Spacer padding={[0, 0, 'large']}>
-            <ButtonGroup>
-              <ButtonPrimary href="#" color={colors.green.medium} isLarge>Primary</ButtonPrimary>
-              <ButtonSecondary href="#" color={colors.green.medium} isLarge>Secondary</ButtonSecondary>
-            </ButtonGroup>
-          </Spacer>
-
-          <Spacer padding={[0, 0, 'large']}>
-            <ButtonGroup>
-              <ButtonPrimary href="#" color={colors.pink.medium}>Primary</ButtonPrimary>
-              <ButtonSecondary href="#" color={colors.pink.medium}>Secondary</ButtonSecondary>
-            </ButtonGroup>
-          </Spacer>
-
-          <Spacer>
-            <ButtonTertiary href="#" color={colors.purple.medium}>Tertiary</ButtonTertiary>
-          </Spacer>
-
-        </Content>
-      </Spacer>
-
-      <Spacer padding={['large', 0]} color={colors.yellow.medium}>
-        <Content>
-
-          <Spacer padding={[0, 0, 'large']}>
-            <ButtonGroup>
-              <ButtonPrimary href="#" color={colors.gray.darkest} isInverted isLarge>Primary</ButtonPrimary>
-              <ButtonSecondary href="#" color={colors.misc.white} isLarge>Secondary</ButtonSecondary>
-            </ButtonGroup>
-          </Spacer>
-
-          <Spacer padding={[0, 0, 'large']}>
-            <ButtonGroup>
-              <ButtonPrimary href="#" color={colors.yellow.medium} isInverted>Primary</ButtonPrimary>
-              <ButtonSecondary href="#" color={colors.gray.darkest}>Secondary</ButtonSecondary>
-            </ButtonGroup>
-          </Spacer>
-
-          <Spacer>
-            <ButtonTertiary href="#" color={colors.gray.darkest} isInverted>Tertiary</ButtonTertiary>
-          </Spacer>
-
-        </Content>
-      </Spacer>
-    </section>
-
-    <section>
-      <Spacer padding={['largest', 0]}>
-        <Content>
-
-          <HeadingTwo color={colors.orange.medium}>Markdown</HeadingTwo>
-
-          <Markdown>
-{`## Hello World:
+const markdown = (`## Hello World:
 
 ${createDummyParagraphs()}
 
@@ -159,43 +41,163 @@ This text leads the user to a [hyperlink](https://www.google.com/) in which to c
 
 Here is some **Bold Text** along side an *Italics Styled* varient.
 
+`)
 
+const IndexPage = () => (
+  <div>
 
-            `}
-          </Markdown>
+      <Hero color={colors.yellow.medium} arrow={['left', 'bottom']} element="header" padding={['largest', 0, 'large']}>
 
-        </Content>
-      </Spacer>
-    </section>
+        <HeadingOne color={colors.misc.white}>Style Guide</HeadingOne>
 
-    <section>
-      <Spacer padding={[0, 0, 'largest']}>
+      </Hero>
+
+      <section>
+        <Spacer padding={['largest', 0, 'largest']}>
+          <Content>
+
+            <HeadingTwo>Colors</HeadingTwo>
+            {Object.keys(colors).map((key) => <ColorList key={key} heading={key} options={colors[key]}/>)}
+
+          </Content>
+        </Spacer>
+      </section>
+
+      <section>
         <Content>
 
-          <HeadingTwo>Grid</HeadingTwo>
-
-          <HeadingThree>Three Up</HeadingThree>
-
-          <Grid>
-            {({GridWrapper, GridItemThreeUp: Item}) => (
-              <GridWrapper>
-                <Item>
-                  <Spacer color={colors.orange.medium} padding={['largest', 0]} />
-                </Item>
-                <Item>
-                  <Spacer color={colors.purple.medium} padding={['largest', 0]} />
-                </Item>
-                <Item>
-                  <Spacer color={colors.green.medium} padding={['largest', 0]} />
-                </Item>
-              </GridWrapper>
-            )}
-          </Grid>
+          <HeadingTwo>Headings</HeadingTwo>
 
         </Content>
-      </Spacer>
 
-    </section>
+        <Spacer color={colors.blue.medium} padding={['largest', 0, 'large']}>
+          <Content>
+
+            <HeadingOne color={colors.gray.darkest}>{createDummyHeading()}</HeadingOne>
+            <HeadingTwo color={colors.orange.medium}>{createDummyHeading()}</HeadingTwo>
+            <HeadingThree color={colors.misc.white}>{createDummyHeading()}</HeadingThree>
+
+          </Content>
+        </Spacer>
+
+        <Spacer padding={['largest', 0, 'large']}>
+          <Content>
+
+            <HeadingOne color={colors.green.medium}>{createDummyHeading()}</HeadingOne>
+            <HeadingTwo color={colors.orange.darkest}>{createDummyHeading()}</HeadingTwo>
+            <HeadingThree color={colors.blue.darkest}>{createDummyHeading()}</HeadingThree>
+
+          </Content>
+        </Spacer>
+
+        <Spacer color={colors.gray.darkest} padding={['largest', 0, 'large']}>
+          <Content>
+
+            <HeadingOne color={colors.blue.medium}>{createDummyHeading()}</HeadingOne>
+            <HeadingTwo color={colors.pink.medium}>{createDummyHeading()}</HeadingTwo>
+            <HeadingThree color={colors.yellow.medium}>{createDummyHeading()}</HeadingThree>
+
+          </Content>
+        </Spacer>
+
+      </section>
+
+
+      <section>
+        <Spacer padding={['largest', 0, 'large']}>
+          <Content>
+
+            <HeadingTwo>Buttons</HeadingTwo>
+
+            <Spacer padding={[0, 0, 'large']}>
+              <ButtonGroup>
+                <ButtonPrimary href="#" color={colors.green.medium} isLarge>Primary</ButtonPrimary>
+                <ButtonSecondary href="#" color={colors.green.medium} isLarge>Secondary</ButtonSecondary>
+              </ButtonGroup>
+            </Spacer>
+
+            <Spacer padding={[0, 0, 'large']}>
+              <ButtonGroup>
+                <ButtonPrimary href="#" color={colors.pink.medium}>Primary</ButtonPrimary>
+                <ButtonSecondary href="#" color={colors.pink.medium}>Secondary</ButtonSecondary>
+              </ButtonGroup>
+            </Spacer>
+
+            <Spacer>
+              <ButtonTertiary href="#" color={colors.purple.medium}>Tertiary</ButtonTertiary>
+            </Spacer>
+
+          </Content>
+        </Spacer>
+
+        <Spacer padding={['large', 0]} color={colors.yellow.medium}>
+          <Content>
+
+            <Spacer padding={[0, 0, 'large']}>
+              <ButtonGroup>
+                <ButtonPrimary href="#" color={colors.gray.darkest} isInverted isLarge>Primary</ButtonPrimary>
+                <ButtonSecondary href="#" color={colors.misc.white} isLarge>Secondary</ButtonSecondary>
+              </ButtonGroup>
+            </Spacer>
+
+            <Spacer padding={[0, 0, 'large']}>
+              <ButtonGroup>
+                <ButtonPrimary href="#" color={colors.yellow.medium} isInverted>Primary</ButtonPrimary>
+                <ButtonSecondary href="#" color={colors.gray.darkest}>Secondary</ButtonSecondary>
+              </ButtonGroup>
+            </Spacer>
+
+            <Spacer>
+              <ButtonTertiary href="#" color={colors.gray.darkest} isInverted>Tertiary</ButtonTertiary>
+            </Spacer>
+
+          </Content>
+        </Spacer>
+      </section>
+
+      <section>
+        <Spacer padding={['largest', 0]}>
+          <Content>
+
+            <HeadingTwo color={colors.orange.medium}>Markdown</HeadingTwo>
+
+            <Markdown>
+{markdown}
+            </Markdown>
+
+          </Content>
+        </Spacer>
+      </section>
+
+      <section>
+        <Spacer padding={[0, 0, 'largest']}>
+          <Content>
+
+            <HeadingTwo>Grid</HeadingTwo>
+
+            <HeadingThree>Three Up</HeadingThree>
+
+            <Grid>
+              {({GridWrapper, GridItemThreeUp: Item}) => (
+                <GridWrapper>
+                  <Item>
+                    <Spacer color={colors.orange.medium} padding={['largest', 0]} />
+                  </Item>
+                  <Item>
+                    <Spacer color={colors.purple.medium} padding={['largest', 0]} />
+                  </Item>
+                  <Item>
+                    <Spacer color={colors.green.medium} padding={['largest', 0]} />
+                  </Item>
+                </GridWrapper>
+              )}
+            </Grid>
+
+          </Content>
+        </Spacer>
+
+      </section>
+
 
     <section>
       <Spacer padding={[0, 0, 'largest']}>
