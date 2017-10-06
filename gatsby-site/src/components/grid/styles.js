@@ -1,5 +1,4 @@
 import styled, {css} from 'styled-components';
-import { rem } from 'polished'
 import {media} from '../../styles';
 
 const Swrapper = styled.div`

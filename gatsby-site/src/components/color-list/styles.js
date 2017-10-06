@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { rem } from 'polished'
+import { rem as createRem, getLuminance, rgba as createRgba } from 'polished'
 import {colors, spacing} from '../../styles';
 
-const itemSize = rem('100px');
+const itemSize = createRem('100px');
 
 const style = {
 
@@ -15,10 +15,11 @@ const style = {
 
   Sitem: styled.li`
     background: ${({hex}) => hex};
-    color: white;
+    border: ${({hex}) => getLuminance(hex) > 0.9 && `1px solid ${colors.gray.lightest}`};
+    color: ${({hex}) => getLuminance(hex) < 0.5 ? colors.misc.white : createRgba(colors.misc.black, 0.5)};
     height: ${itemSize};
     margin: 0;
-    padding-top: ${rem('40px')};
+    padding-top: ${createRem('40px')};
     text-align: center;
     width: ${itemSize};
   `,

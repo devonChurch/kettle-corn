@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import loremIpsum from 'lorem-ipsum';
 import randomNumber from 'lodash.random';
+import firstLetterCaps from 'lodash.capitalize';
 import {colors, spacing} from '../styles';
 import {Content, Spacer, ButtonGroup} from '../components/scaffold';
 import Hero from '../components/hero';
@@ -11,10 +12,10 @@ import Grid from '../components/grid';
 import {HeadingOne, HeadingTwo, HeadingThree} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
 
-const createDummyHeading = () => loremIpsum({
+const createDummyHeading = () => firstLetterCaps(loremIpsum({
   count: randomNumber(5, 10),
   units: 'words'
-});
+}));
 const createDummyParagraphs = () => loremIpsum({
   count: randomNumber(2, 4),
   units: 'paragraphs',

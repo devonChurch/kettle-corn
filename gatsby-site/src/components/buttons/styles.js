@@ -1,7 +1,8 @@
-import styled from 'styled-components';
-import { rem } from 'polished'
-import {colors, spacing, misc} from '../../styles';
+import styled, {css} from 'styled-components';
+import { rem as createRem } from 'polished'
+import {colors, spacing, misc, dynamic} from '../../styles';
 
+const {createDynamicFontSize} = dynamic;
 const Sbutton = styled.div`
 
   &,
@@ -13,10 +14,27 @@ const Sbutton = styled.div`
     border-radius: ${misc.radius};
     border: 3px solid ${({color}) => color || colors.white};
     color: ${({color}) => color || colors.white};
-    font-size: ${({isLarge}) => rem(isLarge ? '18px' : '14px')};
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
+
+    ${({isLarge}) => {
+
+      switch (true) {
+
+        case isLarge:
+          return createDynamicFontSize({
+            min: '16px',
+            max: '18px',
+          });
+
+        default:
+          return css`
+            font-size: ${createRem('14px')};
+          `;
+      }
+
+    }}
   }
 `;
 

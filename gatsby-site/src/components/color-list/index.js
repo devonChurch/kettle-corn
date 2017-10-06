@@ -1,4 +1,5 @@
 import React from 'react';
+import firstLetterCaps from 'lodash.capitalize';
 import {HeadingThree} from '../headings';
 import {Spacer} from '../scaffold';
 import styles from './styles'
@@ -7,7 +8,7 @@ const {Slist, Sitem } = styles;
 
 const createColorItem = ({heading, hex}) => {
 
-  return <Sitem key={hex} hex={hex} type={heading}>{heading}</Sitem>
+  return <Sitem key={hex} hex={hex}>{firstLetterCaps(heading)}</Sitem>
 
 };
 
@@ -19,7 +20,7 @@ const ColorList = ({heading, options}) => {
 
   return (
     <Spacer padding={['medium', 0]}>
-      <HeadingThree color={options.medium}>{heading}</HeadingThree>
+      <HeadingThree color={options.medium}>{firstLetterCaps(heading)}</HeadingThree>
       <Slist>{items}</Slist>
     </Spacer>
   );

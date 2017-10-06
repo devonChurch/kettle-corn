@@ -1,61 +1,29 @@
 import styled, {css} from 'styled-components';
-import { rem, stripUnit } from 'polished'
-import {colors, spacing, media, breakpoints} from '../../styles';
+import { rem as createRem, stripUnit as createStrippedUnit } from 'polished'
+import {colors, spacing, media, breakpoints, dynamic} from '../../styles';
 
-const itemSize = rem('100px');
+const {createDynamicFontSize} = dynamic;
 const {gray} = colors;
-
-const createFontSizes = ({minimum, dynamic, maximum}) => css`
-  font-size: ${minimum};
-
-  ${media['>=medium']} {
-    font-size: ${dynamic};
-  }
-
-  ${media['>=large']} {
-    font-size: ${maximum};
-  }
-`;
-
-// const createFontSizes = ({max, breakpoint}) => {
-//
-//   const multiplier = viewportMultiplyer[breakpoint];
-//   const vwValue =
-//   const base =
-//
-//   return css`
-//     font-size: ${rem(base)};
-//
-//     ${media[`>=${breakpoint}`]} {
-//       font-size: ${vwValue};
-//     }
-//
-//     ${media['>=large']} {
-//       font-size: ${max};
-//     }
-//   `;
-//
-// }
+const maxWidth = createRem(breakpoints.small);
 
 const SheadingOne = styled.h1`
   color: ${(props) =>  props.color || gray.light};
   font-weight: 700;
   margin: 0;
-  max-width: ${stripUnit(breakpoints.large) * 0.5}rem;
+  max-width: ${maxWidth};
 
-  ${createFontSizes({
-    minimum: rem('39.6px'),
-    dynamic: '4.4vw',
-    maximum: rem('52.8px'),
+  ${createDynamicFontSize({
+    min: '35px',
+    max: '52px',
   })}
 
   &:after {
     background: ${({color}) => color || gray.light};
     content: '';
     display: block;
-    height: ${rem('6px')};
+    height: ${createRem('6px')};
     opacity: 0.2;
-    width: ${rem('56px')};
+    width: ${createRem('56px')};
   }
 `;
 
@@ -71,12 +39,11 @@ const style = {
     color: ${(props) => props.color || gray.light};
     font-weight: 700;
     margin: 0;
-    max-width: ${stripUnit(breakpoints.large) * 0.5}rem;
+    max-width: ${maxWidth};
 
-    ${createFontSizes({
-      minimum: rem('19.8px'),
-      dynamic: '2.2vw',
-      maximum: rem('26.4px')
+    ${createDynamicFontSize({
+      min: '20px',
+      max: '26px',
     })}
   `
 }

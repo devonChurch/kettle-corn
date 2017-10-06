@@ -1,27 +1,31 @@
 import styled, {css} from 'styled-components';
-import { rem } from 'polished'
-import {media} from '../../styles';
+import { rem as createRem } from 'polished'
+import {media, dynamic} from '../../styles';
 
-const createArrowPosition = ({position, offset}) => {
+const {createDynamicPosition, createDynamicSize} = dynamic;
+const arrowSize = {min: '20px', max: '40px'};
+const createArrowPosition = (position) => {
 
   switch (position.join(',')) {
 
     case 'center,bottom':
       return css`
-        left: calc(50% - ${offset});
-        top: calc(100% - ${offset});
+        left: 50%;
+        top: 100%;
       `
 
     case 'left,bottom':
       return css`
-        left: calc(10% - ${offset});
-        top: calc(100% - ${offset});
+        left: 10%;
+        top: 100%;
       `
 
     case 'left,top':
       return css`
-        bottom: calc(100% - ${offset});
-        left: calc(10% - ${offset});
+        bottom: 100%;
+        left: 10%;
+        transform-origin: center bottom;
+        transform: rotate(45deg) translateX(50%);
       `
 
     default:
@@ -29,16 +33,6 @@ const createArrowPosition = ({position, offset}) => {
         display: none
       `;
   }
-
-}
-
-const createResponsiveArrow = ({arrow: position = [], size, offset}) => {
-
-  return css`
-    height: ${size};
-    width: ${size};
-    ${createArrowPosition({position, offset})}
-  `;
 
 }
 
@@ -50,18 +44,11 @@ const createWrapper = (element) => styled[element]`
     content: '';
     display: block;
     position: absolute;
-    transform: rotate(45deg);
-    transform-origin: center center;
+    transform: rotate(45deg) translateX(-50%);
+    transform-origin: center top;
     z-index: -1;
-    ${({arrow}) => createResponsiveArrow({arrow, size: rem('24px'), offset: rem('12px')})}
-
-    ${media['>=medium']} {
-      ${({arrow}) => createResponsiveArrow({arrow, size: '4vw', offset: '2vw'})}
-    }
-
-    ${media['>=large']} {
-      ${({arrow}) => createResponsiveArrow({arrow, size: rem('48px'), offset: rem('24px')})}
-    }
+    ${createDynamicSize([arrowSize])}
+    ${({arrow}) => createArrowPosition(arrow)}
   }
 `;
 
