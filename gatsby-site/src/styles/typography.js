@@ -18,16 +18,15 @@ const typography = new Typography({
       ],
     },
     {
-      name: 'Karma',
+      name: 'Glegoo',
       styles: [
-        '300',
-        '500',
+        '400',
         '700',
       ],
     }
   ],
 
-  headerFontFamily: ['Karma', 'serif'],
+  headerFontFamily: ['Glegoo', 'serif'],
   bodyFontFamily: ['Roboto', 'sans-serif'],
 
   // headerColor: 'inherit',

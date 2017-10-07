@@ -8,12 +8,13 @@ const maxWidth = createRem(breakpoints.small);
 const SheadingOne = styled.h1`
   color: ${(props) =>  props.color || createColor('gray', 'light')};
   font-weight: 700;
+  line-height: 1.4;
   margin: 0;
   max-width: ${maxWidth};
 
   ${createDynamicFontSize({
     min: '35px',
-    max: '52px',
+    max: '48px',
   })}
 
   &:after {
@@ -31,12 +32,13 @@ const style = {
   SheadingOne: SheadingOne,
 
   SheadingTwo: SheadingOne.withComponent('h2').extend`
-    font-weight: 300;
+    font-weight: 400;
   `,
 
   SheadingThree: styled.h3`
     color: ${(props) => props.color || createColor('gray', 'light')};
     font-weight: 700;
+    line-height: 1.4;
     margin: 0;
     max-width: ${maxWidth};
 

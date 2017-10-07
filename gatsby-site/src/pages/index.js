@@ -169,7 +169,7 @@ const IndexPage = () => (
 
               <Spacer padding={['large', 0, 0]}>
 
-                <HeadingThree>Dark Background</HeadingThree>
+                <HeadingThree>No Text Alternative</HeadingThree>
 
                 <Grid>
                   {({GridWrapper, GridItemSixUp: Item}) => (
