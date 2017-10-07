@@ -55,8 +55,8 @@ const yellow = {
   lightest: '#FFECB3',
   light: '#FFD54F',
   medium: '#FFC107',
-  dark: '#FFA000',
-  darkest: '#FF6F00',
+  dark: '#E59E00',
+  darkest: '#B77A00',
 
 };
 

@@ -10,7 +10,7 @@ import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
 import Grid from '../components/grid';
 import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone } from '../components/icons';
-import LogoWithTag, {LogoOnly} from '../components/logo';
+import LogoWithText, {LogoNoText} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
 
@@ -83,22 +83,22 @@ const IndexPage = () => (
                   <GridWrapper>
                     <Item>
                       <Spacer padding={[0, 'large', 'large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="gray" background={createColor('misc', 'white')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="gray" background={createColor('misc', 'white')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
                     <Item>
                       <Spacer padding={[0, 'large', 'large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="blue" background={createColor('misc', 'white')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="blue" background={createColor('misc', 'white')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
                     <Item>
                       <Spacer padding={[0, 'large', 'large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="pink" background={createColor('misc', 'white')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="pink" background={createColor('misc', 'white')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
@@ -113,22 +113,22 @@ const IndexPage = () => (
                   <GridWrapper>
                     <Item>
                       <Spacer color={createColor('gray')} padding={['large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="gray" background={createColor('gray')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="gray" background={createColor('gray')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
                     <Item>
                       <Spacer color={createColor('blue')} padding={['large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="blue" background={createColor('blue')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="blue" background={createColor('blue')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
                     <Item>
                       <Spacer color={createColor('pink')} padding={['large']}>
-                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                          <LogoWithTag color="pink" background={createColor('pink')}/>
+                        <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                          <LogoWithText color="pink" background={createColor('pink')}/>
                         </Spacer>
                       </Spacer>
                     </Item>
@@ -144,22 +144,22 @@ const IndexPage = () => (
                     <GridWrapper>
                       <Item>
                         <Spacer color={createColor('gray', 'darkest')} padding={['large']}>
-                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                            <LogoWithTag color="gray" background={createColor('gray', 'darkest')}/>
+                          <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                            <LogoWithText color="gray" background={createColor('gray', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('blue', 'darkest')} padding={['large']}>
-                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                            <LogoWithTag color="blue" background={createColor('blue', 'darkest')}/>
+                          <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                            <LogoWithText color="blue" background={createColor('blue', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('pink', 'darkest')} padding={['large']}>
-                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
-                            <LogoWithTag color="pink" background={createColor('pink', 'darkest')}/>
+                          <Spacer width={{max: '300px'}} margin={[0, 'auto']}>
+                            <LogoWithText color="pink" background={createColor('pink', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
@@ -178,21 +178,21 @@ const IndexPage = () => (
                       <Item>
                         <Spacer padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="purple" background={createColor('misc', 'white')}/>
+                            <LogoNoText color="purple" background={createColor('misc', 'white')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('purple')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="purple" background={createColor('purple', 'medium')}/>
+                            <LogoNoText color="purple" background={createColor('purple', 'medium')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('purple', 'darkest')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="purple" background={createColor('purple', 'darkest')}/>
+                            <LogoNoText color="purple" background={createColor('purple', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
@@ -200,21 +200,21 @@ const IndexPage = () => (
                       <Item>
                         <Spacer padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="green" background={createColor('misc', 'white')}/>
+                            <LogoNoText color="green" background={createColor('misc', 'white')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('green')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="green" background={createColor('green', 'medium')}/>
+                            <LogoNoText color="green" background={createColor('green', 'medium')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('green', 'darkest')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="green" background={createColor('green', 'darkest')}/>
+                            <LogoNoText color="green" background={createColor('green', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
@@ -222,21 +222,21 @@ const IndexPage = () => (
                       <Item>
                         <Spacer padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="yellow" background={createColor('misc', 'white')}/>
+                            <LogoNoText color="yellow" background={createColor('misc', 'white')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('yellow')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="yellow" background={createColor('yellow', 'medium')}/>
+                            <LogoNoText color="yellow" background={createColor('yellow', 'medium')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('yellow', 'darkest')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="yellow" background={createColor('yellow', 'darkest')}/>
+                            <LogoNoText color="yellow" background={createColor('yellow', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
@@ -244,21 +244,21 @@ const IndexPage = () => (
                       <Item>
                         <Spacer padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="orange" background={createColor('misc', 'white')}/>
+                            <LogoNoText color="orange" background={createColor('misc', 'white')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('orange')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="orange" background={createColor('orange', 'medium')}/>
+                            <LogoNoText color="orange" background={createColor('orange', 'medium')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
                       <Item>
                         <Spacer color={createColor('orange', 'darkest')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
-                            <LogoOnly color="orange" background={createColor('orange', 'darkest')}/>
+                            <LogoNoText color="orange" background={createColor('orange', 'darkest')}/>
                           </Spacer>
                         </Spacer>
                       </Item>
