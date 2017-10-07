@@ -1,6 +1,6 @@
 import styled, {css} from 'styled-components';
 import { rem as createRem } from 'polished'
-import {colors, spacing, misc, dynamic} from '../../styles';
+import {createColor, spacing, misc, dynamic} from '../../styles';
 
 const {createDynamicFontSize} = dynamic;
 const Sbutton = styled.div`
@@ -12,8 +12,8 @@ const Sbutton = styled.div`
 
   > a {
     border-radius: ${misc.radius};
-    border: 3px solid ${({color}) => color || colors.white};
-    color: ${({color}) => color || colors.white};
+    border: 3px solid ${({color}) => color || createColor('white')};
+    color: ${({color}) => color || createColor('white')};
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
@@ -41,8 +41,8 @@ const Sbutton = styled.div`
 const Sprimary = Sbutton.extend`
 
   > a {
-    background: ${({background}) => background || colors.white};
-    border-color: ${({background}) => background || colors.white};
+    background: ${({background}) => background || createColor('white')};
+    border-color: ${({background}) => background || createColor('white')};
   }
 `;
 
@@ -58,11 +58,11 @@ const Stertiary = Sbutton.extend`
   > a {
     background: transparent;
     border: 0;
-    color: ${({color}) => color || colors.gray.medium};
+    color: ${({color}) => color || createColor('gray', 'medium')};
     position: relative;
 
     &:after {
-      background: ${({color}) => color || colors.gray.medium};
+      background: ${({color}) => color || createColor('gray', 'medium')};
       content: '';
       display: block;
       height: 3px;

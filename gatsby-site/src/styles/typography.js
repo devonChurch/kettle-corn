@@ -1,5 +1,5 @@
 import Typography from 'typography';
-import {colors} from '../styles'
+import {createColor} from './colors'
 
 const typography = new Typography({
 
@@ -31,7 +31,7 @@ const typography = new Typography({
   bodyFontFamily: ['Roboto', 'sans-serif'],
 
   // headerColor: 'inherit',
-  bodyColor: colors.gray.dark,
+  bodyColor: createColor('gray', 'dark'),
 
   headerWeight: '700',
   bodyWeight: '500',

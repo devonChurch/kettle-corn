@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import {Spacer} from '../scaffold';
-import {colors, spacing, misc} from '../../styles';
+import {createColor, spacing, misc} from '../../styles';
 import styles from './styles';
 
 const {Sprimary, Ssecondary, Stertiary, Sgroup} = styles;
@@ -9,8 +9,8 @@ const createPadding = (isLarge) => isLarge ? ['small', 'medium'] : ['smallest', 
 
 const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted = false}) => {
 
-  const textColor = isInverted ? color : colors.misc.white;
-  const background = isInverted ? colors.misc.white : color;
+  const textColor = isInverted ? color : createColor('misc', 'white');
+  const background = isInverted ? createColor('misc', 'white') : color;
   const padding = createPadding(isLarge);
 
   return (

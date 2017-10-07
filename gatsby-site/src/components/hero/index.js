@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import {Content, Spacer} from '../scaffold';
-import {colors, spacing, misc} from '../../styles';
+import {spacing, misc} from '../../styles';
 import styles from './styles';
 
 const Hero = ({children, color, arrow, element, padding}) => {

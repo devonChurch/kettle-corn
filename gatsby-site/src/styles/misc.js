@@ -1,6 +1,6 @@
-import { rem } from 'polished';
+import { rem as createRem } from 'polished';
 
-const radius = rem('4px');
+const radius = createRem('4px');
 
 const misc = {radius}
 

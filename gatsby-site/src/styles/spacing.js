@@ -1,5 +1,3 @@
-import { rem } from 'polished';
-
 const creativeNegativeSpacing = (positiveSpacing) => {
 
 	const negativeSpacing = Object.keys(positiveSpacing).reduce((accumulator, current) => {

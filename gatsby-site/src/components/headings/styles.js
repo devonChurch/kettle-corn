@@ -1,13 +1,12 @@
 import styled, {css} from 'styled-components';
 import { rem as createRem, stripUnit as createStrippedUnit } from 'polished'
-import {colors, spacing, media, breakpoints, dynamic} from '../../styles';
+import {createColor, spacing, media, breakpoints, dynamic} from '../../styles';
 
 const {createDynamicFontSize} = dynamic;
-const {gray} = colors;
 const maxWidth = createRem(breakpoints.small);
 
 const SheadingOne = styled.h1`
-  color: ${(props) =>  props.color || gray.light};
+  color: ${(props) =>  props.color || createColor('gray', 'light')};
   font-weight: 700;
   margin: 0;
   max-width: ${maxWidth};
@@ -18,7 +17,7 @@ const SheadingOne = styled.h1`
   })}
 
   &:after {
-    background: ${({color}) => color || gray.light};
+    background: ${({color}) => color || createColor('gray', 'light')};
     content: '';
     display: block;
     height: ${createRem('6px')};
@@ -36,7 +35,7 @@ const style = {
   `,
 
   SheadingThree: styled.h3`
-    color: ${(props) => props.color || gray.light};
+    color: ${(props) => props.color || createColor('gray', 'light')};
     font-weight: 700;
     margin: 0;
     max-width: ${maxWidth};
