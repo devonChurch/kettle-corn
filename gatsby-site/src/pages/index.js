@@ -9,6 +9,7 @@ import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
 import Grid from '../components/grid';
+import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone } from '../components/icons';
 import LogoWithTag, {LogoOnly} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
@@ -182,7 +183,7 @@ const IndexPage = () => (
                         </Spacer>
                       </Item>
                       <Item>
-                        <Spacer color={createColor('purple', 'medium')} padding={['medium']}>
+                        <Spacer color={createColor('purple')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
                             <LogoOnly color="purple" background={createColor('purple', 'medium')}/>
                           </Spacer>
@@ -204,7 +205,7 @@ const IndexPage = () => (
                         </Spacer>
                       </Item>
                       <Item>
-                        <Spacer color={createColor('green', 'medium')} padding={['medium']}>
+                        <Spacer color={createColor('green')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
                             <LogoOnly color="green" background={createColor('green', 'medium')}/>
                           </Spacer>
@@ -226,7 +227,7 @@ const IndexPage = () => (
                         </Spacer>
                       </Item>
                       <Item>
-                        <Spacer color={createColor('yellow', 'medium')} padding={['medium']}>
+                        <Spacer color={createColor('yellow')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
                             <LogoOnly color="yellow" background={createColor('yellow', 'medium')}/>
                           </Spacer>
@@ -248,7 +249,7 @@ const IndexPage = () => (
                         </Spacer>
                       </Item>
                       <Item>
-                        <Spacer color={createColor('orange', 'medium')} padding={['medium']}>
+                        <Spacer color={createColor('orange')} padding={['medium']}>
                           <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
                             <LogoOnly color="orange" background={createColor('orange', 'medium')}/>
                           </Spacer>
@@ -278,11 +279,11 @@ const IndexPage = () => (
 
           </Content>
 
-          <Spacer color={createColor('blue', 'medium')} padding={['largest', 0, 'large']}>
+          <Spacer color={createColor('blue')} padding={['largest', 0, 'large']}>
             <Content>
 
               <HeadingOne color={createColor('gray', 'darkest')}>{createDummyHeading()}</HeadingOne>
-              <HeadingTwo color={createColor('orange', 'medium')}>{createDummyHeading()}</HeadingTwo>
+              <HeadingTwo color={createColor('orange')}>{createDummyHeading()}</HeadingTwo>
               <HeadingThree color={createColor('misc', 'white')}>{createDummyHeading()}</HeadingThree>
 
             </Content>
@@ -291,7 +292,7 @@ const IndexPage = () => (
           <Spacer padding={['largest', 0, 'large']}>
             <Content>
 
-              <HeadingOne color={createColor('green', 'medium')}>{createDummyHeading()}</HeadingOne>
+              <HeadingOne color={createColor('green')}>{createDummyHeading()}</HeadingOne>
               <HeadingTwo color={createColor('orange', 'darkest')}>{createDummyHeading()}</HeadingTwo>
               <HeadingThree color={createColor('blue', 'darkest')}>{createDummyHeading()}</HeadingThree>
 
@@ -301,9 +302,9 @@ const IndexPage = () => (
           <Spacer color={createColor('gray', 'darkest')} padding={['largest', 0, 'large']}>
             <Content>
 
-              <HeadingOne color={createColor('blue', 'medium')}>{createDummyHeading()}</HeadingOne>
-              <HeadingTwo color={createColor('pink', 'medium')}>{createDummyHeading()}</HeadingTwo>
-              <HeadingThree color={createColor('yellow', 'medium')}>{createDummyHeading()}</HeadingThree>
+              <HeadingOne color={createColor('blue')}>{createDummyHeading()}</HeadingOne>
+              <HeadingTwo color={createColor('pink')}>{createDummyHeading()}</HeadingTwo>
+              <HeadingThree color={createColor('yellow')}>{createDummyHeading()}</HeadingThree>
 
             </Content>
           </Spacer>
@@ -319,26 +320,26 @@ const IndexPage = () => (
 
               <Spacer padding={[0, 0, 'large']}>
                 <ButtonGroup>
-                  <ButtonPrimary href="#" color={createColor('green', 'medium')} isLarge>Primary</ButtonPrimary>
-                  <ButtonSecondary href="#" color={createColor('green', 'medium')} isLarge>Secondary</ButtonSecondary>
+                  <ButtonPrimary href="#" color={createColor('green')} isLarge>Primary</ButtonPrimary>
+                  <ButtonSecondary href="#" color={createColor('green')} isLarge>Secondary</ButtonSecondary>
                 </ButtonGroup>
               </Spacer>
 
               <Spacer padding={[0, 0, 'large']}>
                 <ButtonGroup>
-                  <ButtonPrimary href="#" color={createColor('pink', 'medium')}>Primary</ButtonPrimary>
-                  <ButtonSecondary href="#" color={createColor('pink', 'medium')}>Secondary</ButtonSecondary>
+                  <ButtonPrimary href="#" color={createColor('pink')}>Primary</ButtonPrimary>
+                  <ButtonSecondary href="#" color={createColor('pink')}>Secondary</ButtonSecondary>
                 </ButtonGroup>
               </Spacer>
 
               <Spacer>
-                <ButtonTertiary href="#" color={createColor('purple', 'medium')}>Tertiary</ButtonTertiary>
+                <ButtonTertiary href="#" color={createColor('purple')}>Tertiary</ButtonTertiary>
               </Spacer>
 
             </Content>
           </Spacer>
 
-          <Spacer padding={['large', 0]} color={createColor('yellow', 'medium')}>
+          <Spacer padding={['large', 0]} color={createColor('yellow')}>
             <Content>
 
               <Spacer padding={[0, 0, 'large']}>
@@ -350,7 +351,7 @@ const IndexPage = () => (
 
               <Spacer padding={[0, 0, 'large']}>
                 <ButtonGroup>
-                  <ButtonPrimary href="#" color={createColor('yellow', 'medium')} isInverted>Primary</ButtonPrimary>
+                  <ButtonPrimary href="#" color={createColor('yellow')} isInverted>Primary</ButtonPrimary>
                   <ButtonSecondary href="#" color={createColor('gray', 'darkest')}>Secondary</ButtonSecondary>
                 </ButtonGroup>
               </Spacer>
@@ -367,7 +368,7 @@ const IndexPage = () => (
           <Spacer padding={['largest', 0]}>
             <Content>
 
-              <HeadingTwo color={createColor('orange', 'medium')}>Markdown</HeadingTwo>
+              <HeadingTwo color={createColor('orange')}>Markdown</HeadingTwo>
 
               <Markdown>
         {markdown}
@@ -389,17 +390,47 @@ const IndexPage = () => (
                 {({GridWrapper, GridItemThreeUp: Item}) => (
                   <GridWrapper>
                     <Item>
-                      <Spacer color={createColor('orange', 'medium')} padding={['largest', 0]} />
+                      <Spacer color={createColor('orange')} padding={['largest', 0]} />
                     </Item>
                     <Item>
-                      <Spacer color={createColor('purple', 'medium')} padding={['largest', 0]} />
+                      <Spacer color={createColor('purple')} padding={['largest', 0]} />
                     </Item>
                     <Item>
-                      <Spacer color={createColor('green', 'medium')} padding={['largest', 0]} />
+                      <Spacer color={createColor('green')} padding={['largest', 0]} />
                     </Item>
                   </GridWrapper>
                 )}
               </Grid>
+
+              <Spacer padding={['large', 0, 0]}>
+
+                <HeadingThree>Six Up</HeadingThree>
+
+                <Grid>
+                  {({GridWrapper, GridItemSixUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer color={createColor('pink')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('purple')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('yellow')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('green')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('blue')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('orange')} padding={['largest', 0]} />
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
+              </Spacer>
 
             </Content>
           </Spacer>
@@ -415,55 +446,132 @@ const IndexPage = () => (
 
             <Spacer padding={['large', 0, 0]}>
               <HeadingThree>Largest</HeadingThree>
-              <Spacer isInline color={createColor('blue', 'medium')} padding={['largest']}>
-                <Spacer color={createColor('pink', 'medium')} padding={['largest', 0, 0, 'largest']}/>
+              <Spacer isInline color={createColor('blue')} padding={['largest']}>
+                <Spacer color={createColor('pink')} padding={['largest', 0, 0, 'largest']}/>
               </Spacer>
             </Spacer>
 
             <Spacer padding={['large', 0, 0]}>
               <HeadingThree>Large</HeadingThree>
-              <Spacer isInline color={createColor('blue', 'medium')} padding={['large']}>
-                <Spacer color={createColor('pink', 'medium')} padding={['large', 0, 0, 'large']}/>
+              <Spacer isInline color={createColor('blue')} padding={['large']}>
+                <Spacer color={createColor('pink')} padding={['large', 0, 0, 'large']}/>
               </Spacer>
             </Spacer>
 
             <Spacer padding={['large', 0, 0]}>
               <HeadingThree>Medium</HeadingThree>
-              <Spacer isInline color={createColor('blue', 'medium')} padding={['medium']}>
-                <Spacer color={createColor('pink', 'medium')} padding={['medium', 0, 0, 'medium']}/>
+              <Spacer isInline color={createColor('blue')} padding={['medium']}>
+                <Spacer color={createColor('pink')} padding={['medium', 0, 0, 'medium']}/>
               </Spacer>
             </Spacer>
 
             <Spacer padding={['large', 0, 0]}>
               <HeadingThree>Small</HeadingThree>
-              <Spacer isInline color={createColor('blue', 'medium')} padding={['small']}>
-                <Spacer color={createColor('pink', 'medium')} padding={['small', 0, 0, 'small']}/>
+              <Spacer isInline color={createColor('blue')} padding={['small']}>
+                <Spacer color={createColor('pink')} padding={['small', 0, 0, 'small']}/>
               </Spacer>
             </Spacer>
 
             <Spacer padding={['large', 0, 0]}>
               <HeadingThree>Smallest</HeadingThree>
-              <Spacer isInline color={createColor('blue', 'medium')} padding={['smallest']}>
-                <Spacer color={createColor('pink', 'medium')} padding={['smallest', 0, 0, 'smallest']}/>
+              <Spacer isInline color={createColor('blue')} padding={['smallest']}>
+                <Spacer color={createColor('pink')} padding={['smallest', 0, 0, 'smallest']}/>
               </Spacer>
             </Spacer>
 
           </Content>
         </Spacer>
-
-
         </section>
 
         <section>
-        <Spacer>
-          <Content>
+          <Spacer>
 
-            <HeadingTwo>Icons</HeadingTwo>
+              <Content>
+                <HeadingTwo>Icons</HeadingTwo>
+              </Content>
 
-          </Content>
-        </Spacer>
+              <Content>
+                <HeadingThree>Standard</HeadingThree>
 
+                <Grid>
+                  {({GridWrapper, GridItemSixUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                            <IconStandardEmail color={createColor('purple')} />
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                            <IconStandardTwitter color={createColor('green')} />
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                            <IconStandardFacebook color={createColor('pink')} />
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                            <IconStandardPhone color={createColor('orange')} />
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
 
+              </Content>
+
+              <Spacer color={createColor('gray', 'darkest')} padding={['large', 0]}>
+                <Content>
+
+                  <Grid>
+                    {({GridWrapper, GridItemSixUp: Item}) => (
+                      <GridWrapper>
+                        <Item>
+                          <Spacer padding={['medium']}>
+                            <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                              <IconStandardEmail />
+                            </Spacer>
+                          </Spacer>
+                        </Item>
+                        <Item>
+                          <Spacer padding={['medium']}>
+                            <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                              <IconStandardTwitter />
+                            </Spacer>
+                          </Spacer>
+                        </Item>
+                        <Item>
+                          <Spacer padding={['medium']}>
+                            <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                              <IconStandardFacebook />
+                            </Spacer>
+                          </Spacer>
+                        </Item>
+                        <Item>
+                          <Spacer padding={['medium']}>
+                            <Spacer width={{max: '50px'}} margin={[0, 'auto']}>
+                              <IconStandardPhone />
+                            </Spacer>
+                          </Spacer>
+                        </Item>
+                      </GridWrapper>
+                    )}
+                  </Grid>
+
+                </Content>
+              </Spacer>
+
+          </Spacer>
         </section>
 
   </div>
