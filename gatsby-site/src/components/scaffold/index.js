@@ -4,10 +4,10 @@ import styles from './styles';
 
 const {Scontent, Sspacer, SbuttonGroup} = styles;
 
-const Spacer = ({children, color, margin, padding, isInline = false}) => {
+const Spacer = ({children, color, margin, padding, isInline = false, width}) => {
 
   return (
-    <Sspacer color={color} margin={margin} padding={padding} isInline={isInline}>
+    <Sspacer color={color} margin={margin} padding={padding} isInline={isInline} width={width}>
       {children}
     </Sspacer>
   );

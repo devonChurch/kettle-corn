@@ -9,6 +9,7 @@ import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
 import Grid from '../components/grid';
+import LogoWithTag, {LogoOnly} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
 
@@ -58,11 +59,213 @@ const IndexPage = () => (
       </Hero>
 
         <section>
-          <Spacer padding={['largest', 0, 'largest']}>
+          <Spacer padding={['largest', 0]}>
             <Content>
 
               <HeadingTwo>Colors</HeadingTwo>
               {Object.keys(colors).map((key) => <ColorList key={key} heading={key} options={colors[key]}/>)}
+
+            </Content>
+          </Spacer>
+        </section>
+
+        <section>
+          <Spacer padding={[0, 0, 'largest']}>
+            <Content>
+
+              <HeadingTwo>Logo</HeadingTwo>
+
+              <HeadingThree>Light Background</HeadingThree>
+
+              <Grid>
+                {({GridWrapper, GridItemThreeUp: Item}) => (
+                  <GridWrapper>
+                    <Item>
+                      <Spacer padding={[0, 'large', 'large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="gray" background={createColor('misc', 'white')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                    <Item>
+                      <Spacer padding={[0, 'large', 'large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="blue" background={createColor('misc', 'white')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                    <Item>
+                      <Spacer padding={[0, 'large', 'large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="pink" background={createColor('misc', 'white')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                  </GridWrapper>
+                )}
+              </Grid>
+
+              <HeadingThree>Medium Background</HeadingThree>
+
+              <Grid>
+                {({GridWrapper, GridItemThreeUp: Item}) => (
+                  <GridWrapper>
+                    <Item>
+                      <Spacer color={createColor('gray')} padding={['large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="gray" background={createColor('gray')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                    <Item>
+                      <Spacer color={createColor('blue')} padding={['large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="blue" background={createColor('blue')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                    <Item>
+                      <Spacer color={createColor('pink')} padding={['large']}>
+                        <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                          <LogoWithTag color="pink" background={createColor('pink')}/>
+                        </Spacer>
+                      </Spacer>
+                    </Item>
+                  </GridWrapper>
+                )}
+                </Grid>
+
+              <Spacer padding={['large', 0, 0]}>
+                <HeadingThree>Dark Background</HeadingThree>
+
+                <Grid>
+                  {({GridWrapper, GridItemThreeUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer color={createColor('gray', 'darkest')} padding={['large']}>
+                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                            <LogoWithTag color="gray" background={createColor('gray', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('blue', 'darkest')} padding={['large']}>
+                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                            <LogoWithTag color="blue" background={createColor('blue', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('pink', 'darkest')} padding={['large']}>
+                          <Spacer width={{max: '200px'}} margin={[0, 'auto']}>
+                            <LogoWithTag color="pink" background={createColor('pink', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
+              </Spacer>
+
+              <Spacer padding={['large', 0, 0]}>
+
+                <HeadingThree>Dark Background</HeadingThree>
+
+                <Grid>
+                  {({GridWrapper, GridItemSixUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="purple" background={createColor('misc', 'white')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('purple', 'medium')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="purple" background={createColor('purple', 'medium')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('purple', 'darkest')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="purple" background={createColor('purple', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="green" background={createColor('misc', 'white')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('green', 'medium')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="green" background={createColor('green', 'medium')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('green', 'darkest')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="green" background={createColor('green', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="yellow" background={createColor('misc', 'white')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('yellow', 'medium')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="yellow" background={createColor('yellow', 'medium')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('yellow', 'darkest')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="yellow" background={createColor('yellow', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+
+                      <Item>
+                        <Spacer padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="orange" background={createColor('misc', 'white')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('orange', 'medium')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="orange" background={createColor('orange', 'medium')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('orange', 'darkest')} padding={['medium']}>
+                          <Spacer width={{max: '100px'}} margin={[0, 'auto']}>
+                            <LogoOnly color="orange" background={createColor('orange', 'darkest')}/>
+                          </Spacer>
+                        </Spacer>
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
+
+            </Spacer>
 
             </Content>
           </Spacer>

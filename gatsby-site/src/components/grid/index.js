@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './styles';
 
-const {Swrapper, SitemThreeUp} = styles;
+const {Swrapper, SitemThreeUp, SitemSixUp} = styles;
+
+const GridItemSixUp = ({children}) => {
+
+  return (
+    <SitemSixUp>{children}</SitemSixUp>
+  );
+
+};
 
 const GridItemThreeUp = ({children}) => {
 
@@ -23,7 +31,7 @@ const Grid = ({children}) => {
 
   return (
     <div>
-      {children({GridWrapper, GridItemThreeUp})}
+      {children({GridWrapper, GridItemThreeUp, GridItemSixUp})}
     </div>
   );
 

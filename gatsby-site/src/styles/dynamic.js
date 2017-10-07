@@ -91,12 +91,28 @@ const createDynamicValues = ({ unit, min, max }) => {
   `;
 };
 
+const getMinMaxValues = (value) => {
+
+  switch (true) {
+
+      case Boolean(value.min && value.max):
+        return value;
+
+      case Boolean(spacing[value]):
+        return spacing[value];
+
+      default:
+        return {};
+  }
+
+};
+
 const createDynamicSpacing = (values) => {
 
   return Object.keys(values).reduce((accumulator, key) => {
 
     const value = values[key];
-    const { min, max } = value.min && value.max ? value : spacing[value];
+    const { min, max } = getMinMaxValues(value);
     const styles = min && max ? createDynamicValues({
       unit: key,
       min: min,
