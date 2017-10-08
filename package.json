@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "develop": "cd ./gatsby-site && gatsby develop",
+    "build": "cd ./gatsby-site && gatsby build -- --prefix-paths",
+    "gh-pages": "gh-pages -d ./gatsby-site/public",
+     "deploy": "npm run build && npm run gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gatsby": "gatsby",
     "commit": "git-cz",
@@ -23,7 +26,8 @@
   "devDependencies": {
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "2.0.0",
-    "gatsby-cli": "^1.1.7"
+    "gatsby-cli": "^1.1.7",
+    "gh-pages": "^1.0.0"
   },
   "config": {
     "commitizen": {

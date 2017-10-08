@@ -1,7 +1,11 @@
 module.exports = {
+
   siteMetadata: {
     title: 'Enhance Digital',
   },
+
+  pathPrefix: '/kettle-corn',
+
   plugins: [
 
     'gatsby-plugin-react-helmet',
