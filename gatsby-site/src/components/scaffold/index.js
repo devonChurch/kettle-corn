@@ -2,14 +2,24 @@ import React from 'react';
 import {spacing} from '../../styles';
 import styles from './styles';
 
-const {Scontent, Sspacer, SbuttonGroup} = styles;
+const {Scontent, Sspacer, Ssizer, SbuttonGroup} = styles;
 
-const Spacer = ({children, color, margin, padding, isInline = false, width}) => {
+const Spacer = ({children, color, margin, padding, isInline = false}) => {
 
   return (
-    <Sspacer color={color} margin={margin} padding={padding} isInline={isInline} width={width}>
+    <Sspacer color={color} margin={margin} padding={padding} isInline={isInline}>
       {children}
     </Sspacer>
+  );
+
+};
+
+const Sizer = ({children, color, isInline = false, isCenter = false, width = 'auto', minWidth = 'initial', maxWidth = 'initial', height = 'auto', minHeight = 'initial', maxHeight = 'initial'}) => {
+
+  return (
+    <Ssizer color={color} isInline={isInline} isCenter={isCenter} size={[height, width]} minWidth={minWidth} maxWidth={maxWidth} minHeight={minHeight} maxHeight={maxHeight}>
+      {children}
+    </Ssizer>
   );
 
 };
@@ -39,6 +49,6 @@ const ButtonGroup = ({children}) => {
 
 };
 
-const scaffold = {Content, Spacer, ButtonGroup};
+const scaffold = {Content, Spacer, Sizer, ButtonGroup};
 
-export {scaffold as default, Content, Spacer, ButtonGroup};
+export {scaffold as default, Content, Spacer, Sizer, ButtonGroup};

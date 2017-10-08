@@ -107,19 +107,26 @@ const getMinMaxValues = (value) => {
 
 };
 
+const createDynamicStyle = (key, value) => {
+
+  const { min, max } = getMinMaxValues(value);
+
+  return min && max ? createDynamicValues({
+    unit: key,
+    min: min,
+    max: max
+  }) : `${key}: ${value};`;
+
+};
+
 const createDynamicSpacing = (values) => {
 
   return Object.keys(values).reduce((accumulator, key) => {
 
     const value = values[key];
-    const { min, max } = getMinMaxValues(value);
-    const styles = min && max ? createDynamicValues({
-      unit: key,
-      min: min,
-      max: max
-    }) : `${key}: ${value};`;
+    const style = createDynamicStyle(key, value);
 
-    return `${accumulator} ${styles}`;
+    return `${accumulator} ${style}`;
 
   }, '');
 
@@ -151,13 +158,9 @@ const createDynamicMargin = (values) => {
 
 }
 
-const createDynamicFontSize = ({min, max}) => {
+const createDynamicFontSize = (value) => {
 
-  return min && max ? createDynamicValues({
-    unit: 'font-size',
-    min,
-    max
-  }) : '';
+  return createDynamicStyle('font-size', value);
 
 };
 
@@ -177,6 +180,30 @@ const createDynamicSize = (values) => {
 
 };
 
-const dynamic = { createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize };
+const createDynamicMinWidth = (value) => {
 
-export {dynamic as default, createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize};
+  return createDynamicStyle('min-width', value);
+
+};
+
+const createDynamicMaxWidth = (value) => {
+
+  return createDynamicStyle('max-width', value);
+
+};
+
+const createDynamicMinHeight = (value) => {
+
+  return createDynamicStyle('min-height', value);
+
+};
+
+const createDynamicMaxHeight = (value) => {
+
+  return createDynamicStyle('max-height', value);
+
+};
+
+const dynamic = { createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize, createDynamicMinWidth, createDynamicMaxWidth, createDynamicMinHeight, createDynamicMaxHeight };
+
+export {dynamic as default, createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize, createDynamicMinWidth, createDynamicMaxWidth, createDynamicMinHeight, createDynamicMaxHeight};
