@@ -233,7 +233,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <div>Dasd asd ad adasd adas das</div>
+                              <ButtonTertiary color={createColor('misc', 'white')} href="tel:+64273058018">027 305 8018</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -253,7 +253,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <div>Dasd asd ad adasd adas das</div>
+                              <ButtonTertiary color={createColor('misc', 'white')} href="mailto:kelsey@enhancedigital.co.nz">kelsey@enhancedigital.co.nz</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -273,7 +273,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <div>Dasd asd ad adasd adas das</div>
+                              <ButtonTertiary color={createColor('misc', 'white')} href="https://www.facebook.com/notifyenhancedigital/">@notifyenhancedigital</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -293,7 +293,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <div>Dasd asd ad adasd adas das</div>
+                              <ButtonTertiary color={createColor('misc', 'white')} href="#">xxxxxxxxxxxxxxxxx</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>

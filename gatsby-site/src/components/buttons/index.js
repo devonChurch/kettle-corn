@@ -7,6 +7,14 @@ import styles from './styles';
 const {Sprimary, Ssecondary, Stertiary, Sgroup} = styles;
 const createPadding = (isLarge) => isLarge ? ['small', 'medium'] : ['smallest', 'small'];
 
+const Anchor = ({children, href}) => {
+
+    const isSpecial = href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('http');
+
+    return isSpecial ? <a href={href}>{children}</a> : <Link to={href}>{children}</Link>;
+
+};
+
 const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted = false}) => {
 
   const textColor = isInverted ? color : createColor('misc', 'white');
@@ -15,11 +23,11 @@ const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted
 
   return (
     <Sprimary color={textColor} background={background} isLarge={isLarge}>
-      <Link to={href}>
+      <Anchor href={href}>
         <Spacer padding={padding}>
           {children}
         </Spacer>
-      </Link>
+      </Anchor>
     </Sprimary>
   );
 
@@ -31,11 +39,11 @@ const ButtonSecondary = ({children, color, href = '#', isLarge = false}) => {
 
   return (
     <Ssecondary color={color} isLarge={isLarge}>
-      <Link to={href}>
+      <Anchor href={href}>
         <Spacer padding={padding}>
           {children}
         </Spacer>
-      </Link>
+      </Anchor>
     </Ssecondary>
   );
 
@@ -45,11 +53,11 @@ const ButtonTertiary = ({children, color = createColor('gray'), href = '#'}) => 
 
   return (
     <Stertiary color={color}>
-      <Link to={href}>
+      <Anchor href={href}>
         <Spacer padding={['smallest']}>
           {children}
         </Spacer>
-      </Link>
+      </Anchor>
     </Stertiary>
   );
 
