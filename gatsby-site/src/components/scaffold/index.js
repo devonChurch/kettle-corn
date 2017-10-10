@@ -2,7 +2,7 @@ import React from 'react';
 import {spacing} from '../../styles';
 import styles from './styles';
 
-const {Scontent, Sspacer, Ssizer, SbuttonGroup} = styles;
+const {Scontent, Sspacer, Ssizer, SbuttonGroup, SflexWrapper, SflexItem} = styles;
 
 const Spacer = ({children, color, margin, padding, isInline = false}) => {
 
@@ -36,7 +36,6 @@ const Content = ({children, color}) => {
 
 };
 
-
 const ButtonGroup = ({children}) => {
 
   return (
@@ -49,6 +48,37 @@ const ButtonGroup = ({children}) => {
 
 };
 
-const scaffold = {Content, Spacer, Sizer, ButtonGroup};
+const FlexItem = ({children, grow, order}) => {
 
-export {scaffold as default, Content, Spacer, Sizer, ButtonGroup};
+  return (
+    <SflexItem grow={grow} order={order}>
+      {children}
+    </SflexItem>
+  );
+
+};
+
+const FlexWrapper = ({children, align, direction, justify}) => {
+
+  return (
+    <SflexWrapper align={align} direction={direction} justify={justify}>
+      {children}
+    </SflexWrapper>
+  );
+
+};
+
+const Flexer = ({children}) => {
+
+  return (
+    children({
+      Wrapper: FlexWrapper,
+      Item: FlexItem
+    })
+  );
+
+};
+
+const scaffold = {Content, Spacer, Sizer, ButtonGroup, Flexer};
+
+export {scaffold as default, Content, Spacer, Sizer, ButtonGroup, Flexer};

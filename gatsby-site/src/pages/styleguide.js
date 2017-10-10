@@ -408,10 +408,10 @@ const StyleguidePage = () => (
 
               <HeadingTwo>Grid</HeadingTwo>
 
-              <HeadingThree>Three Up</HeadingThree>
+              <HeadingThree>Two Up</HeadingThree>
 
               <Grid>
-                {({GridWrapper, GridItemThreeUp: Item}) => (
+                {({GridWrapper, GridItemTwoUp: Item}) => (
                   <GridWrapper>
                     <Item>
                       <Spacer color={createColor('orange')} padding={['largest', 0]} />
@@ -419,12 +419,30 @@ const StyleguidePage = () => (
                     <Item>
                       <Spacer color={createColor('purple')} padding={['largest', 0]} />
                     </Item>
-                    <Item>
-                      <Spacer color={createColor('green')} padding={['largest', 0]} />
-                    </Item>
                   </GridWrapper>
                 )}
               </Grid>
+
+              <Spacer padding={['large', 0, 0]}>
+
+                <HeadingThree>Three Up</HeadingThree>
+
+                <Grid>
+                  {({GridWrapper, GridItemThreeUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer color={createColor('orange')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('purple')} padding={['largest', 0]} />
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('green')} padding={['largest', 0]} />
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
+              </Spacer>
 
               <Spacer padding={['large', 0, 0]}>
 

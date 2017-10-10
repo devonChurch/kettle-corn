@@ -33,6 +33,33 @@ const scaffold = {
     > * {
       ${createDynamicMargin(['medium', 'small', 0])}
     }
+  `,
+
+  SflexWrapper: styled.div`
+    align-items: ${({align}) => align || 'flex-start'};
+    display: flex;
+    flex-direction: ${({direction}) => direction || 'row'};
+    justify-content: ${({justify}) => justify || 'flex-start'};
+    ${({direction}) => {
+
+      switch (direction) {
+
+        case 'column':
+          return css`
+            height: 100%;
+          `;
+
+        default:
+          return css`
+            width: 100%;
+          `;
+      }
+    }}
+  `,
+
+  SflexItem: styled.div`
+    flex-grow: ${({grow}) => grow || 0};
+    order: ${({order}) => order || 0};
   `
 
 }

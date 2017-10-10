@@ -6,6 +6,25 @@ const Swrapper = styled.div`
   flex-wrap: wrap;
 `;
 
+const SitemTwoUp = styled.div`
+  width: 100%;
+
+  ${media['>=medium']} {
+    width: 50%;
+  }
+
+  ${media['>=large']} {
+
+    &:nth-child(odd) {
+      width: 33.33%;
+    }
+
+    &:nth-child(even) {
+      width: 66.66%;
+    }
+  }
+`;
+
 const SitemThreeUp = styled.div`
   width: 100%;
 
@@ -16,10 +35,15 @@ const SitemThreeUp = styled.div`
   ${media['>=large']} {
     width: 33.33%;
   }
+
 `;
 
 const SitemSixUp = styled.div`
-  width: 50%;
+  width: 100%;
+
+  ${media['>=small']} {
+    width: 50%;
+  }
 
   ${media['>=medium']} {
     width: 33%;
@@ -30,6 +54,6 @@ const SitemSixUp = styled.div`
   }
 `;
 
-const styles = { Swrapper, SitemThreeUp, SitemSixUp };
+const styles = { Swrapper, SitemTwoUp, SitemThreeUp, SitemSixUp };
 
 export default styles;

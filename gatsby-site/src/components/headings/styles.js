@@ -6,7 +6,7 @@ const {createDynamicFontSize} = dynamic;
 const maxWidth = createRem(breakpoints.small);
 
 const SheadingOne = styled.h1`
-  color: ${(props) =>  props.color || createColor('gray', 'light')};
+  color: ${({color}) => color || createColor('gray', 'light')};
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
@@ -36,7 +36,7 @@ const style = {
   `,
 
   SheadingThree: styled.h3`
-    color: ${(props) => props.color || createColor('gray', 'light')};
+    color: ${({color}) => color || createColor('gray', 'light')};
     font-weight: 700;
     line-height: 1.4;
     margin: 0;

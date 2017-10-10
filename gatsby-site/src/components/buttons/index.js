@@ -41,7 +41,7 @@ const ButtonSecondary = ({children, color, href = '#', isLarge = false}) => {
 
 };
 
-const ButtonTertiary = ({children, color, href = '#'}) => {
+const ButtonTertiary = ({children, color = createColor('gray'), href = '#'}) => {
 
   return (
     <Stertiary color={color}>

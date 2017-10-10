@@ -58,11 +58,11 @@ const Stertiary = Sbutton.extend`
   > a {
     background: transparent;
     border: 0;
-    color: ${({color}) => color || createColor('gray', 'medium')};
+    color: ${({color}) => color};
     position: relative;
 
     &:after {
-      background: ${({color}) => color || createColor('gray', 'medium')};
+      background: ${({color}) => color};
       content: '';
       display: block;
       height: 3px;
