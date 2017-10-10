@@ -3,14 +3,13 @@ import { rem as createRem, stripUnit as createStrippedUnit } from 'polished'
 import {createColor, spacing, media, breakpoints, dynamic} from '../../styles';
 
 const {createDynamicFontSize} = dynamic;
-const maxWidth = createRem(breakpoints.small);
 
 const SheadingOne = styled.h1`
-  color: ${({color}) => color || createColor('gray', 'light')};
+  color: ${({color}) => color || 'inherit'};
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
-  max-width: ${maxWidth};
+  max-width: ${createRem(breakpoints.small)};
 
   ${createDynamicFontSize({
     min: '35px',
@@ -18,7 +17,7 @@ const SheadingOne = styled.h1`
   })}
 
   &:after {
-    background: ${({color}) => color || createColor('gray', 'light')};
+    background: ${({color}) => color || createColor('misc', 'black', 0.5)};
     content: '';
     display: block;
     height: ${createRem('6px')};
@@ -36,17 +35,24 @@ const style = {
   `,
 
   SheadingThree: styled.h3`
-    color: ${({color}) => color || createColor('gray', 'light')};
-    font-weight: 700;
+    color: ${({color}) => color || 'inherit'};
+    font-weight: 400; // 700;
     line-height: 1.4;
     margin: 0;
-    max-width: ${maxWidth};
+    max-width: ${createRem(breakpoints.small)};
 
     ${createDynamicFontSize({
       min: '20px',
       max: '26px',
     })}
-  `
+  `,
+
+  Stext: styled.span`
+    color: ${({color}) => color || 'inherit'};
+    display: ${({isBlock}) => isBlock ? 'inline-block' : 'inline'};
+    font-weight: ${({weight}) => weight || 'inherit'};
+    max-width: ${createRem(breakpoints.medium)};
+  `,
 }
 
 export default style;

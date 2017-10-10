@@ -32,7 +32,7 @@ const typography = new Typography({
   // headerColor: 'inherit',
   bodyColor: createColor('gray', 'dark'),
 
-  headerWeight: '700',
+  headerWeight: '400',
   bodyWeight: '500',
 
   // boldWeight: 'bold'

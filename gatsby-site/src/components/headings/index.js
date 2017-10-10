@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Spacer} from '../scaffold';
 import styles from './styles';
 
-const {SheadingOne, SheadingTwo, SheadingThree} = styles;
+const {SheadingOne, SheadingTwo, SheadingThree, Stext} = styles;
 
 const HeadingOne = ({children, color}) => {
 
@@ -41,6 +41,16 @@ const HeadingThree = ({children, color}) => {
 
 };
 
-const headings = {HeadingOne, HeadingTwo, HeadingThree};
+const Text = ({children, color, weight, isBlock = false}) => {
 
-export {headings as default, HeadingOne, HeadingTwo, HeadingThree};
+  return (
+    <Stext color={color} weight={weight} isBlock={isBlock}>
+      {children}
+    </Stext>
+  );
+
+};
+
+const headings = {HeadingOne, HeadingTwo, HeadingThree, Text};
+
+export {headings as default, HeadingOne, HeadingTwo, HeadingThree, Text};
