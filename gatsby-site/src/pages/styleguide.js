@@ -76,67 +76,71 @@ const StyleguidePage = () => (
 
               <HeadingTwo>Logo</HeadingTwo>
 
-              <HeadingThree>Light Background</HeadingThree>
+              <Spacer padding={['large', 0, 0]}>
+                <HeadingThree>Light Background</HeadingThree>
 
-              <Grid>
-                {({GridWrapper, GridItemThreeUp: Item}) => (
-                  <GridWrapper>
-                    <Item>
-                      <Spacer padding={[0, 'large', 'large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="gray" background={createColor('misc', 'white')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                    <Item>
-                      <Spacer padding={[0, 'large', 'large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="blue" background={createColor('misc', 'white')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                    <Item>
-                      <Spacer padding={[0, 'large', 'large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="pink" background={createColor('misc', 'white')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                  </GridWrapper>
-                )}
-              </Grid>
-
-              <HeadingThree>Medium Background</HeadingThree>
-
-              <Grid>
-                {({GridWrapper, GridItemThreeUp: Item}) => (
-                  <GridWrapper>
-                    <Item>
-                      <Spacer color={createColor('gray')} padding={['large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="gray" background={createColor('gray')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                    <Item>
-                      <Spacer color={createColor('blue')} padding={['large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="blue" background={createColor('blue')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                    <Item>
-                      <Spacer color={createColor('pink')} padding={['large']}>
-                        <Sizer isCenter maxWidth="300px">
-                          <LogoWithText color="pink" background={createColor('pink')}/>
-                        </Sizer>
-                      </Spacer>
-                    </Item>
-                  </GridWrapper>
-                )}
+                <Grid>
+                  {({GridWrapper, GridItemThreeUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer padding={[0, 'large', 'large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="gray" background={createColor('misc', 'white')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer padding={[0, 'large', 'large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="blue" background={createColor('misc', 'white')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer padding={[0, 'large', 'large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="pink" background={createColor('misc', 'white')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                    </GridWrapper>
+                  )}
                 </Grid>
+              </Spacer>
 
               <Spacer padding={['large', 0, 0]}>
+                <HeadingThree>Medium Background</HeadingThree>
+
+                <Grid>
+                  {({GridWrapper, GridItemThreeUp: Item}) => (
+                    <GridWrapper>
+                      <Item>
+                        <Spacer color={createColor('gray')} padding={['large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="gray" background={createColor('gray')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('blue')} padding={['large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="blue" background={createColor('blue')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                      <Item>
+                        <Spacer color={createColor('pink')} padding={['large']}>
+                          <Sizer isCenter maxWidth="300px">
+                            <LogoWithText color="pink" background={createColor('pink')}/>
+                          </Sizer>
+                        </Spacer>
+                      </Item>
+                    </GridWrapper>
+                  )}
+                </Grid>
+              </Spacer>
+
+              <Spacer padding={['largest', 0, 0]}>
                 <HeadingThree>Dark Background</HeadingThree>
 
                 <Grid>
@@ -168,7 +172,7 @@ const StyleguidePage = () => (
                 </Grid>
               </Spacer>
 
-              <Spacer padding={['large', 0, 0]}>
+              <Spacer padding={['largest', 0, 0]}>
 
                 <HeadingThree>No Text Alternative</HeadingThree>
 

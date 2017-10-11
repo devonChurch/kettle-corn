@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import {Spacer} from '../scaffold';
+import {Spacer, Sizer} from '../scaffold';
+import {IconMiscArrow} from '../icons';
 import {createColor, spacing, misc} from '../../styles';
 import styles from './styles';
 
-const {Sprimary, Ssecondary, Stertiary, Sgroup} = styles;
+const {Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup} = styles;
 const createPadding = (isLarge) => isLarge ? ['small', 'medium'] : ['smallest', 'small'];
 
 const Anchor = ({children, href}) => {
@@ -25,6 +26,7 @@ const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted
     <Sprimary color={textColor} background={background} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
+          <IconMiscArrow className="Button-arrow" color={textColor}/>
           {children}
         </Spacer>
       </Anchor>
@@ -41,6 +43,7 @@ const ButtonSecondary = ({children, color, href = '#', isLarge = false}) => {
     <Ssecondary color={color} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
+          <IconMiscArrow className="Button-arrow" color={color}/>
           {children}
         </Spacer>
       </Anchor>
@@ -54,7 +57,8 @@ const ButtonTertiary = ({children, color = createColor('gray'), href = '#'}) => 
   return (
     <Stertiary color={color}>
       <Anchor href={href}>
-        <Spacer padding={['smallest']}>
+        <Spacer padding={['smallest', 0]}>
+          <IconMiscArrow className="Button-arrow" color={color}/>
           {children}
         </Spacer>
       </Anchor>
@@ -63,6 +67,21 @@ const ButtonTertiary = ({children, color = createColor('gray'), href = '#'}) => 
 
 };
 
-const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary};
+const ButtonQuaternary = ({children, color = createColor('gray'), href = '#'}) => {
 
-export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary};
+  return (
+    <Squaternary color={color}>
+      <Anchor href={href}>
+        <Spacer padding={['smallest', 0]}>
+          <IconMiscArrow className="Button-arrow" color={color}/>
+          {children}
+        </Spacer>
+      </Anchor>
+    </Squaternary>
+  );
+
+};
+
+const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary};
+
+export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary};

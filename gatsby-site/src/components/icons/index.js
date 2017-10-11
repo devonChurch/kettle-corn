@@ -1,15 +1,21 @@
+// Standard
 import {
   IconStandardEmail,
   IconStandardTwitter,
   IconStandardFacebook,
   IconStandardPhone
 } from './standard';
+
+// Feature
 import IconFeatureFeedback from './feature/feedback';
 import IconFeatureSocial from './feature/social';
 import IconFeatureDevelopment from './feature/development';
 import IconFeatureEmail from './feature/email';
 import IconFeatureOptimisation from './feature/optimisation';
 import IconFeatureAnalytics from './feature/analytics';
+
+// Misc
+import {IconMiscArrow} from './misc';
 
 const icons = {
   IconStandardEmail,
@@ -21,7 +27,8 @@ const icons = {
   IconFeatureDevelopment,
   IconFeatureEmail,
   IconFeatureOptimisation,
-  IconFeatureAnalytics
+  IconFeatureAnalytics,
+  IconMiscArrow
 };
 
 export {
@@ -35,5 +42,6 @@ export {
   IconFeatureDevelopment,
   IconFeatureEmail,
   IconFeatureOptimisation,
-  IconFeatureAnalytics
+  IconFeatureAnalytics,
+  IconMiscArrow
 };

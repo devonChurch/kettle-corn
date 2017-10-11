@@ -12,7 +12,7 @@ import Grid from '../components/grid';
 import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone, IconFeatureFeedback, IconFeatureSocial, IconFeatureDevelopment, IconFeatureEmail, IconFeatureOptimisation, IconFeatureAnalytics } from '../components/icons';
 import LogoWithText, {LogoNoText} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../components/headings';
-import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
+import {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary} from '../components/buttons';
 
 const IndexPage = () => (
   <div>
@@ -214,7 +214,9 @@ const IndexPage = () => (
 
         <HeadingTwo color={createColor('misc', 'white')}>We love working with <strong>local businesses</strong></HeadingTwo>
 
-        <Text isBlock>Contact us to talk about your growing your digital presence today.</Text>
+        <Spacer margin={['-medium', 0, 0]}>
+          <Text isBlock color={createColor('blue', 'darkest')}>Contact us to talk about your growing your digital presence today.</Text>
+        </Spacer>
 
         <Spacer margin={['large', '-medium', 0]}>
           <Grid>
@@ -233,7 +235,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonTertiary color={createColor('misc', 'white')} href="tel:+64273058018">027 305 8018</ButtonTertiary>
+                              <ButtonQuaternary color={createColor('misc', 'white')} href="tel:+64273058018">027 305 8018</ButtonQuaternary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -253,7 +255,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonTertiary color={createColor('misc', 'white')} href="mailto:kelsey@enhancedigital.co.nz">kelsey@enhancedigital.co.nz</ButtonTertiary>
+                              <ButtonQuaternary color={createColor('misc', 'white')} href="mailto:kelsey@enhancedigital.co.nz">kelsey@enhancedigital.co.nz</ButtonQuaternary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -273,7 +275,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonTertiary color={createColor('misc', 'white')} href="https://www.facebook.com/notifyenhancedigital/">@notifyenhancedigital</ButtonTertiary>
+                              <ButtonQuaternary color={createColor('misc', 'white')} href="https://www.facebook.com/notifyenhancedigital/">@notifyenhancedigital</ButtonQuaternary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -293,7 +295,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonTertiary color={createColor('misc', 'white')} href="#">xxxxxxxxxxxxxxxxx</ButtonTertiary>
+                              <ButtonQuaternary color={createColor('misc', 'white')} href="#">xxxxxxxxxxxxxxxxx</ButtonQuaternary>
                             </Spacer>
                           </Item>
                         </Wrapper>

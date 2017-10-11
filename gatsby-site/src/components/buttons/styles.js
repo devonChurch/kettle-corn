@@ -1,8 +1,9 @@
 import styled, {css} from 'styled-components';
 import { rem as createRem } from 'polished'
-import {createColor, spacing, misc, dynamic} from '../../styles';
+import {createColor, spacing, speed, misc, dynamic, media} from '../../styles';
 
-const {createDynamicFontSize} = dynamic;
+const {createDynamicSize, createDynamicFontSize, createDynamicPosition} = dynamic;
+const borderWidth = 3;
 const Sbutton = styled.div`
 
   &,
@@ -12,11 +13,13 @@ const Sbutton = styled.div`
 
   > a {
     border-radius: ${misc.radius};
-    border: 3px solid ${({color}) => color || createColor('white')};
+    border: ${createRem(borderWidth)} solid ${({color}) => color || createColor('white')};
     color: ${({color}) => color || createColor('white')};
     font-weight: 900;
+    position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    transition: ${speed.fast} opacity;
 
     ${({isLarge}) => {
 
@@ -35,6 +38,41 @@ const Sbutton = styled.div`
       }
 
     }}
+
+    svg {
+      opacity: 0;
+      position: absolute;
+      transform: translate(-100%, -50%);
+      transition: ${speed.fast} opacity;
+      ${({isLarge}) => {
+
+        const size = isLarge ? '18px' : '12px';
+        const position = isLarge ? ['50%', 'auto','auto', {min: '15px', max: '18px'}] : ['50%', 'auto','auto', {min: '6px', max: '12px'}];
+
+        return `${createDynamicSize([size])}${createDynamicPosition(position)}`;
+
+      }};
+    }
+
+    > * {
+      transition: ${speed.fast} transform;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+
+      ${media['>=medium']} {
+
+        svg {
+          opacity: 1;
+        }
+
+        > * {
+          transform: translateX(${({isLarge}) => createRem(isLarge ? '11px' : '5px')});
+        }
+      }
+    }
   }
 `;
 
@@ -48,9 +86,7 @@ const Sprimary = Sbutton.extend`
 
 const Ssecondary= Sbutton.extend`
 
-  > a {
 
-  }
 `;
 
 const Stertiary = Sbutton.extend`
@@ -62,18 +98,47 @@ const Stertiary = Sbutton.extend`
     position: relative;
 
     &:after {
-      background: ${({color}) => color};
+      border: ${createRem(borderWidth / 2)} solid currentColor;
+      border-radius: ${createRem(borderWidth / 2)};
       content: '';
       display: block;
-      height: 3px;
-      left: 0;
       position: absolute;
-      right: 0;
+      transform: translate(-50%, ${createRem(borderWidth)});
+      transition: ${speed.fast} width;
       width: 100%;
+      will-change: width;
+      ${createDynamicPosition(['auto', 'auto', 'smallest', '50%'])}
+    }
+
+    svg {
+      left: -1px;
+    }
+
+    &:hover {
+
+      ${media['>=medium']} {
+
+        &:after {
+          width: calc(100% + ${createRem('10px')});
+        }
+      }
     }
   }
 `;
 
-const buttons = { Sprimary, Ssecondary, Stertiary };
+const Squaternary = Stertiary.extend`
+
+  > a {
+    font-size: ${createRem('16px')};
+    font-weight: 500;
+    text-transform: none;
+
+    &:after {
+      border-width: ${createRem('0.5px')} 0 0;
+    }
+  }
+`;
+
+const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary };
 
 export default buttons;
