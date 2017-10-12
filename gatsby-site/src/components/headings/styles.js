@@ -4,6 +4,12 @@ import {createColor, spacing, media, breakpoints, dynamic} from '../../styles';
 
 const {createDynamicFontSize} = dynamic;
 
+const createFirstItems = (element, amount) => {
+
+  return new Array(amount).fill(0).map((_, index) => `${element}:nth-of-type(${index})`).join(', ');
+
+};
+
 const SheadingOne = styled.h1`
   color: ${({color}) => color || 'inherit'};
   font-weight: 700;
@@ -49,9 +55,11 @@ const style = {
 
   Stext: styled.span`
     color: ${({color}) => color || 'inherit'};
-    display: ${({isBlock}) => isBlock ? 'inline-block' : 'inline'};
+    display: ${({isBlock}) => isBlock ? 'block' : 'inline'};
     font-weight: ${({weight}) => weight || 'inherit'};
+    font-size: ${({size}) => size ? createRem(size) : 'inherit'};
     max-width: ${createRem(breakpoints.medium)};
+    text-align: ${({align}) => align || 'left'};
   `,
 }
 

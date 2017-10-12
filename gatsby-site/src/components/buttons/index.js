@@ -5,7 +5,7 @@ import {IconMiscArrow} from '../icons';
 import {createColor, spacing, misc} from '../../styles';
 import styles from './styles';
 
-const {Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup} = styles;
+const {Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup, Sinline} = styles;
 const createPadding = (isLarge) => isLarge ? ['small', 'medium'] : ['smallest', 'small'];
 
 const Anchor = ({children, href}) => {
@@ -82,6 +82,18 @@ const ButtonQuaternary = ({children, color = createColor('gray'), href = '#'}) =
 
 };
 
-const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary};
+const ButtonInline = ({children, color, href = '#'}) => {
 
-export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary};
+  return (
+    <Sinline color={color}>
+      <Anchor href={href}>
+        {children}
+      </Anchor>
+    </Sinline>
+  );
+
+};
+
+const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline};
+
+export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline};

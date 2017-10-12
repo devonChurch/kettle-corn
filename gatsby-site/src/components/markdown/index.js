@@ -1,36 +1,49 @@
 import React from 'react';
 import MarkdownToJSX from 'markdown-to-jsx';
 import Link from 'gatsby-link';
-import {H1, H2, H3} from '../headings';
+import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../headings';
+import {ButtonInline} from '../buttons';
 import styles from './styles';
+import {createColor} from '../../styles';
 
 const {Swrapper} = styles;
-const overrides = {
+const overrides = (color) => ({
 
   h1: {
-    component: H1,
-    // props: {},
+    component: HeadingOne,
+    props: {
+      color: createColor(color)
+    },
   },
 
   h2: {
-    component: H2,
+    component: HeadingTwo,
+    props: {
+      color: createColor(color)
+    },
   },
 
   h3: {
-    component: H3,
+    component: HeadingThree,
+    props: {
+      color: createColor(color)
+    },
   },
 
   a: {
-    component: Link,
+    component: ButtonInline,
+    props: {
+      color: createColor(color)
+    },
   },
 
-};
+});
 
-const Markdown = ({children}) => {
+const Markdown = ({children, color = 'gray'}) => {
 
   return (
-    <Swrapper>
-      <MarkdownToJSX options={{overrides}}>
+    <Swrapper color={color}>
+      <MarkdownToJSX options={{ overrides: overrides(color)}}>
         {children}
       </MarkdownToJSX>
     </Swrapper>

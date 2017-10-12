@@ -17,7 +17,26 @@ import {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary} from '
 const IndexPage = () => (
   <div>
 
-    <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['largest', 0]}>
+    <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['medium', 0, 'large']}>
+
+      <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
+        <Flexer>
+          {({Wrapper, Item}) => (
+            <Wrapper wrap="wrap" justify="flex-end">
+              <Item>
+                <Spacer padding={[0, 'small']}>
+                  <ButtonTertiary href="/services" color={createColor('misc', 'white')}>Services</ButtonTertiary>
+                </Spacer>
+              </Item>
+              <Item>
+                <Spacer padding={[0, 'small']}>
+                  <ButtonTertiary color={createColor('misc', 'white')}>Something else</ButtonTertiary>
+                </Spacer>
+              </Item>
+            </Wrapper>
+          )}
+        </Flexer>
+      </Spacer>
 
       <Sizer maxWidth={{ min: '300px', max: '384px' }}>
         <LogoWithText color="yellow" background={createColor('yellow')}/>
@@ -72,7 +91,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('blue')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#email-marketing" color={createColor('blue')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -96,7 +115,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('green')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#seo-&-sem" color={createColor('green')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -120,7 +139,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('purple')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#analytics-&-measuring-engagement" color={createColor('purple')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -144,7 +163,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('pink')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#website-design-&-development" color={createColor('pink')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -168,7 +187,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('orange')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#social-media-management" color={createColor('orange')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -192,7 +211,7 @@ const IndexPage = () => (
                           </Item>
                           <Item>
                             <Spacer padding={[0, 'medium', 'largest']}>
-                              <ButtonTertiary color={createColor('yellow')}>Read more</ButtonTertiary>
+                              <ButtonTertiary href="/services#customer-feedback" color={createColor('yellow')}>Read more</ButtonTertiary>
                             </Spacer>
                           </Item>
                         </Wrapper>

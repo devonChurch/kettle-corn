@@ -1,74 +1,41 @@
-import { rgba as createRgba } from 'polished'
+import { rgba as createRgba, darken as createDarken, lighten as createLighten } from 'polished'
 
-const pink = {
+const createSwatches = (base) => ({
+  lightest: createLighten(0.30, base),
+  light: createLighten(0.15, base),
+  medium: base,
+  dark: createDarken(0.15, base),
+  darkest: createDarken(0.30, base),
+});
 
-  lightest: '#F8BBD0',
-  light: '#F06292',
-  medium: '#E91E63',
-  dark: '#C2185B',
-  darkest: '#880E4F',
+const pink = createSwatches('#E91E63');
+const blue = createSwatches('#2196F3');
+const orange = createSwatches('#FF5722');
+const yellow = createSwatches('#FFC107');
+const gray = createSwatches('#607D8B');
 
-};
+const purple = (() => {
 
-const purple = {
+  const base = '#673AB7';
 
-  lightest: '#D1C4E9',
-  light: '#9575CD',
-  medium: '#673AB7',
-  dark: '#512DA8',
-  darkest: '#311B92',
+  return {
+    ...createSwatches(base),
+    darkest: createDarken(0.2, base)
+  };
 
-};
+})();
 
-const blue = {
+const green = (() => {
 
-  lightest: '#BBDEFB',
-  light: '#64B5F6',
-  medium: '#2196F3',
-  dark: '#1976D2',
-  darkest: '#0D47A1',
+  const base = '#009688';
 
-};
+  return {
+    ...createSwatches(base),
+    dark: createDarken(0.075, base),
+    darkest: createDarken(0.15, base)
+  };
 
-const green = {
-
-  lightest: '#B2DFDB',
-  light: '#4DB6AC',
-  medium: '#009688',
-  dark: '#00796B',
-  darkest: '#004D40',
-
-};
-
-const orange = {
-
-  lightest: '#FFCCBC',
-  light: '#FF8A65',
-  medium: '#FF5722',
-  dark: '#E64A19',
-  darkest: '#BF360C',
-
-};
-
-const yellow = {
-
-  lightest: '#FFECB3',
-  light: '#FFD54F',
-  medium: '#FFC107',
-  dark: '#E59E00',
-  darkest: '#B77A00',
-
-};
-
-const gray = {
-
-  lightest: '#CFD8DC',
-  light: '#90A4AE',
-  medium: '#607D8B',
-  dark: '#455A64',
-  darkest: '#263238',
-
-};
+})();
 
 const misc = {
 

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { rem, stripUnit } from 'polished';
-import {breakpoints} from '../../styles';
+import {createColor} from '../../styles';
 
 const Swrapper = styled.div`
-  max-width: ${stripUnit(breakpoints.large) * 0.75}rem;
+  color: ${({color}) => createColor(color, 'darkest')};
 `;
 
 const styles = { Swrapper };

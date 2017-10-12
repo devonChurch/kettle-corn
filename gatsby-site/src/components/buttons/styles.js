@@ -139,6 +139,19 @@ const Squaternary = Stertiary.extend`
   }
 `;
 
-const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary };
+const Sinline = styled.span`
+
+  > a {
+    color: ${({color}) => color || 'inherit'};
+    transition: ${speed.fast} opacity;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+  }
+`;
+
+const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary, Sinline };
 
 export default buttons;

@@ -4,14 +4,14 @@ import loremIpsum from 'lorem-ipsum';
 import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import {createColor, colors, spacing} from '../styles';
-import {Content, Spacer, Sizer, ButtonGroup} from '../components/scaffold';
+import {Content, Spacer, Sizer, Flexer, ButtonGroup} from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
 import Grid from '../components/grid';
 import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone } from '../components/icons';
 import LogoWithText, {LogoNoText} from '../components/logo';
-import {HeadingOne, HeadingTwo, HeadingThree} from '../components/headings';
+import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
 
 const createDummyHeading = () => firstLetterCaps(loremIpsum({
@@ -53,9 +53,52 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
 const StyleguidePage = () => (
   <div>
 
-      <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['largest', 0, 'large']}>
+      <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['medium', 0, 'large']}>
 
-        <HeadingOne color={createColor('misc', 'white')}>Style Guide</HeadingOne>
+        <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
+          <Flexer>
+            {({Wrapper, Item}) => (
+              <Wrapper wrap="wrap" justify="space-between">
+                <Item grow="1">
+                  <Spacer padding={[0, 'small']}>
+                    <ButtonTertiary href="/" color={createColor('misc', 'white')}>back</ButtonTertiary>
+                  </Spacer>
+                </Item>
+                <Item>
+                  <Spacer padding={[0, 'small']}>
+                    <ButtonTertiary href="/services" color={createColor('misc', 'white')}>Services</ButtonTertiary>
+                  </Spacer>
+                </Item>
+                <Item>
+                  <Spacer padding={[0, 'small']}>
+                    <ButtonTertiary color={createColor('misc', 'white')}>Something else</ButtonTertiary>
+                  </Spacer>
+                </Item>
+              </Wrapper>
+            )}
+          </Flexer>
+        </Spacer>
+
+        <Flexer>
+          {({Wrapper, Item}) => (
+            <Wrapper wrap="wrap" align="center">
+              <Item>
+                <Spacer padding={[0, 'large', 0, 0]}>
+                  <Link to="/">
+                    <Sizer width={{ min: '80px', max: '100px' }}>
+                      <LogoNoText color="yellow" background={createColor('yellow')}/>
+                    </Sizer>
+                  </Link>
+                </Spacer>
+              </Item>
+              <Item grow="1">
+                <Spacer padding={['medium', 0]}>
+                  <HeadingOne color={createColor('misc', 'white')} isSpaceless>Style Guide</HeadingOne>
+                </Spacer>
+              </Item>
+            </Wrapper>
+          )}
+        </Flexer>
 
       </Hero>
 

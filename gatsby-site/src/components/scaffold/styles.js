@@ -39,6 +39,7 @@ const scaffold = {
     align-items: ${({align}) => align || 'flex-start'};
     display: flex;
     flex-direction: ${({direction}) => direction || 'row'};
+    flex-wrap: ${({wrap}) => wrap || 'nowrap'};
     justify-content: ${({justify}) => justify || 'flex-start'};
     ${({direction}) => {
 

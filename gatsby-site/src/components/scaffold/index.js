@@ -58,10 +58,10 @@ const FlexItem = ({children, grow, order}) => {
 
 };
 
-const FlexWrapper = ({children, align, direction, justify}) => {
+const FlexWrapper = ({children, align, direction, justify, wrap}) => {
 
   return (
-    <SflexWrapper align={align} direction={direction} justify={justify}>
+    <SflexWrapper align={align} direction={direction} justify={justify} wrap={wrap}>
       {children}
     </SflexWrapper>
   );
