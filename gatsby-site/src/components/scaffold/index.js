@@ -2,7 +2,17 @@ import React from 'react';
 import {spacing} from '../../styles';
 import styles from './styles';
 
-const {Scontent, Sspacer, Ssizer, SbuttonGroup, SflexWrapper, SflexItem} = styles;
+const {Spage, Scontent, Sspacer, Ssizer, SbuttonGroup, SflexWrapper, SflexItem} = styles;
+
+const Page = ({children, background}) => {
+
+  return (
+    <Spage background={background}>
+      {children}
+    </Spage>
+  );
+
+};
 
 const Spacer = ({children, color, margin, padding, isInline = false}) => {
 
@@ -79,6 +89,6 @@ const Flexer = ({children}) => {
 
 };
 
-const scaffold = {Content, Spacer, Sizer, ButtonGroup, Flexer};
+const scaffold = {Page, Content, Spacer, Sizer, ButtonGroup, Flexer};
 
-export {scaffold as default, Content, Spacer, Sizer, ButtonGroup, Flexer};
+export {scaffold as default, Page, Content, Spacer, Sizer, ButtonGroup, Flexer};

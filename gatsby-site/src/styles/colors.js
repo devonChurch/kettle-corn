@@ -12,6 +12,7 @@ const pink = createSwatches('#E91E63');
 const blue = createSwatches('#2196F3');
 const orange = createSwatches('#FF5722');
 const yellow = createSwatches('#FFC107');
+const red = createSwatches('#F44336');
 const gray = createSwatches('#607D8B');
 
 const purple = (() => {
@@ -59,7 +60,7 @@ const misc = {
 // @example
 // createColor('gray', 'darkest', 0.5);
 // --> 'rgba(38,50,56,0.5)'.
-const colors = {pink, purple, blue, green, orange, yellow, gray, misc};
+const colors = {pink, purple, blue, green, orange, yellow, red, gray, misc};
 
 const createColor = (color, ...options) => {
 

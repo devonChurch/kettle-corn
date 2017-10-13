@@ -4,7 +4,7 @@ import loremIpsum from 'lorem-ipsum';
 import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import {createColor, colors, spacing} from '../styles';
-import {Content, Spacer, Sizer, Flexer, ButtonGroup} from '../components/scaffold';
+import {Page, Content, Spacer, Sizer, Flexer, ButtonGroup} from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
@@ -51,7 +51,7 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
 `)
 
 const StyleguidePage = () => (
-  <div>
+  <Page>
 
       <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['medium', 0, 'large']}>
 
@@ -679,7 +679,7 @@ const StyleguidePage = () => (
           </Spacer>
         </section>
 
-  </div>
+  </Page>
 )
 
 export default StyleguidePage

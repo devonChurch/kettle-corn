@@ -1,9 +1,14 @@
 import styled, {css} from 'styled-components';
 import {padding as createPadding, margin as createMargin, rem as createRem} from 'polished';
-import {media, breakpoints, spacing, dynamic} from '../../styles';
+import {media, breakpoints, spacing, dynamic, createColor} from '../../styles';
 
 const {createDynamicPadding, createDynamicMargin, createDynamicSize, createDynamicMinWidth, createDynamicMaxWidth, createDynamicMinHeight, createDynamicMaxHeight} = dynamic;
 const scaffold = {
+
+  Spage: styled.div`
+    background: ${({background}) => background || createColor('misc', 'white')};
+    min-height: 100vh;
+  `,
 
   Scontent: styled.div`
     margin: 0 auto;

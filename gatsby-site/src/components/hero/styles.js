@@ -4,7 +4,7 @@ import {media, dynamic} from '../../styles';
 
 const {createDynamicPosition, createDynamicSize} = dynamic;
 const arrowSize = {min: '20px', max: '40px'};
-const createArrowPosition = (position) => {
+const createArrowPosition = (position = []) => {
 
   switch (position.join(',')) {
 

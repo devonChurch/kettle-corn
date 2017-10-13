@@ -16,7 +16,7 @@ const Anchor = ({children, href}) => {
 
 };
 
-const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted = false}) => {
+const ButtonPrimary = ({children, color = createColor('gray'), href = '#', isLarge = false, isInverted = false}) => {
 
   const textColor = isInverted ? color : createColor('misc', 'white');
   const background = isInverted ? createColor('misc', 'white') : color;
@@ -35,7 +35,7 @@ const ButtonPrimary = ({children, color, href = '#', isLarge = false, isInverted
 
 };
 
-const ButtonSecondary = ({children, color, href = '#', isLarge = false}) => {
+const ButtonSecondary = ({children, color = createColor('gray'), href = '#', isLarge = false}) => {
 
   const padding = createPadding(isLarge);
 
