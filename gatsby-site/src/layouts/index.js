@@ -35,10 +35,9 @@ const Header = () => (
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Enhance Digital"
+      title="Enhance Digital | Digital Marketing Services"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Talk to us about enhancing the experience for your customers online. Grow your business with digital marketing, website analytics and engagement tools.' },
       ]}
     />
     {/* <Header /> */}
