@@ -32,7 +32,7 @@ const FooterStandard = ({children, title = 'Enhance Digital', background}) => {
                   const {display, href, Icon} = contact[key];
 
                   return (
-                    <Item>
+                    <Item key={key}>
                       <Spacer padding={[0, 'medium', 'medium']}>
                         <Flexer>
                           {({Wrapper, Item}) => (
