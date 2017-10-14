@@ -31,7 +31,7 @@ const ServicesPage = () => (
         const {title, id, color, Icon, content} = services[key];
 
         return (
-          <Spacer padding={['largest', 0, 0]}>
+          <Spacer key={key} padding={['largest', 0, 0]}>
             <Content>
 
               <ServicesArticle

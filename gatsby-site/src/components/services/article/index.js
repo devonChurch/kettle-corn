@@ -20,13 +20,11 @@ const ServicesArticle = ({title, id, color, Icon, content}) => {
         {({Wrapper, Item}) => (
           <Wrapper wrap="wrap" align="center">
             <Item>
-              <Sizer height="70px">
-                <Spacer margin={['-15px', 0, 0, '-20px']} padding={[0, 'medium', 0, 0]}>
-                  <Sizer width="100px">
-                    <Icon />
-                  </Sizer>
-                </Spacer>
-              </Sizer>
+              <Spacer margin={['-15px', 0, 0, '-20px']} padding={[0, 'medium', 0, 0]}>
+                <Sizer width="100px">
+                  <Icon />
+                </Sizer>
+              </Spacer>
             </Item>
             <Item grow="1">
               <Spacer margin={['-medium', 0]}>
