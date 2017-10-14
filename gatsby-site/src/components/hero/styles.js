@@ -46,7 +46,6 @@ const createWrapper = (element) => styled[element]`
     position: absolute;
     transform: rotate(45deg) translateX(-50%);
     transform-origin: center top;
-    z-index: -1;
     ${createDynamicSize([arrowSize])}
     ${({arrow}) => createArrowPosition(arrow)}
   }

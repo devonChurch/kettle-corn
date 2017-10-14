@@ -13,58 +13,13 @@ import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStand
 import LogoWithText, {LogoNoText} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary} from '../components/buttons';
+import HeaderStandard from '../components/headers/standard';
+import FooterStandard from '../components/footers/standard';
 
 const ServicesPage = () => (
   <Page>
 
-    <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['medium', 0, 'large']}>
-
-      <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
-        <Flexer>
-          {({Wrapper, Item}) => (
-            <Wrapper wrap="wrap" justify="space-between">
-              <Item grow="1">
-                <Spacer padding={[0, 'small']}>
-                  <ButtonTertiary href="/" color={createColor('misc', 'white')}>back</ButtonTertiary>
-                </Spacer>
-              </Item>
-              <Item>
-                <Spacer padding={[0, 'small']}>
-                  <ButtonTertiary href="/services" color={createColor('misc', 'white')}>Services</ButtonTertiary>
-                </Spacer>
-              </Item>
-              <Item>
-                <Spacer padding={[0, 'small']}>
-                  <ButtonTertiary color={createColor('misc', 'white')}>Something else</ButtonTertiary>
-                </Spacer>
-              </Item>
-            </Wrapper>
-          )}
-        </Flexer>
-      </Spacer>
-
-      <Flexer>
-        {({Wrapper, Item}) => (
-          <Wrapper wrap="wrap" align="center">
-            <Item>
-              <Spacer padding={[0, 'large', 0, 0]}>
-                <Link to="/">
-                  <Sizer width={{ min: '80px', max: '100px' }}>
-                    <LogoNoText color="yellow" background={createColor('yellow')}/>
-                  </Sizer>
-                </Link>
-              </Spacer>
-            </Item>
-            <Item grow="1">
-              <Spacer padding={['medium', 0]}>
-                <HeadingOne color={createColor('misc', 'white')} isSpaceless>Services</HeadingOne>
-              </Spacer>
-            </Item>
-          </Wrapper>
-        )}
-      </Flexer>
-
-    </Hero>
+    <HeaderStandard title="Services" background={createColor('pink', 'dark')}/>
 
     <main>
 
@@ -335,110 +290,7 @@ Talk to us about collecting feedback from your customers now. We'll help script 
 
     </main>
 
-    <Hero color={createColor('blue')} arrow={['left', 'top']} element="footer" padding={['largest', 0]}>
-
-      <Text color={createColor('misc', 'white')}>
-
-        <HeadingTwo color={createColor('misc', 'white')}>We love working with <strong>local businesses</strong></HeadingTwo>
-
-        <Spacer margin={['-medium', 0, 0]}>
-          <Text isBlock color={createColor('blue', 'darkest')}>Contact us to talk about your growing your digital presence today.</Text>
-        </Spacer>
-
-        <Spacer margin={['large', '-medium', 0]}>
-          <Grid>
-            {({GridWrapper, GridItemTwoUp: Item}) => (
-              <GridWrapper>
-
-                <Item>
-                  <Spacer padding={[0, 'medium', 'medium']}>
-                    <Flexer>
-                      {({Wrapper, Item}) => (
-                        <Wrapper align="center">
-                          <Item>
-                            <Sizer width={{min: '20px', max: '30px'}}>
-                              <IconStandardPhone />
-                            </Sizer>
-                          </Item>
-                          <Item>
-                            <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonQuaternary color={createColor('misc', 'white')} href="tel:+64273058018">027 305 8018</ButtonQuaternary>
-                            </Spacer>
-                          </Item>
-                        </Wrapper>
-                      )}
-                    </Flexer>
-                  </Spacer>
-                </Item>
-                <Item>
-                  <Spacer padding={[0, 'medium', 'medium']}>
-                    <Flexer>
-                      {({Wrapper, Item}) => (
-                        <Wrapper align="center">
-                          <Item>
-                            <Sizer width={{min: '20px', max: '30px'}}>
-                              <IconStandardEmail />
-                            </Sizer>
-                          </Item>
-                          <Item>
-                            <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonQuaternary color={createColor('misc', 'white')} href="mailto:kelsey@enhancedigital.co.nz">kelsey@enhancedigital.co.nz</ButtonQuaternary>
-                            </Spacer>
-                          </Item>
-                        </Wrapper>
-                      )}
-                    </Flexer>
-                  </Spacer>
-                </Item>
-                <Item>
-                  <Spacer padding={[0, 'medium', 'medium']}>
-                    <Flexer>
-                      {({Wrapper, Item}) => (
-                        <Wrapper align="center">
-                          <Item>
-                            <Sizer width={{min: '20px', max: '30px'}}>
-                              <IconStandardFacebook />
-                            </Sizer>
-                          </Item>
-                          <Item>
-                            <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonQuaternary color={createColor('misc', 'white')} href="https://www.facebook.com/notifyenhancedigital/">@notifyenhancedigital</ButtonQuaternary>
-                            </Spacer>
-                          </Item>
-                        </Wrapper>
-                      )}
-                    </Flexer>
-                  </Spacer>
-                </Item>
-                <Item>
-                  <Spacer padding={[0, 'medium', 'medium']}>
-                    <Flexer>
-                      {({Wrapper, Item}) => (
-                        <Wrapper align="center">
-                          <Item>
-                            <Sizer width={{min: '20px', max: '30px'}}>
-                              <IconStandardTwitter />
-                            </Sizer>
-                          </Item>
-                          <Item>
-                            <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonQuaternary color={createColor('misc', 'white')} href="#">xxxxxxxxxxxxxxxxx</ButtonQuaternary>
-                            </Spacer>
-                          </Item>
-                        </Wrapper>
-                      )}
-                    </Flexer>
-                  </Spacer>
-                </Item>
-
-              </GridWrapper>
-            )}
-            </Grid>
-          </Spacer>
-
-      </Text>
-
-    </Hero>
+    <FooterStandard />
 
   </Page>
 )

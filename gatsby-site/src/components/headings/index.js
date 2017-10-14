@@ -8,7 +8,7 @@ const {SheadingOne, SheadingTwo, SheadingThree, Stext} = styles;
 
 const createId = (id) => {
 
-	return id && id.replace(/[^A-Z a-z&]/g, '').trim().replace(/[ ]/g, '-').toLowerCase();
+	return id && id.replace(/[^A-Z a-z&-]/g, '').trim().replace(/[ ]/g, '-').toLowerCase();
 
 };
 

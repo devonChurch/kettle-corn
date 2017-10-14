@@ -13,6 +13,7 @@ import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStand
 import LogoWithText, {LogoNoText} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../components/headings';
 import {ButtonPrimary, ButtonSecondary, ButtonTertiary} from '../components/buttons';
+import HeaderStandard from '../components/headers/standard';
 
 const createDummyHeading = () => firstLetterCaps(loremIpsum({
   count: randomNumber(5, 10),
@@ -53,54 +54,7 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
 const StyleguidePage = () => (
   <Page>
 
-      <Hero color={createColor('yellow')} arrow={['left', 'bottom']} element="header" padding={['medium', 0, 'large']}>
-
-        <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
-          <Flexer>
-            {({Wrapper, Item}) => (
-              <Wrapper wrap="wrap" justify="space-between">
-                <Item grow="1">
-                  <Spacer padding={[0, 'small']}>
-                    <ButtonTertiary href="/" color={createColor('misc', 'white')}>back</ButtonTertiary>
-                  </Spacer>
-                </Item>
-                <Item>
-                  <Spacer padding={[0, 'small']}>
-                    <ButtonTertiary href="/services" color={createColor('misc', 'white')}>Services</ButtonTertiary>
-                  </Spacer>
-                </Item>
-                <Item>
-                  <Spacer padding={[0, 'small']}>
-                    <ButtonTertiary color={createColor('misc', 'white')}>Something else</ButtonTertiary>
-                  </Spacer>
-                </Item>
-              </Wrapper>
-            )}
-          </Flexer>
-        </Spacer>
-
-        <Flexer>
-          {({Wrapper, Item}) => (
-            <Wrapper wrap="wrap" align="center">
-              <Item>
-                <Spacer padding={[0, 'large', 0, 0]}>
-                  <Link to="/">
-                    <Sizer width={{ min: '80px', max: '100px' }}>
-                      <LogoNoText color="yellow" background={createColor('yellow')}/>
-                    </Sizer>
-                  </Link>
-                </Spacer>
-              </Item>
-              <Item grow="1">
-                <Spacer padding={['medium', 0]}>
-                  <HeadingOne color={createColor('misc', 'white')} isSpaceless>Style Guide</HeadingOne>
-                </Spacer>
-              </Item>
-            </Wrapper>
-          )}
-        </Flexer>
-
-      </Hero>
+      <HeaderStandard title="Style Guide" background={createColor('gray', 'dark')}/>
 
         <section>
           <Spacer padding={['largest', 0]}>
