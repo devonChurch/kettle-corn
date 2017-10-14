@@ -38,6 +38,19 @@ const SitemThreeUp = styled.div`
 
 `;
 
+const SitemFourUp = styled.div`
+  width: 100%;
+
+  ${media['>=medium']} {
+    width: 50%;
+  }
+
+  ${media['>=large']} {
+    width: 25%;
+  }
+
+`;
+
 const SitemSixUp = styled.div`
   width: 100%;
 
@@ -54,6 +67,6 @@ const SitemSixUp = styled.div`
   }
 `;
 
-const styles = { Swrapper, SitemTwoUp, SitemThreeUp, SitemSixUp };
+const styles = { Swrapper, SitemTwoUp, SitemThreeUp, SitemFourUp, SitemSixUp };
 
 export default styles;

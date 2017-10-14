@@ -10,6 +10,7 @@ import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
 import Grid from '../components/grid';
+import Partners from '../components/partners';
 import { IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone, IconFeatureFeedback, IconFeatureSocial, IconFeatureDevelopment, IconFeatureEmail, IconFeatureOptimisation, IconFeatureAnalytics } from '../components/icons';
 import LogoWithText, {LogoNoText} from '../components/logo';
 import {HeadingOne, HeadingTwo, HeadingThree, Text} from '../components/headings';
@@ -69,6 +70,18 @@ const IndexPage = () => (
                 )}
                 </Grid>
               </Spacer>
+
+          </Content>
+        </Spacer>
+      </section>
+
+      <section>
+        <Spacer padding={[0, 0, 'largest']}>
+          <Content>
+
+            <HeadingTwo color={createColor('gray', 'light')}>We like working with</HeadingTwo>
+
+            <Partners />
 
           </Content>
         </Spacer>
