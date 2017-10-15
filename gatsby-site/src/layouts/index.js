@@ -34,12 +34,12 @@ const Header = () => (
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet
-      title="Enhance Digital | Digital Marketing Services"
-      meta={[
-        { name: 'description', content: 'Talk to us about enhancing the experience for your customers online. Grow your business with digital marketing, website analytics and engagement tools.' },
-      ]}
-    />
+    <Helmet>
+      <html lang="en"/>
+      <title>Enhance Digital | Digital Marketing Services</title>
+      <meta name="description" content="Talk to us about enhancing the experience for your customers online. Grow your business with digital marketing, website analytics and engagement tools" />
+      <link rel="apple-touch-icon" href="icon.png" />
+    </Helmet>
     {/* <Header /> */}
     <div>
       {children()}
