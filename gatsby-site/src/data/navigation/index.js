@@ -3,13 +3,18 @@ const services = {
   path: '/services'
 };
 
+const contact = {
+  name: 'Talk to us',
+  path: '/contact'
+};
+
 const styleguide = {
   name: 'Style Guide',
   path: '/styleguide'
 };
 
-const main = [services];
+const main = [services, contact];
 
-const navigation = {services, styleguide, main};
+const navigation = {services, contact, styleguide, main};
 
 export default navigation;

@@ -26,7 +26,7 @@ const ButtonPrimary = ({children, color = createColor('gray'), href = '#', isLar
     <Sprimary color={textColor} background={background} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
-          <IconMiscArrow className="Button-arrow" color={textColor}/>
+          <IconMiscArrow color={textColor}/>
           {children}
         </Spacer>
       </Anchor>
@@ -43,7 +43,7 @@ const ButtonSecondary = ({children, color = createColor('gray'), href = '#', isL
     <Ssecondary color={color} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
-          <IconMiscArrow className="Button-arrow" color={color}/>
+          <IconMiscArrow color={color}/>
           {children}
         </Spacer>
       </Anchor>
@@ -58,7 +58,7 @@ const ButtonTertiary = ({children, color = createColor('gray'), href = '#'}) => 
     <Stertiary color={color}>
       <Anchor href={href}>
         <Spacer padding={['smallest', 0]}>
-          <IconMiscArrow className="Button-arrow" color={color}/>
+          <IconMiscArrow color={color}/>
           {children}
         </Spacer>
       </Anchor>
@@ -73,7 +73,7 @@ const ButtonQuaternary = ({children, color = createColor('gray'), href = '#'}) =
     <Squaternary color={color}>
       <Anchor href={href}>
         <Spacer padding={['smallest', 0]}>
-          <IconMiscArrow className="Button-arrow" color={color}/>
+          <IconMiscArrow color={color}/>
           {children}
         </Spacer>
       </Anchor>
@@ -94,6 +94,21 @@ const ButtonInline = ({children, color, href = '#'}) => {
 
 };
 
-const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline};
+const ButtonSubmit = ({children, handleClick, isDisabled}) => {
 
-export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline};
+  return (
+    <Ssecondary color={createColor('blue')}>
+      <button onClick={handleClick} type="submit" disabled={isDisabled}>
+        <Spacer padding={createPadding(false)}>
+          <IconMiscArrow color={createColor('blue')}/>
+          {children}
+        </Spacer>
+      </button>
+    </Ssecondary>
+  );
+
+};
+
+const buttons = {ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline, ButtonSubmit};
+
+export {buttons as default, ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonQuaternary, ButtonInline, ButtonSubmit};

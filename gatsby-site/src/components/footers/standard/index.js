@@ -6,7 +6,7 @@ import {Spacer, Flexer, Sizer} from '../../scaffold';
 import {ButtonQuaternary} from '../../buttons';
 import {LogoNoText} from '../../logo';
 import {HeadingTwo, Text} from '../../headings';
-import contact from '../../../data/contact';
+import ContactOptions from '../../contact/options';
 import {createColor} from '../../../styles';
 
 const FooterStandard = ({children, title = 'Enhance Digital', background}) => {
@@ -22,44 +22,9 @@ const FooterStandard = ({children, title = 'Enhance Digital', background}) => {
           <Text isBlock color={createColor('blue', 'darkest')}>Contact us to talk about your growing your digital presence today.</Text>
         </Spacer>
 
-        <Spacer margin={['large', '-medium', 0]}>
-          <Grid>
-            {({GridWrapper, GridItemTwoUp: Item}) => (
-              <GridWrapper>
-
-                {Object.keys(contact).map((key) => {
-
-                  const {display, href, Icon} = contact[key];
-
-                  return (
-                    <Item key={key}>
-                      <Spacer padding={[0, 'medium', 'medium']}>
-                        <Flexer>
-                          {({Wrapper, Item}) => (
-                            <Wrapper align="center">
-                              <Item>
-                                <Sizer width={{min: '20px', max: '30px'}}>
-                                  <Icon />
-                                </Sizer>
-                              </Item>
-                              <Item>
-                                <Spacer padding={[0, 0, 0, 'medium']}>
-                                  <ButtonQuaternary color={createColor('misc', 'white')} href={href}>{display}</ButtonQuaternary>
-                                </Spacer>
-                              </Item>
-                            </Wrapper>
-                          )}
-                        </Flexer>
-                      </Spacer>
-                    </Item>
-                  );
-
-                })}
-
-              </GridWrapper>
-            )}
-            </Grid>
-          </Spacer>
+        <Spacer margin={['large', 0, 0]}>
+          <ContactOptions color={createColor('misc', 'white')}/>
+        </Spacer>
 
       </Text>
 

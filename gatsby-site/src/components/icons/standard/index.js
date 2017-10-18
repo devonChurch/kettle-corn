@@ -53,11 +53,37 @@ const IconStandardPhone = ({color = createColor('misc', 'white'), isInline = fal
 
 };
 
+const IconStandardTick = ({color = createColor('misc', 'white'), isInline = false}) => {
+
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} isInline={isInline}>
+
+      <path d="M11.2,21.3c-0.2,0-0.4-0.1-0.6-0.2l-6.8-4.8C3.4,16,3.3,15.4,3.6,15c0.3-0.5,0.9-0.6,1.4-0.2l6,4.2l9.7-13.8c0.3-0.5,0.9-0.6,1.4-0.2c0.5,0.3,0.6,0.9,0.2,1.4L12.1,20.9C11.9,21.1,11.6,21.3,11.2,21.3z"/>
+
+    </Ssvg>
+  );
+
+};
+
+const IconStandardCross = ({color = createColor('misc', 'white'), isInline = false}) => {
+
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} isInline={isInline}>
+
+      <path d="M14.4,13l6.4-6.4c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L13,11.6L6.6,5.2c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.4,6.4l-6.4,6.4c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l6.4-6.4l6.4,6.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L14.4,13z"/>
+
+    </Ssvg>
+  );
+
+};
+
 const icons = {
   IconStandardEmail,
   IconStandardTwitter,
   IconStandardFacebook,
-  IconStandardPhone
+  IconStandardPhone,
+  IconStandardTick,
+  IconStandardCross
 };
 
-export {icons as default, IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone};
+export {icons as default, IconStandardEmail, IconStandardTwitter, IconStandardFacebook, IconStandardPhone, IconStandardTick, IconStandardCross};

@@ -34,7 +34,7 @@ const SheadingOne = styled.h1`
 
 const style = {
 
-  SheadingOne: SheadingOne,
+  SheadingOne,
 
   SheadingTwo: SheadingOne.withComponent('h2').extend`
     font-weight: 400;

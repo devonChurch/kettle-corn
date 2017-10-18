@@ -6,12 +6,21 @@ const {createDynamicSize, createDynamicFontSize, createDynamicPosition} = dynami
 const borderWidth = 3;
 const Sbutton = styled.div`
 
+  button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+
   &,
-  > a {
+  > a,
+  > button {
     display: inline-block;
   }
 
-  > a {
+  > a,
+  > button {
     border-radius: ${misc.radius};
     border: ${createRem(borderWidth)} solid ${({color}) => color || createColor('white')};
     color: ${({color}) => color || createColor('white')};
@@ -58,8 +67,12 @@ const Sbutton = styled.div`
       transition: ${speed.fast} transform;
     }
 
-    &:hover,
-    &:focus {
+    &:disabled {
+      opacity: 0.25;
+    }
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
       opacity: 0.75;
 
       ${media['>=medium']} {
@@ -78,7 +91,8 @@ const Sbutton = styled.div`
 
 const Sprimary = Sbutton.extend`
 
-  > a {
+  > a,
+  > button {
     background: ${({background}) => background || createColor('white')};
     border-color: ${({background}) => background || createColor('white')};
   }
@@ -91,7 +105,8 @@ const Ssecondary= Sbutton.extend`
 
 const Stertiary = Sbutton.extend`
 
-  > a {
+  > a,
+  > button {
     background: transparent;
     border: 0;
     color: ${({color}) => color};
@@ -128,7 +143,8 @@ const Stertiary = Sbutton.extend`
 
 const Squaternary = Stertiary.extend`
 
-  > a {
+  > a,
+  > button {
     font-size: ${createRem('16px')};
     font-weight: 500;
     text-transform: none;
@@ -141,7 +157,8 @@ const Squaternary = Stertiary.extend`
 
 const Sinline = styled.span`
 
-  > a {
+  > a,
+  > button {
     color: ${({color}) => color || 'inherit'};
     transition: ${speed.fast} opacity;
 

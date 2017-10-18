@@ -2,7 +2,7 @@ import React from 'react';
 import {createColor} from '../../../styles';
 import styles from './styles';
 
-const {Ssvg} = styles;
+const {Ssvg, SloaderWrapper, SloaderDot} = styles;
 
 const IconMiscArrow = ({color = createColor('misc', 'white'), isInline = false}) => {
 
@@ -16,8 +16,35 @@ const IconMiscArrow = ({color = createColor('misc', 'white'), isInline = false})
 
 };
 
-const icons = {
-  IconMiscArrow
+const IconMiscLoader = () => {
+
+  const rows = 3;
+  const columns = rows;
+  const xAxis = 5;
+  const yAxis = xAxis;
+  const offset = 8;
+  let delay = 0;
+  const layers = new Array(columns).fill(0).map((_, column) => {
+
+    return new Array(rows).fill(0).map((_, row) => (
+      <SloaderDot key={`${column},${row}`} viewBox="0 0 26 26" delay={delay += 1}>
+        <circle cx={xAxis + (offset * row)} cy={yAxis + (offset * column)} r="3"/>
+      </SloaderDot>
+    ));
+
+  }).reduce((accumulator, column) => [accumulator, ...column], []);
+
+  return (
+    <SloaderWrapper>
+      {layers}
+    </SloaderWrapper>
+  );
+
 };
 
-export {icons as default, IconMiscArrow};
+const icons = {
+  IconMiscArrow,
+  IconMiscLoader
+};
+
+export {icons as default, IconMiscArrow, IconMiscLoader};
