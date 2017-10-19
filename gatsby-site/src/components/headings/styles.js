@@ -42,7 +42,7 @@ const style = {
 
   SheadingThree: styled.h3`
     color: ${({color}) => color || 'inherit'};
-    font-weight: 400; // 700;
+    font-weight: 400;
     line-height: 1.4;
     margin: 0;
     max-width: ${createRem(breakpoints.small)};

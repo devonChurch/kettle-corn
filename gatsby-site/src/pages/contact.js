@@ -169,15 +169,8 @@ class ServicesPage extends React.Component {
 
   handleSubmit = (e) => {
 
-    console.log('handleSubmit');
-
     const invalidMessages = this.createInvalidMessages();
     const isValid = !Object.keys(invalidMessages).filter((key) => Boolean(invalidMessages[key])).length;
-
-    console.log('isValid', {
-      'Object.keys(invalidMessages)': Object.keys(invalidMessages),
-      'Object.keys(invalidMessages).filter((key) => Boolean(invalidMessages[key]))': Object.keys(invalidMessages).filter((key) => Boolean(invalidMessages[key])),
-      isValid});
 
     if (isValid) {
 
@@ -201,9 +194,7 @@ class ServicesPage extends React.Component {
     const {formStatus} = state;
     const isSubmitDisabled = formStatus === 'sending' || formStatus === 'success';
     const statusMessage = this.createStatusMessage(formStatus);
-    const invalidMessages = formStatus !== 'dormant' && this.createInvalidMessages();
-
-    console.log('render', {invalidMessages});
+    const invalidMessages = (formStatus === 'attempted' || formStatus === 'error') && this.createInvalidMessages();
 
     return (<Presentation handleSubmit={this.handleSubmit} handleChange={this.handleChange} values={state} isSubmitDisabled={isSubmitDisabled} statusMessage={statusMessage} invalidMessages={invalidMessages}/>);
 

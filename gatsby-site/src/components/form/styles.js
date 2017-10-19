@@ -18,13 +18,18 @@ const Sinput = styled.input`
 
     + * {
       color: ${createColor('blue')};
-      transform: scale(0.7) translate(0, 0);
+      transform: scale(0.8) translate(0, 0);
     }
   }
 
   ${({isPopulated}) => isPopulated && css`
     border-color: ${createColor('gray', 'dark')};
     color: ${createColor('gray', 'darkest')};
+  `}
+
+  ${({isInvalid}) => isInvalid && css`
+    border-color: ${createColor('red')};
+    color: ${createColor('red', 'darkest')};
   `}
 `;
 
@@ -36,7 +41,7 @@ const style = {
 
   Slabel: styled.label`
     display: block;
-    padding: ${spacing.medium.max} 0;
+    padding: ${createRem('20px')} 0;
     position: relative;
   `,
 
@@ -51,14 +56,18 @@ const style = {
     left: 0;
     position: absolute;
     top: 0;
-    transform: translate(${spacing.small.max}, ${createStrippedUnit(spacing.medium.max) + createStrippedUnit(spacing.small.min)}px);
+    transform: translate(${spacing.small.max}, ${createRem('30px')});
     transform-origin: left top;
     transition-duration: ${speed.fast};
     transition-property: color, transform;
 
     ${({isPopulated}) => isPopulated && css`
       color: ${createColor('gray', 'dark')};
-      transform: scale(0.7) translate(0, 0);
+      transform: scale(0.8) translate(0, 0);
+    `}
+
+    ${({isInvalid}) => isInvalid && css`
+      color: ${createColor('red')};
     `}
   `,
 

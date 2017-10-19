@@ -10,6 +10,7 @@ const Sbutton = styled.div`
     background: transparent;
     border: 0;
     cursor: pointer;
+    outline: 0;
     padding: 0;
   }
 
