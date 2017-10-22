@@ -167,6 +167,35 @@ class ServicesPage extends React.Component {
 
   }
 
+  sendDataToServer = async () => {
+
+    try {
+
+      const {name, email, message} = this.state;
+      const endpoint = 'https://57dina5fih.execute-api.us-east-1.amazonaws.com/dev/email-contact-form-alert';
+      const config = {
+        method: 'POST',
+        mode: 'cors',
+        credentials: 'include',
+        body: JSON.stringify({name, email, message}),
+        headers: new Headers({
+          'Content-type': 'text/plain',
+        })
+      };
+      const response = await fetch(endpoint, config);
+
+      if (!response.ok) throw new Error('Post failed!');
+
+      console.log({response});
+
+    } catch (error) {
+
+      console.log({error});
+      this.handlePostError()
+    }
+
+  };
+
   handleSubmit = (e) => {
 
     const invalidMessages = this.createInvalidMessages();
@@ -175,7 +204,7 @@ class ServicesPage extends React.Component {
     if (isValid) {
 
       this.setFormStatus('sending');
-      setTimeout(() => this.handlePostSuccess(), 1000);
+      this.sendDataToServer();
 
     } else {
 
