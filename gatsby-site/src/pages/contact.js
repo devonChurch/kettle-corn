@@ -176,7 +176,7 @@ class ServicesPage extends React.Component {
       const config = {
         method: 'POST',
         mode: 'cors',
-        credentials: 'include',
+        credentials: 'omit',
         body: JSON.stringify({name, email, message}),
         headers: new Headers({
           'Content-type': 'text/plain',
@@ -184,14 +184,23 @@ class ServicesPage extends React.Component {
       };
       const response = await fetch(endpoint, config);
 
-      if (!response.ok) throw new Error('Post failed!');
-
       console.log({response});
+
+      if (response.ok) {
+
+        this.handlePostSuccess();
+
+      } else {
+
+        throw new Error('Post failed!');
+
+      }
 
     } catch (error) {
 
       console.log({error});
       this.handlePostError()
+
     }
 
   };

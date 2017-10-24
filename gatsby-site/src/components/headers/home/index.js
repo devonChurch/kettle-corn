@@ -36,7 +36,7 @@ const HeaderHome = () => {
       <Spacer padding={['large', 0, 0]}>
         <ButtonGroup>
           <ButtonSecondary href={navigation.services.path} color={createColor('misc', 'white')} isLarge>{navigation.services.name}</ButtonSecondary>
-          <ButtonPrimary href="#talk-to-us" color={createColor('yellow')} isInverted isLarge>Talk to us</ButtonPrimary>
+          <ButtonPrimary href={navigation.contact.path} color={createColor('yellow')} isInverted isLarge>Talk to us</ButtonPrimary>
         </ButtonGroup>
       </Spacer>
 
