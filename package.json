@@ -1,19 +1,19 @@
 {
   "name": "kettle-corn",
   "version": "1.0.0",
-  "description": "React static site generator using Gatsby",
+  "description": "Gatsby implementation for enhancedigital.co.nz",
   "main": "index.js",
   "scripts": {
-    "develop": "cd ./gatsby-site && gatsby develop",
-    "build": "cd ./gatsby-site && gatsby build -- --prefix-paths",
-    "gh-pages": "gh-pages -d ./gatsby-site/public",
+    "develop": "gatsby develop",
+    "build": "gatsby build -- --prefix-paths",
+    "gh-pages": "gh-pages -d ./public",
     "deploy": "npm run build && npm run copy && npm run gh-pages",
     "copy": "npm run copy:cname && npm run copy:favicon && npm run copy:icon && npm run copy:webmanifest && npm run copy:robots",
-    "copy:cname": "cp ./gatsby-site/src/CNAME ./gatsby-site/public",
-    "copy:favicon": "cp ./gatsby-site/src/favicon.ico ./gatsby-site/public",
-    "copy:icon": "cp ./gatsby-site/src/icon.png ./gatsby-site/public",
-    "copy:webmanifest": "cp ./gatsby-site/src/site.webmanifest ./gatsby-site/public",
-    "copy:robots": "cp ./gatsby-site/src/robots.txt ./gatsby-site/public",
+    "copy:cname": "cp ./src/CNAME ./public",
+    "copy:favicon": "cp ./src/favicon.ico ./public",
+    "copy:icon": "cp ./src/icon.png ./public",
+    "copy:webmanifest": "cp ./src/site.webmanifest ./public",
+    "copy:robots": "cp ./src/robots.txt ./public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gatsby": "gatsby",
     "commit": "git-cz",
@@ -33,7 +33,8 @@
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "2.0.0",
     "gatsby-cli": "^1.1.7",
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.6.1"
   },
   "config": {
     "commitizen": {
@@ -41,6 +42,9 @@
     }
   },
   "dependencies": {
+    "gatsby": "^1.9.77",
+    "gatsby-link": "^1.6.17",
+    "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-plugin-typography": "^1.7.10",
     "lodash.capitalize": "^4.2.1",
