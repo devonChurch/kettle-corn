@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build -- --prefix-paths",
+    "build": "gatsby build",
     "gh-pages": "gh-pages -d ./public",
-    "deploy": "npm run build && npm run copy && npm run gh-pages",
-    "copy": "npm run copy:cname && npm run copy:favicon && npm run copy:icon && npm run copy:webmanifest && npm run copy:robots",
+    "deploy:github":
+      "npm run build -- --prefix-paths && npm run copy && npm run gh-pages",
+    "copy":
+      "npm run copy:cname && npm run copy:favicon && npm run copy:icon && npm run copy:webmanifest && npm run copy:robots",
     "copy:cname": "cp ./src/CNAME ./public",
     "copy:favicon": "cp ./src/favicon.ico ./public",
     "copy:icon": "cp ./src/icon.png ./public",
