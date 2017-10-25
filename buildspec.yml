@@ -27,7 +27,7 @@ phases:
     commands:
 
       - echo "deploy build to s3"
-      - aws s3 cp --acl public-read --recursive ./public/ s3://enhance-digital-gatsby/
+      - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
 
   # artifacts:
   #   files:
