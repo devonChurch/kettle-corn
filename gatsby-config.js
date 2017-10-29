@@ -1,13 +1,11 @@
 module.exports = {
-
   siteMetadata: {
     title: 'Enhance Digital',
   },
 
-  pathPrefix: '/kettle-corn',
+  // pathPrefix: '/kettle-corn',
 
   plugins: [
-
     'gatsby-plugin-react-helmet',
 
     'gatsby-plugin-styled-components',
@@ -17,7 +15,6 @@ module.exports = {
       options: {
         pathToConfigModule: 'src/styles/typography.js',
       },
-    }
-
+    },
   ],
-}
+};
