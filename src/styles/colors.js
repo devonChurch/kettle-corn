@@ -1,11 +1,11 @@
-import { rgba as createRgba, darken as createDarken, lighten as createLighten } from 'polished'
+import { rgba as createRgba, darken as createDarken, lighten as createLighten } from 'polished';
 
-const createSwatches = (base) => ({
-  lightest: createLighten(0.30, base),
+const createSwatches = base => ({
+  lightest: createLighten(0.3, base),
   light: createLighten(0.15, base),
   medium: base,
   dark: createDarken(0.15, base),
-  darkest: createDarken(0.30, base),
+  darkest: createDarken(0.3, base),
 });
 
 const pink = createSwatches('#E91E63');
@@ -16,34 +16,28 @@ const red = createSwatches('#F44336');
 const gray = createSwatches('#607D8B');
 
 const purple = (() => {
-
   const base = '#673AB7';
 
   return {
     ...createSwatches(base),
-    darkest: createDarken(0.2, base)
+    darkest: createDarken(0.2, base),
   };
-
 })();
 
 const green = (() => {
-
   const base = '#009688';
 
   return {
     ...createSwatches(base),
     dark: createDarken(0.075, base),
-    darkest: createDarken(0.15, base)
+    darkest: createDarken(0.15, base),
   };
-
 })();
 
 const misc = {
-
   white: '#FFFFFF',
-  black: '#000000'
-
-}
+  black: '#000000',
+};
 
 // @example
 // createColor('gray');
@@ -60,35 +54,29 @@ const misc = {
 // @example
 // createColor('gray', 'darkest', 0.5);
 // --> 'rgba(38,50,56,0.5)'.
-const colors = {pink, purple, blue, green, orange, yellow, red, gray, misc};
+const colors = { pink, purple, blue, green, orange, yellow, red, gray, misc };
 
 const createColor = (color, ...options) => {
-
   // If the 'type' is not supplied OR not compatible we need to assign it as a
   // default of 'medium'. In that regard the 'alpha' reference could site as the
   // second argument rather then the third so we need to test the supplied
   // arguments and distribute them appropriately.
-	const {type = 'medium', alpha} = options.reduce((accumulator, option) => {
+  const { type = 'medium', alpha = 1 } = options.reduce((accumulator, option) => {
+    switch (true) {
+      case Boolean(typeof option === 'string' && colors[color][option]):
+        return { ...accumulator, type: option };
 
-		switch (true) {
+      case Boolean(!isNaN(option) && !(option < 0 || option > 1)):
+        return { ...accumulator, alpha: option };
 
-			case Boolean(typeof option === 'string' && colors[color][option]):
-				return {...accumulator, type: option};
+      default:
+        return accumulator;
+    }
+  }, {});
 
-			case Boolean(!isNaN(option) && option >= 0 && option <= 1):
-				return {...accumulator, alpha: option};
+  const hex = colors[color][type];
 
-			default:
-				return accumulator;
-
-  	}
-
-	}, {});
-
-	const hex = colors[color][type];
-
-	return alpha ? createRgba(hex, alpha) : hex;
-
+  return createRgba(hex, alpha);
 };
 
-export {createColor as default, colors, createColor};
+export { createColor as default, colors, createColor };

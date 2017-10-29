@@ -13,8 +13,22 @@ const {
   SflexItem,
 } = styles;
 
-const Page = ({ children, background }) => {
-  return <Spage background={background}>{children}</Spage>;
+const Color = ({ children, color, background, display = 'block', element = 'div' }) => {
+  const Scolor = createScolor(element);
+
+  return (
+    <Scolor background={background} color={color} display={display}>
+      {children}
+    </Scolor>
+  );
+};
+
+const Page = ({ children, background = ['misc', 'white'] }) => {
+  return (
+    <Color background={background}>
+      <Spage>{children}</Spage>
+    </Color>
+  );
 };
 
 const Spacer = ({ children, color, margin, padding, isInline = false }) => {
@@ -22,16 +36,6 @@ const Spacer = ({ children, color, margin, padding, isInline = false }) => {
     <Sspacer color={color} margin={margin} padding={padding} isInline={isInline}>
       {children}
     </Sspacer>
-  );
-};
-
-const Color = ({ children, color, background, element = 'div' }) => {
-  const Scolor = createScolor(element);
-
-  return (
-    <Scolor background={background} color={color}>
-      {children}
-    </Scolor>
   );
 };
 

@@ -13,7 +13,6 @@ const {
 } = dynamic;
 const scaffold = {
   Spage: styled.div`
-    background: ${({ background }) => background || createColor('misc', 'white')};
     min-height: 100vh;
   `,
 
@@ -30,8 +29,9 @@ const scaffold = {
   `,
 
   createScolor: element => styled[element]`
-    background: ${({ background }) => createColor(...background) || 'transparent'};
-    color: ${({ color }) => createColor(...color) || 'inherit'};
+    background: ${({ background }) => (background ? createColor(...background) : 'transparent')};
+    color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
+    display: ${({ display }) => display || 'inherit'};
   `,
 
   Ssizer: styled.div`

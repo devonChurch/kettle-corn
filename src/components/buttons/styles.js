@@ -1,11 +1,10 @@
-import styled, {css} from 'styled-components';
-import { rem as createRem } from 'polished'
-import {createColor, spacing, speed, misc, dynamic, media} from '../../styles';
+import styled, { css } from 'styled-components';
+import { rem as createRem } from 'polished';
+import { createColor, spacing, speed, misc, dynamic, media } from '../../styles';
 
-const {createDynamicSize, createDynamicFontSize, createDynamicPosition} = dynamic;
+const { createDynamicSize, createDynamicFontSize, createDynamicPosition } = dynamic;
 const borderWidth = 3;
 const Sbutton = styled.div`
-
   button {
     background: transparent;
     border: 0;
@@ -23,18 +22,16 @@ const Sbutton = styled.div`
   > a,
   > button {
     border-radius: ${misc.radius};
-    border: ${createRem(borderWidth)} solid ${({color}) => color || createColor('white')};
-    color: ${({color}) => color || createColor('white')};
+    border: ${createRem(borderWidth)} solid ${({ color }) => createColor(...color)};
+    color: ${({ color }) => createColor(...color)};
     font-weight: 900;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
     transition: ${speed.fast} opacity;
 
-    ${({isLarge}) => {
-
+    ${({ isLarge }) => {
       switch (true) {
-
         case isLarge:
           return createDynamicFontSize({
             min: '16px',
@@ -46,21 +43,18 @@ const Sbutton = styled.div`
             font-size: ${createRem('14px')};
           `;
       }
-
-    }}
-
-    svg {
+    }} svg {
       opacity: 0;
       position: absolute;
       transform: translate(-100%, -50%);
       transition: ${speed.fast} opacity;
-      ${({isLarge}) => {
-
+      ${({ isLarge }) => {
         const size = isLarge ? '18px' : '12px';
-        const position = isLarge ? ['50%', 'auto','auto', {min: '15px', max: '18px'}] : ['50%', 'auto','auto', {min: '6px', max: '12px'}];
+        const position = isLarge
+          ? ['50%', 'auto', 'auto', { min: '15px', max: '18px' }]
+          : ['50%', 'auto', 'auto', { min: '6px', max: '12px' }];
 
         return `${createDynamicSize([size])}${createDynamicPosition(position)}`;
-
       }};
     }
 
@@ -77,13 +71,12 @@ const Sbutton = styled.div`
       opacity: 0.75;
 
       ${media['>=medium']} {
-
         svg {
           opacity: 1;
         }
 
         > * {
-          transform: translateX(${({isLarge}) => createRem(isLarge ? '11px' : '5px')});
+          transform: translateX(${({ isLarge }) => createRem(isLarge ? '11px' : '5px')});
         }
       }
     }
@@ -91,26 +84,21 @@ const Sbutton = styled.div`
 `;
 
 const Sprimary = Sbutton.extend`
-
   > a,
   > button {
-    background: ${({background}) => background || createColor('white')};
-    border-color: ${({background}) => background || createColor('white')};
+    background: ${({ background }) => createColor(...background)};
+    border-color: ${({ background }) => createColor(...background)};
   }
 `;
 
-const Ssecondary= Sbutton.extend`
-
-
-`;
+const Ssecondary = Sbutton.extend``;
 
 const Stertiary = Sbutton.extend`
-
   > a,
   > button {
     background: transparent;
     border: 0;
-    color: ${({color}) => color};
+    color: ${({ color }) => color};
     position: relative;
 
     &:after {
@@ -123,7 +111,7 @@ const Stertiary = Sbutton.extend`
       transition: ${speed.fast} width;
       width: 100%;
       will-change: width;
-      ${createDynamicPosition(['auto', 'auto', 'smallest', '50%'])}
+      ${createDynamicPosition(['auto', 'auto', 'smallest', '50%'])};
     }
 
     svg {
@@ -131,9 +119,7 @@ const Stertiary = Sbutton.extend`
     }
 
     &:hover {
-
       ${media['>=medium']} {
-
         &:after {
           width: calc(100% + ${createRem('10px')});
         }
@@ -143,7 +129,6 @@ const Stertiary = Sbutton.extend`
 `;
 
 const Squaternary = Stertiary.extend`
-
   > a,
   > button {
     font-size: ${createRem('16px')};
@@ -157,10 +142,9 @@ const Squaternary = Stertiary.extend`
 `;
 
 const Sinline = styled.span`
-
   > a,
   > button {
-    color: ${({color}) => color || 'inherit'};
+    color: ${({ color }) => color || 'inherit'};
     transition: ${speed.fast} opacity;
 
     &:hover,
