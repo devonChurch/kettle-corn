@@ -33,7 +33,7 @@ const NotFoundPage = () => (
         </Text>
 
         <Spacer padding={['large', 0, 0]}>
-          <ButtonSecondary href="/" color={createColor('misc', 'white')}>
+          <ButtonSecondary href="/" swatch={['misc', 'white']}>
             Go Home
           </ButtonSecondary>
         </Spacer>

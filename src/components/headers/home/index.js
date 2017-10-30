@@ -23,7 +23,7 @@ const HeaderHome = () => {
               {navigation.main.map(({ name, path }) => (
                 <Item key={path}>
                   <Spacer padding={[0, 'small']}>
-                    <ButtonTertiary href={path} color={createColor('misc', 'white')}>
+                    <ButtonTertiary href={path} swatch={['misc', 'white']}>
                       {name}
                     </ButtonTertiary>
                   </Spacer>
@@ -40,19 +40,10 @@ const HeaderHome = () => {
 
       <Spacer padding={['large', 0, 0]}>
         <ButtonGroup>
-          <ButtonSecondary
-            href={navigation.services.path}
-            color={createColor('misc', 'white')}
-            isLarge
-          >
+          <ButtonSecondary href={navigation.services.path} swatch={['misc', 'white']} isLarge>
             {navigation.services.name}
           </ButtonSecondary>
-          <ButtonPrimary
-            href={navigation.contact.path}
-            color={createColor('yellow')}
-            isInverted
-            isLarge
-          >
+          <ButtonPrimary href={navigation.contact.path} swatch={['yellow']} isInverted isLarge>
             Talk to us
           </ButtonPrimary>
         </ButtonGroup>

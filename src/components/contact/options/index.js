@@ -1,36 +1,35 @@
 import React from 'react';
 import contact from '../../../data/contact';
 import Grid from '../../grid';
-import {Spacer, Flexer, Sizer} from '../../scaffold';
-import {ButtonQuaternary} from '../../buttons';
-import {createColor} from '../../../styles';
+import { Spacer, Flexer, Sizer } from '../../scaffold';
+import { ButtonQuaternary } from '../../buttons';
+import { createColor } from '../../../styles';
 
-const ContactOptions = ({color = createColor('gray')}) => {
-
+const ContactOptions = ({ swatch = ['gray'] }) => {
   return (
     <Spacer margin={[0, '-medium']}>
       <Grid>
-        {({GridWrapper, GridItemTwoUp: Item}) => (
+        {({ GridWrapper, GridItemTwoUp: Item }) => (
           <GridWrapper>
-
-            {Object.keys(contact).map((key) => {
-
-              const {display, href, Icon} = contact[key];
+            {Object.keys(contact).map(key => {
+              const { display, href, Icon } = contact[key];
 
               return (
                 <Item key={key}>
                   <Spacer padding={[0, 'medium', 'medium']}>
                     <Flexer>
-                      {({Wrapper, Item}) => (
+                      {({ Wrapper, Item }) => (
                         <Wrapper align="center">
                           <Item>
-                            <Sizer width={{min: '20px', max: '30px'}}>
-                              <Icon color={color}/>
+                            <Sizer width={{ min: '20px', max: '30px' }}>
+                              <Icon color={createColor(...swatch)} />
                             </Sizer>
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
-                              <ButtonQuaternary color={color} href={href}>{display}</ButtonQuaternary>
+                              <ButtonQuaternary swatch={swatch} href={href}>
+                                {display}
+                              </ButtonQuaternary>
                             </Spacer>
                           </Item>
                         </Wrapper>
@@ -39,15 +38,12 @@ const ContactOptions = ({color = createColor('gray')}) => {
                   </Spacer>
                 </Item>
               );
-
             })}
-
           </GridWrapper>
         )}
-        </Grid>
+      </Grid>
     </Spacer>
   );
-
 };
 
 export default ContactOptions;

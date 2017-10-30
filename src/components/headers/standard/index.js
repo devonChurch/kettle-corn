@@ -22,7 +22,7 @@ const HeaderStandard = ({ children, title = 'Enhance Digital', background }) => 
             <Wrapper wrap="wrap" justify="space-between">
               <Item grow="1">
                 <Spacer padding={[0, 'small']}>
-                  <ButtonTertiary href="/" color={createColor('misc', 'white')}>
+                  <ButtonTertiary href="/" swatch={['misc', 'white']}>
                     back
                   </ButtonTertiary>
                 </Spacer>
@@ -30,7 +30,7 @@ const HeaderStandard = ({ children, title = 'Enhance Digital', background }) => 
               {navigation.main.map(({ name, path }) => (
                 <Item key={path}>
                   <Spacer padding={[0, 'small']}>
-                    <ButtonTertiary href={path} color={createColor('misc', 'white')}>
+                    <ButtonTertiary href={path} swatch={['misc', 'white']}>
                       {name}
                     </ButtonTertiary>
                   </Spacer>

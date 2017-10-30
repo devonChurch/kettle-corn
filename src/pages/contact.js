@@ -13,13 +13,7 @@ import Grid from '../components/grid';
 import { IconStandardTick, IconStandardCross, IconMiscLoader } from '../components/icons';
 import LogoWithText, { LogoNoText } from '../components/logo';
 import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../components/headings';
-import {
-  ButtonPrimary,
-  ButtonSecondary,
-  ButtonTertiary,
-  ButtonQuaternary,
-  ButtonSubmit,
-} from '../components/buttons';
+import { ButtonSubmit } from '../components/buttons';
 import HeaderStandard from '../components/headers/standard';
 import FooterStandard from '../components/footers/standard';
 import ServicesArticle from '../components/services/article';

@@ -29,7 +29,7 @@ const FooterStandard = ({ children, title = 'Enhance Digital', background }) => 
         </Spacer>
 
         <Spacer margin={['large', 0, 0]}>
-          <ContactOptions color={createColor('misc', 'white')} />
+          <ContactOptions swatch={['misc', 'white']} />
         </Spacer>
       </Text>
     </Hero>

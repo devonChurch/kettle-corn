@@ -24,12 +24,6 @@ import {
 } from '../components/icons';
 import LogoWithText, { LogoNoText } from '../components/logo';
 import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../components/headings';
-import {
-  ButtonPrimary,
-  ButtonSecondary,
-  ButtonTertiary,
-  ButtonQuaternary,
-} from '../components/buttons';
 import HeaderStandard from '../components/headers/standard';
 import FooterStandard from '../components/footers/standard';
 import ServicesArticle from '../components/services/article';
@@ -41,7 +35,7 @@ const ServicesPage = () => (
     <main>
       <Spacer padding={[0, 0, 'largest']}>
         {Object.keys(services).map(key => {
-          const { title, id, color, Icon, content } = services[key];
+          const { title, id, swatch, Icon, content } = services[key];
 
           return (
             <Spacer key={key} padding={['largest', 0, 0]}>
@@ -49,7 +43,7 @@ const ServicesPage = () => (
                 <ServicesArticle
                   title={title}
                   id={id}
-                  color={color}
+                  swatch={swatch}
                   Icon={Icon}
                   content={content}
                 />

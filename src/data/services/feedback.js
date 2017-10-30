@@ -1,16 +1,16 @@
 import { IconFeatureFeedback } from '../../components/icons';
 
 const feedback = {
-
   title: 'Customer Feedback',
 
   id: 'customer-feedback',
 
-  color: 'yellow',
+  swatch: 'yellow',
 
   Icon: IconFeatureFeedback,
 
-  blurb: 'Start capturing the Voice of your Customer so you can focus on increasing your brand love.',
+  blurb:
+    'Start capturing the Voice of your Customer so you can focus on increasing your brand love.',
 
   content: `Would your customers recommend you to their family and friends? Do you know what delights them and what displeases them? Or what makes them loyal to your business?
 
@@ -20,8 +20,7 @@ Customer Experience brings the connection, emotion and engagement of a customer'
 
 Start capturing feedback using Voice of Customer platforms to better understand where you need to invest more and what you're succeeding at. Through collecting feedback you'll be able to retain great customers, minimize negative feedback and increase love for your brand through engagement.
 
-Talk to us about collecting feedback from your customers now. We'll help script your surveys, choose a great solution that works for you, and set you up so you can focus on providing a great experience.`
-
+Talk to us about collecting feedback from your customers now. We'll help script your surveys, choose a great solution that works for you, and set you up so you can focus on providing a great experience.`,
 };
 
 export default feedback;

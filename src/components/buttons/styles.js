@@ -98,7 +98,7 @@ const Stertiary = Sbutton.extend`
   > button {
     background: transparent;
     border: 0;
-    color: ${({ color }) => color};
+    color: ${({ color }) => createColor(...color)};
     position: relative;
 
     &:after {
@@ -136,7 +136,7 @@ const Squaternary = Stertiary.extend`
     text-transform: none;
 
     &:after {
-      border-width: ${createRem('0.5px')} 0 0;
+      border-width: ${createRem('1px')};
     }
   }
 `;
@@ -144,7 +144,7 @@ const Squaternary = Stertiary.extend`
 const Sinline = styled.span`
   > a,
   > button {
-    color: ${({ color }) => color || 'inherit'};
+    color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
     transition: ${speed.fast} opacity;
 
     &:hover,
