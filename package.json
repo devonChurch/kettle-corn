@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby build && npm run copy",
     "gh-pages": "gh-pages -d ./public",
     "deploy:github":
       "npm run build -- --prefix-paths && npm run copy && npm run gh-pages",
