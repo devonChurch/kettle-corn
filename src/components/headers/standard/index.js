@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Hero from '../../hero';
 import { Spacer, Flexer, Sizer, Color } from '../../scaffold';
@@ -7,8 +8,11 @@ import { LogoNoText } from '../../logo';
 import { HeadingOne } from '../../headings';
 import navigation from '../../../data/navigation';
 import { createColor, spacing } from '../../../styles';
+import styles from './styles';
 
-const HeaderStandard = ({ children, title = 'Enhance Digital', background }) => {
+const { Slogo } = styles;
+
+const HeaderStandard = ({ children, title, background }) => {
   return (
     <Hero
       background={background}
@@ -48,9 +52,9 @@ const HeaderStandard = ({ children, title = 'Enhance Digital', background }) => 
               <Item>
                 <Spacer padding={[0, 'large', 0, 0]}>
                   <Link to="/">
-                    <Sizer width={{ min: '80px', max: '100px' }}>
+                    <Slogo>
                       <LogoNoText color="yellow" background={createColor('yellow')} />
-                    </Sizer>
+                    </Slogo>
                   </Link>
                 </Spacer>
               </Item>
@@ -67,6 +71,16 @@ const HeaderStandard = ({ children, title = 'Enhance Digital', background }) => 
       </Spacer>
     </Hero>
   );
+};
+
+HeaderStandard.propTypes = {
+  children: PropTypes.node,
+  title: PropTypes.string,
+  background: PropTypes.array,
+};
+
+HeaderStandard.defaultProps = {
+  title: 'Enhance Digital',
 };
 
 export default HeaderStandard;

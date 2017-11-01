@@ -9,7 +9,7 @@ import { HeadingTwo, Text } from '../../headings';
 import ContactOptions from '../../contact/options';
 import { createColor } from '../../../styles';
 
-const FooterStandard = ({ children, title = 'Enhance Digital', background }) => {
+const FooterStandard = () => {
   return (
     <Hero
       background={['blue']}

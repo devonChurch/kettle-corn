@@ -1,11 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import contact from '../../../data/contact';
 import Grid from '../../grid';
 import { Spacer, Flexer, Sizer } from '../../scaffold';
 import { ButtonQuaternary } from '../../buttons';
 import { createColor } from '../../../styles';
+import styles from './styles';
 
-const ContactOptions = ({ swatch = ['gray'] }) => {
+const { Sicon } = styles;
+
+const ContactOptions = ({ swatch }) => {
   return (
     <Spacer margin={[0, '-medium']}>
       <Grid>
@@ -21,9 +25,9 @@ const ContactOptions = ({ swatch = ['gray'] }) => {
                       {({ Wrapper, Item }) => (
                         <Wrapper align="center">
                           <Item>
-                            <Sizer width={{ min: '20px', max: '30px' }}>
+                            <Sicon width={{ min: '20px', max: '30px' }}>
                               <Icon color={createColor(...swatch)} />
-                            </Sizer>
+                            </Sicon>
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>
@@ -44,6 +48,14 @@ const ContactOptions = ({ swatch = ['gray'] }) => {
       </Grid>
     </Spacer>
   );
+};
+
+ContactOptions.propTypes = {
+  swatch: PropTypes.array,
+};
+
+ContactOptions.defaultProps = {
+  swatch: ['gray'],
 };
 
 export default ContactOptions;

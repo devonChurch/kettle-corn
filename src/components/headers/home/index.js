@@ -7,6 +7,9 @@ import { LogoWithText } from '../../logo';
 import { HeadingOne } from '../../headings';
 import navigation from '../../../data/navigation';
 import { createColor } from '../../../styles';
+import styles from './styles';
+
+const { Slogo } = styles;
 
 const HeaderHome = () => {
   return (
@@ -34,9 +37,9 @@ const HeaderHome = () => {
         </Flexer>
       </Spacer>
 
-      <Sizer maxWidth={{ min: '300px', max: '384px' }}>
+      <Slogo>
         <LogoWithText color="yellow" background={createColor('yellow')} />
-      </Sizer>
+      </Slogo>
 
       <Spacer padding={['large', 0, 0]}>
         <ButtonGroup>

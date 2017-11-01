@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { Spacer, Sizer } from '../scaffold';
 import { IconMiscArrow } from '../icons';
@@ -18,13 +19,13 @@ const Anchor = ({ children, href }) => {
   return isSpecial ? <a href={href}>{children}</a> : <Link to={href}>{children}</Link>;
 };
 
-const ButtonPrimary = ({
-  children,
-  swatch = ['gray'],
-  href = '#',
-  isLarge = false,
-  isInverted = false,
-}) => {
+const propTypes = {
+  children: PropTypes.node,
+  swatch: PropTypes.array,
+  href: PropTypes.string.isRequired,
+};
+
+const ButtonPrimary = ({ children, swatch, href, isLarge, isInverted }) => {
   const textColor = isInverted ? swatch : ['misc', 'white'];
   const background = isInverted ? ['misc', 'white'] : swatch;
   const padding = createPadding(isLarge);
@@ -41,7 +42,19 @@ const ButtonPrimary = ({
   );
 };
 
-const ButtonSecondary = ({ children, swatch = ['gray'], href = '#', isLarge = false }) => {
+ButtonPrimary.propTypes = {
+  ...propTypes,
+  isLarge: PropTypes.bool,
+  isInverted: PropTypes.bool,
+};
+
+ButtonPrimary.defaultProps = {
+  swatch: ['gray'],
+  isLarge: false,
+  isInverted: false,
+};
+
+const ButtonSecondary = ({ children, swatch, href, isLarge }) => {
   const padding = createPadding(isLarge);
 
   return (
@@ -56,7 +69,17 @@ const ButtonSecondary = ({ children, swatch = ['gray'], href = '#', isLarge = fa
   );
 };
 
-const ButtonTertiary = ({ children, swatch = ['gray'], href = '#' }) => {
+ButtonSecondary.propTypes = {
+  ...propTypes,
+  isLarge: PropTypes.bool,
+};
+
+ButtonSecondary.defaultProps = {
+  swatch: ['gray'],
+  isLarge: false,
+};
+
+const ButtonTertiary = ({ children, swatch, href }) => {
   return (
     <Stertiary color={swatch}>
       <Anchor href={href}>
@@ -69,7 +92,13 @@ const ButtonTertiary = ({ children, swatch = ['gray'], href = '#' }) => {
   );
 };
 
-const ButtonQuaternary = ({ children, swatch = ['gray'], href = '#' }) => {
+ButtonTertiary.propTypes = propTypes;
+
+ButtonTertiary.defaultProps = {
+  swatch: ['gray'],
+};
+
+const ButtonQuaternary = ({ children, swatch, href }) => {
   return (
     <Squaternary color={swatch}>
       <Anchor href={href}>
@@ -82,13 +111,21 @@ const ButtonQuaternary = ({ children, swatch = ['gray'], href = '#' }) => {
   );
 };
 
-const ButtonInline = ({ children, swatch, href = '#' }) => {
+ButtonQuaternary.propTypes = propTypes;
+
+ButtonQuaternary.defaultProps = {
+  swatch: ['gray'],
+};
+
+const ButtonInline = ({ children, swatch, href }) => {
   return (
     <Sinline color={swatch}>
       <Anchor href={href}>{children}</Anchor>
     </Sinline>
   );
 };
+
+ButtonInline.propTypes = propTypes;
 
 const ButtonSubmit = ({ children, handleClick, isDisabled }) => {
   return (
@@ -101,6 +138,12 @@ const ButtonSubmit = ({ children, handleClick, isDisabled }) => {
       </button>
     </Ssecondary>
   );
+};
+
+ButtonSubmit.propTypes = {
+  children: PropTypes.node,
+  handleClick: PropTypes.func,
+  isDisabled: PropTypes.bool,
 };
 
 const buttons = {

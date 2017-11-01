@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { createColor } from '../../../styles';
 import Markdown from '../../markdown';
 import { Spacer, Sizer, Flexer } from '../../scaffold';
@@ -37,7 +38,7 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
 
       <Spacer padding={['large', 0, 0]}>
         {introduction && (
-          <Text isBlock weight="900" size="16px">
+          <Text isBlock weight={900} size="16px">
             <Markdown color={swatch}>{introduction}</Markdown>
           </Text>
         )}
@@ -48,6 +49,14 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
       </Spacer>
     </Spacer>
   );
+};
+
+ServicesArticle.propTypes = {
+  title: PropTypes.string,
+  id: PropTypes.string,
+  swatch: PropTypes.string,
+  Icon: PropTypes.func,
+  content: PropTypes.string,
 };
 
 export default ServicesArticle;

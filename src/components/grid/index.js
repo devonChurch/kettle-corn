@@ -1,58 +1,53 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles';
 
-const {Swrapper, SitemTwoUp, SitemThreeUp, SitemFourUp, SitemSixUp} = styles;
+const { Swrapper, SitemTwoUp, SitemThreeUp, SitemFourUp, SitemSixUp } = styles;
 
-const GridItemTwoUp = ({children}) => {
-
-  return (
-    <SitemTwoUp>{children}</SitemTwoUp>
-  );
-
+const propTypes = {
+  children: PropTypes.node,
 };
 
-const GridItemThreeUp = ({children}) => {
-
-  return (
-    <SitemThreeUp>{children}</SitemThreeUp>
-  );
-
+const GridItemTwoUp = ({ children }) => {
+  return <SitemTwoUp>{children}</SitemTwoUp>;
 };
 
-const GridItemFourUp = ({children}) => {
+GridItemTwoUp.propTypes = propTypes;
 
-  return (
-    <SitemFourUp>{children}</SitemFourUp>
-  );
-
+const GridItemThreeUp = ({ children }) => {
+  return <SitemThreeUp>{children}</SitemThreeUp>;
 };
 
-const GridItemSixUp = ({children}) => {
+GridItemThreeUp.propTypes = propTypes;
 
-  return (
-    <SitemSixUp>{children}</SitemSixUp>
-  );
-
+const GridItemFourUp = ({ children }) => {
+  return <SitemFourUp>{children}</SitemFourUp>;
 };
 
-const GridWrapper = ({children}) => {
+GridItemFourUp.propTypes = propTypes;
 
-  return (
-    <Swrapper>{children}</Swrapper>
-  );
-
+const GridItemSixUp = ({ children }) => {
+  return <SitemSixUp>{children}</SitemSixUp>;
 };
 
-const Grid = ({children}) => {
+GridItemSixUp.propTypes = propTypes;
 
+const GridWrapper = ({ children }) => {
+  return <Swrapper>{children}</Swrapper>;
+};
+
+GridWrapper.propTypes = propTypes;
+
+const Grid = ({ children }) => {
   return (
     <div>
-      {children({GridWrapper, GridItemTwoUp, GridItemThreeUp, GridItemFourUp, GridItemSixUp})}
+      {children({ GridWrapper, GridItemTwoUp, GridItemThreeUp, GridItemFourUp, GridItemSixUp })}
     </div>
   );
-
 };
 
-
+Grid.propTypes = {
+  children: PropTypes.func,
+};
 
 export default Grid;

@@ -196,7 +196,7 @@ const StyleguidePage = () => (
                 <GridWrapper>
                   <Item>
                     <Spacer padding={['medium']}>
-                      <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                      <Sizer isCenter width="15vw" maxWidth="100px">
                         <LogoNoText color="purple" background={createColor('misc', 'white')} />
                       </Sizer>
                     </Spacer>
@@ -204,7 +204,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['purple']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText color="purple" background={createColor('purple', 'medium')} />
                         </Sizer>
                       </Spacer>
@@ -213,7 +213,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['purple', 'darkest']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText
                             color="purple"
                             background={createColor('purple', 'darkest')}
@@ -225,7 +225,7 @@ const StyleguidePage = () => (
 
                   <Item>
                     <Spacer padding={['medium']}>
-                      <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                      <Sizer isCenter width="15vw" maxWidth="100px">
                         <LogoNoText color="green" background={createColor('misc', 'white')} />
                       </Sizer>
                     </Spacer>
@@ -233,7 +233,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['green']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText color="green" background={createColor('green', 'medium')} />
                         </Sizer>
                       </Spacer>
@@ -242,7 +242,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['green', 'darkest']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText color="green" background={createColor('green', 'darkest')} />
                         </Sizer>
                       </Spacer>
@@ -251,7 +251,7 @@ const StyleguidePage = () => (
 
                   <Item>
                     <Spacer padding={['medium']}>
-                      <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                      <Sizer isCenter width="15vw" maxWidth="100px">
                         <LogoNoText color="yellow" background={createColor('misc', 'white')} />
                       </Sizer>
                     </Spacer>
@@ -259,7 +259,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['yellow']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText color="yellow" background={createColor('yellow', 'medium')} />
                         </Sizer>
                       </Spacer>
@@ -268,7 +268,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['yellow', 'darkest']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText
                             color="yellow"
                             background={createColor('yellow', 'darkest')}
@@ -280,7 +280,7 @@ const StyleguidePage = () => (
 
                   <Item>
                     <Spacer padding={['medium']}>
-                      <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                      <Sizer isCenter width="15vw" maxWidth="100px">
                         <LogoNoText color="orange" background={createColor('misc', 'white')} />
                       </Sizer>
                     </Spacer>
@@ -288,7 +288,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['orange']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText color="orange" background={createColor('orange', 'medium')} />
                         </Sizer>
                       </Spacer>
@@ -297,7 +297,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Color background={['orange', 'darkest']}>
                       <Spacer padding={['medium']}>
-                        <Sizer isCenter maxWidth={{ min: '50px', max: '100px' }}>
+                        <Sizer isCenter width="15vw" maxWidth="100px">
                           <LogoNoText
                             color="orange"
                             background={createColor('orange', 'darkest')}
@@ -599,7 +599,7 @@ const StyleguidePage = () => (
               <Item>
                 <Spacer padding={['medium']}>
                   <Spacer margin={[0, 'auto']}>
-                    <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                    <Sizer width="50px">
                       <IconStandardEmail color={createColor('purple')} />
                     </Sizer>
                   </Spacer>
@@ -608,7 +608,7 @@ const StyleguidePage = () => (
               <Item>
                 <Spacer padding={['medium']}>
                   <Spacer margin={[0, 'auto']}>
-                    <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                    <Sizer width="50px">
                       <IconStandardTwitter color={createColor('green')} />
                     </Sizer>
                   </Spacer>
@@ -617,7 +617,7 @@ const StyleguidePage = () => (
               <Item>
                 <Spacer padding={['medium']}>
                   <Spacer margin={[0, 'auto']}>
-                    <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                    <Sizer width="50px">
                       <IconStandardFacebook color={createColor('pink')} />
                     </Sizer>
                   </Spacer>
@@ -626,7 +626,7 @@ const StyleguidePage = () => (
               <Item>
                 <Spacer padding={['medium']}>
                   <Spacer margin={[0, 'auto']}>
-                    <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                    <Sizer width="50px">
                       <IconStandardPhone color={createColor('orange')} />
                     </Sizer>
                   </Spacer>
@@ -646,7 +646,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Spacer padding={['medium']}>
                       <Spacer margin={[0, 'auto']}>
-                        <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                        <Sizer width="50px">
                           <IconStandardEmail />
                         </Sizer>
                       </Spacer>
@@ -655,7 +655,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Spacer padding={['medium']}>
                       <Spacer margin={[0, 'auto']}>
-                        <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                        <Sizer width="50px">
                           <IconStandardTwitter />
                         </Sizer>
                       </Spacer>
@@ -664,7 +664,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Spacer padding={['medium']}>
                       <Spacer margin={[0, 'auto']}>
-                        <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                        <Sizer width="50px">
                           <IconStandardFacebook />
                         </Sizer>
                       </Spacer>
@@ -673,7 +673,7 @@ const StyleguidePage = () => (
                   <Item>
                     <Spacer padding={['medium']}>
                       <Spacer margin={[0, 'auto']}>
-                        <Sizer maxWidth={{ min: '30px', max: '50px' }}>
+                        <Sizer width="50px">
                           <IconStandardPhone />
                         </Sizer>
                       </Spacer>

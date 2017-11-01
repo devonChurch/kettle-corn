@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { createColor } from '../../../styles';
 import { Spacer, Sizer, Flexer } from '../../scaffold';
 import { HeadingThree, Text } from '../../headings';
@@ -16,7 +17,7 @@ const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
                   <Icon />
                 </Sizer>
               </Spacer>
-              <HeadingThree color={[createColor(swatch)]}>{title}</HeadingThree>
+              <HeadingThree color={createColor(swatch)}>{title}</HeadingThree>
               <Text color={createColor(swatch, 'darkest')}>{blurb}</Text>
             </Spacer>
           </Item>
@@ -31,6 +32,14 @@ const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
       )}
     </Flexer>
   );
+};
+
+ServicesTile.propTypes = {
+  title: PropTypes.string,
+  id: PropTypes.string,
+  swatch: PropTypes.string,
+  Icon: PropTypes.func,
+  blurb: PropTypes.string,
 };
 
 export default ServicesTile;
