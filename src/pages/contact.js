@@ -199,15 +199,12 @@ class ServicesPage extends React.Component {
       };
       const response = await fetch(endpoint, config);
 
-      console.log({ response });
-
       if (response.ok) {
         this.handlePostSuccess();
       } else {
         throw new Error('Post failed!');
       }
     } catch (error) {
-      console.log({ error });
       this.handlePostError();
     }
   };

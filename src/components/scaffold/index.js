@@ -3,20 +3,9 @@ import PropTypes from 'prop-types';
 import { spacing } from '../../styles';
 import styles from './styles';
 
-const {
-  Spage,
-  Scontent,
-  Sspacer,
-  createScolor,
-  Ssizer,
-  SbuttonGroup,
-  SflexWrapper,
-  SflexItem,
-} = styles;
+const { Spage, Scontent, Sspacer, Scolor, Ssizer, SbuttonGroup, SflexWrapper, SflexItem } = styles;
 
-const Color = ({ children, color, background, display, element }) => {
-  const Scolor = createScolor(element);
-
+const Color = ({ children, color, background, display }) => {
   return (
     <Scolor background={background} color={color} display={display}>
       {children}
@@ -29,12 +18,10 @@ Color.propTypes = {
   color: PropTypes.array,
   background: PropTypes.array,
   display: PropTypes.string,
-  element: PropTypes.string,
 };
 
 Color.defaultProps = {
   display: 'block',
-  element: 'div',
 };
 
 const Page = ({ children, background }) => {

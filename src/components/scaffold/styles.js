@@ -28,7 +28,7 @@ const scaffold = {
         createDynamicMargin(margin)};
   `,
 
-  createScolor: element => styled[element]`
+  Scolor: styled.div`
     background: ${({ background }) => (background ? createColor(...background) : 'transparent')};
     color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
     display: ${({ display }) => display || 'inherit'};
