@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import MarkdownToJSX from 'markdown-to-jsx';
 import Link from 'gatsby-link';
 import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../headings';
+import { Color } from '../scaffold';
 import { ButtonInline } from '../buttons';
-import styles from './styles';
 import { createColor } from '../../styles';
 
-const { Swrapper } = styles;
 const overrides = color => ({
   h1: {
     component: HeadingOne,
@@ -40,9 +39,9 @@ const overrides = color => ({
 
 const Markdown = ({ children, color }) => {
   return (
-    <Swrapper color={color}>
+    <Color color={[color, 'darkest']}>
       <MarkdownToJSX options={{ overrides: overrides(color) }}>{children}</MarkdownToJSX>
-    </Swrapper>
+    </Color>
   );
 };
 

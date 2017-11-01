@@ -7,11 +7,14 @@ import styles from './styles';
 const { Sform, Slabel, Sinput, StextArea, Sname } = styles;
 
 const fieldPropTypes = {
-  label: PropTypes.string,
-  handleChange: PropTypes.func,
-  value: PropTypes.string,
-  type: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
   invalidMessage: PropTypes.node, // "string" || "bool", "null", etc
+};
+
+const fieldDefaultprops = {
+  invalidMessage: false,
 };
 
 const Form = ({ children, handleSubmit }) => {

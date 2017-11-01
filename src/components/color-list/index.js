@@ -16,8 +16,8 @@ const ColorItem = ({ heading, hex }) => {
 };
 
 ColorItem.propTypes = {
-  heading: PropTypes.string,
-  hex: PropTypes.string,
+  heading: PropTypes.string.isRequired,
+  hex: PropTypes.string.isRequired,
 };
 
 const ColorList = ({ heading, options }) => {
@@ -34,8 +34,8 @@ const ColorList = ({ heading, options }) => {
 };
 
 ColorList.propTypes = {
-  heading: PropTypes.string,
-  options: PropTypes.objectOf(PropTypes.string),
+  heading: PropTypes.string.isRequired,
+  options: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default ColorList;

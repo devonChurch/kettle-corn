@@ -52,11 +52,11 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
 };
 
 ServicesArticle.propTypes = {
-  title: PropTypes.string,
-  id: PropTypes.string,
-  swatch: PropTypes.string,
-  Icon: PropTypes.func,
-  content: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  swatch: PropTypes.string.isRequired,
+  Icon: PropTypes.func.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default ServicesArticle;

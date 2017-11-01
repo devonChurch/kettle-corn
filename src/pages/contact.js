@@ -75,7 +75,7 @@ const Presentation = ({
                     {({ Wrapper, Item }) => (
                       <Wrapper align="center">
                         <Item>
-                          <Sizer width={{ min: '20px', max: '30px' }}>
+                          <Sizer width="3vw" minWidth="20px" maxWidth="30px">
                             <statusMessage.Icon color={statusMessage.color} />
                           </Sizer>
                         </Item>

@@ -35,11 +35,11 @@ const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
 };
 
 ServicesTile.propTypes = {
-  title: PropTypes.string,
-  id: PropTypes.string,
-  swatch: PropTypes.string,
-  Icon: PropTypes.func,
-  blurb: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  swatch: PropTypes.string.isRequired,
+  Icon: PropTypes.func.isRequired,
+  blurb: PropTypes.string.isRequired,
 };
 
 export default ServicesTile;

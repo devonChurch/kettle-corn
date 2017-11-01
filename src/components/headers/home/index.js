@@ -7,16 +7,13 @@ import { LogoWithText } from '../../logo';
 import { HeadingOne } from '../../headings';
 import navigation from '../../../data/navigation';
 import { createColor } from '../../../styles';
-import styles from './styles';
-
-const { Slogo } = styles;
 
 const HeaderHome = () => {
   return (
     <Hero
       background={['yellow']}
       arrow={['left', 'bottom']}
-      padding={['medium', 0, 'large']}
+      padding={['medium', 0, 'largest']}
       element="header"
     >
       <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
@@ -37,9 +34,9 @@ const HeaderHome = () => {
         </Flexer>
       </Spacer>
 
-      <Slogo>
+      <Sizer width="75vw" minWidth="250px" maxWidth="380px">
         <LogoWithText color="yellow" background={createColor('yellow')} />
-      </Slogo>
+      </Sizer>
 
       <Spacer padding={['large', 0, 0]}>
         <ButtonGroup>

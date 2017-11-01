@@ -5,9 +5,6 @@ import Grid from '../../grid';
 import { Spacer, Flexer, Sizer } from '../../scaffold';
 import { ButtonQuaternary } from '../../buttons';
 import { createColor } from '../../../styles';
-import styles from './styles';
-
-const { Sicon } = styles;
 
 const ContactOptions = ({ swatch }) => {
   return (
@@ -25,9 +22,9 @@ const ContactOptions = ({ swatch }) => {
                       {({ Wrapper, Item }) => (
                         <Wrapper align="center">
                           <Item>
-                            <Sicon width={{ min: '20px', max: '30px' }}>
+                            <Sizer width="3vw" minWidth="20px" maxWidth="30px">
                               <Icon color={createColor(...swatch)} />
-                            </Sicon>
+                            </Sizer>
                           </Item>
                           <Item>
                             <Spacer padding={[0, 0, 0, 'medium']}>

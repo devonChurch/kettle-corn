@@ -20,7 +20,7 @@ const Anchor = ({ children, href }) => {
 };
 
 const propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
   swatch: PropTypes.array,
   href: PropTypes.string.isRequired,
 };
@@ -141,9 +141,13 @@ const ButtonSubmit = ({ children, handleClick, isDisabled }) => {
 };
 
 ButtonSubmit.propTypes = {
-  children: PropTypes.node,
-  handleClick: PropTypes.func,
+  children: PropTypes.node.isRequired,
+  handleClick: PropTypes.func.isRequired,
   isDisabled: PropTypes.bool,
+};
+
+ButtonSubmit.defaultProps = {
+  isDisabled: false,
 };
 
 const buttons = {

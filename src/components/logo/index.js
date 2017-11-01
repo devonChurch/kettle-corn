@@ -54,7 +54,7 @@ LogoData.propTypes = {
 
 LogoData.defaultProps = defaultProps;
 
-const TextData = ({ color = 'blue', background = createColor('misc', 'white') }) => {
+const TextData = ({ color, background }) => {
   return (
     <g>
       {/* The word "Enhance" */}
@@ -90,7 +90,7 @@ const TextData = ({ color = 'blue', background = createColor('misc', 'white') })
 TextData.propTypes = propTypes;
 TextData.defaultProps = defaultProps;
 
-const LogoWithText = ({ color = 'blue', background = createColor('misc', 'white') }) => {
+const LogoWithText = ({ color, background }) => {
   return (
     <svg viewBox="0 0 1392 392">
       <LogoData color={color} background={background} />
@@ -102,7 +102,7 @@ const LogoWithText = ({ color = 'blue', background = createColor('misc', 'white'
 LogoWithText.propTypes = propTypes;
 LogoWithText.defaultProps = defaultProps;
 
-const LogoNoText = ({ color = 'blue', background = createColor('misc', 'white') }) => {
+const LogoNoText = ({ color, background }) => {
   return (
     <svg viewBox="0 0 552 392">
       <LogoData color={color} background={background} />
