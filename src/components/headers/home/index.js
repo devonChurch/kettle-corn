@@ -35,7 +35,7 @@ const HeaderHome = () => {
       </Spacer>
 
       <Sizer width="75vw" minWidth="250px" maxWidth="380px">
-        <LogoWithText color="yellow" background={createColor('yellow')} />
+        <LogoWithText color="yellow" background={['yellow']} />
       </Sizer>
 
       <Spacer padding={['large', 0, 0]}>

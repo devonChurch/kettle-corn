@@ -1,9 +1,9 @@
-import styled, {css} from 'styled-components';
-import { rem as createRem, stripUnit as createStrippedUnit } from 'polished'
-import {createColor, spacing, speed, media, breakpoints, dynamic, misc} from '../../styles';
+import styled, { css } from 'styled-components';
+import { rem as createRem, stripUnit as createStrippedUnit } from 'polished';
+import { createColor, spacing, speed, media, breakpoints, dynamic, misc } from '../../styles';
 
 const Sinput = styled.input`
-  border: 3px solid ${createColor('gray', 'light')};
+  border: ${misc.borderWidth} solid ${createColor('gray', 'lightest')};
   border-radius: ${misc.radius};
   font-size: ${createRem('16px')};
   outline: 0;
@@ -22,19 +22,20 @@ const Sinput = styled.input`
     }
   }
 
-  ${({isPopulated}) => isPopulated && css`
-    border-color: ${createColor('gray', 'dark')};
-    color: ${createColor('gray', 'darkest')};
-  `}
-
-  ${({isInvalid}) => isInvalid && css`
-    border-color: ${createColor('red')};
-    color: ${createColor('red', 'darkest')};
-  `}
+  ${({ isPopulated }) =>
+    isPopulated &&
+    css`
+      border-color: ${createColor('gray', 'dark')};
+      color: ${createColor('gray', 'darkest')};
+    `} ${({ isInvalid }) =>
+      isInvalid &&
+      css`
+        border-color: ${createColor('red')};
+        color: ${createColor('red', 'darkest')};
+      `};
 `;
 
 const style = {
-
   Sform: styled.form`
     max-width: ${breakpoints.small};
   `,
@@ -61,16 +62,17 @@ const style = {
     transition-duration: ${speed.fast};
     transition-property: color, transform;
 
-    ${({isPopulated}) => isPopulated && css`
-      color: ${createColor('gray', 'dark')};
-      transform: scale(0.8) translate(0, 0);
-    `}
-
-    ${({isInvalid}) => isInvalid && css`
-      color: ${createColor('red')};
-    `}
+    ${({ isPopulated }) =>
+      isPopulated &&
+      css`
+        color: ${createColor('gray', 'dark')};
+        transform: scale(0.8) translate(0, 0);
+      `} ${({ isInvalid }) =>
+        isInvalid &&
+        css`
+          color: ${createColor('red')};
+        `};
   `,
-
-}
+};
 
 export default style;

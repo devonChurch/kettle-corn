@@ -7,12 +7,12 @@ const { Senhance, Sdigital, Sextra } = styles;
 
 const propTypes = {
   color: PropTypes.string,
-  background: PropTypes.string,
+  background: PropTypes.array,
 };
 
 const defaultProps = {
   color: 'blue',
-  background: createColor('misc', 'white'),
+  background: ['misc', 'white'],
 };
 
 const LogoData = ({ color, background, isCentered }) => {

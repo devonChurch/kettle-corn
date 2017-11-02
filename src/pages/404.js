@@ -25,10 +25,8 @@ const NotFoundPage = () => (
 
     <main>
       <Content>
-        <HeadingThree color={createColor('red', 'darkest')}>
-          We were unable to find your page.
-        </HeadingThree>
-        <Text color={createColor('red', 'darkest')}>
+        <HeadingThree color={['red', 'darkest']}>We were unable to find your page.</HeadingThree>
+        <Text color={['red', 'darkest']}>
           Please try going back to our home page using the button below
         </Text>
 

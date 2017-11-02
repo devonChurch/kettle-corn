@@ -53,14 +53,14 @@ const HeaderStandard = ({ children, title, background }) => {
                 <Spacer padding={[0, 'large', 0, 0]}>
                   <Link to="/">
                     <Slogo>
-                      <LogoNoText color="yellow" background={createColor('yellow')} />
+                      <LogoNoText color="yellow" background={['yellow']} />
                     </Slogo>
                   </Link>
                 </Spacer>
               </Item>
               <Item grow="1">
                 <Spacer padding={['medium', 0]}>
-                  <HeadingOne color={createColor('misc', 'white')} isSpaceless>
+                  <HeadingOne color={['misc', 'white']} isSpaceless>
                     {title}
                   </HeadingOne>
                 </Spacer>

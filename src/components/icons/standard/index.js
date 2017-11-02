@@ -6,12 +6,12 @@ import styles from './styles';
 const { Ssvg } = styles;
 
 const propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.array,
   isInline: PropTypes.bool,
 };
 
 const defaultProps = {
-  color: createColor('misc', 'white'),
+  color: ['misc', 'white'],
   isInline: false,
 };
 

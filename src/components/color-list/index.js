@@ -27,7 +27,7 @@ const ColorList = ({ heading, options }) => {
 
   return (
     <Spacer padding={['medium', 0]}>
-      <HeadingThree color={options.medium}>{createCapitalize(heading)}</HeadingThree>
+      <HeadingThree color={[heading]}>{createCapitalize(heading)}</HeadingThree>
       <Slist>{items}</Slist>
     </Spacer>
   );

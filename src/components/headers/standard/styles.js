@@ -10,7 +10,7 @@ const style = {
     width: 20vw;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.7;
     }
   `,
 };

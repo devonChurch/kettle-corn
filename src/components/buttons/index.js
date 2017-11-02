@@ -34,7 +34,7 @@ const ButtonPrimary = ({ children, swatch, href, isLarge, isInverted }) => {
     <Sprimary color={textColor} background={background} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
-          <IconMiscArrow color={createColor(...textColor)} />
+          <IconMiscArrow fill={textColor} />
           {children}
         </Spacer>
       </Anchor>
@@ -61,7 +61,7 @@ const ButtonSecondary = ({ children, swatch, href, isLarge }) => {
     <Ssecondary color={swatch} isLarge={isLarge}>
       <Anchor href={href}>
         <Spacer padding={padding}>
-          <IconMiscArrow color={createColor(...swatch)} />
+          <IconMiscArrow fill={swatch} />
           {children}
         </Spacer>
       </Anchor>
@@ -84,7 +84,7 @@ const ButtonTertiary = ({ children, swatch, href }) => {
     <Stertiary color={swatch}>
       <Anchor href={href}>
         <Spacer padding={['smallest', 0]}>
-          <IconMiscArrow color={createColor(...swatch)} />
+          <IconMiscArrow fill={swatch} />
           {children}
         </Spacer>
       </Anchor>
@@ -103,7 +103,7 @@ const ButtonQuaternary = ({ children, swatch, href }) => {
     <Squaternary color={swatch}>
       <Anchor href={href}>
         <Spacer padding={['smallest', 0]}>
-          <IconMiscArrow color={createColor(...swatch)} />
+          <IconMiscArrow fill={swatch} />
           {children}
         </Spacer>
       </Anchor>
@@ -132,7 +132,7 @@ const ButtonSubmit = ({ children, handleClick, isDisabled }) => {
     <Ssecondary color={['blue']}>
       <button onClick={handleClick} type="submit" disabled={isDisabled}>
         <Spacer padding={createPadding(false)}>
-          <IconMiscArrow color={createColor('blue')} />
+          <IconMiscArrow fill={['blue']} />
           {children}
         </Spacer>
       </button>

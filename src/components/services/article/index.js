@@ -27,7 +27,7 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
             </Item>
             <Item grow="1">
               <Spacer margin={['-medium', 0]}>
-                <HeadingTwo color={createColor(swatch)} isSpaceless id={id}>
+                <HeadingTwo color={[swatch]} isSpaceless id={id}>
                   {title}
                 </HeadingTwo>
               </Spacer>
@@ -39,12 +39,12 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
       <Spacer padding={['large', 0, 0]}>
         {introduction && (
           <Text isBlock weight={900} size="16px">
-            <Markdown color={swatch}>{introduction}</Markdown>
+            <Markdown swatch={swatch}>{introduction}</Markdown>
           </Text>
         )}
 
         <Text isBlock size="14px">
-          <Markdown color={swatch}>{bodyCopy}</Markdown>
+          <Markdown swatch={swatch}>{bodyCopy}</Markdown>
         </Text>
       </Spacer>
     </Spacer>

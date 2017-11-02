@@ -5,21 +5,21 @@ import styles from './styles';
 
 const { Ssvg, SloaderWrapper, SloaderDot } = styles;
 
-const IconMiscArrow = ({ color = createColor('misc', 'white'), isInline = false }) => {
+const IconMiscArrow = ({ fill, isInline }) => {
   return (
-    <Ssvg viewBox="0 0 14 14" fill={color} isInline={isInline}>
+    <Ssvg viewBox="0 0 14 14" fill={fill} isInline={isInline}>
       <polygon points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 " />
     </Ssvg>
   );
 };
 
 IconMiscArrow.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.array,
   isInline: PropTypes.bool,
 };
 
 IconMiscArrow.defaultProps = {
-  color: createColor('misc', 'white'),
+  color: ['misc', 'white'],
   isInline: false,
 };
 

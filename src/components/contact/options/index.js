@@ -23,7 +23,7 @@ const ContactOptions = ({ swatch }) => {
                         <Wrapper align="center">
                           <Item>
                             <Sizer width="3vw" minWidth="20px" maxWidth="30px">
-                              <Icon color={createColor(...swatch)} />
+                              <Icon color={swatch} />
                             </Sizer>
                           </Item>
                           <Item>

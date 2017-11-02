@@ -34,11 +34,11 @@ const Presentation = ({
     <main>
       <Spacer padding={['largest', 0]}>
         <Content>
-          <HeadingTwo color={createColor('blue')}>
-            <Text color={createColor('gray', 'light')}>We love working with</Text>{' '}
+          <HeadingTwo color={['blue']}>
+            <Text color={['gray', 'light']}>We love working with</Text>{' '}
             <Text weight={700}>local businesses</Text>
           </HeadingTwo>
-          <Text isBlock color={createColor('blue', 'darkest')}>
+          <Text isBlock color={['blue', 'darkest']}>
             Contact us to talk about your growing your digital presence today.
           </Text>
 
@@ -92,11 +92,11 @@ const Presentation = ({
             </Form>
           </Spacer>
 
-          <HeadingTwo color={createColor('blue')}>
-            <Text color={createColor('gray', 'light')}>Other ways to</Text>{' '}
+          <HeadingTwo color={['blue']}>
+            <Text color={['gray', 'light']}>Other ways to</Text>{' '}
             <Text weight={700}>talk to us</Text>
           </HeadingTwo>
-          <ContactOptions color={createColor('blue')} />
+          <ContactOptions swatch={['blue']} />
         </Content>
       </Spacer>
     </main>
@@ -139,14 +139,14 @@ class ServicesPage extends React.Component {
     switch (formStatus) {
       case 'success':
         return {
-          color: createColor('green'),
+          color: ['green'],
           text: 'Great, we will be in touch soon',
           Icon: IconStandardTick,
         };
 
       case 'error':
         return {
-          color: createColor('red'),
+          color: ['red'],
           text:
             'Sorry, we have encountered an error. Please try again or use one of the other contact methods below',
           Icon: IconStandardCross,
@@ -154,7 +154,7 @@ class ServicesPage extends React.Component {
 
       case 'sending':
         return {
-          color: createColor('blue'),
+          color: ['blue'],
           text: 'Sending question',
           Icon: IconMiscLoader,
         };

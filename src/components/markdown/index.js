@@ -7,51 +7,51 @@ import { Color } from '../scaffold';
 import { ButtonInline } from '../buttons';
 import { createColor } from '../../styles';
 
-const overrides = color => ({
+const overrides = swatch => ({
   h1: {
     component: HeadingOne,
     props: {
-      color: createColor(color),
+      color: [swatch],
     },
   },
 
   h2: {
     component: HeadingTwo,
     props: {
-      color: createColor(color),
+      color: [swatch],
     },
   },
 
   h3: {
     component: HeadingThree,
     props: {
-      color: createColor(color),
+      color: [swatch],
     },
   },
 
   a: {
     component: ButtonInline,
     props: {
-      color: createColor(color),
+      color: [swatch],
     },
   },
 });
 
-const Markdown = ({ children, color }) => {
+const Markdown = ({ children, swatch }) => {
   return (
-    <Color color={[color, 'darkest']}>
-      <MarkdownToJSX options={{ overrides: overrides(color) }}>{children}</MarkdownToJSX>
+    <Color color={[swatch, 'darkest']}>
+      <MarkdownToJSX options={{ overrides: overrides(swatch) }}>{children}</MarkdownToJSX>
     </Color>
   );
 };
 
 Markdown.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.string,
+  swatch: PropTypes.string,
 };
 
 Markdown.defaultProps = {
-  color: 'gray',
+  swatch: 'gray',
 };
 
 export default Markdown;

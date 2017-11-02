@@ -43,10 +43,10 @@ const IndexPage = () => (
       <section>
         <Spacer padding={['largest', 0, 0]}>
           <Content>
-            <HeadingOne color={createColor('yellow')}>
-              <Text color={createColor('gray')} weight={400}>
+            <HeadingOne color={['yellow']}>
+              <Text color={['gray']} weight={400}>
                 Grow your business with a{' '}
-                <Text color={createColor('yellow', 'darkest')} weight={700}>
+                <Text color={['yellow', 'darkest']} weight={700}>
                   digital strategy
                 </Text>{' '}
                 and
@@ -66,7 +66,7 @@ const IndexPage = () => (
       <section>
         <Spacer padding={['largest', 0, 0]}>
           <Content>
-            <HeadingTwo color={createColor('gray', 'light')}>Services</HeadingTwo>
+            <HeadingTwo color={['gray', 'light']}>Services</HeadingTwo>
 
             <Spacer margin={[0, '-medium']}>
               <Grid>
@@ -98,7 +98,7 @@ const IndexPage = () => (
       <section>
         <Spacer padding={[0, 0, 'largest']}>
           <Content>
-            <HeadingTwo color={createColor('gray', 'light')}>We like working with</HeadingTwo>
+            <HeadingTwo color={['gray', 'light']}>We like working with</HeadingTwo>
 
             <Partners />
           </Content>

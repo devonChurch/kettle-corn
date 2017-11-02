@@ -43,7 +43,7 @@ const FormInput = ({ label, handleChange, value, type, invalidMessage }) => {
       <Sname isPopulated={isPopulated} isInvalid={isInvalid}>
         {label}
       </Sname>
-      <Text size="12px" color={createColor('red')}>
+      <Text size="12px" color={['red']}>
         {isInvalid ? invalidMessage : '\u00A0'}
       </Text>
     </Slabel>
@@ -60,6 +60,7 @@ const FormTextArea = ({ label, handleChange, value, type, invalidMessage }) => {
     <Slabel>
       <StextArea
         type="text"
+        rows="8"
         name={label}
         value={value}
         isInvalid={isInvalid}
@@ -69,7 +70,7 @@ const FormTextArea = ({ label, handleChange, value, type, invalidMessage }) => {
       <Sname isPopulated={isPopulated} isInvalid={isInvalid}>
         {label}
       </Sname>
-      <Text size="12px" color={createColor('red')}>
+      <Text size="12px" color={['red']}>
         {isInvalid ? invalidMessage : '\u00A0'}
       </Text>
     </Slabel>

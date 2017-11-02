@@ -13,7 +13,7 @@ const loaderDotAnimation = keyframes`
 const icons = {
   Ssvg: styled.svg`
     display: ${({ isInline }) => (isInline ? 'inline-block' : 'block')};
-    fill: ${({ color }) => color};
+    fill: ${({ fill }) => createColor(...fill)};
   `,
 
   SloaderWrapper: styled.div`

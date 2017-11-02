@@ -3,7 +3,6 @@ import { rem as createRem } from 'polished';
 import { createColor, spacing, speed, misc, dynamic, media } from '../../styles';
 
 const { createDynamicSize, createDynamicFontSize, createDynamicPosition } = dynamic;
-const borderWidth = 3;
 const Sbutton = styled.div`
   button {
     background: transparent;
@@ -22,7 +21,7 @@ const Sbutton = styled.div`
   > a,
   > button {
     border-radius: ${misc.radius};
-    border: ${createRem(borderWidth)} solid ${({ color }) => createColor(...color)};
+    border: ${misc.borderWidth} solid ${({ color }) => createColor(...color)};
     color: ${({ color }) => createColor(...color)};
     font-weight: 900;
     position: relative;
@@ -102,12 +101,11 @@ const Stertiary = Sbutton.extend`
     position: relative;
 
     &:after {
-      border: ${createRem(borderWidth / 2)} solid currentColor;
-      border-radius: ${createRem(borderWidth / 2)};
+      border-top: ${misc.borderWidth} solid currentColor;
       content: '';
       display: block;
       position: absolute;
-      transform: translate(-50%, ${createRem(borderWidth)});
+      transform: translate(-50%, ${misc.borderWidth});
       transition: ${speed.fast} width;
       width: 100%;
       will-change: width;

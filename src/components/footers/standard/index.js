@@ -17,13 +17,13 @@ const FooterStandard = () => {
       element="footer"
       padding={['largest', 0, 'large']}
     >
-      <Text color={createColor('misc', 'white')}>
-        <HeadingTwo id="talk-to-us" color={createColor('misc', 'white')}>
+      <Text color={['misc', 'white']}>
+        <HeadingTwo id="talk-to-us" color={['misc', 'white']}>
           We love working with <strong>local businesses</strong>
         </HeadingTwo>
 
         <Spacer margin={['-medium', 0, 0]}>
-          <Text isBlock color={createColor('blue', 'darkest')}>
+          <Text isBlock color={['blue', 'darkest']}>
             Contact us to talk about your growing your digital presence today.
           </Text>
         </Spacer>

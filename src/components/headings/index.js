@@ -9,7 +9,7 @@ const { SheadingOne, SheadingTwo, SheadingThree, Stext } = styles;
 
 const propTypes = {
   children: PropTypes.node,
-  color: PropTypes.string,
+  color: PropTypes.array,
   isSpaceless: PropTypes.bool,
   id: PropTypes.string,
 };
@@ -61,22 +61,21 @@ const HeadingThree = ({ children, color, isSpaceless, id }) => {
 
 HeadingThree.propTypes = propTypes;
 
-const Text = ({ children, color, weight, isBlock, align, size, isMarkdown }) => {
+const Text = ({ children, color, weight, isBlock, align, size }) => {
   return (
     <Stext color={color} weight={weight} isBlock={isBlock} align={align} size={size}>
-      {isMarkdown ? <Markdown color={color}>{children}</Markdown> : children}
+      {children}
     </Stext>
   );
 };
 
 Text.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.string,
+  color: PropTypes.array,
   weight: PropTypes.number,
   isBlock: PropTypes.bool,
   align: PropTypes.string,
   size: PropTypes.string,
-  isMarkdown: PropTypes.bool,
 };
 
 Text.defaultProps = {

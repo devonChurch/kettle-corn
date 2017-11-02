@@ -76,7 +76,15 @@ const createColor = (color, ...options) => {
 
   const hex = colors[color][type];
 
-  return createRgba(hex, alpha);
+  try {
+    return createRgba(hex, alpha);
+  } catch (e) {
+    return console.warn(
+      `color (swatch = ${color}, tint = ${type}, alpha = ${alpha}) does not exist (substituted in medium gray)`,
+    );
+
+    createRgba(gray.medium, 1);
+  }
 };
 
 export { createColor as default, colors, createColor };

@@ -17,8 +17,8 @@ const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
                   <Icon />
                 </Sizer>
               </Spacer>
-              <HeadingThree color={createColor(swatch)}>{title}</HeadingThree>
-              <Text color={createColor(swatch, 'darkest')}>{blurb}</Text>
+              <HeadingThree color={[swatch]}>{title}</HeadingThree>
+              <Text color={[swatch, 'darkest']}>{blurb}</Text>
             </Spacer>
           </Item>
           <Item>
