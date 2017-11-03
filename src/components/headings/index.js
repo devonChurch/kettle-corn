@@ -61,9 +61,9 @@ const HeadingThree = ({ children, color, isSpaceless, id }) => {
 
 HeadingThree.propTypes = propTypes;
 
-const Text = ({ children, color, weight, isBlock, align, size }) => {
+const Text = ({ children, color, weight, display, align, size }) => {
   return (
-    <Stext color={color} weight={weight} isBlock={isBlock} align={align} size={size}>
+    <Stext color={color} weight={weight} display={display} align={align} size={size}>
       {children}
     </Stext>
   );
@@ -73,13 +73,13 @@ Text.propTypes = {
   children: PropTypes.node,
   color: PropTypes.array,
   weight: PropTypes.number,
-  isBlock: PropTypes.bool,
+  display: PropTypes.string,
   align: PropTypes.string,
   size: PropTypes.string,
 };
 
 Text.defaultProps = {
-  isBlock: false,
+  display: 'inline',
 };
 
 const headings = { HeadingOne, HeadingTwo, HeadingThree, Text };

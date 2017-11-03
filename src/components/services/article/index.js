@@ -38,12 +38,12 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
 
       <Spacer padding={['large', 0, 0]}>
         {introduction && (
-          <Text isBlock weight={900} size="16px">
+          <Text display="block" weight={900} size="16px">
             <Markdown swatch={swatch}>{introduction}</Markdown>
           </Text>
         )}
 
-        <Text isBlock size="14px">
+        <Text display="block" size="14px">
           <Markdown swatch={swatch}>{bodyCopy}</Markdown>
         </Text>
       </Spacer>

@@ -38,7 +38,7 @@ const Presentation = ({
             <Text color={['gray', 'light']}>We love working with</Text>{' '}
             <Text weight={700}>local businesses</Text>
           </HeadingTwo>
-          <Text isBlock color={['blue', 'darkest']}>
+          <Text display="block" color={['blue', 'darkest']}>
             Contact us to talk about your growing your digital presence today.
           </Text>
 

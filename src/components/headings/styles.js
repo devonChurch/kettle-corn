@@ -53,7 +53,7 @@ const style = {
 
   Stext: styled.span`
     color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
-    display: ${({ isBlock }) => (isBlock ? 'block' : 'inline')};
+    display: ${({ display }) => console.log({ display }) || display};
     font-weight: ${({ weight }) => weight || 'inherit'};
     font-size: ${({ size }) => (size ? createRem(size) : 'inherit')};
     max-width: ${createRem(breakpoints.medium)};

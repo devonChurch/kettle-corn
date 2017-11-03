@@ -4,7 +4,7 @@ import { media, breakpoints, spacing, dynamic, createColor } from '../../../styl
 
 const icons = {
   Ssvg: styled.svg`
-    display: ${({ isInline }) => (isInline ? 'inline-block' : 'block')};
+    display: ${({ display }) => display};
     fill: ${({ color }) => createColor(...color)};
   `,
 };

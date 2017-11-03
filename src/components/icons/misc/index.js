@@ -5,9 +5,9 @@ import styles from './styles';
 
 const { Ssvg, SloaderWrapper, SloaderDot } = styles;
 
-const IconMiscArrow = ({ fill, isInline }) => {
+const IconMiscArrow = ({ fill, display }) => {
   return (
-    <Ssvg viewBox="0 0 14 14" fill={fill} isInline={isInline}>
+    <Ssvg viewBox="0 0 14 14" fill={fill} display={display}>
       <polygon points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 " />
     </Ssvg>
   );
@@ -15,12 +15,12 @@ const IconMiscArrow = ({ fill, isInline }) => {
 
 IconMiscArrow.propTypes = {
   color: PropTypes.array,
-  isInline: PropTypes.bool,
+  display: PropTypes.string,
 };
 
 IconMiscArrow.defaultProps = {
   color: ['misc', 'white'],
-  isInline: false,
+  display: 'block',
 };
 
 const IconMiscLoader = () => {

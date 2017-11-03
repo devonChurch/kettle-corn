@@ -21,7 +21,7 @@ Color.propTypes = {
 };
 
 Color.defaultProps = {
-  display: 'block',
+  display: 'inherit',
 };
 
 const Page = ({ children, background }) => {
@@ -41,9 +41,9 @@ Page.defaultProps = {
   background: ['misc', 'white'],
 };
 
-const Spacer = ({ children, color, margin, padding, isInline }) => {
+const Spacer = ({ children, color, margin, padding, display }) => {
   return (
-    <Sspacer color={color} margin={margin} padding={padding} isInline={isInline}>
+    <Sspacer color={color} margin={margin} padding={padding} display={display}>
       {children}
     </Sspacer>
   );
@@ -54,17 +54,17 @@ Spacer.propTypes = {
   color: PropTypes.array,
   margin: PropTypes.array,
   padding: PropTypes.array,
-  isInline: PropTypes.bool,
+  display: PropTypes.string,
 };
 
 Spacer.defaultProps = {
-  isInline: false,
+  display: 'inherit',
 };
 
 const Sizer = ({
   children,
   color,
-  isInline,
+  display,
   isCenter,
   width,
   minWidth,
@@ -76,7 +76,7 @@ const Sizer = ({
   return (
     <Ssizer
       color={color}
-      isInline={isInline}
+      display={display}
       isCenter={isCenter}
       size={[height, width]}
       minWidth={minWidth}
@@ -92,7 +92,7 @@ const Sizer = ({
 Sizer.propTypes = {
   children: PropTypes.node,
   color: PropTypes.array,
-  isInline: PropTypes.bool,
+  display: PropTypes.string,
   isCenter: PropTypes.bool,
   width: PropTypes.string,
   minWidth: PropTypes.string,
@@ -103,7 +103,7 @@ Sizer.propTypes = {
 };
 
 Sizer.defaultProps = {
-  isInline: false,
+  display: 'inherit',
   isCenter: false,
   width: 'auto',
   minWidth: 'initial',

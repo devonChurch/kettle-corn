@@ -53,7 +53,7 @@ const IndexPage = () => (
               </Text>{' '}
               stay ahead of the game.
             </HeadingOne>
-            <Text isBlock>
+            <Text display="block">
               We offer a number of comprehensive or add-on services for businesses. Maybe you're
               just starting out on your digital journey, or perhaps you've got some online
               advertising and customer analytics up and running - but don't really know what to do

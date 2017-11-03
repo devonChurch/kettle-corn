@@ -23,7 +23,7 @@ const scaffold = {
 
   Sspacer: styled.div`
     background: ${({ color }) => color || 'transparent'};
-    display: ${({ isInline }) => (isInline ? 'inline-block' : 'block')};
+    display: ${({ display }) => display};
     ${({ padding }) => createDynamicPadding(padding)} ${({ margin }) =>
         createDynamicMargin(margin)};
   `,
@@ -31,12 +31,12 @@ const scaffold = {
   Scolor: styled.div`
     background: ${({ background }) => (background ? createColor(...background) : 'transparent')};
     color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
-    display: ${({ display }) => display || 'inherit'};
+    display: ${({ display }) => display};
   `,
 
   Ssizer: styled.div`
     background: ${({ color }) => color || 'transparent'};
-    display: ${({ isInline }) => (isInline ? 'inline-block' : 'block')};
+    display: ${({ display }) => display};
     margin: ${({ isCenter }) => (isCenter ? 'auto' : '0')};
     ${({ size }) => createDynamicSize(size)} ${({ minWidth }) =>
         createDynamicMinWidth(minWidth)} ${({ maxWidth }) => createDynamicMaxWidth(maxWidth)} ${({
