@@ -152,6 +152,11 @@ FlexItem.propTypes = {
   order: PropTypes.string,
 };
 
+FlexItem.defaultProps = {
+  grow: '0',
+  order: '0',
+};
+
 const FlexWrapper = ({ children, align, direction, justify, wrap }) => {
   return (
     <SflexWrapper align={align} direction={direction} justify={justify} wrap={wrap}>
@@ -160,12 +165,19 @@ const FlexWrapper = ({ children, align, direction, justify, wrap }) => {
   );
 };
 
-FlexItem.propTypes = {
+FlexWrapper.propTypes = {
   children: PropTypes.node,
   align: PropTypes.string,
   direction: PropTypes.string,
   justify: PropTypes.string,
   wrap: PropTypes.string,
+};
+
+FlexWrapper.defaultProps = {
+  align: 'flex-start',
+  direction: 'row',
+  justify: 'flex-start',
+  wrap: 'nowrap',
 };
 
 const Flexer = ({ children }) => {

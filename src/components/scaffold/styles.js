@@ -22,7 +22,6 @@ const scaffold = {
   `,
 
   Sspacer: styled.div`
-    background: ${({ color }) => color || 'transparent'};
     display: ${({ display }) => display};
     ${({ padding }) => createDynamicPadding(padding)} ${({ margin }) =>
         createDynamicMargin(margin)};
@@ -35,7 +34,6 @@ const scaffold = {
   `,
 
   Ssizer: styled.div`
-    background: ${({ color }) => color || 'transparent'};
     display: ${({ display }) => display};
     margin: ${({ isCenter }) => (isCenter ? 'auto' : '0')};
     ${({ size }) => createDynamicSize(size)} ${({ minWidth }) =>
@@ -52,11 +50,11 @@ const scaffold = {
   `,
 
   SflexWrapper: styled.div`
-    align-items: ${({ align }) => align || 'flex-start'};
+    align-items: ${({ align }) => align};
     display: flex;
-    flex-direction: ${({ direction }) => direction || 'row'};
-    flex-wrap: ${({ wrap }) => wrap || 'nowrap'};
-    justify-content: ${({ justify }) => justify || 'flex-start'};
+    flex-direction: ${({ direction }) => direction};
+    flex-wrap: ${({ wrap }) => wrap};
+    justify-content: ${({ justify }) => justify};
     ${({ direction }) => {
       switch (direction) {
         case 'column':
@@ -73,8 +71,8 @@ const scaffold = {
   `,
 
   SflexItem: styled.div`
-    flex-grow: ${({ grow }) => grow || 0};
-    order: ${({ order }) => order || 0};
+    flex-grow: ${({ grow }) => grow};
+    order: ${({ order }) => order};
   `,
 };
 

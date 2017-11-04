@@ -23,7 +23,7 @@ const Senhance = styled.g`
   fill: ${({ color, background }) =>
     createContrastingFill({
       color,
-      background: createColor(...background, 'Logo'),
+      background: createColor(...background),
       light: createColor(color),
       medium: createColor('misc', 'white'),
       dark: createColor('misc', 'white'),
@@ -34,7 +34,7 @@ const Sdigital = styled.g`
   fill: ${({ color, background }) =>
     createContrastingFill({
       color,
-      background: createColor(...background, 'Logo'),
+      background: createColor(...background),
       light: createColor(color, 'darkest'),
       medium: createColor('misc', 'black', 0.5),
       dark: createColor('misc', 'white', 0.4),
@@ -45,7 +45,7 @@ const Sextra = styled.g`
   fill: ${({ color, background }) =>
     createContrastingFill({
       color,
-      background: createColor(...background, 'Logo'),
+      background: createColor(...background),
       light: createColor('gray', 'lightest'),
       medium: createColor('misc', 'white', 0.25),
       dark: createColor('misc', 'black', 0.25),

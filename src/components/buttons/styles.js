@@ -21,7 +21,8 @@ const Sbutton = styled.div`
   > a,
   > button {
     border-radius: ${misc.radius};
-    border: ${misc.borderWidth} solid ${({ color }) => createColor(...color)};
+    border: ${misc.borderWidth} solid;
+    border-color: ${({ color }) => createColor(...color)};
     color: ${({ color }) => createColor(...color)};
     font-weight: 900;
     position: relative;

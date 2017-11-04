@@ -74,9 +74,8 @@ const createColor = (color, ...options) => {
     }
   }, {});
 
-  const hex = colors[color][type];
-
   try {
+    const hex = colors[color][type];
     return createRgba(hex, alpha);
   } catch (e) {
     return console.warn(

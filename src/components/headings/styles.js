@@ -22,7 +22,8 @@ const SheadingOne = styled.h1`
     min: '35px',
     max: '48px',
   })} &:after {
-    background: ${({ color }) => createColor(...(color ? color : ['misc', 'black', 0.5]))};
+    background: ${({ color }) =>
+      color ? createColor(...color) : createColor('misc', 'black', 0.5)};
     content: '';
     display: block;
     height: ${createRem('6px')};
@@ -53,7 +54,7 @@ const style = {
 
   Stext: styled.span`
     color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
-    display: ${({ display }) => console.log({ display }) || display};
+    display: ${({ display }) => display};
     font-weight: ${({ weight }) => weight || 'inherit'};
     font-size: ${({ size }) => (size ? createRem(size) : 'inherit')};
     max-width: ${createRem(breakpoints.medium)};
