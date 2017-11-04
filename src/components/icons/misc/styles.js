@@ -1,6 +1,6 @@
-import styled, {css, keyframes} from 'styled-components';
-import {padding as createPadding, margin as createMargin, rem as createRem} from 'polished';
-import {media, breakpoints, spacing, dynamic, createColor} from '../../../styles';
+import styled, { css, keyframes } from 'styled-components';
+import { padding as createPadding, margin as createMargin, rem as createRem } from 'polished';
+import { media, breakpoints, spacing, dynamic, createColor } from '../../../styles';
 
 const loaderDotSpeed = 0.25;
 const loaderDotAnimation = keyframes`
@@ -11,13 +11,13 @@ const loaderDotAnimation = keyframes`
 `;
 
 const icons = {
-
   Ssvg: styled.svg`
-    display: ${({isInline}) => isInline ? 'inline-block' : 'block'};
-    fill: ${({color}) => color};
+    display: ${({ display }) => display};
+    fill: ${({ fill }) => createColor(...fill)};
   `,
 
   SloaderWrapper: styled.div`
+    display: block;
     position: relative;
 
     > svg:nth-child(1) {
@@ -26,7 +26,7 @@ const icons = {
   `,
 
   SloaderDot: styled.svg`
-    animation-delay: ${({delay}) => `${delay * loaderDotSpeed}s`};
+    animation-delay: ${({ delay }) => `${delay * loaderDotSpeed}s`};
     animation-duration: ${9 * loaderDotSpeed}s;
     animation-iteration-count: infinite;
     animation-name: ${loaderDotAnimation};
@@ -36,8 +36,7 @@ const icons = {
     position: absolute;
     top: 0;
     width: 100%;
-  `
-
-}
+  `,
+};
 
 export default icons;

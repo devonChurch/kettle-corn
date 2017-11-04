@@ -1,12 +1,11 @@
 import { IconFeatureEmail } from '../../components/icons';
 
 const email = {
-
   title: 'Email marketing',
 
   id: 'email-marketing',
 
-  color: 'blue',
+  swatch: 'blue',
 
   Icon: IconFeatureEmail,
 
@@ -27,8 +26,7 @@ So what's going to work best for your business... and where do you start? You'll
 
 In New Zealand, commercial electronic messages are subject to a piece of legislation called the Unsolicited Electronic Messages Act 2007. This means you need permission from the recipient before you send them your business emails. You can read more about this [here](https://www.marketing.org.nz/Understandthe3TypesofConsentRequiredtoSendMarketingEmails).
 
-Talk to us to start about a strategy to get your message across the right people. We'll help you create mailing lists, perform segmentation and target mail drops with fresh, relevant and engaging content.`
-
+Talk to us to start about a strategy to get your message across the right people. We'll help you create mailing lists, perform segmentation and target mail drops with fresh, relevant and engaging content.`,
 };
 
 export default email;

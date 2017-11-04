@@ -1,12 +1,11 @@
 import { IconFeatureOptimisation } from '../../components/icons';
 
 const optimisation = {
-
   title: 'Search Engine Optimisation and Marketing (SEO & SEM)',
 
   id: 'optimisation',
 
-  color: 'green',
+  swatch: 'green',
 
   Icon: IconFeatureOptimisation,
 
@@ -22,8 +21,7 @@ The easier your website is to find, the more likely you are to generate good qua
 
 **What is SEM (search engine marketing):** SEM refers to paid search engine listings that increase the visibility of your business, but is also an all encomapssing term for optimising your website to rank higher. Search engines such as Google, Yahoo and Bing all offer pay-per-click listings (PPC) services, with Google being the most prevelant. Your business can buy high ranking, low cost search engine listings in a variety of formats - small, large, text only, image/shopper ads after setting up campaigns and bidding on keywords/phrases at the Google ad auction.
 
-We can help you start with a strategy focussed on keyword research, linkbuilding, benchmarking and onsite/off-site optimisation. If you're ready to get found by the right people, talk to us about your improving your SEO and SEM now.`
-
+We can help you start with a strategy focussed on keyword research, linkbuilding, benchmarking and onsite/off-site optimisation. If you're ready to get found by the right people, talk to us about your improving your SEO and SEM now.`,
 };
 
 export default optimisation;

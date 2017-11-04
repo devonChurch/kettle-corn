@@ -1,14 +1,14 @@
 import React from 'react';
-import {createColor} from '../../../styles';
-import {Spacer, Sizer, Flexer} from '../../scaffold';
-import {HeadingThree, Text} from '../../headings';
-import {ButtonTertiary} from '../../buttons';
+import PropTypes from 'prop-types';
+import { createColor } from '../../../styles';
+import { Spacer, Sizer, Flexer } from '../../scaffold';
+import { HeadingThree, Text } from '../../headings';
+import { ButtonTertiary } from '../../buttons';
 
-const ServicesTile = ({title, id, color, Icon, blurb}) => {
-
+const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
   return (
     <Flexer>
-      {({Wrapper, Item}) => (
+      {({ Wrapper, Item }) => (
         <Wrapper direction="column">
           <Item grow="1">
             <Spacer padding={[0, 'medium', 'small']}>
@@ -17,20 +17,29 @@ const ServicesTile = ({title, id, color, Icon, blurb}) => {
                   <Icon />
                 </Sizer>
               </Spacer>
-              <HeadingThree color={createColor(color)}>{title}</HeadingThree>
-              <Text color={createColor(color, 'darkest')}>{blurb}</Text>
+              <HeadingThree color={[swatch]}>{title}</HeadingThree>
+              <Text color={[swatch, 'darkest']}>{blurb}</Text>
             </Spacer>
           </Item>
           <Item>
             <Spacer padding={[0, 'medium', 'largest']}>
-              <ButtonTertiary href={`/services#${id}`} color={createColor(color)}>Read more</ButtonTertiary>
+              <ButtonTertiary href={`/services#${id}`} swatch={[swatch]}>
+                Read more
+              </ButtonTertiary>
             </Spacer>
           </Item>
         </Wrapper>
       )}
     </Flexer>
   );
+};
 
+ServicesTile.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  swatch: PropTypes.string.isRequired,
+  Icon: PropTypes.func.isRequired,
+  blurb: PropTypes.string.isRequired,
 };
 
 export default ServicesTile;

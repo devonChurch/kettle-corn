@@ -7,10 +7,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build && npm run copy",
     "gh-pages": "gh-pages -d ./public",
-    "deploy:github":
-      "npm run build -- --prefix-paths && npm run copy && npm run gh-pages",
-    "copy":
-      "npm run copy:cname && npm run copy:favicon && npm run copy:icon && npm run copy:webmanifest && npm run copy:robots",
+    "deploy:github": "npm run build -- --prefix-paths && npm run copy && npm run gh-pages",
+    "copy": "npm run copy:cname && npm run copy:favicon && npm run copy:icon && npm run copy:webmanifest && npm run copy:robots",
     "copy:cname": "cp ./src/CNAME ./public",
     "copy:favicon": "cp ./src/favicon.ico ./public",
     "copy:icon": "cp ./src/icon.png ./public",
@@ -53,6 +51,7 @@
     "lodash.random": "^3.2.0",
     "lorem-ipsum": "^1.0.4",
     "markdown-to-jsx": "^5.4.2",
-    "polished": "^1.7.0"
+    "polished": "^1.7.0",
+    "styled-components": "^2.2.3"
   }
 }

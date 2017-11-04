@@ -1,63 +1,87 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import {Spacer} from '../scaffold';
+import { Spacer } from '../scaffold';
 import Markdown from '../markdown';
 import styles from './styles';
 
-const {SheadingOne, SheadingTwo, SheadingThree, Stext} = styles;
+const { SheadingOne, SheadingTwo, SheadingThree, Stext } = styles;
 
-const createId = (id) => {
-
-	return id && id.replace(/[^A-Z a-z&-]/g, '').trim().replace(/[ ]/g, '-').toLowerCase();
-
+const propTypes = {
+  children: PropTypes.node,
+  color: PropTypes.array,
+  isSpaceless: PropTypes.bool,
+  id: PropTypes.string,
 };
 
-const HeadingOne = ({children, color, isSpaceless, id}) => {
+const createId = id => {
+  return (
+    id &&
+    id
+      .replace(/[^A-Z a-z&-]/g, '')
+      .trim()
+      .replace(/[ ]/g, '-')
+      .toLowerCase()
+  );
+};
 
+const HeadingOne = ({ children, color, isSpaceless, id }) => {
   return (
     <Spacer padding={[0, 0, isSpaceless ? 0 : 'large']}>
       <SheadingOne id={createId(id)} color={color}>
-          {children}
+        {children}
       </SheadingOne>
     </Spacer>
   );
-
 };
 
-const HeadingTwo = ({children, color, isSpaceless, id}) => {
+HeadingOne.propTypes = propTypes;
 
+const HeadingTwo = ({ children, color, isSpaceless, id }) => {
   return (
     <Spacer padding={[0, 0, isSpaceless ? 0 : 'large']}>
       <SheadingTwo id={createId(id)} color={color}>
-          {children}
+        {children}
       </SheadingTwo>
     </Spacer>
   );
-
 };
 
-const HeadingThree = ({children, color, isSpaceless, id}) => {
+HeadingTwo.propTypes = propTypes;
 
+const HeadingThree = ({ children, color, isSpaceless, id }) => {
   return (
     <Spacer padding={[0, 0, isSpaceless ? 0 : 'medium']}>
       <SheadingThree id={createId(id)} color={color}>
-          {children}
+        {children}
       </SheadingThree>
     </Spacer>
   );
-
 };
 
-const Text = ({children, color, weight, isBlock = false, align, size, isMarkdown}) => {
+HeadingThree.propTypes = propTypes;
 
+const Text = ({ children, color, weight, display, align, size }) => {
   return (
-    <Stext color={color} weight={weight} isBlock={isBlock} align={align} size={size}>
-      {isMarkdown ? <Markdown color={color}>{children}</Markdown> : children}
+    <Stext color={color} weight={weight} display={display} align={align} size={size}>
+      {children}
     </Stext>
   );
-
 };
 
-const headings = {HeadingOne, HeadingTwo, HeadingThree, Text};
+Text.propTypes = {
+  children: PropTypes.node,
+  color: PropTypes.array,
+  weight: PropTypes.number,
+  display: PropTypes.string,
+  align: PropTypes.string,
+  size: PropTypes.string,
+};
 
-export {headings as default, HeadingOne, HeadingTwo, HeadingThree, Text};
+Text.defaultProps = {
+  display: 'inline',
+};
+
+const headings = { HeadingOne, HeadingTwo, HeadingThree, Text };
+
+export { headings as default, HeadingOne, HeadingTwo, HeadingThree, Text };

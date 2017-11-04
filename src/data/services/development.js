@@ -1,12 +1,11 @@
 import { IconFeatureDevelopment } from '../../components/icons';
 
 const development = {
-
   title: 'Website design and development',
 
   id: 'development',
 
-  color: 'pink',
+  swatch: 'pink',
 
   Icon: IconFeatureDevelopment,
 
@@ -22,8 +21,7 @@ We take the time to understand your business and digital strategy in order to pr
 
 We can point you in the right direction and help you achieve the most for your business.
 
-Get in touch with us to start planning your website today.`
-
+Get in touch with us to start planning your website today.`,
 };
 
 export default development;

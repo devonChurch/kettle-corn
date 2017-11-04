@@ -1,17 +1,18 @@
-import styled, {css} from 'styled-components';
-import { rem as createRem, stripUnit as createStrippedUnit } from 'polished'
-import {createColor, spacing, media, breakpoints, dynamic} from '../../styles';
+import styled, { css } from 'styled-components';
+import { rem as createRem, stripUnit as createStrippedUnit } from 'polished';
+import { createColor, spacing, media, breakpoints, dynamic } from '../../styles';
 
-const {createDynamicFontSize} = dynamic;
+const { createDynamicFontSize } = dynamic;
 
 const createFirstItems = (element, amount) => {
-
-  return new Array(amount).fill(0).map((_, index) => `${element}:nth-of-type(${index})`).join(', ');
-
+  return new Array(amount)
+    .fill(0)
+    .map((_, index) => `${element}:nth-of-type(${index})`)
+    .join(', ');
 };
 
 const SheadingOne = styled.h1`
-  color: ${({color}) => color || 'inherit'};
+  color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
   font-weight: 700;
   line-height: 1.4;
   margin: 0;
@@ -20,10 +21,9 @@ const SheadingOne = styled.h1`
   ${createDynamicFontSize({
     min: '35px',
     max: '48px',
-  })}
-
-  &:after {
-    background: ${({color}) => color || createColor('misc', 'black', 0.5)};
+  })} &:after {
+    background: ${({ color }) =>
+      color ? createColor(...color) : createColor('misc', 'black', 0.5)};
     content: '';
     display: block;
     height: ${createRem('6px')};
@@ -33,7 +33,6 @@ const SheadingOne = styled.h1`
 `;
 
 const style = {
-
   SheadingOne,
 
   SheadingTwo: SheadingOne.withComponent('h2').extend`
@@ -41,7 +40,7 @@ const style = {
   `,
 
   SheadingThree: styled.h3`
-    color: ${({color}) => color || 'inherit'};
+    color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
     font-weight: 400;
     line-height: 1.4;
     margin: 0;
@@ -50,17 +49,17 @@ const style = {
     ${createDynamicFontSize({
       min: '20px',
       max: '26px',
-    })}
+    })};
   `,
 
   Stext: styled.span`
-    color: ${({color}) => color || 'inherit'};
-    display: ${({isBlock}) => isBlock ? 'block' : 'inline'};
-    font-weight: ${({weight}) => weight || 'inherit'};
-    font-size: ${({size}) => size ? createRem(size) : 'inherit'};
+    color: ${({ color }) => (color ? createColor(...color) : 'inherit')};
+    display: ${({ display }) => display};
+    font-weight: ${({ weight }) => weight || 'inherit'};
+    font-size: ${({ size }) => (size ? createRem(size) : 'inherit')};
     max-width: ${createRem(breakpoints.medium)};
-    text-align: ${({align}) => align || 'left'};
+    text-align: ${({ align }) => align || 'left'};
   `,
-}
+};
 
 export default style;
