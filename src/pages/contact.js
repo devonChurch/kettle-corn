@@ -5,7 +5,8 @@ import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import { createColor, colors, spacing } from '../styles';
 import services from '../data/services';
-import { Page, Content, Spacer, Sizer, ButtonGroup, Flexer } from '../components/scaffold';
+import { config } from '../utils';
+import { Page, Content, Spacer, Sizer, ButtonGroup, Flexer, Test } from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
@@ -43,53 +44,62 @@ const Presentation = ({
           </Text>
 
           <Spacer padding={['medium', 0, 'largest']}>
-            <Form handleSubmit={handleSubmit}>
-              <FormInput
-                label="Name"
-                type="text"
-                value={values.name}
-                handleChange={handleChange('name')}
-                invalidMessage={invalidMessages.name}
-              />
-              <FormInput
-                label="Email"
-                type="text"
-                value={values.email}
-                handleChange={handleChange('email')}
-                invalidMessage={invalidMessages.email}
-              />
-              <FormTextArea
-                label="Message"
-                value={values.message}
-                handleChange={handleChange('message')}
-                invalidMessage={invalidMessages.message}
-              />
+            <Test hook="contact-form-wrapper">
+              <Form handleSubmit={handleSubmit}>
+                <FormInput
+                  label="Name"
+                  type="text"
+                  value={values.name}
+                  handleChange={handleChange('name')}
+                  invalidMessage={invalidMessages.name}
+                />
+                <FormInput
+                  label="Email"
+                  type="text"
+                  value={values.email}
+                  handleChange={handleChange('email')}
+                  invalidMessage={invalidMessages.email}
+                />
+                <FormTextArea
+                  label="Message"
+                  value={values.message}
+                  handleChange={handleChange('message')}
+                  invalidMessage={invalidMessages.message}
+                />
 
-              <ButtonSubmit handleClick={handleSubmit} isDisabled={isSubmitDisabled}>
-                Send question
-              </ButtonSubmit>
+                <ButtonSubmit handleClick={handleSubmit} isDisabled={isSubmitDisabled}>
+                  Send question
+                </ButtonSubmit>
 
-              {Boolean(statusMessage.color && statusMessage.text && statusMessage.Icon) && (
-                <Spacer padding={['medium', 0, 0]}>
-                  <Flexer>
-                    {({ Wrapper, Item }) => (
-                      <Wrapper align="center">
-                        <Item>
-                          <Sizer width="3vw" minWidth="20px" maxWidth="30px">
-                            <statusMessage.Icon color={statusMessage.color} />
-                          </Sizer>
-                        </Item>
-                        <Item>
-                          <Spacer padding={[0, 0, 0, 'small']}>
-                            <Text color={statusMessage.color}>{statusMessage.text}</Text>
-                          </Spacer>
-                        </Item>
-                      </Wrapper>
-                    )}
-                  </Flexer>
-                </Spacer>
-              )}
-            </Form>
+                {Boolean(
+                  statusMessage.color &&
+                    statusMessage.text &&
+                    statusMessage.Icon &&
+                    statusMessage.test,
+                ) && (
+                  <Spacer padding={['medium', 0, 0]}>
+                    <Flexer>
+                      {({ Wrapper, Item }) => (
+                        <Wrapper align="center">
+                          <Item>
+                            <Sizer width="3vw" minWidth="20px" maxWidth="30px">
+                              <statusMessage.Icon color={statusMessage.color} />
+                            </Sizer>
+                          </Item>
+                          <Item>
+                            <Spacer padding={[0, 0, 0, 'small']}>
+                              <Test hook={statusMessage.test}>
+                                <Text color={statusMessage.color}>{statusMessage.text}</Text>
+                              </Test>
+                            </Spacer>
+                          </Item>
+                        </Wrapper>
+                      )}
+                    </Flexer>
+                  </Spacer>
+                )}
+              </Form>
+            </Test>
           </Spacer>
 
           <HeadingTwo color={['blue']}>
@@ -139,6 +149,7 @@ class ServicesPage extends React.Component {
     switch (formStatus) {
       case 'success':
         return {
+          test: 'contact-form-success',
           color: ['green'],
           text: 'Great, we will be in touch soon',
           Icon: IconStandardTick,
@@ -146,6 +157,7 @@ class ServicesPage extends React.Component {
 
       case 'error':
         return {
+          test: 'contact-form-error',
           color: ['red'],
           text:
             'Sorry, we have encountered an error. Please try again or use one of the other contact methods below',
@@ -154,6 +166,7 @@ class ServicesPage extends React.Component {
 
       case 'sending':
         return {
+          test: 'contact-form-sending',
           color: ['blue'],
           text: 'Sending question',
           Icon: IconMiscLoader,
@@ -186,9 +199,8 @@ class ServicesPage extends React.Component {
   sendDataToServer = async () => {
     try {
       const { name, email, message } = this.state;
-      const endpoint =
-        'https://57dina5fih.execute-api.us-east-1.amazonaws.com/dev/email-contact-form-alert';
-      const config = {
+      const endpoint = config.endpoints.emailContactFormAlert;
+      const options = {
         method: 'POST',
         mode: 'cors',
         credentials: 'omit',
@@ -197,7 +209,7 @@ class ServicesPage extends React.Component {
           'Content-type': 'text/plain',
         }),
       };
-      const response = await fetch(endpoint, config);
+      const response = await fetch(endpoint, options);
 
       if (response.ok) {
         this.handlePostSuccess();

@@ -191,6 +191,10 @@ FlexItem.propTypes = {
   children: PropTypes.node,
 };
 
-const scaffold = { Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer };
+const Test = ({ children, hook }) => {
+  return <div data-test={hook}>{children}</div>;
+};
 
-export { scaffold as default, Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer };
+const scaffold = { Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer, Test };
+
+export { scaffold as default, Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer, Test };
