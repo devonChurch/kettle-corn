@@ -4,6 +4,7 @@
   "description": "Gatsby implementation for enhancedigital.co.nz",
   "main": "index.js",
   "scripts": {
+    "prepush": "npm run test:e2e:development",
     "develop": "NODE_ENV=development gatsby develop",
     "build": "NODE_ENV=production gatsby build && npm run copy",
     "gh-pages": "gh-pages -d ./public",
@@ -37,6 +38,7 @@
     "cz-conventional-changelog": "2.0.0",
     "gatsby-cli": "^1.1.7",
     "gh-pages": "^1.0.0",
+    "husky": "^0.14.3",
     "jest": "^21.2.1",
     "prettier": "^1.6.1",
     "puppeteer": "^0.12.0"

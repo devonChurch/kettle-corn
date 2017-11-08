@@ -14,6 +14,8 @@ phases:
   pre_build:
     commands:
 
+      - echo "access id = $CLOUD_FRONT_ID"
+
       # - echo "run tests (linting + unit)"
       # - npm test
 
@@ -28,6 +30,12 @@ phases:
 
       - echo "deploy build to s3"
       - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
+      
+      - echo "invalidate cloud front cache"
+      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /**/*.html
+
+      - echo "run end-to-end tests"
+      - npm run test:e2e:production
 
   # artifacts:
   #   files:

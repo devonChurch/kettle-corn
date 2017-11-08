@@ -1,6 +1,6 @@
 const isProduction = NODE_ENV === 'production';
 
-console.log({ isProduction });
+const version = 'v2.1.0';
 
 const lambdaEndpoint = isProduction
   ? 'https://57dina5fih.execute-api.us-east-1.amazonaws.com/dev'
@@ -10,6 +10,8 @@ const endpoints = {
   emailContactFormAlert: `${lambdaEndpoint}/email-contact-form-alert`,
 };
 
-const config = { isProduction, lambdaEndpoint, endpoints };
+const config = { isProduction, version, lambdaEndpoint, endpoints };
 
-export { config as default, isProduction, lambdaEndpoint, endpoints };
+console.log({ config });
+
+export { config as default, isProduction, version, lambdaEndpoint, endpoints };
