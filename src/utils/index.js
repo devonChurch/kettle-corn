@@ -1,3 +1,5 @@
-const utils = {}
+import config from './config';
 
-export {utils as default};
+const utils = { config };
+
+export { utils as default, config };
