@@ -19,8 +19,8 @@ phases:
 
       - echo "access id = $CLOUD_FRONT_ID"
 
-      # - echo "run tests (linting + unit)"
-      # - npm test
+      - echo "run unit tests"
+      - npm run test:unit
 
   build:
     commands:

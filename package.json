@@ -7,7 +7,7 @@
     "esm": "js"
   },
   "scripts": {
-    "prepush": "npm run test:e2e:development",
+    "prepush": "npm run test:unit && npm run test:e2e:development",
     "develop": "NODE_ENV=development gatsby develop",
     "build": "NODE_ENV=production gatsby build && npm run copy",
     "gh-pages": "gh-pages -d ./public",
