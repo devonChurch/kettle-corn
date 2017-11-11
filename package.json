@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Gatsby implementation for enhancedigital.co.nz",
   "main": "index.js",
+  "@std/esm": {
+    "esm": "js"
+  },
   "scripts": {
     "prepush": "npm run test:e2e:development",
     "develop": "NODE_ENV=development gatsby develop",
@@ -16,9 +19,9 @@
     "copy:webmanifest": "cp ./src/site.webmanifest ./public",
     "copy:robots": "cp ./src/robots.txt ./public",
     "test": "npm run test:unit",
-    "test:unit": "jest '/src/.*.unit.test.mjs'",
-    "test:e2e:development": "NODE_ENV=development jest '/__tests__/.*.e2e.test.js'",
-    "test:e2e:production": "NODE_ENV=production jest '/__tests__/.*.e2e.test.js'",
+    "test:unit": "jest '/src/.*.unit.test.js'",
+    "test:e2e:development": "NODE_ENV=development gatsby jest '/__tests__/.*.e2e.test.js'",
+    "test:e2e:production": "NODE_ENV=production gatsby jest '/__tests__/.*.e2e.test.js'",
     "gatsby": "gatsby",
     "commit": "git-cz",
     "commitizen": "commitizen"

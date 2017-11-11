@@ -1,3 +1,5 @@
+require('babel-polyfill');
+
 const isProduction = process.env.NODE_ENV === 'production';
 const puppeteer = require('puppeteer');
 const puppeteerOptions = isProduction ? {} : { headless: false, slowMo: 50 };
