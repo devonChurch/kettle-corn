@@ -2,12 +2,15 @@
 
 const isProduction = process.env.NODE_ENV === 'production';
 const puppeteer = require('puppeteer');
-const puppeteerOptions = isProduction ? {} : { headless: false, slowMo: 50 };
+const puppeteerOptions = isProduction
+  ? { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
+  : { headless: false, slowMo: 50 };
 const puppeteerUrls = isProduction
   ? ['https://enhancedigital.co.nz', 'https://www.enhancedigital.co.nz']
   : ['http://localhost:8000', 'http://www.localhost:8000'];
 
 console.log({ isProduction });
+// const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
 jest.setTimeout(20000);
 
