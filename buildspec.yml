@@ -5,11 +5,9 @@ phases:
   install:
     commands:
 
-      - echo "nvm --version"
-      - nvm --version
-
-      - echo "nvm ls"
-      - nvm ls
+      - echo "install node 8"
+      - curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+      - sudo yum -y install nodejs
 
       - echo "node version"
       - node --version
