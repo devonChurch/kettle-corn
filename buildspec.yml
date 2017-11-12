@@ -5,44 +5,47 @@ phases:
   install:
     commands:
 
-      - echo "install ubuntu dependancies"
-      - sudo apt-get install libpangocairo-1.0-0 libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxi6 libxtst6 libnss3 libcups2 libxss1 libxrandr2 libgconf2-4 libasound2 libatk1.0-0 libgtk-3-0
+      - echo "nvm --version"
+      - nvm --version
+
+      - echo "nvm ls"
+      - nvm ls
 
       - echo "node version"
       - node --version
 
-      - echo "install npm v5.3.0"
-      - npm install -g npm@5.3.0
+  #     - echo "install npm v5.3.0"
+  #     - npm install -g npm@5.3.0
 
-      - echo "install local dependancies"
-      - npm install
+  #     - echo "install local dependancies"
+  #     - npm install
 
-  pre_build:
-    commands:
+  # pre_build:
+  #   commands:
 
-      - echo "access id = $CLOUD_FRONT_ID"
+  #     - echo "access id = $CLOUD_FRONT_ID"
 
-      - echo "run unit tests"
-      - npm run test:unit
+  #     - echo "run unit tests"
+  #     - npm run test:unit
 
-  build:
-    commands:
+  # build:
+  #   commands:
 
-      - echo "create gatsby (production) build"
-      - npm run build
+  #     - echo "create gatsby (production) build"
+  #     - npm run build
 
-  post_build:
-    commands:
+  # post_build:
+  #   commands:
 
-      - echo "deploy build to s3"
-      - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
+  #     - echo "deploy build to s3"
+  #     - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
       
-      - echo "invalidate cloud front cache"
-      - aws configure set preview.cloudfront true
-      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
+  #     - echo "invalidate cloud front cache"
+  #     - aws configure set preview.cloudfront true
+  #     - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
 
-      - echo "run end-to-end tests"
-      - npm run test:e2e:production
+  #     - echo "run end-to-end tests"
+  #     - npm run test:e2e:production
 
   # artifacts:
   #   files:
