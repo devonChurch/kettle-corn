@@ -13,6 +13,7 @@
         // NOTE: AWS Codebuild's highest Node version is 7.0.0 so we need to
         // add in things like "object rest spread" in oder to get Jest to run.
         "transform-es2015-modules-commonjs",
-        "transform-object-rest-spread"
+        "transform-object-rest-spread",
+        "transform-async-to-generator"
     ]
 }
