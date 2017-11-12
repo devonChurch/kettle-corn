@@ -6,8 +6,8 @@ phases:
     commands:
 
       - echo "install node 8"
-      - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-      - sudo apt-get install -y nodejs
+      - npm install -g n
+      - n 8.5.0
 
       - echo "node version"
       - node --version
