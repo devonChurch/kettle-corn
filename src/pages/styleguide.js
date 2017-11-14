@@ -13,11 +13,13 @@ import {
   IconStandardTwitter,
   IconStandardFacebook,
   IconStandardPhone,
+  IconStandardCross,
+  IconStandardMenu,
 } from '../components/icons';
 import Markdown from '../components/markdown';
 import LogoWithText, { LogoNoText } from '../components/logo';
 import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../components/headings';
-import { ButtonPrimary, ButtonSecondary, ButtonTertiary } from '../components/buttons';
+import { ButtonPrimary, ButtonSecondary, ButtonTertiary, ButtonIcon } from '../components/buttons';
 import HeaderStandard from '../components/headers/standard';
 
 const createDummyHeading = () =>
@@ -366,6 +368,21 @@ const StyleguidePage = () => (
             </ButtonGroup>
           </Spacer>
 
+          <Spacer padding={[0, 0, 'large']}>
+            <ButtonGroup>
+              <ButtonIcon
+                Icon={IconStandardCross}
+                handleClick={() => alert('Clicked!')}
+                swatch={['blue']}
+              />
+              <ButtonIcon
+                Icon={IconStandardMenu}
+                handleClick={() => alert('Clicked!')}
+                swatch={['blue']}
+              />
+            </ButtonGroup>
+          </Spacer>
+
           <Spacer>
             <ButtonTertiary href="#" swatch={['purple']}>
               Tertiary
@@ -396,6 +413,21 @@ const StyleguidePage = () => (
                 <ButtonSecondary href="#" swatch={['gray', 'darkest']}>
                   Secondary
                 </ButtonSecondary>
+              </ButtonGroup>
+            </Spacer>
+
+            <Spacer padding={[0, 0, 'large']}>
+              <ButtonGroup>
+                <ButtonIcon
+                  Icon={IconStandardCross}
+                  handleClick={() => alert('Clicked!')}
+                  swatch={['gray', 'darkest']}
+                />
+                <ButtonIcon
+                  Icon={IconStandardMenu}
+                  handleClick={() => alert('Clicked!')}
+                  swatch={['gray', 'darkest']}
+                />
               </ButtonGroup>
             </Spacer>
 

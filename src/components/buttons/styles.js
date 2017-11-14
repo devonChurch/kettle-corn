@@ -5,11 +5,7 @@ import { createColor, spacing, speed, misc, dynamic, media } from '../../styles'
 const { createDynamicSize, createDynamicFontSize, createDynamicPosition } = dynamic;
 const Sbutton = styled.div`
   button {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    outline: 0;
-    padding: 0;
+    ${misc.buttonReset};
   }
 
   &,
@@ -153,6 +149,24 @@ const Sinline = styled.span`
   }
 `;
 
-const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary, Sinline };
+const Sicon = styled.div`
+  display: inline-block;
+
+  button {
+    ${misc.buttonReset};
+    border-radius: ${misc.radius};
+    border: ${misc.borderWidth} solid;
+    border-color: ${({ swatch }) => createColor(...swatch)};
+    display: block;
+    transition: ${speed.fast} opacity;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+  }
+`;
+
+const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary, Sinline, Sicon };
 
 export default buttons;

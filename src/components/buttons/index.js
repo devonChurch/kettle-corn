@@ -6,7 +6,7 @@ import { IconMiscArrow } from '../icons';
 import { createColor, spacing, misc } from '../../styles';
 import styles from './styles';
 
-const { Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup, Sinline } = styles;
+const { Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup, Sinline, Sicon } = styles;
 const createPadding = isLarge => (isLarge ? ['small', 'medium'] : ['smallest', 'small']);
 
 const Anchor = ({ children, href }) => {
@@ -150,6 +150,32 @@ ButtonSubmit.defaultProps = {
   isDisabled: false,
 };
 
+const ButtonIcon = ({ Icon, handleClick, swatch, isDisabled }) => {
+  return (
+    <Sicon swatch={swatch}>
+      <button onClick={handleClick} type="button" disabled={isDisabled}>
+        <Spacer padding={['5px']}>
+          <Sizer width="30px">
+            <Icon color={swatch} />
+          </Sizer>
+        </Spacer>
+      </button>
+    </Sicon>
+  );
+};
+
+ButtonIcon.propTypes = {
+  Icon: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  swatch: PropTypes.array,
+  isDisabled: PropTypes.bool,
+};
+
+ButtonIcon.defaultProps = {
+  swatch: ['gray'],
+  isDisabled: false,
+};
+
 const buttons = {
   ButtonPrimary,
   ButtonSecondary,
@@ -157,6 +183,7 @@ const buttons = {
   ButtonQuaternary,
   ButtonInline,
   ButtonSubmit,
+  ButtonIcon,
 };
 
 export {
@@ -167,4 +194,5 @@ export {
   ButtonQuaternary,
   ButtonInline,
   ButtonSubmit,
+  ButtonIcon,
 };

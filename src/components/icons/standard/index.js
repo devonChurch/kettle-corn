@@ -82,6 +82,19 @@ const IconStandardCross = ({ color, display }) => {
 IconStandardCross.propTypes = propTypes;
 IconStandardCross.defaultProps = defaultProps;
 
+const IconStandardMenu = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M20,14H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S20.6,14,20,14z" />
+      <path d="M20,20H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S20.6,20,20,20z" />
+      <path d="M20,8H6C5.4,8,5,7.6,5,7s0.4-1,1-1h14c0.6,0,1,0.4,1,1S20.6,8,20,8z" />
+    </Ssvg>
+  );
+};
+
+IconStandardMenu.propTypes = propTypes;
+IconStandardMenu.defaultProps = defaultProps;
+
 const icons = {
   IconStandardEmail,
   IconStandardTwitter,
@@ -89,6 +102,7 @@ const icons = {
   IconStandardPhone,
   IconStandardTick,
   IconStandardCross,
+  IconStandardMenu,
 };
 
 export {
@@ -99,4 +113,5 @@ export {
   IconStandardPhone,
   IconStandardTick,
   IconStandardCross,
+  IconStandardMenu,
 };
