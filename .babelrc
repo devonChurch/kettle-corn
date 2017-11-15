@@ -1,6 +1,8 @@
 {
     "env": {
 
+        // Gatsby takes case of the"production" related Babel translation however we need
+        // to setup a Jest setup for the"test" env ONLY.
         "test": {
             "presets": [
                 "babel-preset-env",
@@ -15,13 +17,11 @@
                 // can use Jest so I leverage Gatsby's dependancy structure when I can
                 // (since Jest is testing the code that is being consumed by Gatsby anyway)
                 //
-                // NOTE: AWS Codebuild's highest Node version is 7.0.0 so we need to
-                // add in things like "object rest spread" in oder to get Jest to run.
+                // NOTE: Even though Codebuilds current highest Node.js version is 7.0.0
+                // I am manually upgrading to match our NVM target. In that regard we can
+                // now turn off allot of redundant transformers =).
                 "transform-es2015-modules-commonjs",
-                "transform-class-properties",
-                // "transform-react-jsx"
-                // "transform-object-rest-spread"
-                // "transform-async-to-generator"
+                "transform-class-properties"
             ]
         }
     }

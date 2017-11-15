@@ -111,8 +111,6 @@ const getMinMaxValues = value => {
 };
 
 const createDynamicStyle = (key, value) => {
-  // console.log('createDynamicStyle', { key, value });
-
   const { min, max } = getMinMaxValues(value);
 
   return min && max
@@ -122,8 +120,6 @@ const createDynamicStyle = (key, value) => {
         max,
       })
     : `${key}: ${value};`;
-
-  // return 'width: 10px;';
 };
 
 const createDynamicSpacing = values => {
@@ -144,15 +140,10 @@ const createDynamicPadding = (values = []) => {
     .replace(/paddingLeft/g, 'padding-left')
     .replace(/paddingBottom/g, 'padding-bottom')
     .replace(/paddingRight/g, 'padding-right');
-
-  // return 'width: 10px;';
 };
 
 const createDynamicMargin = (values = []) => {
-  // console.log({ values });
-  // if (!values) debugger;
   const margin = createMargin(...values);
-  // console.log({ margin });
   const dynamic = createDynamicSpacing(margin);
 
   return dynamic
@@ -160,47 +151,38 @@ const createDynamicMargin = (values = []) => {
     .replace(/marginLeft/g, 'margin-left')
     .replace(/marginBottom/g, 'margin-bottom')
     .replace(/marginRight/g, 'margin-right');
-
-  return 'width: 10px;';
 };
 
 const createDynamicFontSize = (value = []) => {
   return createDynamicStyle('font-size', value);
-  // return 'width: 10px;';
 };
 
 const createDynamicPosition = (values = []) => {
   const position = createPosition(...values);
 
   return createDynamicSpacing(position);
-  // return 'width: 10px;';
 };
 
 const createDynamicSize = (values = []) => {
   const size = createSize(...values);
 
   return createDynamicSpacing(size);
-  // return 'width: 10px;';
 };
 
 const createDynamicMinWidth = (value = 'inherit') => {
   return createDynamicStyle('min-width', value);
-  // return 'width: 10px;';
 };
 
 const createDynamicMaxWidth = (value = 'inherit') => {
   return createDynamicStyle('max-width', value);
-  // return 'width: 10px;';
 };
 
 const createDynamicMinHeight = (value = 'inherit') => {
   return createDynamicStyle('min-height', value);
-  // return 'width: 10px;';
 };
 
 const createDynamicMaxHeight = (value = 'inherit') => {
   return createDynamicStyle('max-height', value);
-  // return 'width: 10px;';
 };
 
 const dynamic = {

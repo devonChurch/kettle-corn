@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import ContactForm from './index';
 
 describe('Validation', () => {
@@ -14,6 +14,7 @@ describe('Validation', () => {
     expect(text).toEqual(expect.stringContaining('Please supply a contact name'));
     expect(text).toEqual(expect.stringContaining('A valid Email address is required'));
     expect(text).toEqual(expect.stringContaining('Please supply a message'));
+    expect(wrapper).toMatchSnapshot();
   });
 
   test('should require a valid email address', () => {
@@ -26,6 +27,7 @@ describe('Validation', () => {
     const text = wrapper.text();
 
     expect(text).toEqual(expect.stringContaining('A valid Email address is required'));
+    expect(wrapper).toMatchSnapshot();
   });
 
   test('should validate for when correct values are supplied', () => {
@@ -44,6 +46,7 @@ describe('Validation', () => {
     expect(text).not.toEqual(expect.stringContaining('Please supply a contact name'));
     expect(text).not.toEqual(expect.stringContaining('A valid Email address is required'));
     expect(text).not.toEqual(expect.stringContaining('Please supply a message'));
+    expect(wrapper).toMatchSnapshot();
   });
 });
 
@@ -66,6 +69,9 @@ describe('Sending submission', () => {
 
     expect(message.exists()).toBeTruthy();
   });
+  test('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 
 describe('Submit success', () => {
@@ -87,6 +93,9 @@ describe('Submit success', () => {
 
     expect(message.exists()).toBeTruthy();
   });
+  test('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
 
 describe('Submit error', () => {
@@ -107,5 +116,8 @@ describe('Submit error', () => {
     const message = wrapper.find('[data-test="contact-form-error"]');
 
     expect(message.exists()).toBeTruthy();
+  });
+  test('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,0 +1,3152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sending submission should match snapshot 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={false}
+    isSubmitDisabled={true}
+    statusMessage={
+      Object {
+        "Icon": [Function],
+        "color": Array [
+          "blue",
+        ],
+        "test": "contact-form-sending",
+        "text": "Sending question",
+      }
+    }
+    values={
+      Object {
+        "email": "test@test.com",
+        "formStatus": "sending",
+        "message": "Test",
+        "name": "Mr Test",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                label="Name"
+                type="text"
+                value="Mr Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value="Mr Test"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value="Mr Test"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                label="Email"
+                type="text"
+                value="test@test.com"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value="test@test.com"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value="test@test.com"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                label="Message"
+                value="Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value="Test"
+                    >
+                      <textarea
+                        className="sc-kEYyzF ctoHbP"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value="Test"
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={true}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={true}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+              <Spacer
+                display="inherit"
+                padding={
+                  Array [
+                    "medium",
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <styled.div
+                  display="inherit"
+                  padding={
+                    Array [
+                      "medium",
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-bZQynM dvoTsu"
+                    display="inherit"
+                  >
+                    <Flexer>
+                      <FlexWrapper
+                        align="center"
+                        direction="row"
+                        justify="flex-start"
+                        wrap="nowrap"
+                      >
+                        <styled.div
+                          align="center"
+                          direction="row"
+                          justify="flex-start"
+                          wrap="nowrap"
+                        >
+                          <div
+                            className="sc-iwsKbI ldakHB"
+                            direction="row"
+                            wrap="nowrap"
+                          >
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Sizer
+                                    display="inherit"
+                                    height="auto"
+                                    isCenter={false}
+                                    maxHeight="initial"
+                                    maxWidth="30px"
+                                    minHeight="initial"
+                                    minWidth="20px"
+                                    width="3vw"
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      isCenter={false}
+                                      maxHeight="initial"
+                                      maxWidth="30px"
+                                      minHeight="initial"
+                                      minWidth="20px"
+                                      size={
+                                        Array [
+                                          "auto",
+                                          "3vw",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-htoDjs hqnidb"
+                                        display="inherit"
+                                        size={
+                                          Array [
+                                            "auto",
+                                            "3vw",
+                                          ]
+                                        }
+                                      >
+                                        <IconMiscLoader
+                                          color={
+                                            Array [
+                                              "blue",
+                                            ]
+                                          }
+                                        >
+                                          <styled.div>
+                                            <div
+                                              className="sc-htpNat jCAfPJ"
+                                            >
+                                              <styled.svg
+                                                delay={1}
+                                                key="0,0"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb kDlhQv"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={5}
+                                                    cy={5}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={2}
+                                                key="0,1"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb fIurkC"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={13}
+                                                    cy={5}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={3}
+                                                key="0,2"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb fjmXnP"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={21}
+                                                    cy={5}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={4}
+                                                key="1,0"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb lbEuJX"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={5}
+                                                    cy={13}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={5}
+                                                key="1,1"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb cswAVd"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={13}
+                                                    cy={13}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={6}
+                                                key="1,2"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb heTQcr"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={21}
+                                                    cy={13}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={7}
+                                                key="2,0"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb jgspqM"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={5}
+                                                    cy={21}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={8}
+                                                key="2,1"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb ebwqlx"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={13}
+                                                    cy={21}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                              <styled.svg
+                                                delay={9}
+                                                key="2,2"
+                                                viewBox="0 0 26 26"
+                                              >
+                                                <svg
+                                                  className="sc-bxivhb ffpobx"
+                                                  viewBox="0 0 26 26"
+                                                >
+                                                  <circle
+                                                    cx={21}
+                                                    cy={21}
+                                                    r="3"
+                                                  />
+                                                </svg>
+                                              </styled.svg>
+                                            </div>
+                                          </styled.div>
+                                        </IconMiscLoader>
+                                      </div>
+                                    </styled.div>
+                                  </Sizer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Spacer
+                                    display="inherit"
+                                    padding={
+                                      Array [
+                                        0,
+                                        0,
+                                        0,
+                                        "small",
+                                      ]
+                                    }
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      padding={
+                                        Array [
+                                          0,
+                                          0,
+                                          0,
+                                          "small",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-bZQynM jqSgaK"
+                                        display="inherit"
+                                      >
+                                        <Test
+                                          hook="contact-form-sending"
+                                        >
+                                          <div
+                                            data-test="contact-form-sending"
+                                          >
+                                            <Text
+                                              color={
+                                                Array [
+                                                  "blue",
+                                                ]
+                                              }
+                                              display="inline"
+                                            >
+                                              <styled.span
+                                                color={
+                                                  Array [
+                                                    "blue",
+                                                  ]
+                                                }
+                                                display="inline"
+                                              >
+                                                <span
+                                                  className="sc-dxgOiQ gLSifx"
+                                                  color={
+                                                    Array [
+                                                      "blue",
+                                                    ]
+                                                  }
+                                                  display="inline"
+                                                >
+                                                  Sending question
+                                                </span>
+                                              </styled.span>
+                                            </Text>
+                                          </div>
+                                        </Test>
+                                      </div>
+                                    </styled.div>
+                                  </Spacer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                          </div>
+                        </styled.div>
+                      </FlexWrapper>
+                    </Flexer>
+                  </div>
+                </styled.div>
+              </Spacer>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
+
+exports[`Submit error should match snapshot 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={
+      Object {
+        "email": false,
+        "message": false,
+        "name": false,
+      }
+    }
+    isSubmitDisabled={false}
+    statusMessage={
+      Object {
+        "Icon": [Function],
+        "color": Array [
+          "red",
+        ],
+        "test": "contact-form-error",
+        "text": "Sorry, we have encountered an error. Please try again or use one of the other contact methods below",
+      }
+    }
+    values={
+      Object {
+        "email": "test@test.com",
+        "formStatus": "error",
+        "message": "Test",
+        "name": "Mr Test",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Name"
+                type="text"
+                value="Mr Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value="Mr Test"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value="Mr Test"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Email"
+                type="text"
+                value="test@test.com"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value="test@test.com"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value="test@test.com"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Message"
+                value="Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value="Test"
+                    >
+                      <textarea
+                        className="sc-kEYyzF ctoHbP"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value="Test"
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={false}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={false}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+              <Spacer
+                display="inherit"
+                padding={
+                  Array [
+                    "medium",
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <styled.div
+                  display="inherit"
+                  padding={
+                    Array [
+                      "medium",
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-bZQynM dvoTsu"
+                    display="inherit"
+                  >
+                    <Flexer>
+                      <FlexWrapper
+                        align="center"
+                        direction="row"
+                        justify="flex-start"
+                        wrap="nowrap"
+                      >
+                        <styled.div
+                          align="center"
+                          direction="row"
+                          justify="flex-start"
+                          wrap="nowrap"
+                        >
+                          <div
+                            className="sc-iwsKbI ldakHB"
+                            direction="row"
+                            wrap="nowrap"
+                          >
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Sizer
+                                    display="inherit"
+                                    height="auto"
+                                    isCenter={false}
+                                    maxHeight="initial"
+                                    maxWidth="30px"
+                                    minHeight="initial"
+                                    minWidth="20px"
+                                    width="3vw"
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      isCenter={false}
+                                      maxHeight="initial"
+                                      maxWidth="30px"
+                                      minHeight="initial"
+                                      minWidth="20px"
+                                      size={
+                                        Array [
+                                          "auto",
+                                          "3vw",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-htoDjs hqnidb"
+                                        display="inherit"
+                                        size={
+                                          Array [
+                                            "auto",
+                                            "3vw",
+                                          ]
+                                        }
+                                      >
+                                        <IconStandardCross
+                                          color={
+                                            Array [
+                                              "red",
+                                            ]
+                                          }
+                                          display="block"
+                                        >
+                                          <styled.svg
+                                            color={
+                                              Array [
+                                                "red",
+                                              ]
+                                            }
+                                            display="block"
+                                            viewBox="0 0 26 26"
+                                          >
+                                            <svg
+                                              className="sc-bdVaJa fNqbZI"
+                                              color={
+                                                Array [
+                                                  "red",
+                                                ]
+                                              }
+                                              display="block"
+                                              viewBox="0 0 26 26"
+                                            >
+                                              <path
+                                                d="M14.4,13l6.4-6.4c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L13,11.6L6.6,5.2c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.4,6.4l-6.4,6.4c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l6.4-6.4l6.4,6.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L14.4,13z"
+                                              />
+                                            </svg>
+                                          </styled.svg>
+                                        </IconStandardCross>
+                                      </div>
+                                    </styled.div>
+                                  </Sizer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Spacer
+                                    display="inherit"
+                                    padding={
+                                      Array [
+                                        0,
+                                        0,
+                                        0,
+                                        "small",
+                                      ]
+                                    }
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      padding={
+                                        Array [
+                                          0,
+                                          0,
+                                          0,
+                                          "small",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-bZQynM jqSgaK"
+                                        display="inherit"
+                                      >
+                                        <Test
+                                          hook="contact-form-error"
+                                        >
+                                          <div
+                                            data-test="contact-form-error"
+                                          >
+                                            <Text
+                                              color={
+                                                Array [
+                                                  "red",
+                                                ]
+                                              }
+                                              display="inline"
+                                            >
+                                              <styled.span
+                                                color={
+                                                  Array [
+                                                    "red",
+                                                  ]
+                                                }
+                                                display="inline"
+                                              >
+                                                <span
+                                                  className="sc-dxgOiQ jWWAjN"
+                                                  color={
+                                                    Array [
+                                                      "red",
+                                                    ]
+                                                  }
+                                                  display="inline"
+                                                >
+                                                  Sorry, we have encountered an error. Please try again or use one of the other contact methods below
+                                                </span>
+                                              </styled.span>
+                                            </Text>
+                                          </div>
+                                        </Test>
+                                      </div>
+                                    </styled.div>
+                                  </Spacer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                          </div>
+                        </styled.div>
+                      </FlexWrapper>
+                    </Flexer>
+                  </div>
+                </styled.div>
+              </Spacer>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
+
+exports[`Submit success should match snapshot 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={false}
+    isSubmitDisabled={true}
+    statusMessage={
+      Object {
+        "Icon": [Function],
+        "color": Array [
+          "green",
+        ],
+        "test": "contact-form-success",
+        "text": "Great, we will be in touch soon",
+      }
+    }
+    values={
+      Object {
+        "email": "test@test.com",
+        "formStatus": "success",
+        "message": "Test",
+        "name": "Mr Test",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                label="Name"
+                type="text"
+                value="Mr Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value="Mr Test"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value="Mr Test"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                label="Email"
+                type="text"
+                value="test@test.com"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value="test@test.com"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value="test@test.com"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                label="Message"
+                value="Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value="Test"
+                    >
+                      <textarea
+                        className="sc-kEYyzF ctoHbP"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value="Test"
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={true}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={true}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+              <Spacer
+                display="inherit"
+                padding={
+                  Array [
+                    "medium",
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <styled.div
+                  display="inherit"
+                  padding={
+                    Array [
+                      "medium",
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-bZQynM dvoTsu"
+                    display="inherit"
+                  >
+                    <Flexer>
+                      <FlexWrapper
+                        align="center"
+                        direction="row"
+                        justify="flex-start"
+                        wrap="nowrap"
+                      >
+                        <styled.div
+                          align="center"
+                          direction="row"
+                          justify="flex-start"
+                          wrap="nowrap"
+                        >
+                          <div
+                            className="sc-iwsKbI ldakHB"
+                            direction="row"
+                            wrap="nowrap"
+                          >
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Sizer
+                                    display="inherit"
+                                    height="auto"
+                                    isCenter={false}
+                                    maxHeight="initial"
+                                    maxWidth="30px"
+                                    minHeight="initial"
+                                    minWidth="20px"
+                                    width="3vw"
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      isCenter={false}
+                                      maxHeight="initial"
+                                      maxWidth="30px"
+                                      minHeight="initial"
+                                      minWidth="20px"
+                                      size={
+                                        Array [
+                                          "auto",
+                                          "3vw",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-htoDjs hqnidb"
+                                        display="inherit"
+                                        size={
+                                          Array [
+                                            "auto",
+                                            "3vw",
+                                          ]
+                                        }
+                                      >
+                                        <IconStandardTick
+                                          color={
+                                            Array [
+                                              "green",
+                                            ]
+                                          }
+                                          display="block"
+                                        >
+                                          <styled.svg
+                                            color={
+                                              Array [
+                                                "green",
+                                              ]
+                                            }
+                                            display="block"
+                                            viewBox="0 0 26 26"
+                                          >
+                                            <svg
+                                              className="sc-bdVaJa gILOvz"
+                                              color={
+                                                Array [
+                                                  "green",
+                                                ]
+                                              }
+                                              display="block"
+                                              viewBox="0 0 26 26"
+                                            >
+                                              <path
+                                                d="M11.2,21.3c-0.2,0-0.4-0.1-0.6-0.2l-6.8-4.8C3.4,16,3.3,15.4,3.6,15c0.3-0.5,0.9-0.6,1.4-0.2l6,4.2l9.7-13.8c0.3-0.5,0.9-0.6,1.4-0.2c0.5,0.3,0.6,0.9,0.2,1.4L12.1,20.9C11.9,21.1,11.6,21.3,11.2,21.3z"
+                                              />
+                                            </svg>
+                                          </styled.svg>
+                                        </IconStandardTick>
+                                      </div>
+                                    </styled.div>
+                                  </Sizer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Spacer
+                                    display="inherit"
+                                    padding={
+                                      Array [
+                                        0,
+                                        0,
+                                        0,
+                                        "small",
+                                      ]
+                                    }
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      padding={
+                                        Array [
+                                          0,
+                                          0,
+                                          0,
+                                          "small",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-bZQynM jqSgaK"
+                                        display="inherit"
+                                      >
+                                        <Test
+                                          hook="contact-form-success"
+                                        >
+                                          <div
+                                            data-test="contact-form-success"
+                                          >
+                                            <Text
+                                              color={
+                                                Array [
+                                                  "green",
+                                                ]
+                                              }
+                                              display="inline"
+                                            >
+                                              <styled.span
+                                                color={
+                                                  Array [
+                                                    "green",
+                                                  ]
+                                                }
+                                                display="inline"
+                                              >
+                                                <span
+                                                  className="sc-dxgOiQ kDzDFH"
+                                                  color={
+                                                    Array [
+                                                      "green",
+                                                    ]
+                                                  }
+                                                  display="inline"
+                                                >
+                                                  Great, we will be in touch soon
+                                                </span>
+                                              </styled.span>
+                                            </Text>
+                                          </div>
+                                        </Test>
+                                      </div>
+                                    </styled.div>
+                                  </Spacer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                          </div>
+                        </styled.div>
+                      </FlexWrapper>
+                    </Flexer>
+                  </div>
+                </styled.div>
+              </Spacer>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
+
+exports[`Validation should require a valid email address 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={
+      Object {
+        "email": "A valid Email address is required",
+        "message": "Please supply a message",
+        "name": "Please supply a contact name",
+      }
+    }
+    isSubmitDisabled={false}
+    statusMessage={Object {}}
+    values={
+      Object {
+        "email": "invalid-email.com",
+        "formStatus": "attempted",
+        "message": "",
+        "name": "",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage="Please supply a contact name"
+                label="Name"
+                type="text"
+                value=""
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={true}
+                      isPopulated={false}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    >
+                      <input
+                        className="sc-ckVGcZ wjHLa"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={false}
+                    >
+                      <div
+                        className="sc-kkGfuU cmfgop"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          Please supply a contact name
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage="A valid Email address is required"
+                label="Email"
+                type="text"
+                value="invalid-email.com"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={true}
+                      isPopulated={true}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value="invalid-email.com"
+                    >
+                      <input
+                        className="sc-ckVGcZ ZCLZO"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value="invalid-email.com"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU kjaGCJ"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          A valid Email address is required
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                invalidMessage="Please supply a message"
+                label="Message"
+                value=""
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={true}
+                      isPopulated={false}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value=""
+                    >
+                      <textarea
+                        className="sc-kEYyzF dGKIxt"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value=""
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={false}
+                    >
+                      <div
+                        className="sc-kkGfuU cmfgop"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          Please supply a message
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={false}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={false}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
+
+exports[`Validation should set each input ("name", "email", "message") to be invalid when no value is given 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={
+      Object {
+        "email": "A valid Email address is required",
+        "message": "Please supply a message",
+        "name": "Please supply a contact name",
+      }
+    }
+    isSubmitDisabled={false}
+    statusMessage={Object {}}
+    values={
+      Object {
+        "email": "",
+        "formStatus": "attempted",
+        "message": "",
+        "name": "",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage="Please supply a contact name"
+                label="Name"
+                type="text"
+                value=""
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={true}
+                      isPopulated={false}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    >
+                      <input
+                        className="sc-ckVGcZ wjHLa"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={false}
+                    >
+                      <div
+                        className="sc-kkGfuU cmfgop"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          Please supply a contact name
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage="A valid Email address is required"
+                label="Email"
+                type="text"
+                value=""
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={true}
+                      isPopulated={false}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    >
+                      <input
+                        className="sc-ckVGcZ wjHLa"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value=""
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={false}
+                    >
+                      <div
+                        className="sc-kkGfuU cmfgop"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          A valid Email address is required
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                invalidMessage="Please supply a message"
+                label="Message"
+                value=""
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={true}
+                      isPopulated={false}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value=""
+                    >
+                      <textarea
+                        className="sc-kEYyzF dGKIxt"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value=""
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={true}
+                      isPopulated={false}
+                    >
+                      <div
+                        className="sc-kkGfuU cmfgop"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                          Please supply a message
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={false}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={false}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
+
+exports[`Validation should validate for when correct values are supplied 1`] = `
+<ContactForm>
+  <Presentation
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    invalidMessages={
+      Object {
+        "email": false,
+        "message": false,
+        "name": false,
+      }
+    }
+    isSubmitDisabled={false}
+    statusMessage={
+      Object {
+        "Icon": [Function],
+        "color": Array [
+          "red",
+        ],
+        "test": "contact-form-error",
+        "text": "Sorry, we have encountered an error. Please try again or use one of the other contact methods below",
+      }
+    }
+    values={
+      Object {
+        "email": "test@test.com",
+        "formStatus": "error",
+        "message": "Test",
+        "name": "Mr Test",
+      }
+    }
+  >
+    <Test
+      hook="contact-form-wrapper"
+    >
+      <div
+        data-test="contact-form-wrapper"
+      >
+        <Form
+          handleSubmit={[Function]}
+        >
+          <styled.form
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-jKJlTe drEqkH"
+              onSubmit={[Function]}
+            >
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Name"
+                type="text"
+                value="Mr Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Name"
+                      onChange={[Function]}
+                      type="text"
+                      value="Mr Test"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Name"
+                        onChange={[Function]}
+                        type="text"
+                        value="Mr Test"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Name
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormInput
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Email"
+                type="text"
+                value="test@test.com"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.input
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Email"
+                      onChange={[Function]}
+                      type="text"
+                      value="test@test.com"
+                    >
+                      <input
+                        className="sc-ckVGcZ hyxXyc"
+                        name="Email"
+                        onChange={[Function]}
+                        type="text"
+                        value="test@test.com"
+                      />
+                    </styled.input>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Email
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormInput>
+              <FormTextArea
+                handleChange={[Function]}
+                invalidMessage={false}
+                label="Message"
+                value="Test"
+              >
+                <styled.label>
+                  <label
+                    className="sc-eNQAEJ hndvlP"
+                  >
+                    <styled.textarea
+                      isInvalid={false}
+                      isPopulated={true}
+                      name="Message"
+                      onChange={[Function]}
+                      rows="8"
+                      type="text"
+                      value="Test"
+                    >
+                      <textarea
+                        className="sc-kEYyzF ctoHbP"
+                        name="Message"
+                        onChange={[Function]}
+                        rows="8"
+                        type="text"
+                        value="Test"
+                      />
+                    </styled.textarea>
+                    <styled.div
+                      isInvalid={false}
+                      isPopulated={true}
+                    >
+                      <div
+                        className="sc-kkGfuU jVJAA"
+                      >
+                        Message
+                      </div>
+                    </styled.div>
+                    <Text
+                      color={
+                        Array [
+                          "red",
+                        ]
+                      }
+                      display="inline"
+                      size="12px"
+                    >
+                      <styled.span
+                        color={
+                          Array [
+                            "red",
+                          ]
+                        }
+                        display="inline"
+                        size="12px"
+                      >
+                        <span
+                          className="sc-dxgOiQ hjDhem"
+                          color={
+                            Array [
+                              "red",
+                            ]
+                          }
+                          display="inline"
+                          size="12px"
+                        >
+                           
+                        </span>
+                      </styled.span>
+                    </Text>
+                  </label>
+                </styled.label>
+              </FormTextArea>
+              <ButtonSubmit
+                handleClick={[Function]}
+                isDisabled={false}
+              >
+                <styled.div
+                  color={
+                    Array [
+                      "blue",
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-jTzLTM iyRzEp"
+                    color={
+                      Array [
+                        "blue",
+                      ]
+                    }
+                  >
+                    <button
+                      disabled={false}
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Spacer
+                        display="inherit"
+                        padding={
+                          Array [
+                            "smallest",
+                            "small",
+                          ]
+                        }
+                      >
+                        <styled.div
+                          display="inherit"
+                          padding={
+                            Array [
+                              "smallest",
+                              "small",
+                            ]
+                          }
+                        >
+                          <div
+                            className="sc-bZQynM dxFGpc"
+                            display="inherit"
+                          >
+                            <IconMiscArrow
+                              color={
+                                Array [
+                                  "misc",
+                                  "white",
+                                ]
+                              }
+                              display="block"
+                              fill={
+                                Array [
+                                  "blue",
+                                ]
+                              }
+                            >
+                              <styled.svg
+                                display="block"
+                                fill={
+                                  Array [
+                                    "blue",
+                                  ]
+                                }
+                                viewBox="0 0 14 14"
+                              >
+                                <svg
+                                  className="sc-bwzfXH eQLZoL"
+                                  display="block"
+                                  fill={
+                                    Array [
+                                      "blue",
+                                    ]
+                                  }
+                                  viewBox="0 0 14 14"
+                                >
+                                  <polygon
+                                    points="4.9,1.5 3.2,3.2 7.4,7 3.2,10.8 4.9,12.5 10.8,7 "
+                                  />
+                                </svg>
+                              </styled.svg>
+                            </IconMiscArrow>
+                            Send question
+                          </div>
+                        </styled.div>
+                      </Spacer>
+                    </button>
+                  </div>
+                </styled.div>
+              </ButtonSubmit>
+              <Spacer
+                display="inherit"
+                padding={
+                  Array [
+                    "medium",
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <styled.div
+                  display="inherit"
+                  padding={
+                    Array [
+                      "medium",
+                      0,
+                      0,
+                    ]
+                  }
+                >
+                  <div
+                    className="sc-bZQynM dvoTsu"
+                    display="inherit"
+                  >
+                    <Flexer>
+                      <FlexWrapper
+                        align="center"
+                        direction="row"
+                        justify="flex-start"
+                        wrap="nowrap"
+                      >
+                        <styled.div
+                          align="center"
+                          direction="row"
+                          justify="flex-start"
+                          wrap="nowrap"
+                        >
+                          <div
+                            className="sc-iwsKbI ldakHB"
+                            direction="row"
+                            wrap="nowrap"
+                          >
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Sizer
+                                    display="inherit"
+                                    height="auto"
+                                    isCenter={false}
+                                    maxHeight="initial"
+                                    maxWidth="30px"
+                                    minHeight="initial"
+                                    minWidth="20px"
+                                    width="3vw"
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      isCenter={false}
+                                      maxHeight="initial"
+                                      maxWidth="30px"
+                                      minHeight="initial"
+                                      minWidth="20px"
+                                      size={
+                                        Array [
+                                          "auto",
+                                          "3vw",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-htoDjs hqnidb"
+                                        display="inherit"
+                                        size={
+                                          Array [
+                                            "auto",
+                                            "3vw",
+                                          ]
+                                        }
+                                      >
+                                        <IconStandardCross
+                                          color={
+                                            Array [
+                                              "red",
+                                            ]
+                                          }
+                                          display="block"
+                                        >
+                                          <styled.svg
+                                            color={
+                                              Array [
+                                                "red",
+                                              ]
+                                            }
+                                            display="block"
+                                            viewBox="0 0 26 26"
+                                          >
+                                            <svg
+                                              className="sc-bdVaJa fNqbZI"
+                                              color={
+                                                Array [
+                                                  "red",
+                                                ]
+                                              }
+                                              display="block"
+                                              viewBox="0 0 26 26"
+                                            >
+                                              <path
+                                                d="M14.4,13l6.4-6.4c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0L13,11.6L6.6,5.2c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.4,6.4l-6.4,6.4c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l6.4-6.4l6.4,6.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L14.4,13z"
+                                              />
+                                            </svg>
+                                          </styled.svg>
+                                        </IconStandardCross>
+                                      </div>
+                                    </styled.div>
+                                  </Sizer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                            <FlexItem
+                              grow="0"
+                              order="0"
+                            >
+                              <styled.div
+                                grow="0"
+                                order="0"
+                              >
+                                <div
+                                  className="sc-gZMcBi iPVpjK"
+                                  order="0"
+                                >
+                                  <Spacer
+                                    display="inherit"
+                                    padding={
+                                      Array [
+                                        0,
+                                        0,
+                                        0,
+                                        "small",
+                                      ]
+                                    }
+                                  >
+                                    <styled.div
+                                      display="inherit"
+                                      padding={
+                                        Array [
+                                          0,
+                                          0,
+                                          0,
+                                          "small",
+                                        ]
+                                      }
+                                    >
+                                      <div
+                                        className="sc-bZQynM jqSgaK"
+                                        display="inherit"
+                                      >
+                                        <Test
+                                          hook="contact-form-error"
+                                        >
+                                          <div
+                                            data-test="contact-form-error"
+                                          >
+                                            <Text
+                                              color={
+                                                Array [
+                                                  "red",
+                                                ]
+                                              }
+                                              display="inline"
+                                            >
+                                              <styled.span
+                                                color={
+                                                  Array [
+                                                    "red",
+                                                  ]
+                                                }
+                                                display="inline"
+                                              >
+                                                <span
+                                                  className="sc-dxgOiQ jWWAjN"
+                                                  color={
+                                                    Array [
+                                                      "red",
+                                                    ]
+                                                  }
+                                                  display="inline"
+                                                >
+                                                  Sorry, we have encountered an error. Please try again or use one of the other contact methods below
+                                                </span>
+                                              </styled.span>
+                                            </Text>
+                                          </div>
+                                        </Test>
+                                      </div>
+                                    </styled.div>
+                                  </Spacer>
+                                </div>
+                              </styled.div>
+                            </FlexItem>
+                          </div>
+                        </styled.div>
+                      </FlexWrapper>
+                    </Flexer>
+                  </div>
+                </styled.div>
+              </Spacer>
+            </form>
+          </styled.form>
+        </Form>
+      </div>
+    </Test>
+  </Presentation>
+</ContactForm>
+`;
