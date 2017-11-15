@@ -1,19 +1,28 @@
 {
-    "presets": [
-        "jest"
-    ],
-    "plugins": [
-        // The following Babel plugins are not first class dependancies (in my
-        // project package.json) and are instead targeted via Gatsby's own
-        //dependancies due to NPM 5's flat dependancy structure. It would be
-        // annoying / stilly to handle two Babel configurations just so that I
-        // can use Jest so I leverage Gatsby's dependancy structure when I can
-        // (since Jest is testing the code that is being consumed by Gatsby anyway)
-        //
-        // NOTE: AWS Codebuild's highest Node version is 7.0.0 so we need to
-        // add in things like "object rest spread" in oder to get Jest to run.
-        "transform-es2015-modules-commonjs"
-        // "transform-object-rest-spread",
-        // "transform-async-to-generator"
-    ]
+    "env": {
+
+        "test": {
+            "presets": [
+                "babel-preset-env",
+                "babel-preset-react",
+                "jest"
+            ],
+            "plugins": [
+                // The following Babel plugins are not first class dependancies (in my
+                // project package.json) and are instead targeted via Gatsby's own
+                //dependancies due to NPM 5's flat dependancy structure. It would be
+                // annoying / stilly to handle two Babel configurations just so that I
+                // can use Jest so I leverage Gatsby's dependancy structure when I can
+                // (since Jest is testing the code that is being consumed by Gatsby anyway)
+                //
+                // NOTE: AWS Codebuild's highest Node version is 7.0.0 so we need to
+                // add in things like "object rest spread" in oder to get Jest to run.
+                "transform-es2015-modules-commonjs",
+                "transform-class-properties",
+                // "transform-react-jsx"
+                // "transform-object-rest-spread"
+                // "transform-async-to-generator"
+            ]
+        }
+    }
 }
