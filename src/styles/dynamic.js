@@ -1,6 +1,13 @@
-import {rem as createRem, padding as createPadding, margin as createMargin, stripUnit as createStrippedUnit, position as createPosition, size as createSize} from 'polished';
+import {
+  rem as createRem,
+  padding as createPadding,
+  margin as createMargin,
+  stripUnit as createStrippedUnit,
+  position as createPosition,
+  size as createSize,
+} from 'polished';
 import spacing from './spacing';
-import {media, breakpoints, createMediaQuery} from './media';
+import { media, breakpoints, createMediaQuery } from './media';
 
 // Formula (A):
 //      _______________________________________________________________________
@@ -67,21 +74,20 @@ import {media, breakpoints, createMediaQuery} from './media';
 //      _______________________________________________________________________
 
 const createDynamicValues = ({ unit, min, max }) => {
-
   // Min...
-  const strippedMin = createStrippedUnit(min);
+  const strippedMin = createStrippedUnit(`${min}`);
   const viewportRatioMin = createStrippedUnit(breakpoints.small) / 100;
   const viewportValue = strippedMin / viewportRatioMin;
 
   // Max...
-  const strippedMax = createStrippedUnit(max);
+  const strippedMax = createStrippedUnit(`${max}`);
   const viewportRatioMax = strippedMax / viewportValue;
   const breakpointMax = 100 * viewportRatioMax;
 
   return `
     ${unit}: ${createRem(strippedMin)};
 
-    ${media[">=small"]} {
+    ${media['>=small']} {
       ${unit}: ${viewportValue}vw;
     }
 
@@ -91,49 +97,41 @@ const createDynamicValues = ({ unit, min, max }) => {
   `;
 };
 
-const getMinMaxValues = (value) => {
-
+const getMinMaxValues = value => {
   switch (true) {
+    case Boolean(value.min && value.max):
+      return value;
 
-      case Boolean(value.min && value.max):
-        return value;
+    case Boolean(spacing[value]):
+      return spacing[value];
 
-      case Boolean(spacing[value]):
-        return spacing[value];
-
-      default:
-        return {};
+    default:
+      return {};
   }
-
 };
 
 const createDynamicStyle = (key, value) => {
-
   const { min, max } = getMinMaxValues(value);
 
-  return min && max ? createDynamicValues({
-    unit: key,
-    min: min,
-    max: max
-  }) : `${key}: ${value};`;
-
+  return min && max
+    ? createDynamicValues({
+        unit: key,
+        min,
+        max,
+      })
+    : `${key}: ${value};`;
 };
 
-const createDynamicSpacing = (values) => {
-
+const createDynamicSpacing = values => {
   return Object.keys(values).reduce((accumulator, key) => {
-
     const value = values[key];
     const style = createDynamicStyle(key, value);
 
     return `${accumulator} ${style}`;
-
   }, '');
-
 };
 
-const createDynamicPadding = (values) => {
-
+const createDynamicPadding = (values = []) => {
   const padding = createPadding(...values);
   const dynamic = createDynamicSpacing(padding);
 
@@ -142,11 +140,9 @@ const createDynamicPadding = (values) => {
     .replace(/paddingLeft/g, 'padding-left')
     .replace(/paddingBottom/g, 'padding-bottom')
     .replace(/paddingRight/g, 'padding-right');
+};
 
-}
-
-const createDynamicMargin = (values) => {
-
+const createDynamicMargin = (values = []) => {
   const margin = createMargin(...values);
   const dynamic = createDynamicSpacing(margin);
 
@@ -155,55 +151,63 @@ const createDynamicMargin = (values) => {
     .replace(/marginLeft/g, 'margin-left')
     .replace(/marginBottom/g, 'margin-bottom')
     .replace(/marginRight/g, 'margin-right');
-
-}
-
-const createDynamicFontSize = (value) => {
-
-  return createDynamicStyle('font-size', value);
-
 };
 
-const createDynamicPosition = (values) => {
+const createDynamicFontSize = (value = []) => {
+  return createDynamicStyle('font-size', value);
+};
 
+const createDynamicPosition = (values = []) => {
   const position = createPosition(...values);
 
   return createDynamicSpacing(position);
-
 };
 
-const createDynamicSize = (values) => {
-
+const createDynamicSize = (values = []) => {
   const size = createSize(...values);
 
   return createDynamicSpacing(size);
-
 };
 
-const createDynamicMinWidth = (value) => {
-
+const createDynamicMinWidth = (value = 'inherit') => {
   return createDynamicStyle('min-width', value);
-
 };
 
-const createDynamicMaxWidth = (value) => {
-
+const createDynamicMaxWidth = (value = 'inherit') => {
   return createDynamicStyle('max-width', value);
-
 };
 
-const createDynamicMinHeight = (value) => {
-
+const createDynamicMinHeight = (value = 'inherit') => {
   return createDynamicStyle('min-height', value);
-
 };
 
-const createDynamicMaxHeight = (value) => {
-
+const createDynamicMaxHeight = (value = 'inherit') => {
   return createDynamicStyle('max-height', value);
-
 };
 
-const dynamic = { createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize, createDynamicMinWidth, createDynamicMaxWidth, createDynamicMinHeight, createDynamicMaxHeight };
+const dynamic = {
+  createDynamicValues,
+  createDynamicPadding,
+  createDynamicMargin,
+  createDynamicFontSize,
+  createDynamicPosition,
+  createDynamicSize,
+  createDynamicMinWidth,
+  createDynamicMaxWidth,
+  createDynamicMinHeight,
+  createDynamicMaxHeight,
+};
 
-export {dynamic as default, createDynamicValues, createDynamicPadding, createDynamicMargin, createDynamicFontSize, createDynamicPosition, createDynamicSize, createDynamicMinWidth, createDynamicMaxWidth, createDynamicMinHeight, createDynamicMaxHeight};
+export {
+  dynamic as default,
+  createDynamicValues,
+  createDynamicPadding,
+  createDynamicMargin,
+  createDynamicFontSize,
+  createDynamicPosition,
+  createDynamicSize,
+  createDynamicMinWidth,
+  createDynamicMaxWidth,
+  createDynamicMinHeight,
+  createDynamicMaxHeight,
+};

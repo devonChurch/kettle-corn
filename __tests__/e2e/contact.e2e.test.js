@@ -23,11 +23,11 @@ describe('successful form submission', () => {
 
       const $name = await page.$('input[name="Name"]');
       await $name.focus();
-      await $name.type('Mr Potato');
+      await $name.type('Mr Test');
       await page.keyboard.press('Tab');
 
       const $email = await page.$('input:focus');
-      await $email.type('mr@potato.com');
+      await $email.type('test@test.com');
       await page.keyboard.press('Tab');
 
       const $message = await page.$('textarea:focus');
