@@ -1,6 +1,6 @@
 {
   "name": "kettle-corn",
-  "version": "1.0.0",
+  "version": "2.3.0",
   "description": "Gatsby implementation for enhancedigital.co.nz",
   "main": "index.js",
   "scripts": {

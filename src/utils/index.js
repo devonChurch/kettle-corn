@@ -1,5 +1,6 @@
 import config from './config';
+import analytics from './analytics';
 
-const utils = { config };
+const utils = { config, analytics };
 
-export { utils as default, config };
+export { utils as default, config, analytics };
