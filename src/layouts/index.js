@@ -19,9 +19,9 @@ const TemplateWrapper = ({ children }) => (
 
       <meta name="enhance digital version" value={config.version} />
 
-      {config.isProduction && (
+      {/* config.isProduction && (
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108251862-1" />
-      )}
+      )*/}
 
       {console.log(`enhance digital ${config.version}`)}
     </Helmet>
