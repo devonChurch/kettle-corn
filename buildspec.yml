@@ -47,7 +47,7 @@ phases:
       - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
 
       - echo "run end-to-end tests"
-      - npm run test:e2e:production
+      # - npm run test:e2e:production
 
   # artifacts:
   #   files:
