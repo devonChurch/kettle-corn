@@ -1,7 +1,8 @@
 import config from './config';
 
 const start = () => {
-  if (config.isProduction) {
+  const window = window || {};
+  if (config.isProduction && window) {
     console.log('start analytics');
     const { dataLayer = [] } = window;
 
