@@ -18,7 +18,11 @@ const TemplateWrapper = ({ children }) => (
       />
       <link rel="apple-touch-icon" href="icon.png" />
 
-      <meta name="enhance digital version" value={config.version} />
+      <meta
+        name="Enhance Digital version"
+        value={config.version}
+        data-test="enhance-digital-version"
+      />
 
       {console.log(`enhance digital ${config.version}`)}
     </Helmet>

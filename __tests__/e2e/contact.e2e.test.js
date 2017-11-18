@@ -2,6 +2,7 @@
 
 const isProduction = process.env.NODE_ENV === 'production';
 const puppeteer = require('puppeteer');
+const { version: buildVersion } = require('../../src/utils/config');
 const puppeteerOptions = isProduction
   ? { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
   : { headless: false, slowMo: 50 };
@@ -12,6 +13,21 @@ const puppeteerUrls = isProduction
 console.log({ isProduction });
 
 jest.setTimeout(20000);
+
+describe('cache bust', () => {
+  test('should ensure that the browser and current build version are equal', async () => {
+    const url = puppeteerUrls[0];
+    const browser = await puppeteer.launch(puppeteerOptions);
+    const page = await browser.newPage();
+    await page.goto(`${url}/contact/`);
+
+    const browserVersion = await page.$eval('[data-test="enhance-digital-version"]', $node =>
+      $node.getAttribute('value'),
+    );
+
+    expect(browserVersion).toBe(buildVersion);
+  });
+});
 
 describe('successful form submission', () => {
   puppeteerUrls.forEach(url => {
