@@ -49,7 +49,7 @@ phases:
       
       - echo "invalidate cloud front cache"
       - aws configure set preview.cloudfront true
-      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*""
+      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
 
       - echo "run end-to-end tests"
       - npm run test:e2e:production
