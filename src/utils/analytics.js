@@ -30,8 +30,8 @@ const createScript = () => {
 
 const register = () => {
   window.dataLayer = window.dataLayer || [];
-  dataLayer.push('js', new Date());
-  dataLayer.push('config', 'UA-108251862-1');
+  dataLayer.push(['js', new Date()]);
+  dataLayer.push(['config', 'UA-108251862-1']);
 };
 
 const start = () => {
