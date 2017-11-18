@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import { config, analytics } from '../utils';
+import { config } from '../utils';
+import Analytics from '../components/analytics';
 
-analytics.start();
+// analytics.start();
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -19,12 +20,9 @@ const TemplateWrapper = ({ children }) => (
 
       <meta name="enhance digital version" value={config.version} />
 
-      {/* config.isProduction && (
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108251862-1" />
-      )*/}
-
       {console.log(`enhance digital ${config.version}`)}
     </Helmet>
+    <Analytics />
     <div>{children()}</div>
   </div>
 );
