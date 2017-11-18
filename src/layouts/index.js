@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import { config } from '../utils';
-import Analytics from '../components/analytics';
+import { config, analytics } from '../utils';
 
-// analytics.start();
+analytics.start();
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -26,7 +25,6 @@ const TemplateWrapper = ({ children }) => (
 
       {console.log(`enhance digital ${config.version}`)}
     </Helmet>
-    <Analytics />
     <div>{children()}</div>
   </div>
 );
