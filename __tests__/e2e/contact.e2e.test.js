@@ -12,7 +12,7 @@ const puppeteerUrls = isProduction
 
 console.log({ isProduction });
 
-jest.setTimeout(20000);
+jest.setTimeout(30000);
 
 describe('cache bust', () => {
   test('should ensure that the browser and current build version are equal', async () => {
@@ -26,6 +26,8 @@ describe('cache bust', () => {
     );
 
     expect(browserVersion).toBe(buildVersion);
+
+    await browser.close();
   });
 });
 
