@@ -10,7 +10,6 @@ const puppeteerUrls = isProduction
   : ['http://localhost:8000', 'http://www.localhost:8000'];
 
 console.log({ isProduction });
-// const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
 jest.setTimeout(20000);
 

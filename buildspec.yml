@@ -26,6 +26,8 @@ phases:
     commands:
 
       - echo "access id = $CLOUD_FRONT_ID"
+      - echo "access id = $AWS_ACCESS_KEY_ID"
+      - echo "access key = $AWS_SECRET_ACCESS_KEY"
 
       - echo "run unit tests"
       - npm run test:unit
@@ -39,15 +41,18 @@ phases:
   post_build:
     commands:
 
-      - echo "deploy build to s3"
+      - echo "clean previous build from s3"
+      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      
+      - echo "deploy new build to s3"
       - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
       
       - echo "invalidate cloud front cache"
       - aws configure set preview.cloudfront true
-      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
+      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*""
 
       - echo "run end-to-end tests"
-      # - npm run test:e2e:production
+      - npm run test:e2e:production
 
   # artifacts:
   #   files:
