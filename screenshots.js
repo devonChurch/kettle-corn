@@ -34,6 +34,7 @@ const start = async () => {
       const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
 
+    await page.close();
     await browser.close();
     console.log(`\n${test} | finish`);
   }
