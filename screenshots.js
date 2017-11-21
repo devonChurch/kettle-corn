@@ -11,30 +11,37 @@ const screenshots = path.resolve(__dirname, './screenshots');
 
 console.log({ isProduction });
 
-// ['services', 'contact', 'styleguide'].forEach(async test => {
+// We are running the screenshot generation functionality in a completely linear
+// sequence using "for of" rather than "forEach" itterations. This is due to
+// Puppeteer throwing an error as the sequence grew.
+//
+// ERROR:
+// (node:7498) UnhandledPromiseRejectionWarning: Unhandled promise rejection
+// (rejection id: 1): Error: Page crashed!
 const start = async () => {
   for (test of ['services', 'contact', 'styleguide']) {
-    try {
-      console.log(`*** ${test} | start`);
-      const browser = await puppeteer.launch(puppeteerOptions);
-      const page = await browser.newPage();
-      await fs.ensureDir(screenshots);
-      await page.goto(`https://enhancedigital.co.nz/${test}/`, { waitUntil: 'load' });
+    console.log('- - - - - - - - - - - - - - - - - - -');
+    console.log(`${test} | start \n`);
+    const browser = await puppeteer.launch(puppeteerOptions);
+    const page = await browser.newPage();
+    await fs.ensureDir(screenshots);
+    await page.goto(`https://enhancedigital.co.nz/${test}/`, { waitUntil: 'load' });
 
-      for (width of [320, 600, 900, 1200]) {
-        console.log(`>>> ${test} | ${width}px`);
-        await page.setViewport({ width, height: 600 });
-        const saveAs = path.resolve(screenshots, `${test}-${width}.png`);
-        const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
-      }
-
-      await browser.close();
-    } catch (error) {
-      console.log(error);
+    for (width of [320, 600, 900, 1200]) {
+      console.log(`- ${test} | ${width}px`);
+      await page.setViewport({ width, height: 600 });
+      const saveAs = path.resolve(screenshots, `${test}-${width}.png`);
+      const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
-    console.log(`--- ${test} | finish`);
-  }
-};
-// });
 
-start();
+    await browser.close();
+    console.log(`\n${test} | finish`);
+  }
+  console.log('- - - - - - - - - - - - - - - - - - -');
+};
+
+try {
+  start();
+} catch (error) {
+  console.log(error);
+}

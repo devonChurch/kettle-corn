@@ -25,37 +25,37 @@ phases:
   pre_build:
     commands:
 
-      # - echo "access id = $CLOUD_FRONT_ID"
-      # - echo "access id = $AWS_ACCESS_KEY_ID"
-      # - echo "access key = $AWS_SECRET_ACCESS_KEY"
+      - echo "access id = $CLOUD_FRONT_ID"
+      - echo "access id = $AWS_ACCESS_KEY_ID"
+      - echo "access key = $AWS_SECRET_ACCESS_KEY"
 
-      # - echo "run unit tests"
-      # - npm run test:unit
+      - echo "run unit tests"
+      - npm run test:unit
 
   build:
     commands:
 
-      # - echo "create gatsby (production) build"
-      # - npm run build
+      - echo "create gatsby (production) build"
+      - npm run build
 
   post_build:
     commands:
 
-      # - echo "clean previous build from s3"
-      # - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      - echo "clean previous build from s3"
+      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
       
-      # - echo "deploy new build to s3"
-      # - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
+      - echo "deploy new build to s3"
+      - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
       
-      # - echo "invalidate cloud front cache"
-      # - aws configure set preview.cloudfront true
-      # - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
+      - echo "invalidate cloud front cache"
+      - aws configure set preview.cloudfront true
+      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
 
-      # - echo "delay for $DELAY seconds until cache invalidates"
-      # - sleep $DELAY
+      - echo "delay for $DELAY seconds until cache invalidates"
+      - sleep $DELAY
       
-      # - echo "run end-to-end tests"
-      # - npm run test:e2e:production
+      - echo "run end-to-end tests"
+      - npm run test:e2e:production
       
       - echo "generate screenshots"
       - npm run test:screenshots:production
