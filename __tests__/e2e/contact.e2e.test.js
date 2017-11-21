@@ -19,7 +19,9 @@ describe('cache bust', () => {
     const url = puppeteerUrls[0];
     const browser = await puppeteer.launch(puppeteerOptions);
     const page = await browser.newPage();
-    await page.goto(`${url}/contact/`);
+    await page.goto(`${url}/contact/`, {
+      waitUntil: 'load',
+    });
 
     const browserVersion = await page.$eval('[data-test="enhance-digital-version"]', $node =>
       $node.getAttribute('value'),

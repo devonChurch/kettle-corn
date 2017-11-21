@@ -51,8 +51,20 @@ phases:
       - aws configure set preview.cloudfront true
       - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
 
+      - echo "delay for $DELAY seconds until cache invalidates"
+      - sleep $DELAY
+      
       - echo "run end-to-end tests"
       - npm run test:e2e:production
+      
+      - echo "generate screenshots"
+      - npm run test:screenshots:production
+
+      - echo "clean previous screenshots from s3"
+      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      
+      - echo "deploy new screenshots to s3"
+      - aws s3 cp --recursive ./screenshots/ s3://enhance-digital-screenshots/
 
   # artifacts:
   #   files:

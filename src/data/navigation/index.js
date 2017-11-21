@@ -1,3 +1,5 @@
+import config from '../../utils';
+
 const services = {
   name: 'Services',
   path: '/services',
@@ -13,7 +15,7 @@ const styleguide = {
   path: '/styleguide',
 };
 
-const main = [services, contact];
+const main = config.isProduction ? [services, contact] : [services, contact, styleguide];
 
 const navigation = { services, contact, styleguide, main };
 

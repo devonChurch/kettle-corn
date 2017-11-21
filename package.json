@@ -19,6 +19,8 @@
     "test:unit": "jest '/src/.*.unit.test.js'",
     "test:e2e:development": "NODE_ENV=development jest '/__tests__/.*.e2e.test.js'",
     "test:e2e:production": "NODE_ENV=production jest '/__tests__/.*.e2e.test.js'",
+    "test:screenshots:development": "NODE_ENV=development node ./screenshots",
+    "test:screenshots:production": "NODE_ENV=production node ./screenshots",
     "gatsby": "gatsby",
     "commit": "git-cz",
     "commitizen": "commitizen"
@@ -39,6 +41,7 @@
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-15": "^1.0.5",
     "enzyme-to-json": "^3.2.2",
+    "fs-extra": "^4.0.2",
     "gatsby-cli": "^1.1.7",
     "gh-pages": "^1.0.0",
     "husky": "^0.14.3",

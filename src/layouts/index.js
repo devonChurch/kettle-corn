@@ -16,13 +16,11 @@ const TemplateWrapper = ({ children }) => (
         content="Talk to us about enhancing the experience for your customers online. Grow your business with digital marketing, website analytics and engagement tools"
       />
       <link rel="apple-touch-icon" href="icon.png" />
-
       <meta
         name="Enhance Digital version"
         value={config.version}
         data-test="enhance-digital-version"
       />
-
       {console.log(`enhance digital ${config.version}`)}
     </Helmet>
     <div>{children()}</div>

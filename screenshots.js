@@ -1,0 +1,32 @@
+// require('babel-polyfill');
+
+const isProduction = process.env.NODE_ENV === 'production';
+const path = require('path');
+const fs = require('fs-extra');
+const puppeteer = require('puppeteer');
+const puppeteerOptions = isProduction
+  ? { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
+  : { headless: false, slowMo: 50 };
+const screenshots = path.resolve(__dirname, './screenshots');
+
+console.log({ isProduction });
+
+const setup = async () => {
+  await fs.ensureDir(screenshots);
+};
+
+setup();
+
+['services', 'contact', 'styleguide'].forEach(async test => {
+  const browser = await puppeteer.launch(puppeteerOptions);
+  const page = await browser.newPage();
+  await page.goto(`https://enhancedigital.co.nz/${test}/`, { waitUntil: 'load' });
+
+  for (width of [320, 600, 900, 1200]) {
+    await page.setViewport({ width, height: 600 });
+    const saveAs = path.resolve(screenshots, `${test}-${width}.png`);
+    const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
+  }
+
+  await browser.close();
+});
