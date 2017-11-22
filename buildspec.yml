@@ -61,7 +61,7 @@ phases:
       - npm run test:screenshots:production
 
       - echo "clean previous screenshots from s3"
-      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      - aws s3 rm s3://enhance-digital-screenshots/ --recursive
       
       - echo "deploy new screenshots to s3"
       - aws s3 cp --recursive ./screenshots/ s3://enhance-digital-screenshots/
