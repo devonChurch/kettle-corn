@@ -1,4 +1,4 @@
-import { IconFeatureFeedback } from '../../components/icons';
+import { IconStandardSpeech } from '../../components/icons';
 
 const feedback = {
   title: 'Customer Feedback',
@@ -7,7 +7,7 @@ const feedback = {
 
   swatch: 'yellow',
 
-  Icon: IconFeatureFeedback,
+  Icon: IconStandardSpeech,
 
   blurb:
     'Start capturing the Voice of your Customer so you can focus on increasing your brand love.',

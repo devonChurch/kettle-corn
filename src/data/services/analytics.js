@@ -1,4 +1,4 @@
-import { IconFeatureAnalytics } from '../../components/icons';
+import { IconStandardGraph } from '../../components/icons';
 
 const analytics = {
   title: 'Analytics & Measuring Engagement',
@@ -7,7 +7,7 @@ const analytics = {
 
   swatch: 'purple',
 
-  Icon: IconFeatureAnalytics,
+  Icon: IconStandardGraph,
 
   blurb:
     'Remove the guesswork. Start tracking your customers, prospects and competitors now to optimise your digital marketing spend.',

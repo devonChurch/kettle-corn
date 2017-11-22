@@ -1,6 +1,8 @@
 import styled, { css, keyframes } from 'styled-components';
 import { padding as createPadding, margin as createMargin, rem as createRem } from 'polished';
-import { media, breakpoints, spacing, dynamic, createColor } from '../../../styles';
+import { media, breakpoints, spacing, dynamic, createColor, misc } from '../../../styles';
+
+const { createDynamicSize } = dynamic;
 
 const loaderDotSpeed = 0.25;
 const loaderDotAnimation = keyframes`
@@ -36,6 +38,13 @@ const icons = {
     position: absolute;
     top: 0;
     width: 100%;
+  `,
+
+  SiconContainer: styled.div`
+    background: ${({ background }) => createColor(...background)};
+    border-radius: ${misc.radius};
+    padding: ${createRem('7px')};
+    ${createDynamicSize(['40px'])};
   `,
 };
 

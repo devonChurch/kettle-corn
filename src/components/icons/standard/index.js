@@ -95,6 +95,67 @@ const IconStandardMenu = ({ color, display }) => {
 IconStandardMenu.propTypes = propTypes;
 IconStandardMenu.defaultProps = defaultProps;
 
+const IconStandardSearch = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M23.3,22.2l-4.9-4.9c1.2-1.5,2-3.5,2-5.6c0-4.9-4-8.9-8.9-8.9s-8.9,4-8.9,8.9s4,8.9,8.9,8.9c2.1,0,4-0.7,5.6-2l4.9,4.9c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3C23.7,23.2,23.7,22.6,23.3,22.2z M4.4,11.7c0-3.8,3.1-6.9,6.9-6.9s6.9,3.1,6.9,6.9c0,3.8-3.1,6.9-6.9,6.9S4.4,15.5,4.4,11.7z" />
+    </Ssvg>
+  );
+};
+
+IconStandardSearch.propTypes = propTypes;
+IconStandardSearch.defaultProps = defaultProps;
+
+const IconStandardGraph = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M23,22.7H3c-0.6,0-1-0.4-1-1V4.3c0-0.6,0.4-1,1-1s1,0.4,1,1v16.3H23c0.6,0,1,0.4,1,1S23.6,22.7,23,22.7z" />
+      <path d="M8,17.6c-0.6,0-1-0.4-1-1v-2.4c0-0.6,0.4-1,1-1s1,0.4,1,1v2.4C9,17.2,8.5,17.6,8,17.6z" />
+      <path d="M13,17.6c-0.6,0-1-0.4-1-1v-4.8c0-0.6,0.4-1,1-1s1,0.4,1,1v4.8C14,17.2,13.6,17.6,13,17.6z" />
+      <path d="M18,17.6c-0.6,0-1-0.4-1-1V9.5c0-0.6,0.4-1,1-1s1,0.4,1,1v7.1C19,17.2,18.6,17.6,18,17.6z" />
+    </Ssvg>
+  );
+};
+
+IconStandardGraph.propTypes = propTypes;
+IconStandardGraph.defaultProps = defaultProps;
+
+const IconStandardDesign = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M22.6,2.9c-0.4-0.2-0.8-0.1-1.1,0.2L3.1,21.5c-0.3,0.3-0.4,0.7-0.2,1.1C3,23,3.4,23.2,3.8,23.2l18.4,0c0.3,0,0.5-0.1,0.7-0.3s0.3-0.4,0.3-0.7V3.8C23.2,3.4,23,3,22.6,2.9z M21.2,21.2l-15,0l1.3-1.3c0.2,0.2,0.4,0.2,0.6,0.2c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-0.9,0-1.3l1.4-1.4l0.9,0.9c0.2,0.2,0.5,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4l-0.9-0.9l1.3-1.3l2.4,2.4c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L14.4,13l1.3-1.3l0.9,0.9c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4l-0.9-0.9l1.4-1.4c0.2,0.2,0.4,0.2,0.6,0.2c0.3,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-0.9,0-1.3l1.3-1.3V21.2z" />
+    </Ssvg>
+  );
+};
+
+IconStandardDesign.propTypes = propTypes;
+IconStandardDesign.defaultProps = defaultProps;
+
+const IconStandardSpeech = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M8,23.6c-0.2,0-0.3,0-0.5-0.1C7.2,23.3,7,23,7,22.6v-3.2H3c-0.6,0-1-0.4-1-1v-15c0-0.6,0.4-1,1-1h20c0.6,0,1,0.4,1,1v15c0,0.6-0.4,1-1,1h-8.1l-6.3,4.1C8.4,23.6,8.2,23.6,8,23.6z M4,17.4h4c0.6,0,1,0.4,1,1v2.4l5.1-3.3c0.2-0.1,0.3-0.2,0.5-0.2H22v-13H4V17.4z" />
+      <circle cx="8.9" cy="11.3" r="1" />
+      <circle cx="13" cy="11.3" r="1" />
+      <circle cx="17.1" cy="11.3" r="1" />
+    </Ssvg>
+  );
+};
+
+IconStandardSpeech.propTypes = propTypes;
+IconStandardSpeech.defaultProps = defaultProps;
+
+const IconStandardHeart = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M13,23.4c-0.3,0-0.5-0.1-0.7-0.3l-8.5-8.5C1,11.8,1,7.4,3.8,4.6c1.3-1.3,3.1-2.1,5-2.1c1.6,0,3,0.5,4.3,1.4c1.2-0.9,2.7-1.4,4.3-1.4c1.9,0,3.6,0.7,5,2.1c2.7,2.7,2.7,7.2,0,10l-8.5,8.5C13.5,23.3,13.3,23.4,13,23.4z M8.7,4.6c-1.3,0-2.6,0.5-3.6,1.5c-2,2-2,5.2,0,7.1L13,21l7.8-7.8c2-2,2-5.2,0-7.1c-1-1-2.2-1.5-3.6-1.5c-1.3,0-2.6,0.5-3.6,1.5c-0.4,0.4-1,0.4-1.4,0C11.3,5.1,10.1,4.6,8.7,4.6z" />
+    </Ssvg>
+  );
+};
+
+IconStandardHeart.propTypes = propTypes;
+IconStandardHeart.defaultProps = defaultProps;
+
 const icons = {
   IconStandardEmail,
   IconStandardTwitter,
@@ -103,6 +164,11 @@ const icons = {
   IconStandardTick,
   IconStandardCross,
   IconStandardMenu,
+  IconStandardSearch,
+  IconStandardGraph,
+  IconStandardDesign,
+  IconStandardSpeech,
+  IconStandardHeart,
 };
 
 export {
@@ -114,4 +180,9 @@ export {
   IconStandardTick,
   IconStandardCross,
   IconStandardMenu,
+  IconStandardSearch,
+  IconStandardGraph,
+  IconStandardDesign,
+  IconStandardSpeech,
+  IconStandardHeart,
 };

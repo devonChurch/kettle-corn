@@ -7,6 +7,11 @@ import {
   IconStandardTick,
   IconStandardCross,
   IconStandardMenu,
+  IconStandardSearch,
+  IconStandardGraph,
+  IconStandardDesign,
+  IconStandardSpeech,
+  IconStandardHeart,
 } from './standard';
 
 // Feature
@@ -18,7 +23,7 @@ import IconFeatureOptimisation from './feature/optimisation';
 import IconFeatureAnalytics from './feature/analytics';
 
 // Misc
-import { IconMiscArrow, IconMiscLoader } from './misc';
+import { IconMiscArrow, IconMiscLoader, IconContainer } from './misc';
 
 const icons = {
   IconStandardEmail,
@@ -28,6 +33,11 @@ const icons = {
   IconStandardTick,
   IconStandardCross,
   IconStandardMenu,
+  IconStandardSearch,
+  IconStandardGraph,
+  IconStandardDesign,
+  IconStandardSpeech,
+  IconStandardHeart,
   IconFeatureFeedback,
   IconFeatureSocial,
   IconFeatureDevelopment,
@@ -36,6 +46,7 @@ const icons = {
   IconFeatureAnalytics,
   IconMiscArrow,
   IconMiscLoader,
+  IconContainer,
 };
 
 export {
@@ -47,6 +58,11 @@ export {
   IconStandardTick,
   IconStandardCross,
   IconStandardMenu,
+  IconStandardSearch,
+  IconStandardGraph,
+  IconStandardDesign,
+  IconStandardSpeech,
+  IconStandardHeart,
   IconFeatureFeedback,
   IconFeatureSocial,
   IconFeatureDevelopment,
@@ -55,4 +71,5 @@ export {
   IconFeatureAnalytics,
   IconMiscArrow,
   IconMiscLoader,
+  IconContainer,
 };

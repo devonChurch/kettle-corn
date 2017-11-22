@@ -30,7 +30,7 @@ import ServicesArticle from '../components/services/article';
 
 const ServicesPage = () => (
   <Page>
-    <HeaderStandard title="Services" background={['yellow']} />
+    <HeaderStandard title="Services" background={['blue']} />
 
     <main>
       <Spacer padding={[0, 0, 'largest']}>

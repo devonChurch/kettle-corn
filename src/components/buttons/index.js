@@ -184,6 +184,7 @@ const buttons = {
   ButtonInline,
   ButtonSubmit,
   ButtonIcon,
+  Anchor,
 };
 
 export {
@@ -195,4 +196,5 @@ export {
   ButtonInline,
   ButtonSubmit,
   ButtonIcon,
+  Anchor,
 };

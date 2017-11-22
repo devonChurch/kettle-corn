@@ -11,12 +11,12 @@ import { createColor } from '../../../styles';
 const HeaderHome = () => {
   return (
     <Hero
-      background={['yellow']}
+      background={['blue']}
       arrow={['left', 'bottom']}
       padding={['medium', 0, 'largest']}
       element="header"
     >
-      <Spacer margin={[0, '-small']} padding={[0, 0, 'medium']}>
+      <Spacer margin={[0, '-small']} padding={[0, 0, 'large']}>
         <Flexer>
           {({ Wrapper, Item }) => (
             <Wrapper wrap="wrap" justify="flex-end">
@@ -35,7 +35,7 @@ const HeaderHome = () => {
       </Spacer>
 
       <Sizer width="75vw" minWidth="250px" maxWidth="380px">
-        <LogoWithText color="yellow" background={['yellow']} />
+        <LogoWithText color="blue" background={['blue']} />
       </Sizer>
 
       <Spacer padding={['large', 0, 0]}>
@@ -43,7 +43,7 @@ const HeaderHome = () => {
           <ButtonSecondary href={navigation.services.path} swatch={['misc', 'white']} isLarge>
             {navigation.services.name}
           </ButtonSecondary>
-          <ButtonPrimary href={navigation.contact.path} swatch={['yellow']} isInverted isLarge>
+          <ButtonPrimary href={navigation.contact.path} swatch={['blue']} isInverted isLarge>
             Talk to us
           </ButtonPrimary>
         </ButtonGroup>

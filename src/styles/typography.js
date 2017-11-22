@@ -1,29 +1,22 @@
 import Typography from 'typography';
-import {createColor} from './colors'
+import { createColor } from './colors';
 
 const typography = new Typography({
-
   title: 'Enhance Digital',
 
   // baseFontSize: '16px',
-  baseLineHeight: 1.45,
+  baseLineHeight: 1.7,
   scaleRatio: 3.25,
 
   googleFonts: [
     {
       name: 'Roboto',
-      styles: [
-        '500',
-        '900',
-      ],
+      styles: ['500', '900'],
     },
     {
       name: 'Glegoo',
-      styles: [
-        '400',
-        '700',
-      ],
-    }
+      styles: ['400', '700'],
+    },
   ],
 
   headerFontFamily: ['Glegoo', 'serif'],
@@ -39,7 +32,6 @@ const typography = new Typography({
   // blockMarginBottom: ...
 
   // includeNormalize: true,
-
 });
 
 export default typography;

@@ -5,6 +5,7 @@ import Markdown from '../../markdown';
 import { Spacer, Sizer, Flexer } from '../../scaffold';
 import { HeadingTwo, Text } from '../../headings';
 import { ButtonTertiary } from '../../buttons';
+import { IconContainer } from '../../icons';
 
 const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
   const paragraphs = content.split('\n').filter(paragraph => paragraph);
@@ -15,36 +16,25 @@ const ServicesArticle = ({ title, id, swatch, Icon, content }) => {
 
   return (
     <Spacer>
-      <Flexer>
-        {({ Wrapper, Item }) => (
-          <Wrapper wrap="wrap" align="center">
-            <Item>
-              <Spacer margin={['-15px', 0, 0, '-20px']} padding={[0, 'medium', 0, 0]}>
-                <Sizer width="100px">
-                  <Icon />
-                </Sizer>
-              </Spacer>
-            </Item>
-            <Item grow="1">
-              <Spacer margin={['-medium', 0]}>
-                <HeadingTwo color={[swatch]} isSpaceless id={id}>
-                  {title}
-                </HeadingTwo>
-              </Spacer>
-            </Item>
-          </Wrapper>
-        )}
-      </Flexer>
+      <Spacer padding={[0, 0, 'medium']}>
+        <IconContainer background={[swatch]}>
+          <Icon />
+        </IconContainer>
+      </Spacer>
+
+      <HeadingTwo color={[swatch]} isSpaceless id={id}>
+        {title}
+      </HeadingTwo>
 
       <Spacer padding={['large', 0, 0]}>
         {introduction && (
-          <Text display="block" weight={900} size="16px">
+          <Text display="block" weight={900} size="18px">
             <Markdown swatch={swatch}>{introduction}</Markdown>
           </Text>
         )}
 
-        <Text display="block" size="14px">
-          <Markdown swatch={swatch}>{bodyCopy}</Markdown>
+        <Text display="block" size="16px">
+          <Markdown swatch={'gray'}>{bodyCopy}</Markdown>
         </Text>
       </Spacer>
     </Spacer>

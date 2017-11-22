@@ -1,4 +1,4 @@
-import { IconFeatureEmail } from '../../components/icons';
+import { IconStandardEmail } from '../../components/icons';
 
 const email = {
   title: 'Email marketing',
@@ -7,7 +7,7 @@ const email = {
 
   swatch: 'blue',
 
-  Icon: IconFeatureEmail,
+  Icon: IconStandardEmail,
 
   blurb: 'Get smart with your email marketing strategy – no one wants more junk mail.',
 
