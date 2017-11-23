@@ -1,4 +1,4 @@
-import { IconFeatureOptimisation } from '../../components/icons';
+import { IconStandardSearch } from '../../components/icons';
 
 const optimisation = {
   title: 'Search Engine Optimisation and Marketing (SEO & SEM)',
@@ -7,7 +7,7 @@ const optimisation = {
 
   swatch: 'green',
 
-  Icon: IconFeatureOptimisation,
+  Icon: IconStandardSearch,
 
   blurb: 'Sort out your SEO and SEM before you and your customers end up in circles.',
 

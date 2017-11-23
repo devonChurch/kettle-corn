@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { createColor } from '../../../styles';
 import styles from './styles';
 
-const { Ssvg, SloaderWrapper, SloaderDot } = styles;
+const { Ssvg, SloaderWrapper, SloaderDot, SiconContainer } = styles;
 
 const IconMiscArrow = ({ fill, display }) => {
   return (
@@ -44,9 +44,23 @@ const IconMiscLoader = () => {
   return <SloaderWrapper>{layers}</SloaderWrapper>;
 };
 
+const IconContainer = ({ background, children }) => {
+  return <SiconContainer background={background}>{children}</SiconContainer>;
+};
+
+IconContainer.propTypes = {
+  background: PropTypes.array,
+  children: PropTypes.node,
+};
+
+IconContainer.defaultProps = {
+  background: ['gray'],
+};
+
 const icons = {
   IconMiscArrow,
   IconMiscLoader,
+  IconContainer,
 };
 
-export { icons as default, IconMiscArrow, IconMiscLoader };
+export { icons as default, IconMiscArrow, IconMiscLoader, IconContainer };

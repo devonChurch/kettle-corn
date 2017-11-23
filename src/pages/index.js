@@ -5,7 +5,7 @@ import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import { createColor, colors, spacing } from '../styles';
 import services from '../data/services';
-import { Page, Content, Spacer, Sizer, ButtonGroup, Flexer } from '../components/scaffold';
+import { Page, Content, Spacer, Sizer, Color, ButtonGroup, Flexer } from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
@@ -41,12 +41,12 @@ const IndexPage = () => (
 
     <main>
       <section>
-        <Spacer padding={['largest', 0, 0]}>
+        <Spacer padding={['largest', 0]}>
           <Content>
-            <HeadingOne color={['yellow']}>
+            <HeadingOne color={['blue']}>
               <Text color={['gray']} weight={400}>
                 Grow your business with a{' '}
-                <Text color={['yellow', 'darkest']} weight={700}>
+                <Text color={['blue', 'darkest']} weight={700}>
                   digital strategy
                 </Text>{' '}
                 and
@@ -64,34 +64,38 @@ const IndexPage = () => (
       </section>
 
       <section>
-        <Spacer padding={['largest', 0, 0]}>
-          <Content>
-            <HeadingTwo color={['gray', 'light']}>Services</HeadingTwo>
+        <Spacer margin={[0, 0, 'largest']}>
+          <Color background={['blue', 'darkest']}>
+            <Spacer padding={['largest', 0]}>
+              <Content>
+                <HeadingTwo color={['misc', 'white']}>Services</HeadingTwo>
 
-            <Spacer margin={[0, '-medium']}>
-              <Grid>
-                {({ GridWrapper, GridItemThreeUp: Item }) => (
-                  <GridWrapper>
-                    {Object.keys(services).map(key => {
-                      const { title, id, swatch, Icon, blurb } = services[key];
+                <Spacer margin={[0, '-small']}>
+                  <Grid>
+                    {({ GridWrapper, GridItemThreeUp: Item }) => (
+                      <GridWrapper>
+                        {Object.keys(services).map(key => {
+                          const { title, id, swatch, Icon, blurb } = services[key];
 
-                      return (
-                        <Item key={key}>
-                          <ServicesTile
-                            title={title}
-                            id={id}
-                            swatch={swatch}
-                            Icon={Icon}
-                            blurb={blurb}
-                          />
-                        </Item>
-                      );
-                    })}
-                  </GridWrapper>
-                )}
-              </Grid>
+                          return (
+                            <Item key={key}>
+                              <ServicesTile
+                                title={title}
+                                id={id}
+                                swatch={swatch}
+                                Icon={Icon}
+                                blurb={blurb}
+                              />
+                            </Item>
+                          );
+                        })}
+                      </GridWrapper>
+                    )}
+                  </Grid>
+                </Spacer>
+              </Content>
             </Spacer>
-          </Content>
+          </Color>
         </Spacer>
       </section>
 

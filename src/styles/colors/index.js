@@ -1,11 +1,13 @@
 import { rgba as createRgba, darken as createDarken, lighten as createLighten } from 'polished';
 
 const createSwatches = base => ({
+  extraLight: createLighten(0.4, base),
   lightest: createLighten(0.3, base),
   light: createLighten(0.15, base),
   medium: base,
   dark: createDarken(0.15, base),
   darkest: createDarken(0.3, base),
+  extraDark: createDarken(0.4, base),
 });
 
 const pink = createSwatches('#E91E63');

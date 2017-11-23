@@ -1,4 +1,4 @@
-import { IconFeatureSocial } from '../../components/icons';
+import { IconStandardHeart } from '../../components/icons';
 
 const social = {
   title: 'Social Media Management',
@@ -7,7 +7,7 @@ const social = {
 
   swatch: 'orange',
 
-  Icon: IconFeatureSocial,
+  Icon: IconStandardHeart,
 
   blurb: 'People are always talking, so put your ear to the ground and start influencing.',
 

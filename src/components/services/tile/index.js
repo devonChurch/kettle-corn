@@ -3,34 +3,35 @@ import PropTypes from 'prop-types';
 import { createColor } from '../../../styles';
 import { Spacer, Sizer, Flexer } from '../../scaffold';
 import { HeadingThree, Text } from '../../headings';
-import { ButtonTertiary } from '../../buttons';
+import { ButtonTertiary, Anchor } from '../../buttons';
+import { IconContainer } from '../../icons';
+import styles from './styles';
+
+const { Swrapper, Stile, Sbutton } = styles;
 
 const ServicesTile = ({ title, id, swatch, Icon, blurb }) => {
+  const href = `/services#${id}`;
+
   return (
-    <Flexer>
-      {({ Wrapper, Item }) => (
-        <Wrapper direction="column">
-          <Item grow="1">
-            <Spacer padding={[0, 'medium', 'small']}>
-              <Spacer margin={[0, 0, 0, '-20px']}>
-                <Sizer width="100px">
-                  <Icon />
-                </Sizer>
-              </Spacer>
-              <HeadingThree color={[swatch]}>{title}</HeadingThree>
-              <Text color={[swatch, 'darkest']}>{blurb}</Text>
-            </Spacer>
-          </Item>
-          <Item>
-            <Spacer padding={[0, 'medium', 'largest']}>
-              <ButtonTertiary href={`/services#${id}`} swatch={[swatch]}>
-                Read more
-              </ButtonTertiary>
-            </Spacer>
-          </Item>
-        </Wrapper>
-      )}
-    </Flexer>
+    <Swrapper>
+      <Anchor href={href}>
+        <Stile swatch={swatch}>
+          <Spacer padding={[0, 0, 'medium']}>
+            <IconContainer background={[swatch]}>
+              <Icon />
+            </IconContainer>
+          </Spacer>
+          <HeadingThree color={[swatch]}>{title}</HeadingThree>
+          <Text color={[swatch, 'darkest']}>{blurb}</Text>
+          <Sizer height={'large'} />
+        </Stile>
+      </Anchor>
+      <Sbutton>
+        <ButtonTertiary href={href} swatch={[swatch]}>
+          Read more
+        </ButtonTertiary>
+      </Sbutton>
+    </Swrapper>
   );
 };
 

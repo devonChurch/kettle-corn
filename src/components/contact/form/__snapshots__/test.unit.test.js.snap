@@ -39,7 +39,7 @@ exports[`Sending submission should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -50,7 +50,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -61,7 +61,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -73,7 +73,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Name
                       </div>
@@ -97,7 +97,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -121,7 +121,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -132,7 +132,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -144,7 +144,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Email
                       </div>
@@ -168,7 +168,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -191,7 +191,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -203,7 +203,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kEYyzF ctoHbP"
+                        className="sc-kkGfuU yjwyl"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -216,7 +216,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Message
                       </div>
@@ -240,7 +240,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -268,7 +268,7 @@ exports[`Sending submission should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -299,7 +299,7 @@ exports[`Sending submission should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -370,7 +370,7 @@ exports[`Sending submission should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-bZQynM dvoTsu"
+                    className="sc-gzVnrw dFawoA"
                     display="inherit"
                   >
                     <Flexer>
@@ -387,7 +387,7 @@ exports[`Sending submission should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-iwsKbI ldakHB"
+                            className="sc-gZMcBi FNzkq"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -400,7 +400,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Sizer
@@ -428,7 +428,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-htoDjs hqnidb"
+                                        className="sc-dnqmqq gqzsYK"
                                         display="inherit"
                                         size={
                                           Array [
@@ -610,7 +610,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Spacer
@@ -636,7 +636,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-bZQynM jqSgaK"
+                                        className="sc-gzVnrw kzWPNF"
                                         display="inherit"
                                       >
                                         <Test
@@ -662,7 +662,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-dxgOiQ gLSifx"
+                                                  className="sc-ckVGcZ crJFlK"
                                                   color={
                                                     Array [
                                                       "blue",
@@ -743,7 +743,7 @@ exports[`Submit error should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -755,7 +755,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -766,7 +766,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -778,7 +778,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Name
                       </div>
@@ -802,7 +802,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -827,7 +827,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -838,7 +838,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -850,7 +850,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Email
                       </div>
@@ -874,7 +874,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -898,7 +898,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -910,7 +910,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kEYyzF ctoHbP"
+                        className="sc-kkGfuU yjwyl"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -923,7 +923,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Message
                       </div>
@@ -947,7 +947,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -975,7 +975,7 @@ exports[`Submit error should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -1006,7 +1006,7 @@ exports[`Submit error should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -1077,7 +1077,7 @@ exports[`Submit error should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-bZQynM dvoTsu"
+                    className="sc-gzVnrw dFawoA"
                     display="inherit"
                   >
                     <Flexer>
@@ -1094,7 +1094,7 @@ exports[`Submit error should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-iwsKbI ldakHB"
+                            className="sc-gZMcBi FNzkq"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -1107,7 +1107,7 @@ exports[`Submit error should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Sizer
@@ -1135,7 +1135,7 @@ exports[`Submit error should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-htoDjs hqnidb"
+                                        className="sc-dnqmqq gqzsYK"
                                         display="inherit"
                                         size={
                                           Array [
@@ -1192,7 +1192,7 @@ exports[`Submit error should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Spacer
@@ -1218,7 +1218,7 @@ exports[`Submit error should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-bZQynM jqSgaK"
+                                        className="sc-gzVnrw kzWPNF"
                                         display="inherit"
                                       >
                                         <Test
@@ -1244,7 +1244,7 @@ exports[`Submit error should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-dxgOiQ jWWAjN"
+                                                  className="sc-ckVGcZ dWxVpl"
                                                   color={
                                                     Array [
                                                       "red",
@@ -1319,7 +1319,7 @@ exports[`Submit success should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -1330,7 +1330,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -1341,7 +1341,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -1353,7 +1353,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Name
                       </div>
@@ -1377,7 +1377,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -1401,7 +1401,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -1412,7 +1412,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -1424,7 +1424,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Email
                       </div>
@@ -1448,7 +1448,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -1471,7 +1471,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -1483,7 +1483,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kEYyzF ctoHbP"
+                        className="sc-kkGfuU yjwyl"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -1496,7 +1496,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Message
                       </div>
@@ -1520,7 +1520,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -1548,7 +1548,7 @@ exports[`Submit success should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -1579,7 +1579,7 @@ exports[`Submit success should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -1650,7 +1650,7 @@ exports[`Submit success should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-bZQynM dvoTsu"
+                    className="sc-gzVnrw dFawoA"
                     display="inherit"
                   >
                     <Flexer>
@@ -1667,7 +1667,7 @@ exports[`Submit success should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-iwsKbI ldakHB"
+                            className="sc-gZMcBi FNzkq"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -1680,7 +1680,7 @@ exports[`Submit success should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Sizer
@@ -1708,7 +1708,7 @@ exports[`Submit success should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-htoDjs hqnidb"
+                                        className="sc-dnqmqq gqzsYK"
                                         display="inherit"
                                         size={
                                           Array [
@@ -1765,7 +1765,7 @@ exports[`Submit success should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Spacer
@@ -1791,7 +1791,7 @@ exports[`Submit success should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-bZQynM jqSgaK"
+                                        className="sc-gzVnrw kzWPNF"
                                         display="inherit"
                                       >
                                         <Test
@@ -1817,7 +1817,7 @@ exports[`Submit success should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-dxgOiQ kDzDFH"
+                                                  className="sc-ckVGcZ iuDoeQ"
                                                   color={
                                                     Array [
                                                       "green",
@@ -1889,7 +1889,7 @@ exports[`Validation should require a valid email address 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -1901,7 +1901,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={true}
@@ -1912,7 +1912,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value=""
                     >
                       <input
-                        className="sc-ckVGcZ wjHLa"
+                        className="sc-jKJlTe hCWUcA"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -1924,7 +1924,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={false}
                     >
                       <div
-                        className="sc-kkGfuU cmfgop"
+                        className="sc-iAyFgw kEWiWf"
                       >
                         Name
                       </div>
@@ -1948,7 +1948,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -1973,7 +1973,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={true}
@@ -1984,7 +1984,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value="invalid-email.com"
                     >
                       <input
-                        className="sc-ckVGcZ ZCLZO"
+                        className="sc-jKJlTe ihgVyr"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -1996,7 +1996,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU kjaGCJ"
+                        className="sc-iAyFgw kjeoPR"
                       >
                         Email
                       </div>
@@ -2020,7 +2020,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2044,7 +2044,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={true}
@@ -2056,7 +2056,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value=""
                     >
                       <textarea
-                        className="sc-kEYyzF dGKIxt"
+                        className="sc-kkGfuU cIogTW"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2069,7 +2069,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={false}
                     >
                       <div
-                        className="sc-kkGfuU cmfgop"
+                        className="sc-iAyFgw kEWiWf"
                       >
                         Message
                       </div>
@@ -2093,7 +2093,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2121,7 +2121,7 @@ exports[`Validation should require a valid email address 1`] = `
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -2152,7 +2152,7 @@ exports[`Validation should require a valid email address 1`] = `
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -2247,7 +2247,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -2259,7 +2259,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={true}
@@ -2270,7 +2270,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <input
-                        className="sc-ckVGcZ wjHLa"
+                        className="sc-jKJlTe hCWUcA"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -2282,7 +2282,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-kkGfuU cmfgop"
+                        className="sc-iAyFgw kEWiWf"
                       >
                         Name
                       </div>
@@ -2306,7 +2306,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2331,7 +2331,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={true}
@@ -2342,7 +2342,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <input
-                        className="sc-ckVGcZ wjHLa"
+                        className="sc-jKJlTe hCWUcA"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -2354,7 +2354,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-kkGfuU cmfgop"
+                        className="sc-iAyFgw kEWiWf"
                       >
                         Email
                       </div>
@@ -2378,7 +2378,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2402,7 +2402,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={true}
@@ -2414,7 +2414,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <textarea
-                        className="sc-kEYyzF dGKIxt"
+                        className="sc-kkGfuU cIogTW"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2427,7 +2427,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-kkGfuU cmfgop"
+                        className="sc-iAyFgw kEWiWf"
                       >
                         Message
                       </div>
@@ -2451,7 +2451,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2479,7 +2479,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -2510,7 +2510,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -2614,7 +2614,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-jKJlTe drEqkH"
+              className="sc-eNQAEJ bFnsAd"
               onSubmit={[Function]}
             >
               <FormInput
@@ -2626,7 +2626,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -2637,7 +2637,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -2649,7 +2649,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Name
                       </div>
@@ -2673,7 +2673,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2698,7 +2698,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.input
                       isInvalid={false}
@@ -2709,7 +2709,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-ckVGcZ hyxXyc"
+                        className="sc-jKJlTe fzWilj"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -2721,7 +2721,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Email
                       </div>
@@ -2745,7 +2745,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2769,7 +2769,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-eNQAEJ hndvlP"
+                    className="sc-hMqMXs fsNqEC"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -2781,7 +2781,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kEYyzF ctoHbP"
+                        className="sc-kkGfuU yjwyl"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2794,7 +2794,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-kkGfuU jVJAA"
+                        className="sc-iAyFgw hsHxrF"
                       >
                         Message
                       </div>
@@ -2818,7 +2818,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-dxgOiQ hjDhem"
+                          className="sc-ckVGcZ jubzum"
                           color={
                             Array [
                               "red",
@@ -2846,7 +2846,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                   }
                 >
                   <div
-                    className="sc-jTzLTM iyRzEp"
+                    className="sc-fjdhpX kApFHI"
                     color={
                       Array [
                         "blue",
@@ -2877,7 +2877,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                           }
                         >
                           <div
-                            className="sc-bZQynM dxFGpc"
+                            className="sc-gzVnrw foXiVo"
                             display="inherit"
                           >
                             <IconMiscArrow
@@ -2948,7 +2948,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                   }
                 >
                   <div
-                    className="sc-bZQynM dvoTsu"
+                    className="sc-gzVnrw dFawoA"
                     display="inherit"
                   >
                     <Flexer>
@@ -2965,7 +2965,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-iwsKbI ldakHB"
+                            className="sc-gZMcBi FNzkq"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -2978,7 +2978,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Sizer
@@ -3006,7 +3006,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-htoDjs hqnidb"
+                                        className="sc-dnqmqq gqzsYK"
                                         display="inherit"
                                         size={
                                           Array [
@@ -3063,7 +3063,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gZMcBi iPVpjK"
+                                  className="sc-gqjmRU bGUlrb"
                                   order="0"
                                 >
                                   <Spacer
@@ -3089,7 +3089,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-bZQynM jqSgaK"
+                                        className="sc-gzVnrw kzWPNF"
                                         display="inherit"
                                       >
                                         <Test
@@ -3115,7 +3115,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-dxgOiQ jWWAjN"
+                                                  className="sc-ckVGcZ dWxVpl"
                                                   color={
                                                     Array [
                                                       "red",

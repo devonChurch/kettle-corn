@@ -1,4 +1,4 @@
-import { IconFeatureDevelopment } from '../../components/icons';
+import { IconStandardDesign } from '../../components/icons';
 
 const development = {
   title: 'Website design and development',
@@ -7,7 +7,7 @@ const development = {
 
   swatch: 'pink',
 
-  Icon: IconFeatureDevelopment,
+  Icon: IconStandardDesign,
 
   blurb: 'Let us build and manage your digital footprint so you can stand out from the crowd.',
 
