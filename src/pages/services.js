@@ -27,19 +27,25 @@ import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../components/headin
 import HeaderStandard from '../components/headers/standard';
 import FooterStandard from '../components/footers/standard';
 import ServicesArticle from '../components/services/article';
+import Divider from '../components/dividers';
 
 const ServicesPage = () => (
   <Page>
     <HeaderStandard title="Services" background={['blue']} />
 
     <main>
-      <Spacer padding={[0, 0, 'largest']}>
-        {Object.keys(services).map(key => {
+      <Spacer padding={['large', 0, 'largest']}>
+        {Object.keys(services).map((key, index) => {
           const { title, id, swatch, Icon, content } = services[key];
 
           return (
-            <Spacer key={key} padding={['largest', 0, 0]}>
+            <Spacer key={key} padding={['large', 0, 0]}>
               <Content>
+                {Boolean(index) && (
+                  <Spacer padding={[0, 0, 'large']}>
+                    <Divider background={['gray', 'extraLight']} />
+                  </Spacer>
+                )}
                 <ServicesArticle
                   title={title}
                   id={id}
