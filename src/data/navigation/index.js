@@ -1,4 +1,4 @@
-import config from '../../utils';
+import { config } from '../../utils';
 
 const services = {
   name: 'Services',
