@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import 'jest-styled-components';
 import ContactForm from './index';
 
 describe('Validation', () => {
