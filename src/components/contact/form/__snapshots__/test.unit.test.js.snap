@@ -1,6 +1,522 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sending submission should match snapshot 1`] = `
+.c8 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c13 {
+  display: block;
+  position: relative;
+}
+
+.c13 > svg:nth-child(1) {
+  position: static;
+}
+
+.c14 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c15 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c16 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c17 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c18 {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c19 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c20 {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c21 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c22 {
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s;
+  -webkit-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: yjkZA;
+  animation-name: yjkZA;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  fill: rgba(65,84,94,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c7 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c9 {
+  display: inherit;
+  padding-top: 0.9375rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.c23 {
+  display: inherit;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0.46875rem;
+}
+
+.c12 {
+  display: inherit;
+  margin: 0;
+  height: auto;
+  width: 3vw;
+  min-width: 20px;
+  max-width: 30px;
+  min-height: initial;
+  max-height: initial;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.c11 {
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c6 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c6,
+.c6 > a,
+.c6 > button {
+  display: inline-block;
+}
+
+.c6 > a,
+.c6 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c6 > a svg,
+.c6 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c6 > a > *,
+.c6 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c6 > a:disabled,
+.c6 > button:disabled {
+  opacity: 0.25;
+}
+
+.c6 > a:hover:not(:disabled),
+.c6 > button:hover:not(:disabled),
+.c6 > a:focus:not(:disabled),
+.c6 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c24 {
+  color: rgba(33,150,243,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: inherit;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+  max-width: 600px;
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(65,84,94,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-top: 2.5vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-top: 1.875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c23 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c23 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c6 > a:hover:not(:disabled) svg,
+  .c6 > button:hover:not(:disabled) svg,
+  .c6 > a:focus:not(:disabled) svg,
+  .c6 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c6 > a:hover:not(:disabled) > *,
+  .c6 > button:hover:not(:disabled) > *,
+  .c6 > a:focus:not(:disabled) > *,
+  .c6 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -39,7 +555,7 @@ exports[`Sending submission should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -50,7 +566,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -61,7 +577,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -73,7 +589,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -97,7 +613,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -121,7 +637,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -132,7 +648,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -144,7 +660,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Email
                       </div>
@@ -168,7 +684,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -191,7 +707,7 @@ exports[`Sending submission should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -203,7 +719,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kkGfuU yjwyl"
+                        className="c5"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -216,7 +732,7 @@ exports[`Sending submission should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -240,7 +756,7 @@ exports[`Sending submission should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -268,7 +784,7 @@ exports[`Sending submission should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c6"
                     color={
                       Array [
                         "blue",
@@ -299,16 +815,10 @@ exports[`Sending submission should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c7"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -326,7 +836,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c8"
                                   display="block"
                                   fill={
                                     Array [
@@ -370,7 +880,7 @@ exports[`Sending submission should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-gzVnrw dFawoA"
+                    className="c9"
                     display="inherit"
                   >
                     <Flexer>
@@ -387,7 +897,7 @@ exports[`Sending submission should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-gZMcBi FNzkq"
+                            className="c10"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -400,7 +910,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Sizer
@@ -428,7 +938,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-dnqmqq gqzsYK"
+                                        className="c12"
                                         display="inherit"
                                         size={
                                           Array [
@@ -446,7 +956,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                         >
                                           <styled.div>
                                             <div
-                                              className="sc-htpNat jCAfPJ"
+                                              className="c13"
                                             >
                                               <styled.svg
                                                 delay={1}
@@ -454,7 +964,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb kDlhQv"
+                                                  className="c14"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -470,7 +980,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb fIurkC"
+                                                  className="c15"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -486,7 +996,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb fjmXnP"
+                                                  className="c16"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -502,7 +1012,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb lbEuJX"
+                                                  className="c17"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -518,7 +1028,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb cswAVd"
+                                                  className="c18"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -534,7 +1044,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb heTQcr"
+                                                  className="c19"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -550,7 +1060,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb jgspqM"
+                                                  className="c20"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -566,7 +1076,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb ebwqlx"
+                                                  className="c21"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -582,7 +1092,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 viewBox="0 0 26 26"
                                               >
                                                 <svg
-                                                  className="sc-bxivhb ffpobx"
+                                                  className="c22"
                                                   viewBox="0 0 26 26"
                                                 >
                                                   <circle
@@ -610,7 +1120,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Spacer
@@ -636,7 +1146,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-gzVnrw kzWPNF"
+                                        className="c23"
                                         display="inherit"
                                       >
                                         <Test
@@ -662,7 +1172,7 @@ exports[`Sending submission should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-ckVGcZ crJFlK"
+                                                  className="c24"
                                                   color={
                                                     Array [
                                                       "blue",
@@ -699,6 +1209,356 @@ exports[`Sending submission should match snapshot 1`] = `
 `;
 
 exports[`Submit error should match snapshot 1`] = `
+.c13 {
+  display: block;
+  fill: rgba(244,67,54,1);
+}
+
+.c8 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c7 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c9 {
+  display: inherit;
+  padding-top: 0.9375rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.c14 {
+  display: inherit;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0.46875rem;
+}
+
+.c12 {
+  display: inherit;
+  margin: 0;
+  height: auto;
+  width: 3vw;
+  min-width: 20px;
+  max-width: 30px;
+  min-height: initial;
+  max-height: initial;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.c11 {
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c6 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c6,
+.c6 > a,
+.c6 > button {
+  display: inline-block;
+}
+
+.c6 > a,
+.c6 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c6 > a svg,
+.c6 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c6 > a > *,
+.c6 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c6 > a:disabled,
+.c6 > button:disabled {
+  opacity: 0.25;
+}
+
+.c6 > a:hover:not(:disabled),
+.c6 > button:hover:not(:disabled),
+.c6 > a:focus:not(:disabled),
+.c6 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c15 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: inherit;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+  max-width: 600px;
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(65,84,94,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-top: 2.5vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-top: 1.875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c14 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c14 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c6 > a:hover:not(:disabled) svg,
+  .c6 > button:hover:not(:disabled) svg,
+  .c6 > a:focus:not(:disabled) svg,
+  .c6 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c6 > a:hover:not(:disabled) > *,
+  .c6 > button:hover:not(:disabled) > *,
+  .c6 > a:focus:not(:disabled) > *,
+  .c6 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -743,7 +1603,7 @@ exports[`Submit error should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -755,7 +1615,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -766,7 +1626,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -778,7 +1638,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -802,7 +1662,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -827,7 +1687,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -838,7 +1698,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -850,7 +1710,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Email
                       </div>
@@ -874,7 +1734,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -898,7 +1758,7 @@ exports[`Submit error should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -910,7 +1770,7 @@ exports[`Submit error should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kkGfuU yjwyl"
+                        className="c5"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -923,7 +1783,7 @@ exports[`Submit error should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -947,7 +1807,7 @@ exports[`Submit error should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -975,7 +1835,7 @@ exports[`Submit error should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c6"
                     color={
                       Array [
                         "blue",
@@ -1006,16 +1866,10 @@ exports[`Submit error should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c7"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -1033,7 +1887,7 @@ exports[`Submit error should match snapshot 1`] = `
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c8"
                                   display="block"
                                   fill={
                                     Array [
@@ -1077,7 +1931,7 @@ exports[`Submit error should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-gzVnrw dFawoA"
+                    className="c9"
                     display="inherit"
                   >
                     <Flexer>
@@ -1094,7 +1948,7 @@ exports[`Submit error should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-gZMcBi FNzkq"
+                            className="c10"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -1107,7 +1961,7 @@ exports[`Submit error should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Sizer
@@ -1135,7 +1989,7 @@ exports[`Submit error should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-dnqmqq gqzsYK"
+                                        className="c12"
                                         display="inherit"
                                         size={
                                           Array [
@@ -1162,7 +2016,7 @@ exports[`Submit error should match snapshot 1`] = `
                                             viewBox="0 0 26 26"
                                           >
                                             <svg
-                                              className="sc-bdVaJa fNqbZI"
+                                              className="c13"
                                               color={
                                                 Array [
                                                   "red",
@@ -1192,7 +2046,7 @@ exports[`Submit error should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Spacer
@@ -1218,7 +2072,7 @@ exports[`Submit error should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-gzVnrw kzWPNF"
+                                        className="c14"
                                         display="inherit"
                                       >
                                         <Test
@@ -1244,7 +2098,7 @@ exports[`Submit error should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-ckVGcZ dWxVpl"
+                                                  className="c15"
                                                   color={
                                                     Array [
                                                       "red",
@@ -1281,6 +2135,356 @@ exports[`Submit error should match snapshot 1`] = `
 `;
 
 exports[`Submit success should match snapshot 1`] = `
+.c13 {
+  display: block;
+  fill: rgba(0,150,136,1);
+}
+
+.c8 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c7 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c9 {
+  display: inherit;
+  padding-top: 0.9375rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.c14 {
+  display: inherit;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0.46875rem;
+}
+
+.c12 {
+  display: inherit;
+  margin: 0;
+  height: auto;
+  width: 3vw;
+  min-width: 20px;
+  max-width: 30px;
+  min-height: initial;
+  max-height: initial;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.c11 {
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c6 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c6,
+.c6 > a,
+.c6 > button {
+  display: inline-block;
+}
+
+.c6 > a,
+.c6 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c6 > a svg,
+.c6 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c6 > a > *,
+.c6 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c6 > a:disabled,
+.c6 > button:disabled {
+  opacity: 0.25;
+}
+
+.c6 > a:hover:not(:disabled),
+.c6 > button:hover:not(:disabled),
+.c6 > a:focus:not(:disabled),
+.c6 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c15 {
+  color: rgba(0,150,136,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: inherit;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+  max-width: 600px;
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(65,84,94,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-top: 2.5vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-top: 1.875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c14 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c14 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c6 > a:hover:not(:disabled) svg,
+  .c6 > button:hover:not(:disabled) svg,
+  .c6 > a:focus:not(:disabled) svg,
+  .c6 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c6 > a:hover:not(:disabled) > *,
+  .c6 > button:hover:not(:disabled) > *,
+  .c6 > a:focus:not(:disabled) > *,
+  .c6 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -1319,7 +2523,7 @@ exports[`Submit success should match snapshot 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -1330,7 +2534,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -1341,7 +2545,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -1353,7 +2557,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -1377,7 +2581,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -1401,7 +2605,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -1412,7 +2616,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -1424,7 +2628,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Email
                       </div>
@@ -1448,7 +2652,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -1471,7 +2675,7 @@ exports[`Submit success should match snapshot 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -1483,7 +2687,7 @@ exports[`Submit success should match snapshot 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kkGfuU yjwyl"
+                        className="c5"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -1496,7 +2700,7 @@ exports[`Submit success should match snapshot 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -1520,7 +2724,7 @@ exports[`Submit success should match snapshot 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -1548,7 +2752,7 @@ exports[`Submit success should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c6"
                     color={
                       Array [
                         "blue",
@@ -1579,16 +2783,10 @@ exports[`Submit success should match snapshot 1`] = `
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c7"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -1606,7 +2804,7 @@ exports[`Submit success should match snapshot 1`] = `
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c8"
                                   display="block"
                                   fill={
                                     Array [
@@ -1650,7 +2848,7 @@ exports[`Submit success should match snapshot 1`] = `
                   }
                 >
                   <div
-                    className="sc-gzVnrw dFawoA"
+                    className="c9"
                     display="inherit"
                   >
                     <Flexer>
@@ -1667,7 +2865,7 @@ exports[`Submit success should match snapshot 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-gZMcBi FNzkq"
+                            className="c10"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -1680,7 +2878,7 @@ exports[`Submit success should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Sizer
@@ -1708,7 +2906,7 @@ exports[`Submit success should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-dnqmqq gqzsYK"
+                                        className="c12"
                                         display="inherit"
                                         size={
                                           Array [
@@ -1735,7 +2933,7 @@ exports[`Submit success should match snapshot 1`] = `
                                             viewBox="0 0 26 26"
                                           >
                                             <svg
-                                              className="sc-bdVaJa gILOvz"
+                                              className="c13"
                                               color={
                                                 Array [
                                                   "green",
@@ -1765,7 +2963,7 @@ exports[`Submit success should match snapshot 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Spacer
@@ -1791,7 +2989,7 @@ exports[`Submit success should match snapshot 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-gzVnrw kzWPNF"
+                                        className="c14"
                                         display="inherit"
                                       >
                                         <Test
@@ -1817,7 +3015,7 @@ exports[`Submit success should match snapshot 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-ckVGcZ iuDoeQ"
+                                                  className="c15"
                                                   color={
                                                     Array [
                                                       "green",
@@ -1854,6 +3052,309 @@ exports[`Submit success should match snapshot 1`] = `
 `;
 
 exports[`Validation should require a valid email address 1`] = `
+.c10 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c9 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c8 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c8,
+.c8 > a,
+.c8 > button {
+  display: inline-block;
+}
+
+.c8 > a,
+.c8 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c8 > a svg,
+.c8 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c8 > a > *,
+.c8 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c8 > a:disabled,
+.c8 > button:disabled {
+  opacity: 0.25;
+}
+
+.c8 > a:hover:not(:disabled),
+.c8 > button:hover:not(:disabled),
+.c8 > a:focus:not(:disabled),
+.c8 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(244,67,54,1);
+  color: rgba(137,16,8,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+  border-color: rgba(244,67,54,1);
+  color: rgba(137,16,8,1);
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c7 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(244,67,54,1);
+  color: rgba(137,16,8,1);
+  max-width: 600px;
+}
+
+.c7:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c7:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(244,67,54,1);
+}
+
+.c6 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(65,84,94,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+  color: rgba(244,67,54,1);
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c8 > a svg,
+  .c8 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c8 > a svg,
+  .c8 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c8 > a:hover:not(:disabled) svg,
+  .c8 > button:hover:not(:disabled) svg,
+  .c8 > a:focus:not(:disabled) svg,
+  .c8 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c8 > a:hover:not(:disabled) > *,
+  .c8 > button:hover:not(:disabled) > *,
+  .c8 > a:focus:not(:disabled) > *,
+  .c8 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -1889,7 +3390,7 @@ exports[`Validation should require a valid email address 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -1901,7 +3402,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={true}
@@ -1912,7 +3413,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value=""
                     >
                       <input
-                        className="sc-jKJlTe hCWUcA"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -1924,7 +3425,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={false}
                     >
                       <div
-                        className="sc-iAyFgw kEWiWf"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -1948,7 +3449,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -1973,7 +3474,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={true}
@@ -1984,7 +3485,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value="invalid-email.com"
                     >
                       <input
-                        className="sc-jKJlTe ihgVyr"
+                        className="c5"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -1996,7 +3497,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw kjeoPR"
+                        className="c6"
                       >
                         Email
                       </div>
@@ -2020,7 +3521,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2044,7 +3545,7 @@ exports[`Validation should require a valid email address 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={true}
@@ -2056,7 +3557,7 @@ exports[`Validation should require a valid email address 1`] = `
                       value=""
                     >
                       <textarea
-                        className="sc-kkGfuU cIogTW"
+                        className="c7"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2069,7 +3570,7 @@ exports[`Validation should require a valid email address 1`] = `
                       isPopulated={false}
                     >
                       <div
-                        className="sc-iAyFgw kEWiWf"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -2093,7 +3594,7 @@ exports[`Validation should require a valid email address 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2121,7 +3622,7 @@ exports[`Validation should require a valid email address 1`] = `
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c8"
                     color={
                       Array [
                         "blue",
@@ -2152,16 +3653,10 @@ exports[`Validation should require a valid email address 1`] = `
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c9"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -2179,7 +3674,7 @@ exports[`Validation should require a valid email address 1`] = `
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c10"
                                   display="block"
                                   fill={
                                     Array [
@@ -2212,6 +3707,257 @@ exports[`Validation should require a valid email address 1`] = `
 `;
 
 exports[`Validation should set each input ("name", "email", "message") to be invalid when no value is given 1`] = `
+.c8 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c7 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c6 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c6,
+.c6 > a,
+.c6 > button {
+  display: inline-block;
+}
+
+.c6 > a,
+.c6 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c6 > a svg,
+.c6 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c6 > a > *,
+.c6 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c6 > a:disabled,
+.c6 > button:disabled {
+  opacity: 0.25;
+}
+
+.c6 > a:hover:not(:disabled),
+.c6 > button:hover:not(:disabled),
+.c6 > a:focus:not(:disabled),
+.c6 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(244,67,54,1);
+  color: rgba(137,16,8,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(244,67,54,1);
+  color: rgba(137,16,8,1);
+  max-width: 600px;
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(244,67,54,1);
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c6 > a:hover:not(:disabled) svg,
+  .c6 > button:hover:not(:disabled) svg,
+  .c6 > a:focus:not(:disabled) svg,
+  .c6 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c6 > a:hover:not(:disabled) > *,
+  .c6 > button:hover:not(:disabled) > *,
+  .c6 > a:focus:not(:disabled) > *,
+  .c6 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -2247,7 +3993,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -2259,7 +4005,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={true}
@@ -2270,7 +4016,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <input
-                        className="sc-jKJlTe hCWUcA"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -2282,7 +4028,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-iAyFgw kEWiWf"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -2306,7 +4052,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2331,7 +4077,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={true}
@@ -2342,7 +4088,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <input
-                        className="sc-jKJlTe hCWUcA"
+                        className="c2"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -2354,7 +4100,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-iAyFgw kEWiWf"
+                        className="c3"
                       >
                         Email
                       </div>
@@ -2378,7 +4124,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2402,7 +4148,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={true}
@@ -2414,7 +4160,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       value=""
                     >
                       <textarea
-                        className="sc-kkGfuU cIogTW"
+                        className="c5"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2427,7 +4173,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                       isPopulated={false}
                     >
                       <div
-                        className="sc-iAyFgw kEWiWf"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -2451,7 +4197,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2479,7 +4225,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c6"
                     color={
                       Array [
                         "blue",
@@ -2510,16 +4256,10 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c7"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -2537,7 +4277,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c8"
                                   display="block"
                                   fill={
                                     Array [
@@ -2570,6 +4310,356 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
 `;
 
 exports[`Validation should validate for when correct values are supplied 1`] = `
+.c13 {
+  display: block;
+  fill: rgba(244,67,54,1);
+}
+
+.c8 {
+  display: block;
+  fill: rgba(33,150,243,1);
+}
+
+.c7 {
+  display: inherit;
+  padding-top: 0.234375rem;
+  padding-right: 0.46875rem;
+  padding-bottom: 0.234375rem;
+  padding-left: 0.46875rem;
+}
+
+.c9 {
+  display: inherit;
+  padding-top: 0.9375rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.c14 {
+  display: inherit;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0.46875rem;
+}
+
+.c12 {
+  display: inherit;
+  margin: 0;
+  height: auto;
+  width: 3vw;
+  min-width: 20px;
+  max-width: 30px;
+  min-height: initial;
+  max-height: initial;
+}
+
+.c10 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.c11 {
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c6 button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+}
+
+.c6,
+.c6 > a,
+.c6 > button {
+  display: inline-block;
+}
+
+.c6 > a,
+.c6 > button {
+  border-radius: 0.25rem;
+  border: 0.1875rem solid;
+  border-color: rgba(33,150,243,1);
+  color: rgba(33,150,243,1);
+  font-weight: 900;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  font-size: 0.875rem;
+}
+
+.c6 > a svg,
+.c6 > button svg {
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
+  -webkit-transition: 250ms opacity;
+  transition: 250ms opacity;
+  height: 12px;
+  width: 12px;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0.375rem;
+}
+
+.c6 > a > *,
+.c6 > button > * {
+  -webkit-transition: 250ms -webkit-transform;
+  -webkit-transition: 250ms transform;
+  transition: 250ms transform;
+}
+
+.c6 > a:disabled,
+.c6 > button:disabled {
+  opacity: 0.25;
+}
+
+.c6 > a:hover:not(:disabled),
+.c6 > button:hover:not(:disabled),
+.c6 > a:focus:not(:disabled),
+.c6 > button:focus:not(:disabled) {
+  opacity: 0.75;
+}
+
+.c4 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: 0.75rem;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c15 {
+  color: rgba(244,67,54,1);
+  display: inline;
+  font-weight: inherit;
+  font-size: inherit;
+  max-width: 56.25rem;
+  text-align: left;
+}
+
+.c2 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+}
+
+.c2:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c2:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c0 {
+  max-width: 600px;
+}
+
+.c1 {
+  display: block;
+  padding: 1.25rem 0;
+  position: relative;
+}
+
+.c5 {
+  border: 0.1875rem solid rgba(183,198,205,1);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  outline: 0;
+  padding: 7.5px 15px;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: border-color,color;
+  transition-property: border-color,color;
+  width: 100%;
+  border-color: rgba(65,84,94,1);
+  color: rgba(33,44,49,1);
+  max-width: 600px;
+}
+
+.c5:focus {
+  border-color: rgba(33,150,243,1);
+  color: rgba(6,68,117,1);
+}
+
+.c5:focus + * {
+  color: rgba(33,150,243,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+.c3 {
+  color: rgba(138,162,174,1);
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(15px,1.875rem);
+  -ms-transform: translate(15px,1.875rem);
+  transform: translate(15px,1.875rem);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-property: color,-webkit-transform;
+  -webkit-transition-property: color,transform;
+  transition-property: color,transform;
+  color: rgba(65,84,94,1);
+  -webkit-transform: scale(0.8) translate(0,0);
+  -ms-transform: scale(0.8) translate(0,0);
+  transform: scale(0.8) translate(0,0);
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-top: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-right: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-bottom: 0.625vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-bottom: 0.46875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c7 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c9 {
+    padding-top: 2.5vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c9 {
+    padding-top: 1.875rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c14 {
+    padding-left: 1.25vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c14 {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media all and (min-width:37.5rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 1vw;
+  }
+}
+
+@media all and (min-width:75rem) {
+  .c6 > a svg,
+  .c6 > button svg {
+    left: 0.75rem;
+  }
+}
+
+@media all and (min-width:56.25rem) {
+  .c6 > a:hover:not(:disabled) svg,
+  .c6 > button:hover:not(:disabled) svg,
+  .c6 > a:focus:not(:disabled) svg,
+  .c6 > button:focus:not(:disabled) svg {
+    opacity: 1;
+  }
+
+  .c6 > a:hover:not(:disabled) > *,
+  .c6 > button:hover:not(:disabled) > *,
+  .c6 > a:focus:not(:disabled) > *,
+  .c6 > button:focus:not(:disabled) > * {
+    -webkit-transform: translateX(0.3125rem);
+    -ms-transform: translateX(0.3125rem);
+    transform: translateX(0.3125rem);
+  }
+}
+
 <ContactForm>
   <Presentation
     handleChange={[Function]}
@@ -2614,7 +4704,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
             onSubmit={[Function]}
           >
             <form
-              className="sc-eNQAEJ bFnsAd"
+              className="c0"
               onSubmit={[Function]}
             >
               <FormInput
@@ -2626,7 +4716,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -2637,7 +4727,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="Mr Test"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Name"
                         onChange={[Function]}
                         type="text"
@@ -2649,7 +4739,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Name
                       </div>
@@ -2673,7 +4763,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2698,7 +4788,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.input
                       isInvalid={false}
@@ -2709,7 +4799,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="test@test.com"
                     >
                       <input
-                        className="sc-jKJlTe fzWilj"
+                        className="c2"
                         name="Email"
                         onChange={[Function]}
                         type="text"
@@ -2721,7 +4811,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Email
                       </div>
@@ -2745,7 +4835,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2769,7 +4859,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
               >
                 <styled.label>
                   <label
-                    className="sc-hMqMXs fsNqEC"
+                    className="c1"
                   >
                     <styled.textarea
                       isInvalid={false}
@@ -2781,7 +4871,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       value="Test"
                     >
                       <textarea
-                        className="sc-kkGfuU yjwyl"
+                        className="c5"
                         name="Message"
                         onChange={[Function]}
                         rows="8"
@@ -2794,7 +4884,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                       isPopulated={true}
                     >
                       <div
-                        className="sc-iAyFgw hsHxrF"
+                        className="c3"
                       >
                         Message
                       </div>
@@ -2818,7 +4908,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                         size="12px"
                       >
                         <span
-                          className="sc-ckVGcZ jubzum"
+                          className="c4"
                           color={
                             Array [
                               "red",
@@ -2846,7 +4936,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                   }
                 >
                   <div
-                    className="sc-fjdhpX kApFHI"
+                    className="c6"
                     color={
                       Array [
                         "blue",
@@ -2877,16 +4967,10 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                           }
                         >
                           <div
-                            className="sc-gzVnrw foXiVo"
+                            className="c7"
                             display="inherit"
                           >
                             <IconMiscArrow
-                              color={
-                                Array [
-                                  "misc",
-                                  "white",
-                                ]
-                              }
                               display="block"
                               fill={
                                 Array [
@@ -2904,7 +4988,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                 viewBox="0 0 14 14"
                               >
                                 <svg
-                                  className="sc-bwzfXH eQLZoL"
+                                  className="c8"
                                   display="block"
                                   fill={
                                     Array [
@@ -2948,7 +5032,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                   }
                 >
                   <div
-                    className="sc-gzVnrw dFawoA"
+                    className="c9"
                     display="inherit"
                   >
                     <Flexer>
@@ -2965,7 +5049,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                           wrap="nowrap"
                         >
                           <div
-                            className="sc-gZMcBi FNzkq"
+                            className="c10"
                             direction="row"
                             wrap="nowrap"
                           >
@@ -2978,7 +5062,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Sizer
@@ -3006,7 +5090,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-dnqmqq gqzsYK"
+                                        className="c12"
                                         display="inherit"
                                         size={
                                           Array [
@@ -3033,7 +5117,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                             viewBox="0 0 26 26"
                                           >
                                             <svg
-                                              className="sc-bdVaJa fNqbZI"
+                                              className="c13"
                                               color={
                                                 Array [
                                                   "red",
@@ -3063,7 +5147,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                 order="0"
                               >
                                 <div
-                                  className="sc-gqjmRU bGUlrb"
+                                  className="c11"
                                   order="0"
                                 >
                                   <Spacer
@@ -3089,7 +5173,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                       }
                                     >
                                       <div
-                                        className="sc-gzVnrw kzWPNF"
+                                        className="c14"
                                         display="inherit"
                                       >
                                         <Test
@@ -3115,7 +5199,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
                                                 display="inline"
                                               >
                                                 <span
-                                                  className="sc-ckVGcZ dWxVpl"
+                                                  className="c15"
                                                   color={
                                                     Array [
                                                       "red",

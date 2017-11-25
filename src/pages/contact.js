@@ -21,6 +21,7 @@ import ServicesArticle from '../components/services/article';
 import ContactForm from '../components/contact/form';
 import ContactOptions from '../components/contact/options';
 import { Form, FormInput, FormTextArea } from '../components/form';
+import FooterSimple from '../components/footers/simple';
 
 const ContactPage = () => (
   <Page>
@@ -49,6 +50,8 @@ const ContactPage = () => (
         </Content>
       </Spacer>
     </main>
+
+    <FooterSimple />
   </Page>
 );
 

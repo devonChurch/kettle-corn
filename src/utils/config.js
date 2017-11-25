@@ -1,6 +1,6 @@
 const isProduction = NODE_ENV === 'production';
 
-const version = 'v2.3.5';
+const version = 'v3.5.0';
 
 const lambdaEndpoint = isProduction
   ? 'https://57dina5fih.execute-api.us-east-1.amazonaws.com/dev'

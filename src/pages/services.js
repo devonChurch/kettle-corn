@@ -42,7 +42,7 @@ const ServicesPage = () => (
             <Spacer key={key} padding={['large', 0, 0]}>
               <Content>
                 {Boolean(index) && (
-                  <Spacer padding={[0, 0, 'large']}>
+                  <Spacer padding={['small', 0, 'largest']}>
                     <Divider background={['gray', 'extraLight']} />
                   </Spacer>
                 )}

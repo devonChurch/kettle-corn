@@ -14,12 +14,12 @@ const IconMiscArrow = ({ fill, display }) => {
 };
 
 IconMiscArrow.propTypes = {
-  color: PropTypes.array,
+  fill: PropTypes.array,
   display: PropTypes.string,
 };
 
 IconMiscArrow.defaultProps = {
-  color: ['misc', 'white'],
+  fill: ['misc', 'white'],
   display: 'block',
 };
 
