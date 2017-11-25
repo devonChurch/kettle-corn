@@ -167,6 +167,20 @@ const Sicon = styled.div`
   }
 `;
 
-const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary, Sinline, Sicon };
+const Shover = styled.span`
+  ${({ isHover }) =>
+    isHover &&
+    css`
+      display: block;
+      transition: opacity ${speed.fast};
+
+      &:hover,
+      &:focus {
+        opacity: 0.75;
+      }
+    `};
+`;
+
+const buttons = { Sprimary, Ssecondary, Stertiary, Squaternary, Sinline, Sicon, Shover };
 
 export default buttons;

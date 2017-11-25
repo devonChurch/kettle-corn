@@ -12,6 +12,7 @@ import {
   IconStandardDesign,
   IconStandardSpeech,
   IconStandardHeart,
+  IconStandardArrowUp,
 } from './standard';
 
 // Feature
@@ -38,6 +39,7 @@ const icons = {
   IconStandardDesign,
   IconStandardSpeech,
   IconStandardHeart,
+  IconStandardArrowUp,
   IconFeatureFeedback,
   IconFeatureSocial,
   IconFeatureDevelopment,
@@ -63,6 +65,7 @@ export {
   IconStandardDesign,
   IconStandardSpeech,
   IconStandardHeart,
+  IconStandardArrowUp,
   IconFeatureFeedback,
   IconFeatureSocial,
   IconFeatureDevelopment,

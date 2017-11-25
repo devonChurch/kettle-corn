@@ -156,6 +156,17 @@ const IconStandardHeart = ({ color, display }) => {
 IconStandardHeart.propTypes = propTypes;
 IconStandardHeart.defaultProps = defaultProps;
 
+const IconStandardArrowUp = ({ color, display }) => {
+  return (
+    <Ssvg viewBox="0 0 26 26" color={color} display={display}>
+      <path d="M21.8,12.3l-8.1-8.1c-0.4-0.4-1-0.4-1.4,0l-8.1,8.1c-0.4,0.4-0.4,1,0,1.4C4.4,13.9,4.7,14,4.9,14s0.5-0.1,0.7-0.3L12,7.3v13.7c0,0.6,0.4,1,1,1s1-0.4,1-1V7.3l6.4,6.4c0.4,0.4,1,0.4,1.4,0S22.2,12.7,21.8,12.3z" />
+    </Ssvg>
+  );
+};
+
+IconStandardArrowUp.propTypes = propTypes;
+IconStandardArrowUp.defaultProps = defaultProps;
+
 const icons = {
   IconStandardEmail,
   IconStandardTwitter,
@@ -169,6 +180,7 @@ const icons = {
   IconStandardDesign,
   IconStandardSpeech,
   IconStandardHeart,
+  IconStandardArrowUp,
 };
 
 export {
@@ -185,4 +197,5 @@ export {
   IconStandardDesign,
   IconStandardSpeech,
   IconStandardHeart,
+  IconStandardArrowUp,
 };

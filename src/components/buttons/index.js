@@ -6,17 +6,46 @@ import { IconMiscArrow } from '../icons';
 import { createColor, spacing, misc } from '../../styles';
 import styles from './styles';
 
-const { Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup, Sinline, Sicon } = styles;
+const { Sprimary, Ssecondary, Stertiary, Squaternary, Sgroup, Sinline, Sicon, Shover } = styles;
 const createPadding = isLarge => (isLarge ? ['small', 'medium'] : ['smallest', 'small']);
 
-const Anchor = ({ children, href }) => {
+const Anchor = ({ children, href, isHover }) => {
   const isSpecial =
     href.startsWith('#') ||
     href.startsWith('tel:') ||
     href.startsWith('mailto:') ||
     href.startsWith('http');
 
-  return isSpecial ? <a href={href}>{children}</a> : <Link to={href}>{children}</Link>;
+  switch (true) {
+    case Boolean(isHover && isSpecial):
+      return (
+        <Shover isHover>
+          <a href={href}>{children}</a>
+        </Shover>
+      );
+
+    case Boolean(isHover):
+      return (
+        <Shover isHover>
+          <Link to={href}>{children}</Link>
+        </Shover>
+      );
+
+    case Boolean(isSpecial):
+      return <a href={href}>{children}</a>;
+
+    default:
+      return <Link to={href}>{children}</Link>;
+  }
+};
+
+Anchor.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+};
+
+Anchor.defaultProps = {
+  isFocus: false,
 };
 
 const propTypes = {

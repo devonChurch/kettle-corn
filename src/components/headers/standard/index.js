@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Hero from '../../hero';
 import { Spacer, Flexer, Sizer, Color } from '../../scaffold';
-import { ButtonTertiary } from '../../buttons';
+import { Anchor, ButtonTertiary } from '../../buttons';
 import { LogoNoText } from '../../logo';
 import { HeadingOne } from '../../headings';
 import navigation from '../../../data/navigation';
@@ -51,11 +51,11 @@ const HeaderStandard = ({ children, title, background }) => {
             <Wrapper wrap="wrap" align="center">
               <Item>
                 <Spacer padding={[0, 'large', 0, 0]}>
-                  <Link to="/">
+                  <Anchor href="/" isHover>
                     <Slogo>
                       <LogoNoText color="yellow" background={['yellow']} />
                     </Slogo>
-                  </Link>
+                  </Anchor>
                 </Spacer>
               </Item>
               <Item grow="1">

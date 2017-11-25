@@ -11,11 +11,12 @@ const styles = {
     border-radius: ${strokeWidth};
     border-left: 0;
     border-right: 0;
+    margin: 0;
+    max-width: 1200px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1200px;
     width: calc(100vw - 60px);
   `,
 };
