@@ -64,53 +64,59 @@ const IndexPage = () => (
       </section>
 
       <section>
-        <Spacer margin={[0, 0, 'largest']}>
-          <Color background={['blue', 'darkest']}>
-            <Spacer padding={['largest', 0]}>
-              <Content>
-                <HeadingTwo color={['misc', 'white']}>Services</HeadingTwo>
+        <Color background={['blue', 'darkest']}>
+          <Spacer padding={['largest', 0]}>
+            <Content>
+              <HeadingTwo color={['misc', 'white']}>Services</HeadingTwo>
 
-                <Spacer margin={[0, '-small']}>
-                  <Grid>
-                    {({ GridWrapper, GridItemThreeUp: Item }) => (
-                      <GridWrapper>
-                        {Object.keys(services).map(key => {
-                          const { title, id, swatch, Icon, blurb } = services[key];
+              <Spacer margin={[0, '-small']}>
+                <Grid>
+                  {({ GridWrapper, GridItemThreeUp: Item }) => (
+                    <GridWrapper>
+                      {Object.keys(services).map(key => {
+                        const { title, id, swatch, Icon, blurb } = services[key];
 
-                          return (
-                            <Item key={key}>
-                              <ServicesTile
-                                title={title}
-                                id={id}
-                                swatch={swatch}
-                                Icon={Icon}
-                                blurb={blurb}
-                              />
-                            </Item>
-                          );
-                        })}
-                      </GridWrapper>
-                    )}
-                  </Grid>
-                </Spacer>
-              </Content>
-            </Spacer>
-          </Color>
-        </Spacer>
+                        return (
+                          <Item key={key}>
+                            <ServicesTile
+                              title={title}
+                              id={id}
+                              swatch={swatch}
+                              Icon={Icon}
+                              blurb={blurb}
+                            />
+                          </Item>
+                        );
+                      })}
+                    </GridWrapper>
+                  )}
+                </Grid>
+              </Spacer>
+            </Content>
+          </Spacer>
+        </Color>
       </section>
 
       <section>
-        <Spacer padding={[0, 0, 'largest']}>
-          <Content>
-            <HeadingTwo color={['gray', 'light']}>We like working with</HeadingTwo>
-
-            <Partners />
-          </Content>
-        </Spacer>
+        <Color background={['green']}>
+          <Spacer padding={['largest', 0]}>
+            <Content>
+              <HeadingTwo color={['misc', 'white']}>
+                We like{' '}
+                <Text color={['green', 'darkest']} weight={700}>
+                  working with
+                </Text>
+              </HeadingTwo>
+              <Partners />
+            </Content>
+          </Spacer>
+        </Color>
       </section>
     </main>
 
-    <FooterStandard />
+    <Spacer padding={['largest', 0, 0]}>
+      <FooterStandard />
+    </Spacer>
   </Page>
 );
 

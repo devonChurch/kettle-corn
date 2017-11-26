@@ -6,23 +6,27 @@ import Grid from '../grid';
 import { Spacer, Sizer, Flexer } from '../scaffold';
 import styles from './styles';
 
-const { Slogo } = styles;
+const { Stile, Slogo } = styles;
 
 const Partners = () => {
   return (
-    <Grid>
-      {({ GridWrapper, GridItemFourUp: Item }) => (
-        <GridWrapper>
-          {partners.map(({ name, logo }) => (
-            <Item key={name}>
-              <Spacer padding={['medium', 0]}>
-                <Slogo src={logo} alt={name} />
-              </Spacer>
-            </Item>
-          ))}
-        </GridWrapper>
-      )}
-    </Grid>
+    <Stile>
+      <Flexer>
+        {({ Wrapper, Item }) => (
+          <Wrapper wrap="wrap" justify="center">
+            {partners.map(({ name, logo }) => (
+              <Item key={name}>
+                <Sizer minWidth="150px" maxWidth="260px">
+                  <Spacer padding={['medium']}>
+                    <Slogo src={logo} alt={name} />
+                  </Spacer>
+                </Sizer>
+              </Item>
+            ))}
+          </Wrapper>
+        )}
+      </Flexer>
+    </Stile>
   );
 };
 
