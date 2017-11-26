@@ -64,7 +64,7 @@ Here is some **Bold Text** along side an *Italics Styled* varient.
 
 const StyleguidePage = () => (
   <Page>
-    <HeaderStandard title="Style Guide" background={['gray', 'dark']} />
+    <HeaderStandard title="Style Guide" background={['blue']} />
 
     <section>
       <Spacer padding={['largest', 0]}>
