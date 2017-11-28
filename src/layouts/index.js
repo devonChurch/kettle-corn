@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import { config, analytics } from '../utils';
 
-analytics.start();
+// analytics.start();
 
 const TemplateWrapper = ({ children }) => (
   <div>
