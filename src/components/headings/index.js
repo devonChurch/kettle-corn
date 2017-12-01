@@ -5,7 +5,7 @@ import { Spacer } from '../scaffold';
 import Markdown from '../markdown';
 import styles from './styles';
 
-const { SheadingOne, SheadingTwo, SheadingThree, Stext } = styles;
+const { SheadingOne, SheadingTwo, SheadingThree, Stext, Sintroduction } = styles;
 
 const propTypes = {
   children: PropTypes.node,
@@ -82,6 +82,10 @@ Text.defaultProps = {
   display: 'inline',
 };
 
-const headings = { HeadingOne, HeadingTwo, HeadingThree, Text };
+const Introduction = ({ children, color }) => {
+  return <Sintroduction color={color}>{children}</Sintroduction>;
+};
 
-export { headings as default, HeadingOne, HeadingTwo, HeadingThree, Text };
+const headings = { HeadingOne, HeadingTwo, HeadingThree, Text, Introduction };
+
+export { headings as default, HeadingOne, HeadingTwo, HeadingThree, Text, Introduction };

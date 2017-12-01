@@ -21,7 +21,9 @@ const SheadingOne = styled.h1`
   ${createDynamicFontSize({
     min: '35px',
     max: '48px',
-  })} &:after {
+  })};
+
+  &:after {
     background: ${({ color }) =>
       color ? createColor(...color) : createColor('misc', 'black', 0.5)};
     content: '';
@@ -59,6 +61,23 @@ const style = {
     font-size: ${({ size }) => (size ? createRem(size) : 'inherit')};
     max-width: ${createRem(breakpoints.medium)};
     text-align: ${({ align }) => align || 'left'};
+  `,
+
+  Sintroduction: SheadingOne.extend`
+    max-width: inherit;
+
+    ${createDynamicFontSize({
+      min: '26px',
+      max: '48px',
+    })};
+
+    br {
+      display: none;
+
+      ${media['>=large']} {
+        display: block;
+      }
+    }
   `,
 };
 

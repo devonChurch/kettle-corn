@@ -24,7 +24,7 @@ import {
   IconFeatureAnalytics,
 } from '../components/icons';
 import LogoWithText, { LogoNoText } from '../components/logo';
-import { HeadingOne, HeadingTwo, HeadingThree, Text } from '../components/headings';
+import { HeadingOne, HeadingTwo, HeadingThree, Text, Introduction } from '../components/headings';
 import {
   ButtonPrimary,
   ButtonSecondary,
@@ -43,22 +43,25 @@ const IndexPage = () => (
       <section>
         <Spacer padding={['largest', 0]}>
           <Content>
-            <HeadingOne color={['blue']}>
+            <Introduction color={['blue']}>
               <Text color={['gray']} weight={400}>
-                Grow your business with a{' '}
+                Start{' '}
                 <Text color={['blue', 'darkest']} weight={700}>
-                  digital strategy
+                  reaching and engaging
                 </Text>{' '}
-                and
+                <br />
+                with more customers through
               </Text>{' '}
-              stay ahead of the game.
-            </HeadingOne>
-            <Text display="block">
-              We offer a number of comprehensive or add-on services for businesses. Maybe you're
-              just starting out on your digital journey, or perhaps you've got some online
-              advertising and customer analytics up and running - but don't really know what to do
-              next. Get in touch and we'll sort it out.
-            </Text>
+              <br />
+              smarter digital marketing.
+            </Introduction>
+            <Spacer padding={['large', 0, 0]}>
+              <Text display="block">
+                Talk to us about enhancing your business and find out what motivates your customer.
+                We'll help with end-to-end data driven marketing, personalisation and insights to
+                propel you forward.
+              </Text>
+            </Spacer>
           </Content>
         </Spacer>
       </section>
