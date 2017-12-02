@@ -19,24 +19,27 @@ console.log({ isProduction });
 // (node:7498) UnhandledPromiseRejectionWarning: Unhandled promise rejection
 // (rejection id: 1): Error: Page crashed!
 const start = async () => {
-  for (test of ['services', 'contact', 'styleguide']) {
+  for (test of ['', 'services', 'contact', 'styleguide']) {
+    const name = test || 'home';
+
     console.log('- - - - - - - - - - - - - - - - - - -');
-    console.log(`${test} | start \n`);
+    console.log(`${name} | start \n`);
+
     const browser = await puppeteer.launch(puppeteerOptions);
     const page = await browser.newPage();
     await fs.ensureDir(screenshots);
-    await page.goto(`https://enhancedigital.co.nz/${test}/`, { waitUntil: 'load' });
+    await page.goto(`https://enhancedigital.co.nz/${test}`, { waitUntil: 'load' });
 
     for (width of [320, 600, 900, 1200]) {
-      console.log(`- ${test} | ${width}px`);
+      console.log(`- ${name} | ${width}px`);
       await page.setViewport({ width, height: 600 });
-      const saveAs = path.resolve(screenshots, `${test}-${width}.png`);
+      const saveAs = path.resolve(screenshots, `${name}-${width}.png`);
       const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
 
     await page.close();
     await browser.close();
-    console.log(`\n${test} | finish`);
+    console.log(`\n${name} | finish`);
   }
   console.log('- - - - - - - - - - - - - - - - - - -');
 };
@@ -45,4 +48,7 @@ try {
   start();
 } catch (error) {
   console.log(error);
+  process.exit(1);
 }
+
+process.exit(0);
