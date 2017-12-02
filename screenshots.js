@@ -41,14 +41,16 @@ const start = async () => {
     await browser.close();
     console.log(`\n${name} | finish`);
   }
-  console.log('- - - - - - - - - - - - - - - - - - -');
 };
 
 try {
-  start();
+  start().then(() => {
+    console.log('- - - - - - - - - - - - - - - - - - -');
+    console.log('testing complete');
+    process.exit(0);
+  });
 } catch (error) {
+  console.log('- - - - - - - - - - - - - - - - - - -');
   console.log(error);
   process.exit(1);
 }
-
-process.exit(0);
