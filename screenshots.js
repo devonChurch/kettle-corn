@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const puppeteer = require('puppeteer');
 const puppeteerOptions = isProduction
-  ? { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
+  ? { args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] }
   : { headless: false, slowMo: 50 };
 const screenshots = path.resolve(__dirname, './screenshots');
 
