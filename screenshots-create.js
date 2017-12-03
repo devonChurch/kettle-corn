@@ -2,7 +2,6 @@
 
 const isProduction = process.env.NODE_ENV === 'production';
 const path = require('path');
-const fs = require('fs-extra');
 const puppeteer = require('puppeteer');
 const puppeteerUrl = isProduction ? 'https://enhancedigital.co.nz/' : 'http://localhost:8000/';
 const puppeteerOptions = isProduction
@@ -28,7 +27,6 @@ const start = async () => {
 
     const browser = await puppeteer.launch(puppeteerOptions);
     const page = await browser.newPage();
-    await fs.ensureDir(screenshots);
     await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' });
 
     for (width of [320, 600, 900, 1200]) {
@@ -47,7 +45,7 @@ const start = async () => {
 try {
   start().then(() => {
     console.log('- - - - - - - - - - - - - - - - - - -');
-    console.log('testing complete');
+    console.log('screenshot creation complete');
     process.exit(0);
   });
 } catch (error) {

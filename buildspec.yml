@@ -62,14 +62,17 @@ phases:
       - echo "run end-to-end tests"
       - npm run test:e2e:production
       
-      - echo "generate screenshots"
-      - npm run test:screenshots:production
+      - echo "prep screenshots"
+      - npm run screenshots:prep
+      
+      - echo "create new screenshots"
+      - npm run screenshots:create:production
 
       - echo "get previous new screen shots from s3 and set as old screenshots"
       - aws s3 cp --recursive s3://enhance-digital-screenshots/new ./screenshots/old
 
-      - echo "create screenshot comparison"
-      - npm run test:compare
+      - echo "compare screenshots"
+      - npm run screenshots:compare
 
       - echo "clean previous screenshots from s3"
       - aws s3 rm s3://enhance-digital-screenshots/ --recursive

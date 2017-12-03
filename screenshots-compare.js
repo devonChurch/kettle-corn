@@ -12,16 +12,13 @@ const getFileNames = folder => {
 
 const oldFileNames = getFileNames('old');
 const newFileNames = getFileNames('new');
-// const compareFilePaths = newFileNames.filter(path => oldFileNames.includes(path));
 
 const start = async () => {
   for (fileName of newFileNames) {
-    // for(i = 0, length = newFileNames.length; i < length; i += 1) {
-
     if (!oldFileNames.includes(fileName)) continue;
 
     console.log('- - - - - - - - - - - - - - - - - - -');
-    console.log(`${fileName} | start \n`);
+    console.log(`${fileName} | start`);
 
     const getFilePath = folder => path.resolve(screenshotsDir, folder, fileName);
     const oldFilePath = getFilePath('old');
@@ -33,11 +30,9 @@ const start = async () => {
     );
 
     fs.writeFileSync(compareFilePath, compareData.getBuffer());
-    console.log(`\n${fileName} | finish`);
+    console.log(`${fileName} | finish`);
   }
 };
-
-// console.log({ oldFileNames, newFileNames });
 
 try {
   start().then(() => {
