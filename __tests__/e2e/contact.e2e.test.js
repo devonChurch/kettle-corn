@@ -8,7 +8,7 @@ const puppeteerOptions = isProduction
   : { headless: false, slowMo: 50 };
 const puppeteerUrls = isProduction
   ? ['https://enhancedigital.co.nz', 'https://www.enhancedigital.co.nz']
-  : ['http://localhost:8000', 'http://www.localhost:8000'];
+  : ['http://localhost:8000'];
 
 console.log({ isProduction });
 
