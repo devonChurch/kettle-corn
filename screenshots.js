@@ -4,10 +4,11 @@ const isProduction = process.env.NODE_ENV === 'production';
 const path = require('path');
 const fs = require('fs-extra');
 const puppeteer = require('puppeteer');
+const puppeteerUrl = isProduction ? 'https://enhancedigital.co.nz/' : 'http://localhost:8000/';
 const puppeteerOptions = isProduction
   ? { args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] }
   : { headless: false, slowMo: 50 };
-const screenshots = path.resolve(__dirname, './screenshots');
+const screenshots = path.resolve(__dirname, 'screenshots', 'new');
 
 console.log({ isProduction });
 
@@ -28,7 +29,7 @@ const start = async () => {
     const browser = await puppeteer.launch(puppeteerOptions);
     const page = await browser.newPage();
     await fs.ensureDir(screenshots);
-    await page.goto(`https://enhancedigital.co.nz/${test}`, { waitUntil: 'load' });
+    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' });
 
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);

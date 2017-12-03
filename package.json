@@ -21,6 +21,7 @@
     "test:e2e:production": "NODE_ENV=production jest '/__tests__/.*.e2e.test.js'",
     "test:screenshots:development": "NODE_ENV=development node ./screenshots",
     "test:screenshots:production": "NODE_ENV=production node ./screenshots",
+    "test:compare": "node ./compare",
     "gatsby": "gatsby",
     "commit": "git-cz",
     "commitizen": "commitizen"
@@ -36,6 +37,8 @@
   },
   "homepage": "https://github.com/devonChurch/kettle-corn#readme",
   "devDependencies": {
+    "canvas": "^1.6.7",
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "2.0.0",
     "enzyme": "^3.1.1",
@@ -50,7 +53,8 @@
     "jest-styled-components": "^4.9.0",
     "prettier": "^1.6.1",
     "puppeteer": "^0.13.0",
-    "react-test-renderer": "^15.6.1"
+    "react-test-renderer": "^15.6.1",
+    "resemblejs": "^2.5.0"
   },
   "config": {
     "commitizen": {

@@ -7,7 +7,12 @@ phases:
 
       - echo "ubuntu dependancies"
       - apt-get update
+
+      - echo "install puppeteer dependancies"
       - apt-get install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+
+      - echo "install canvas dependancies"
+      - apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++
 
       - echo "install node 8"
       - npm install -g n
@@ -59,6 +64,12 @@ phases:
       
       - echo "generate screenshots"
       - npm run test:screenshots:production
+
+      - echo "get previous new screen shots from s3 and set as old screenshots"
+      - aws s3 cp --recursive s3://enhance-digital-screenshots/ ./screenshots/old
+
+      - echo "create screenshot comparison"
+      - npm run test:compare
 
       - echo "clean previous screenshots from s3"
       - aws s3 rm s3://enhance-digital-screenshots/ --recursive
