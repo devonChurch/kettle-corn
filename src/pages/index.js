@@ -43,7 +43,7 @@ const IndexPage = () => (
       <section>
         <Spacer padding={['largest', 0]}>
           <Content>
-            <Introduction color={['orange']}>
+            <Introduction color={['blue']}>
               <Text color={['gray']} weight={400}>
                 Start{' '}
                 <Text color={['blue', 'darkest']} weight={700}>
