@@ -32,6 +32,10 @@ const start = async () => {
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);
       await page.setViewport({ width, height: 600 });
+
+      // Wait a second for the repaints etc to be fufilled.
+      await new Promise(resolve => setTimeout(() => resolve(), 1000));
+
       const saveAs = path.resolve(screenshots, `${name}-${width}.png`);
       const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
