@@ -27,7 +27,7 @@ const start = async () => {
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${name} | start \n`);
-    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'networkidle0' });
+    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' });
 
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);
