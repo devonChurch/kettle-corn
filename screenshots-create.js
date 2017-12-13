@@ -19,14 +19,14 @@ console.log({ isProduction });
 // (node:7498) UnhandledPromiseRejectionWarning: Unhandled promise rejection
 // (rejection id: 1): Error: Page crashed!
 const start = async () => {
+  const browser = await puppeteer.launch(puppeteerOptions);
+  const page = await browser.newPage();
+
   for (test of ['', 'services', 'contact', 'styleguide']) {
     const name = test || 'home';
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${name} | start \n`);
-
-    const browser = await puppeteer.launch(puppeteerOptions);
-    const page = await browser.newPage();
     await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' });
 
     for (width of [320, 600, 900, 1200]) {
@@ -39,11 +39,11 @@ const start = async () => {
       const saveAs = path.resolve(screenshots, `${name}-${width}.png`);
       const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
-
-    await page.close();
-    await browser.close();
     console.log(`\n${name} | finish`);
   }
+
+  await page.close();
+  await browser.close();
 };
 
 try {
