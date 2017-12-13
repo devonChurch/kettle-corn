@@ -27,11 +27,11 @@ const start = async () => {
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${name} | start \n`);
-    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' });
+    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'networkidle0' });
 
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);
-      await page.setViewport({ width, height: 9999 });
+      await page.setViewport({ width, height: 600 });
 
       // Wait a second for the repaints etc to be fufilled.
       await new Promise(resolve => setTimeout(() => resolve(), 1000));
