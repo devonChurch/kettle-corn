@@ -42,6 +42,7 @@ try {
   });
 } catch (e) {
   console.log('- - - - - - - - - - - - - - - - - - -');
+  console.log('comparing error');
   console.log(error);
   process.exit(1);
 }

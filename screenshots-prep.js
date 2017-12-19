@@ -16,6 +16,7 @@ try {
     process.exit(0);
   });
 } catch (error) {
+  console.log('screenshot prep error');
   console.log(error);
   process.exit(1);
 }
