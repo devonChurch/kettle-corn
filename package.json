@@ -21,7 +21,7 @@
     "test:e2e:production": "NODE_ENV=production jest '/__tests__/.*.e2e.test.js'",
     "screenshots:prep": "node ./screenshots-prep",
     "screenshots:create:development": "NODE_ENV=development node ./screenshots-create",
-    "screenshots:create:production": "NODE_ENV=production node DEBUG='puppeteer:*' ./screenshots-create",
+    "screenshots:create:production": "NODE_ENV=production DEBUG='puppeteer:*' node ./screenshots-create",
     "screenshots:compare": "node ./screenshots-compare",
     "gatsby": "gatsby",
     "commit": "git-cz",
