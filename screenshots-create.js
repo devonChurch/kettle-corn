@@ -42,8 +42,8 @@ const start = async () => {
     console.log(`\n${name} | finish`);
   }
 
-  await page.close();
-  await browser.close();
+  // await page.close();
+  // await browser.close();
 };
 
 try {
