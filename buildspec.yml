@@ -53,11 +53,7 @@ phases:
       - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
       
       - echo "invalidate cloud front cache"
-      - aws configure set preview.cloudfront true
-      - aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths "/*"
-
-      - echo "delay for $DELAY seconds until cache invalidates"
-      - sleep $DELAY
+      - npm run cache:invalidate
       
       - echo "run end-to-end tests"
       - npm run test:e2e:production
