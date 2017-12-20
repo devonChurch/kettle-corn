@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "pull through cloud front id ($CLOUD_FRONT_ID)"
-
 if [ $CLOUD_FRONT_ID ]; then
   
   echo "invalidating cache ($CLOUD_FRONT_ID)"

@@ -30,9 +30,12 @@ phases:
   pre_build:
     commands:
 
-      - echo "access id = $CLOUD_FRONT_ID"
-      - echo "access id = $AWS_ACCESS_KEY_ID"
-      - echo "access key = $AWS_SECRET_ACCESS_KEY"
+      - echo "bucket (site)        = $BUCKET_SITE"
+      - echo "bucket (screen shot) = $BUCKET_SCREEN_SHOTS"
+      - echo "cloudfront id        = $CLOUD_FRONT_ID"
+      - echo "access (id)          = $AWS_ACCESS_KEY_ID"
+      - echo "access (key)         = $AWS_SECRET_ACCESS_KEY"
+      - echo "dealy (seconds)      = $DELAY"
 
       - echo "run unit tests"
       - npm run test:unit
@@ -47,10 +50,10 @@ phases:
     commands:
 
       - echo "clean previous build from s3"
-      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      - aws s3 rm s3://BUCKET_SITE/ --recursive
       
       - echo "deploy new build to s3"
-      - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
+      - aws s3 cp --acl public-read --recursive ./public/ s3://BUCKET_SITE/
       
       - echo "invalidate cloud front cache"
       - npm run cache:invalidate
@@ -65,16 +68,16 @@ phases:
       - npm run screenshots:create:production
 
       - echo "get previous new screen shots from s3 and set as old screenshots"
-      - aws s3 cp --recursive s3://enhance-digital-screenshots/new ./screenshots/old
+      - aws s3 cp --recursive s3://$BUCKET_SCREEN_SHOTS/new ./screenshots/old
 
       - echo "compare screenshots"
       - npm run screenshots:compare
 
       - echo "clean previous screenshots from s3"
-      - aws s3 rm s3://enhance-digital-screenshots/ --recursive
+      - aws s3 rm s3://$BUCKET_SCREEN_SHOTS/ --recursive
       
       - echo "deploy all screenshots to s3"
-      - aws s3 cp --recursive ./screenshots/ s3://enhance-digital-screenshots/
+      - aws s3 cp --recursive ./screenshots/ s3://$BUCKET_SCREEN_SHOTS/
 
   # artifacts:
   #   files:
