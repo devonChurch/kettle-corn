@@ -22,12 +22,17 @@ const start = async () => {
   const browser = await puppeteer.launch(puppeteerOptions);
   const page = await browser.newPage();
 
+  page.on('error', error => {
+    console.log('caught page error', error);
+    throw new Error(error);
+  });
+
   for (test of ['', 'services', 'contact', 'styleguide']) {
     const name = test || 'home';
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${name} | start \n`);
-    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'networkidle0' });
+    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' }); //'networkidle0'
 
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);
@@ -42,8 +47,8 @@ const start = async () => {
     console.log(`\n${name} | finish`);
   }
 
-  // await page.close();
-  // await browser.close();
+  await page.close();
+  await browser.close();
 };
 
 try {
