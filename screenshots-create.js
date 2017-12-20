@@ -42,7 +42,8 @@ const start = async () => {
       await new Promise(resolve => setTimeout(() => resolve(), 1000));
 
       const saveAs = path.resolve(screenshots, `${name}-${width}.png`);
-      const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
+      // const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
+      const screenshot = await page.screenshot({ path: saveAs });
     }
     console.log(`\n${name} | finish`);
   }
