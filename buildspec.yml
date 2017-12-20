@@ -50,10 +50,10 @@ phases:
     commands:
 
       - echo "clean previous build from s3"
-      - aws s3 rm s3://BUCKET_SITE/ --recursive
+      - aws s3 rm s3://$BUCKET_SITE/ --recursive
       
       - echo "deploy new build to s3"
-      - aws s3 cp --acl public-read --recursive ./public/ s3://BUCKET_SITE/
+      - aws s3 cp --acl public-read --recursive ./public/ s3://$BUCKET_SITE/
       
       - echo "invalidate cloud front cache"
       - npm run cache:invalidate
