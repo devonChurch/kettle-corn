@@ -30,6 +30,8 @@ phases:
   pre_build:
     commands:
 
+      - echo "*** codebuild environment variables ***"
+      - echo "site environment     = $SITE_ENV"
       - echo "bucket (site)        = $BUCKET_SITE"
       - echo "bucket (screen shot) = $BUCKET_SCREEN_SHOTS"
       - echo "cloudfront id        = $CLOUD_FRONT_ID"
