@@ -2,9 +2,10 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const start = async () => {
-  for (folder of ['new', 'old', 'compare']) {
+  // for (folder of ['new', 'old', 'compare']) {
+  for (folder of ['new', 'old', 'compare', 'test']) {
     console.log(`attempting to create directory /${folder}`);
-    const dir = path.resolve(__dirname, 'screenshots', folder);
+    const dir = path.resolve(__dirname, '../screenshots', folder);
 
     await fs.ensureDir(dir);
   }

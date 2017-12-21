@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const compareImages = require('resemblejs/compareImages');
 
-const screenshotsDir = path.resolve(__dirname, 'screenshots');
+const screenshotsDir = path.resolve(__dirname, '../screenshots');
 const getFileNames = folder => {
   const dir = path.resolve(screenshotsDir, folder);
   const filePaths = fs.readdirSync(dir);
