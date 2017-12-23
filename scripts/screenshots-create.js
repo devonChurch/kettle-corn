@@ -29,12 +29,12 @@ const start = async () => {
     throw new Error(error);
   });
 
-  for (test of ['', 'services', 'contact', 'styleguide']) {
+  for (test of ['', 'services', 'contact']) {
     const name = test || 'home';
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${name} | start \n`);
-    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'networkidle0' }); // 'networkidle0' 'load'
+    await page.goto(`${puppeteerUrl}${test}`, { waitUntil: 'load' }); // 'networkidle0' 'load'
 
     for (width of [320, 600, 900, 1200]) {
       console.log(`- ${name} | ${width}px`);
@@ -43,20 +43,8 @@ const start = async () => {
       // Wait a second for the repaints etc to be fufilled.
       await delay();
 
-      const clientHeight = await page.evaluate(() => document.body.clientHeight);
-      const maxHeight = maxPixelArea / width;
-      const saveHeight = Math.min(clientHeight, maxHeight);
-
-      console.log({ width, clientHeight, maxHeight, saveHeight });
-
-      await page.setViewport({ width, height: saveHeight });
-
-      // Wait a second for the repaints etc to be fufilled.
-      await delay();
-
       const saveAs = path.resolve(screenshots, `${name}-${width}.png`);
-      // const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
-      const screenshot = await page.screenshot({ path: saveAs });
+      const screenshot = await page.screenshot({ fullPage: true, path: saveAs });
     }
     console.log(`\n${name} | finish`);
   }
@@ -64,40 +52,6 @@ const start = async () => {
   await page.close();
   await browser.close();
 };
-
-// const start = async () => {
-//   const browser = await puppeteer.launch(puppeteerOptions);
-//   const page = await browser.newPage();
-//   const name = 'test';
-
-//   page.on('error', error => {
-//     console.log('caught page error', error);
-//     throw new Error(error);
-//   });
-
-//   console.log('- - - - - - - - - - - - - - - - - - -');
-//   console.log(`${name} | start \n`);
-
-//   await page.goto('https://codepen.io/DevonChurch/live/QaEJwx', { waitUntil: 'load' });
-
-//   const start = 12000;
-//   const end = 16000;
-//   const increment = 100;
-//   const total = (end - start) / increment;
-//   const heights = new Array(total + 1).fill(0).map((_, i) => start + increment * i);
-
-//   for (height of heights) {
-//     console.log(`- ${name} | ${height}px`);
-
-//     await page.setViewport({ width: 1200, height });
-//     // Wait a second for the repaints etc to be fufilled.
-//     await new Promise(resolve => setTimeout(() => resolve(), 1000));
-//     const saveAs = path.resolve(screenshots, `${name}-${height}.png`);
-//     const screenshot = await page.screenshot({ path: saveAs });
-//   }
-
-//   console.log(`\n${name} | finish`);
-// };
 
 try {
   start().then(() => {

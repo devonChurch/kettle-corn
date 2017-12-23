@@ -1,12 +1,26 @@
+const isProduction = process.env.NODE_ENV === 'production';
 const fs = require('fs-extra');
 const path = require('path');
+const screenshotsDir = path.resolve(__dirname, '../screenshots');
 
 const start = async () => {
-  for (folder of ['new', 'old', 'compare']) {
-    console.log(`attempting to create directory /${folder}`);
-    const dir = path.resolve(__dirname, '../screenshots', folder);
+  const [oldDir, newDir, compareDir] = ['old', 'new', 'compare'].map(dir =>
+    path.resolve(screenshotsDir, dir),
+  );
 
-    await fs.ensureDir(dir);
+  if (isProduction) {
+    for (dir of [oldDir, newDir, compareDir]) {
+      console.log(`attempting to create directory /${dir}`);
+      await fs.ensureDir(dir);
+    }
+  } else {
+    console.log('change previously new screenshots to become current old screenshots');
+    await fs.copy(newDir, oldDir);
+
+    for (dir of [newDir, compareDir]) {
+      console.log(`attempting to empty directory /${dir}`);
+      await fs.emptyDir(dir);
+    }
   }
 };
 

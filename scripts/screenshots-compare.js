@@ -1,8 +1,10 @@
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 const compareImages = require('resemblejs/compareImages');
 
+const misMatchThreshold = 0;
 const screenshotsDir = path.resolve(__dirname, '../screenshots');
+const manifestDir = path.resolve(__dirname, '../screenshots', 'manifest.json');
 const getFileNames = folder => {
   const dir = path.resolve(screenshotsDir, folder);
   const filePaths = fs.readdirSync(dir);
@@ -12,8 +14,11 @@ const getFileNames = folder => {
 
 const oldFileNames = getFileNames('old');
 const newFileNames = getFileNames('new');
+const manifest = [];
 
 const start = async () => {
+  fs.ensureFile(manifestDir);
+
   for (fileName of newFileNames) {
     if (!oldFileNames.includes(fileName)) continue;
 
@@ -28,10 +33,16 @@ const start = async () => {
       fs.readFileSync(oldFilePath),
       fs.readFileSync(newFilePath),
     );
+    const { rawMisMatchPercentage, getBuffer } = compareData;
+    const isMisMatch = rawMisMatchPercentage > misMatchThreshold;
 
-    fs.writeFileSync(compareFilePath, compareData.getBuffer());
+    fs.writeFileSync(compareFilePath, getBuffer());
+    manifest.push({ fileName, isMisMatch });
     console.log(`${fileName} | finish`);
   }
+
+  console.log({ manifest });
+  fs.writeFileSync(manifestDir, JSON.stringify(manifest));
 };
 
 try {
