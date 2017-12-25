@@ -20,7 +20,10 @@ const start = async () => {
   fs.ensureFile(manifestDir);
 
   for (fileName of newFileNames) {
-    if (!oldFileNames.includes(fileName)) continue;
+    if (!oldFileNames.includes(fileName)) {
+      console.log(`there was no old filename (${fileName}) to compare`);
+      continue;
+    }
 
     console.log('- - - - - - - - - - - - - - - - - - -');
     console.log(`${fileName} | start`);
