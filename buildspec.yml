@@ -64,7 +64,7 @@ phases:
       - npm run test:e2e:production
       
       - echo "prep screenshots"
-      - npm run screenshots:prep
+      - npm run screenshots:prep:production
       
       - echo "create new screenshots"
       - npm run screenshots:create:production
