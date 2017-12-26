@@ -79,11 +79,11 @@ phases:
       - aws s3 rm s3://$BUCKET_SCREEN_SHOTS/ --recursive
       
       - echo "deploy the following screenshot folders to s3"
-      - echo ls ./screenshots/
-      - echo ls ./screenshots/old/
-      - echo ls ./screenshots/new/
-      - echo ls ./screenshots/compare/
-      - echo cat ./screenshots/manifest.json
+      - ls ./screenshots/
+      - ls ./screenshots/old/
+      - ls ./screenshots/new/
+      - ls ./screenshots/compare/
+      - cat ./screenshots/manifest.json
       - aws s3 cp ./screenshots/ s3://$BUCKET_SCREEN_SHOTS/ --recursive
 
   # artifacts:

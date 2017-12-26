@@ -20,8 +20,11 @@ const start = async () => {
   fs.ensureFile(manifestDir);
 
   for (fileName of newFileNames) {
-    if (!oldFileNames.includes(fileName)) {
+    const hasOldFile = oldFileNames.includes(fileName);
+
+    if (!hasOldFile) {
       console.log(`there was no old filename (${fileName}) to compare`);
+      manifest.push({ fileName, status: 'noOld' });
       continue;
     }
 
@@ -37,14 +40,23 @@ const start = async () => {
       fs.readFileSync(newFilePath),
     );
     const { rawMisMatchPercentage, getBuffer } = compareData;
-    const isMisMatch = rawMisMatchPercentage > misMatchThreshold;
+    const status = rawMisMatchPercentage > misMatchThreshold ? 'noMatch' : 'match';
 
     fs.writeFileSync(compareFilePath, getBuffer());
-    manifest.push({ fileName, isMisMatch });
+    manifest.push({ fileName, status });
     console.log(`${fileName} | finish`);
   }
 
-  console.log({ manifest });
+  for (fileName of oldFileNames) {
+    const hasNewFile = newFileNames.includes(fileName);
+
+    if (!hasNewFile) {
+      console.log(`there was no new filename (${fileName}) to compare`);
+      manifest.push({ fileName, status: 'noNew' });
+    }
+  }
+
+  console.log(JSON.stringify(manifest, null, 2));
   fs.writeFileSync(manifestDir, JSON.stringify(manifest));
 };
 
@@ -60,3 +72,10 @@ try {
   console.log(error);
   process.exit(1);
 }
+
+// [
+//   {
+//     filename: 'home-320.png',
+//     status: '' // noMatch, match, noOld, noNew
+//   }
+// ]
