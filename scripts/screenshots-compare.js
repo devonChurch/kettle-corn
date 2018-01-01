@@ -52,7 +52,7 @@ const createComparisonManifestData = ({ rawMisMatchPercentage }) => {
   const isMisMatch = rawMisMatchPercentage > threshold;
 
   return {
-    percentage: rawMisMatchPercentage,
+    percentage: Math.round(rawMisMatchPercentage),
     status: isMisMatch ? 'noMatch' : 'match',
   };
 };
