@@ -1,23 +1,21 @@
 // require('babel-polyfill');
 
 const { APP_ENV = 'development' } = process.env;
+const isDevelopment = APP_ENV === 'development';
 const siteUrls = {
   development: 'http://localhost:8000/',
   stage: 'http://stage.enhancedigital.co.nz/',
   production: 'https://enhancedigital.co.nz/',
 };
-const isStage;
 const path = require('path');
 const puppeteer = require('puppeteer');
 const puppeteerUrl = siteUrls[APP_ENV];
-const puppeteerOptions = isProduction
-  ? { args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] }
-  : { headless: false, slowMo: 50 };
+const puppeteerOptions = isDevelopment
+  ? { headless: false, slowMo: 50 }
+  : { args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] };
 const screenshots = path.resolve(__dirname, '../screenshots', 'new');
 const maxPixelArea = 1200 * 12000;
 const delay = () => new Promise(resolve => setTimeout(() => resolve(), 1000));
-
-console.log({ isProduction });
 
 // We are running the screenshot generation functionality in a completely linear
 // sequence using "for of" rather than "forEach" itterations. This is due to
