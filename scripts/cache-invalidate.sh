@@ -12,5 +12,6 @@ if [ $CLOUD_FRONT_ID ]; then
 else
 
   echo "no cache to invalidate"
+  sleep $DELAY
 
 fi
