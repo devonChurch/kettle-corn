@@ -19,6 +19,7 @@
     "screenshots:create:development": "NODE_ENV=development node ./scripts/screenshots-create",
     "screenshots:create:production": "NODE_ENV=production node ./scripts/screenshots-create",
     "screenshots:compare": "node ./scripts/screenshots-compare",
+    "screenshots:thumb": "node ./scripts/screenshots-thumb",
     "cache:invalidate": "bash ./scripts/cache-invalidate.sh",
     "gatsby": "gatsby",
     "commit": "git-cz",
@@ -52,7 +53,8 @@
     "prettier": "^1.6.1",
     "puppeteer": "^0.13.0",
     "react-test-renderer": "^15.6.1",
-    "resemblejs": "^2.5.0"
+    "resemblejs": "^2.5.0",
+    "sharp": "^0.18.4"
   },
   "config": {
     "commitizen": {
