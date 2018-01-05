@@ -75,6 +75,9 @@ phases:
       - echo "compare screenshots"
       - npm run screenshots:compare
 
+      - echo "create screenshot thumbnails"
+      - npm run screenshots:thumb
+
       - echo "clean previous screenshots from s3"
       - aws s3 rm s3://$BUCKET_SCREEN_SHOTS/ --recursive
       
@@ -83,6 +86,7 @@ phases:
       - ls ./screenshots/old/
       - ls ./screenshots/new/
       - ls ./screenshots/compare/
+      - ls ./screenshots/thumb/
       - cat ./screenshots/manifest.json
       - aws s3 cp ./screenshots/ s3://$BUCKET_SCREEN_SHOTS/ --recursive
 
