@@ -7,20 +7,20 @@ cp ./src/favicon.ico ./public
 cp ./src/icon.png ./public
 cp ./src/site.webmanifest ./public
 
-if [ $SITE_ENV == "production" ]; then
+if [ $APP_ENV == "production" ]; then
   
-  echo "copy $SITE_ENV specific assets"
+  echo "copy $APP_ENV specific assets"
   
   cp ./src/robots.txt ./public
 
-elif [ $SITE_ENV == "stage" ]; then
+elif [ $APP_ENV == "stage" ]; then
 
-  echo "copy $SITE_ENV specific assets"
+  echo "copy $APP_ENV specific assets"
 
   cp ./src/robots-stage.txt ./public/robots.txt
 
 else
 
-  echo "no $SITE_ENV specific assets"
+  echo "no $APP_ENV specific assets"
 
 fi

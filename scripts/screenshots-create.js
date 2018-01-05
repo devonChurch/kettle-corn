@@ -1,9 +1,15 @@
 // require('babel-polyfill');
 
-const isProduction = process.env.NODE_ENV === 'production';
+const { APP_ENV = 'development' } = process.env;
+const siteUrls = {
+  development: 'http://localhost:8000/',
+  stage: 'http://stage.enhancedigital.co.nz/',
+  production: 'https://enhancedigital.co.nz/',
+};
+const isStage;
 const path = require('path');
 const puppeteer = require('puppeteer');
-const puppeteerUrl = isProduction ? 'https://enhancedigital.co.nz/' : 'http://localhost:8000/';
+const puppeteerUrl = siteUrls[APP_ENV];
 const puppeteerOptions = isProduction
   ? { args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] }
   : { headless: false, slowMo: 50 };
