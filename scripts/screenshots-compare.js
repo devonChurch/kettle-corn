@@ -28,7 +28,7 @@ const createGenericManifestData = fileName => {
     .reverse();
   const section = sectionSnippets.reverse().join('-');
 
-  return { fileName, width, section };
+  return { fileName, width: parseInt(width, 10), section };
 };
 
 const createComparisonRawData = async fileName => {
