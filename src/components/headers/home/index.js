@@ -44,7 +44,7 @@ const HeaderHome = () => {
             {navigation.services.name}
           </ButtonSecondary>
           <ButtonPrimary href={navigation.contact.path} swatch={['blue']} isInverted isLarge>
-            Banana
+            Talk to us
           </ButtonPrimary>
         </ButtonGroup>
       </Spacer>

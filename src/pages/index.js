@@ -5,7 +5,16 @@ import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import { createColor, colors, spacing } from '../styles';
 import services from '../data/services';
-import { Page, Content, Spacer, Sizer, Color, ButtonGroup, Flexer } from '../components/scaffold';
+import {
+  Page,
+  Content,
+  Encapsulate,
+  Spacer,
+  Sizer,
+  Color,
+  ButtonGroup,
+  Flexer,
+} from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
 import Markdown from '../components/markdown';
@@ -66,55 +75,59 @@ const IndexPage = () => (
         </Spacer>
       </section>
 
-      <section>
-        <Color background={['blue', 'darkest']}>
-          <Spacer padding={['largest', 0]}>
-            <Content>
-              <HeadingTwo color={['misc', 'white']}>Services</HeadingTwo>
+      <Encapsulate>
+        <section>
+          <Color background={['blue', 'darkest']}>
+            <Spacer padding={['largest', 0, 'large']}>
+              <Content>
+                <HeadingTwo color={['misc', 'white']}>Services</HeadingTwo>
 
-              <Spacer margin={[0, '-small']}>
-                <Grid>
-                  {({ GridWrapper, GridItemThreeUp: Item }) => (
-                    <GridWrapper>
-                      {Object.keys(services).map(key => {
-                        const { title, id, swatch, Icon, blurb } = services[key];
+                <Spacer margin={[0, '-small']}>
+                  <Grid>
+                    {({ GridWrapper, GridItemThreeUp: Item }) => (
+                      <GridWrapper>
+                        {Object.keys(services).map(key => {
+                          const { title, id, swatch, Icon, blurb } = services[key];
 
-                        return (
-                          <Item key={key}>
-                            <ServicesTile
-                              title={title}
-                              id={id}
-                              swatch={swatch}
-                              Icon={Icon}
-                              blurb={blurb}
-                            />
-                          </Item>
-                        );
-                      })}
-                    </GridWrapper>
-                  )}
-                </Grid>
-              </Spacer>
-            </Content>
-          </Spacer>
-        </Color>
-      </section>
+                          return (
+                            <Item key={key}>
+                              <ServicesTile
+                                title={title}
+                                id={id}
+                                swatch={swatch}
+                                Icon={Icon}
+                                blurb={blurb}
+                              />
+                            </Item>
+                          );
+                        })}
+                      </GridWrapper>
+                    )}
+                  </Grid>
+                </Spacer>
+              </Content>
+            </Spacer>
+            {/* Set bottom padding to make the encapsulation border uniform. */}
+            <Spacer padding={['medium', 0, 'small']} />
+          </Color>
+        </section>
 
-      <section>
-        <Color background={['green']}>
-          <Spacer padding={['largest', 0]}>
-            <Content>
-              <HeadingTwo color={['misc', 'white']}>
-                We like{' '}
-                <Text color={['green', 'darkest']} weight={700}>
-                  working with
-                </Text>
-              </HeadingTwo>
-              <Partners />
-            </Content>
-          </Spacer>
-        </Color>
-      </section>
+        <section>
+          <Color background={['green']}>
+            <Spacer padding={['largest', 0]}>
+              <Content>
+                <HeadingTwo color={['misc', 'white']}>
+                  We like{' '}
+                  <Text color={['green', 'darkest']} weight={700}>
+                    working with
+                  </Text>
+                </HeadingTwo>
+                <Partners />
+              </Content>
+            </Spacer>
+          </Color>
+        </section>
+      </Encapsulate>
     </main>
 
     <Spacer padding={['largest', 0, 0]}>
