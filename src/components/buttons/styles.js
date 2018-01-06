@@ -12,6 +12,7 @@ const Sbutton = styled.div`
   > a,
   > button {
     display: inline-block;
+    outline: 0;
   }
 
   > a,
@@ -113,7 +114,8 @@ const Stertiary = Sbutton.extend`
       left: -1px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       ${media['>=medium']} {
         &:after {
           width: calc(100% + ${createRem('10px')});

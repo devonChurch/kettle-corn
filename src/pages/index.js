@@ -113,12 +113,12 @@ const IndexPage = () => (
         </section>
 
         <section>
-          <Color background={['green']}>
+          <Color background={['blue', 'extraLight']}>
             <Spacer padding={['largest', 0]}>
               <Content>
-                <HeadingTwo color={['misc', 'white']}>
+                <HeadingTwo color={['blue']}>
                   We like{' '}
-                  <Text color={['green', 'darkest']} weight={700}>
+                  <Text color={['blue', 'darkest']} weight={700}>
                     working with
                   </Text>
                 </HeadingTwo>
