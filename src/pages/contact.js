@@ -1,11 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import loremIpsum from 'lorem-ipsum';
-import randomNumber from 'lodash.random';
-import firstLetterCaps from 'lodash.capitalize';
+import Helmet from 'react-helmet';
 import { createColor, colors, spacing } from '../styles';
-import services from '../data/services';
 import { config } from '../utils';
+import services from '../data/services';
+import navigation from '../data/navigation/';
 import { Page, Content, Spacer, Sizer, ButtonGroup, Flexer, Test } from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
@@ -25,6 +24,14 @@ import FooterSimple from '../components/footers/simple';
 
 const ContactPage = () => (
   <Page>
+    <Helmet>
+      <meta property="og:url" content={`${config.siteEndpoint}${navigation.contact.path}/`} />
+      <meta property="og:title" content="We love working with local businesses" />
+      <meta
+        property="og:description"
+        content="Contact us to talk about your growing your digital presence today"
+      />
+    </Helmet>
     <HeaderStandard title="Talk to us" background={['blue']} />
 
     <main>
