@@ -55,7 +55,7 @@ describe('successful form submission', () => {
 
       const $submit = await page.$('button[type="submit"]:focus');
       await $submit.click();
-      await new Promise(resolve => setTimeout(() => resolve(), 5000));
+      await new Promise(resolve => setTimeout(() => resolve(), 10000));
 
       const successMessage = await page.$eval(
         '[data-test="contact-form-success"]',

@@ -10,36 +10,44 @@ import youtube from '../../images/partners/youtube.svg';
 const partners = [
   {
     name: 'Ask Nicely',
-    logo: askNicely
+    logo: askNicely,
+    website: 'https://www.asknicely.com/',
   },
   {
     name: 'Facebook',
-    logo: facebook
+    logo: facebook,
+    website: 'https://www.facebook.com/',
   },
   {
     name: 'Google Analytics',
-    logo: googleAnalytics
+    logo: googleAnalytics,
+    website: 'https://www.google.com/analytics/',
   },
   {
     name: 'Mail Chimp',
-    logo: mailChimp
+    logo: mailChimp,
+    website: 'https://mailchimp.com/',
   },
   {
     name: 'Optimizely',
-    logo: optimizely
+    logo: optimizely,
+    website: 'https://www.optimizely.com/',
   },
   {
     name: 'Shopify',
-    logo: shopify
+    logo: shopify,
+    website: 'https://www.shopify.co.nz/',
   },
   {
     name: 'Wordpress',
-    logo: wordpress
+    logo: wordpress,
+    website: 'https://wordpress.com/',
   },
   {
     name: 'Youtube',
-    logo: youtube
-  }
+    logo: youtube,
+    website: 'https://www.youtube.com/',
+  },
 ];
 
 export default partners;

@@ -30,9 +30,14 @@ phases:
   pre_build:
     commands:
 
-      - echo "access id = $CLOUD_FRONT_ID"
-      - echo "access id = $AWS_ACCESS_KEY_ID"
-      - echo "access key = $AWS_SECRET_ACCESS_KEY"
+      - echo "*** codebuild environment variables ***"
+      - echo "application environment = $APP_ENV"
+      - echo "bucket (site)           = $BUCKET_SITE"
+      - echo "bucket (screen shot)    = $BUCKET_SCREEN_SHOTS"
+      - echo "cloudfront id           = $CLOUD_FRONT_ID"
+      - echo "access (id)             = $AWS_ACCESS_KEY_ID"
+      - echo "access (key)            = $AWS_SECRET_ACCESS_KEY"
+      - echo "dealy (seconds)         = $DELAY"
 
       - echo "run unit tests"
       - npm run test:unit
@@ -47,34 +52,43 @@ phases:
     commands:
 
       - echo "clean previous build from s3"
-      - aws s3 rm s3://enhancedigital.co.nz/ --recursive
+      - aws s3 rm s3://$BUCKET_SITE/ --recursive
       
       - echo "deploy new build to s3"
-      - aws s3 cp --acl public-read --recursive ./public/ s3://enhancedigital.co.nz/
+      - aws s3 cp ./public/ s3://$BUCKET_SITE/ --acl public-read --recursive --storage-class REDUCED_REDUNDANCY
       
       - echo "invalidate cloud front cache"
       - npm run cache:invalidate
       
       - echo "run end-to-end tests"
-      - npm run test:e2e:production
+      - npm run test:e2e
       
       - echo "prep screenshots"
       - npm run screenshots:prep
       
       - echo "create new screenshots"
-      - npm run screenshots:create:production
+      - npm run screenshots:create
 
       - echo "get previous new screen shots from s3 and set as old screenshots"
-      - aws s3 cp --recursive s3://enhance-digital-screenshots/new ./screenshots/old
+      - aws s3 cp s3://$BUCKET_SCREEN_SHOTS/new ./screenshots/old --recursive
 
       - echo "compare screenshots"
       - npm run screenshots:compare
 
+      - echo "create screenshot thumbnails"
+      - npm run screenshots:thumb
+
       - echo "clean previous screenshots from s3"
-      - aws s3 rm s3://enhance-digital-screenshots/ --recursive
+      - aws s3 rm s3://$BUCKET_SCREEN_SHOTS/ --recursive
       
-      - echo "deploy all screenshots to s3"
-      - aws s3 cp --recursive ./screenshots/ s3://enhance-digital-screenshots/
+      - echo "deploy the following screenshot folders to s3"
+      - ls ./screenshots/
+      - ls ./screenshots/old/
+      - ls ./screenshots/new/
+      - ls ./screenshots/compare/
+      - ls ./screenshots/thumb/
+      - cat ./screenshots/manifest.json
+      - aws s3 cp ./screenshots/ s3://$BUCKET_SCREEN_SHOTS/ --recursive --storage-class REDUCED_REDUNDANCY
 
   # artifacts:
   #   files:

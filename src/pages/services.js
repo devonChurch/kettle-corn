@@ -1,10 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 import loremIpsum from 'lorem-ipsum';
 import randomNumber from 'lodash.random';
 import firstLetterCaps from 'lodash.capitalize';
 import { createColor, colors, spacing } from '../styles';
+import { config } from '../utils';
 import services from '../data/services';
+import navigation from '../data/navigation/';
 import { Page, Content, Spacer, Sizer, ButtonGroup, Flexer } from '../components/scaffold';
 import Hero from '../components/hero';
 import ColorList from '../components/color-list';
@@ -31,6 +34,17 @@ import Divider from '../components/dividers';
 
 const ServicesPage = () => (
   <Page>
+    <Helmet>
+      <meta property="og:url" content={`${config.siteEndpoint}${navigation.services.path}/`} />
+      <meta
+        property="og:title"
+        content="Talk to us about enhancing the digital journey for your customers"
+      />
+      <meta
+        property="og:description"
+        content="Get help with digital marketing, website design/management, SEO &amp; SEM, customer analytics and business insights"
+      />
+    </Helmet>
     <HeaderStandard title="Services" background={['blue']} />
 
     <main>

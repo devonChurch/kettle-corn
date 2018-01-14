@@ -1,6 +1,19 @@
 import styled, { css } from 'styled-components';
-import { padding as createPadding, margin as createMargin, rem as createRem } from 'polished';
-import { media, breakpoints, spacing, dynamic, createColor } from '../../styles';
+import {
+  padding as createPadding,
+  margin as createMargin,
+  rem as createRem,
+  stripUnit as createStrippedUnit,
+} from 'polished';
+import {
+  media,
+  breakpoints,
+  createMediaQuery,
+  spacing,
+  misc,
+  dynamic,
+  createColor,
+} from '../../styles';
 
 const {
   createDynamicPadding,
@@ -11,6 +24,25 @@ const {
   createDynamicMinHeight,
   createDynamicMaxHeight,
 } = dynamic;
+
+const Sencapsulate = (() => {
+  // The width includes the large breakpoint plus the large padding on each size,
+  // however we minus the horizontal padding that the <Content /> component provides.
+  const maxWidth = `
+    ${createStrippedUnit(spacing.largest.max) * 2 +
+      createStrippedUnit(breakpoints.large) -
+      createStrippedUnit(spacing.medium.max) * 2}px`;
+
+  return styled.div`
+    ${createMediaQuery(maxWidth)} {
+      border-radius: ${misc.radius};
+      max-width: ${maxWidth};
+      margin: auto;
+      overflow: hidden;
+    }
+  `;
+})();
+
 const scaffold = {
   Spage: styled.div`
     min-height: 100vh;
@@ -20,6 +52,8 @@ const scaffold = {
     margin: 0 auto;
     max-width: ${breakpoints.large};
   `,
+
+  Sencapsulate,
 
   Sspacer: styled.div`
     display: ${({ display }) => display};

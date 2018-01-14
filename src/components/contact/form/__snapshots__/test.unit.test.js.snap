@@ -255,6 +255,7 @@ exports[`Sending submission should match snapshot 1`] = `
 .c6 > a,
 .c6 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c6 > a,
@@ -1297,6 +1298,7 @@ exports[`Submit error should match snapshot 1`] = `
 .c6 > a,
 .c6 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c6 > a,
@@ -2223,6 +2225,7 @@ exports[`Submit success should match snapshot 1`] = `
 .c6 > a,
 .c6 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c6 > a,
@@ -3077,6 +3080,7 @@ exports[`Validation should require a valid email address 1`] = `
 .c8 > a,
 .c8 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c8 > a,
@@ -3732,6 +3736,7 @@ exports[`Validation should set each input ("name", "email", "message") to be inv
 .c6 > a,
 .c6 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c6 > a,
@@ -4398,6 +4403,7 @@ exports[`Validation should validate for when correct values are supplied 1`] = `
 .c6 > a,
 .c6 > button {
   display: inline-block;
+  outline: 0;
 }
 
 .c6 > a,

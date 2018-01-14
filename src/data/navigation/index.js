@@ -1,5 +1,10 @@
 import { config } from '../../utils';
 
+const home = {
+  name: 'Home',
+  path: '/',
+};
+
 const services = {
   name: 'Services',
   path: '/services',
@@ -15,8 +20,8 @@ const styleguide = {
   path: '/styleguide',
 };
 
-const main = config.isProduction ? [services, contact] : [services, contact, styleguide];
+const main = config.isDevelopment ? [services, contact, styleguide] : [services, contact];
 
-const navigation = { services, contact, styleguide, main };
+const navigation = { home, services, contact, styleguide, main };
 
 export default navigation;

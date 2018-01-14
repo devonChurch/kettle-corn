@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "pull through cloud front id ($CLOUD_FRONT_ID)"
-
-if [ $CLOUD_FRONT_ID ]; then
+if [ $APP_ENV == "production" ]; then
   
   echo "invalidating cache ($CLOUD_FRONT_ID)"
   aws configure set preview.cloudfront true
@@ -14,5 +12,7 @@ if [ $CLOUD_FRONT_ID ]; then
 else
 
   echo "no cache to invalidate"
+  echo "delay for $DELAY seconds until dynamodb replicates"
+  sleep $DELAY
 
 fi

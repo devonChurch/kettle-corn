@@ -6,5 +6,6 @@ module.exports = {
   verbose: true,
   globals: {
     NODE_ENV: 'development',
+    APP_ENV: 'development',
   },
 };

@@ -3,7 +3,17 @@ import PropTypes from 'prop-types';
 import { spacing } from '../../styles';
 import styles from './styles';
 
-const { Spage, Scontent, Sspacer, Scolor, Ssizer, SbuttonGroup, SflexWrapper, SflexItem } = styles;
+const {
+  Spage,
+  Scontent,
+  Sencapsulate,
+  Sspacer,
+  Scolor,
+  Ssizer,
+  SbuttonGroup,
+  SflexWrapper,
+  SflexItem,
+} = styles;
 
 const Color = ({ children, color, background, display }) => {
   return (
@@ -113,17 +123,24 @@ Sizer.defaultProps = {
   maxHeight: 'initial',
 };
 
-const Content = ({ children, color }) => {
+const Content = ({ children }) => {
   return (
-    <Scontent color={color}>
+    <Scontent>
       <Spacer padding={[0, 'medium']}>{children}</Spacer>
     </Scontent>
   );
 };
 
 Content.propTypes = {
-  children: PropTypes.node,
   color: PropTypes.array,
+};
+
+const Encapsulate = ({ children }) => {
+  return <Sencapsulate>{children}</Sencapsulate>;
+};
+
+Encapsulate.propTypes = {
+  children: PropTypes.node,
 };
 
 const ButtonGroup = ({ children }) => {
@@ -195,6 +212,17 @@ const Test = ({ children, hook }) => {
   return <div data-test={hook}>{children}</div>;
 };
 
-const scaffold = { Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer, Test };
+const scaffold = { Page, Content, Encapsulate, Spacer, Color, Sizer, ButtonGroup, Flexer, Test };
 
-export { scaffold as default, Page, Content, Spacer, Color, Sizer, ButtonGroup, Flexer, Test };
+export {
+  scaffold as default,
+  Page,
+  Content,
+  Encapsulate,
+  Spacer,
+  Color,
+  Sizer,
+  ButtonGroup,
+  Flexer,
+  Test,
+};
