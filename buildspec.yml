@@ -70,7 +70,7 @@ phases:
       - npm run screenshots:create
 
       - echo "get previous new screen shots from s3 and set as old screenshots"
-      - aws s3 cp s3://$BUCKET_SCREEN_SHOTS/new ./screenshots/old
+      - aws s3 cp s3://$BUCKET_SCREEN_SHOTS/new ./screenshots/old --recursive
 
       - echo "compare screenshots"
       - npm run screenshots:compare
