@@ -22,6 +22,7 @@ const TemplateWrapper = ({ children }) => (
         value={config.version}
         data-test="enhance-digital-version"
       />
+      <meta property="fb:app_id" content="363055947501662" />
       <meta property="og:url" content={`${config.siteEndpoint}${navigation.home.path}`} />
       <meta property="og:type" content="website" />
       <meta
