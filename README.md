@@ -58,7 +58,7 @@ We use [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/en
 * Run unit tests
 
   ```
-  npm run xxxxxxx
+  npm run test:unit
   ```
 
 
