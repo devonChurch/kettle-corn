@@ -25,7 +25,7 @@ Utilising a comprehensive CI / CD pipeline, a low latency Front-end delivery sys
 
 The AWS infrastructure fed into both [Stage](http://stage.enhancedigital.co.nz/) and [Production](https://enhancedigital.co.nz/) environments allowing for *fast*, *stable* and *flexible* iterations.
 
-![kettle-corn](https://user-images.githubusercontent.com/15273233/40571816-b1b0344e-60f3-11e8-83b6-1715874c9339.png)
+![kettle-corn](https://user-images.githubusercontent.com/15273233/40573886-ac96ef2e-611c-11e8-901a-d09a681a8897.jpg)
 
 
 ## Installation
