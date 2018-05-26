@@ -55,9 +55,11 @@ The AWS infrastructure fed into both [Stage](http://stage.enhancedigital.co.nz/)
 
 We use [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/) to unit test our *utilities* and *React* components. Unit tests are run as part of our CI / CD pipeline and on every `git push` as part of [Husy](https://www.npmjs.com/package/husky) *Git hooks* setup.
 
-```
-npm run test:unit
-```
+* Run unit tests
+
+  ```
+  npm run xxxxxxx
+  ```
 
 
 ### Visual Regression Tests
@@ -66,11 +68,13 @@ As part of our *stage* and *production* deployments we run an *image diffing* se
 
 The system is built with [Puppeteer](https://github.com/GoogleChrome/puppeteer) taking screenshots of each page in a series of different sized *view ports*. From there we use [Resemble.js](http://huddleeng.github.io/Resemble.js/) to find any inconsistencies between the images. The results are then sent to the developer via a [CodeBuild](https://aws.amazon.com/codebuild/), [Lambda](https://aws.amazon.com/lambda/) and [SES](https://aws.amazon.com/ses/) pipeline which emails the visual summary using [Zurbs Foundation](https://foundation.zurb.com/emails/docs/) design pattern.
 
-```
-screenshots:prep
-screenshots:create:development
-screenshots:compare
-```
+* Run visual regression tests
+
+  ```
+  npm run screenshots:prep
+  npm run screenshots:create:development
+  npm run screenshots:compare
+  ```
 
 ![screen shot 2018-05-25 at 10 37 47 pm](https://user-images.githubusercontent.com/15273233/40571850-55b8f1c0-60f4-11e8-9ac6-8802794dd14d.png)
 
@@ -78,6 +82,12 @@ screenshots:compare
 ### Integration Tests
 
 To test the *full stack* of the application we run set of custom [Puppeteer](https://github.com/GoogleChrome/puppeteer) sequences to ensure things like *form submissions* are working correctly. Integration tests are run as part of our CI / CD pipeline and on every `git push` as part of [Husy](https://www.npmjs.com/package/husky) *Git hooks* setup.
+
+* Run integration tests
+
+  ```
+  npm run test:e2e:development
+  ```
 
 ![e2e](https://user-images.githubusercontent.com/15273233/40571856-755d8482-60f4-11e8-9c65-53c08595c92b.gif)
 
