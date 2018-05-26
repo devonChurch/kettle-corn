@@ -4,12 +4,11 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-![blue](https://user-images.githubusercontent.com/15273233/40571783-36e53f02-60f3-11e8-93ba-2e368b309067.jpg)
-
+<img src="https://user-images.githubusercontent.com/15273233/40571783-36e53f02-60f3-11e8-93ba-2e368b309067.jpg" height="auto" width="300"/>
 
 A **static site generator** for the [Enhance Digital](https://enhancedigital.co.nz/) marketing site.
 
-![screen shot 2018-05-25 at 10 39 55 pm](https://user-images.githubusercontent.com/15273233/40571793-66163f38-60f3-11e8-9b0b-16bcb9c7e6e7.png)
+<img src="https://user-images.githubusercontent.com/15273233/40571793-66163f38-60f3-11e8-9b0b-16bcb9c7e6e7.png" height="auto" width="500"/>
 
 The platform uses [GatsbyJS](https://www.gatsbyjs.org/) as the base and leverages [React](https://reactjs.org/) and [Styled Components](https://www.styled-components.com/).
 
