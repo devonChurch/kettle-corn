@@ -79,7 +79,7 @@ The system is built with [Puppeteer](https://github.com/GoogleChrome/puppeteer) 
 ![screen shot 2018-05-25 at 10 37 47 pm](https://user-images.githubusercontent.com/15273233/40571850-55b8f1c0-60f4-11e8-9ac6-8802794dd14d.png)
 
 
-### Integration Tests
+### End-to-End Tests
 
 To test the *full stack* of the application we run set of custom [Puppeteer](https://github.com/GoogleChrome/puppeteer) sequences to ensure things like *form submissions* are working correctly. Integration tests are run as part of our CI / CD pipeline and on every `git push` as part of [Husy](https://www.npmjs.com/package/husky) *Git hooks* setup.
 
@@ -90,4 +90,7 @@ To test the *full stack* of the application we run set of custom [Puppeteer](htt
   ```
 
 ![e2e](https://user-images.githubusercontent.com/15273233/40571856-755d8482-60f4-11e8-9c65-53c08595c92b.gif)
+
+**Note:** I have also added a [Cypress](https://www.cypress.io/) based system for *End-to-End* testing as part of an [exploratory experiment](https://github.com/devonChurch/banana-cake).
+
 
